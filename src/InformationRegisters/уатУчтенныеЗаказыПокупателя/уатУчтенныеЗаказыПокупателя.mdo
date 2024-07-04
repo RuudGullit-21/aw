@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4214497a-ea26-4f50-9216-6203467f9f62">
+  <producedTypes>
+    <selectionType typeId="253b442a-f7e0-4658-b99f-b9c8fd79a803" valueTypeId="76733d72-b1b1-4756-ab49-d622a59903e2"/>
+    <listType typeId="712a6462-6398-42af-b549-3a212e8c82d0" valueTypeId="4d91714f-8cc1-4c3c-8594-06e925acf4ae"/>
+    <managerType typeId="01178d32-998b-4567-a256-82cd0f708241" valueTypeId="4226d401-0102-42ac-9439-c3a912c98f6d"/>
+    <recordSetType typeId="c9afe3b7-227a-4a59-b266-45a5ca10b411" valueTypeId="4efc0282-0cdc-4869-9831-be833c8a400e"/>
+    <recordKeyType typeId="d8c1ea41-3df0-4065-963c-fc6512092792" valueTypeId="cd7ae549-4173-48b9-80e3-d2d612b4c45d"/>
+    <recordType typeId="d2ae172a-cc74-4cc6-889f-b21375c946a9" valueTypeId="f6f28445-ed19-41e1-a289-8b9ea83464d2"/>
+    <recordManagerType typeId="dec488d6-1b03-425c-b301-f3a9e0c2f21c" valueTypeId="c8257152-27cb-4987-9377-ff6b962f85f0"/>
+  </producedTypes>
+  <name>уатУчтенныеЗаказыПокупателя</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учтенные заказы покупателя</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Recorded customer orders</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатУчтенныеЗаказыПокупателя.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dimensions uuid="bc9f6797-dfa5-49d5-8d6c-38b1f5d9a065">
+    <name>ЗаказПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Customer order</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ покупателя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Customer order</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="a656cbaa-4057-4ccb-9d4e-8ab6eeaf2fbe">
+    <name>МаршрутныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Routing list</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Routing list</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="61417771-7ddd-4406-bf89-e54c1bb41205">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39792fb0-e327-4f64-b537-039183c0839f">
+  <producedTypes>
+    <objectType typeId="90e06842-ff00-43cd-b4d5-fc031b617fe2" valueTypeId="1f04ecd7-a264-4b5e-aaa9-7e71e289b80a"/>
+    <managerType typeId="15d13958-657a-44ff-b2bd-3fda12720f7e" valueTypeId="3d39d011-08c3-4147-9967-e878bd32accc"/>
+  </producedTypes>
+  <name>уатКалькуляторТарифов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Калькулятор тарифов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Tariff calculator</value>
+  </synonym>
+  <comment>Калькулятор тарифов (уат)</comment>
+  <defaultForm>DataProcessor.уатКалькуляторТарифов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Калькулятор тарифов</value>
+  </extendedPresentation>
+  <extendedPresentation>
+    <key>en</key>
+    <value>Tariff calculator</value>
+  </extendedPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Калькулятор тарифов</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Tariff calculator</value>
+  </explanation>
+  <attributes uuid="7b1de21d-d6d0-4777-bc3a-c4a59e05a8c0">
+    <name>ВремяНачалаОказанияУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время начала оказания услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start time of provision of services</value>
+    </synonym>
+    <comment>Время начала оказания услуги</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время начала оказания услуги.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start time of rendering services.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5f04ab89-8e41-425e-b626-cc5020d7c224">
+    <name>ВремяОкончанияОказанияУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время окончания оказания услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End time of rendering services</value>
+    </synonym>
+    <comment>Время окончания оказания услуги</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время окончания оказания услуги.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End time of rendering service.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c6050fd7-4c3d-44f3-b037-2f9b482f2c8a">
+    <name>Прейскурант</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прейскурант</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Price list</value>
+    </synonym>
+    <comment>Прейскурант</comment>
+    <type>
+      <types>CatalogRef.уатПрейскурантыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Прейскурант ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle price list</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ade3e40b-1468-442d-802c-256fb62c846a">
+    <name>Расстояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расстояние</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Distance</value>
+    </synonym>
+    <comment>Расстояние</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расстояние.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Distance.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4df92956-8bf1-4d9a-bf8b-607b664c49d1">
+    <name>СписокФильтров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список фильтров</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Filters list</value>
+    </synonym>
+    <comment>Список фильтров</comment>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Список накладываемых фильтров</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>List of applied filters</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d7968c91-8ce3-402a-93dd-1028a742540e">
+    <name>СуммаВключаетНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма включает НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount includes VAT</value>
+    </synonym>
+    <comment>Сумма включает НДС</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма включает налог на добавленную стоимость</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Total include value-added tax</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="df7246ca-234e-44eb-bfad-88aeab11aaca">
+    <name>УчитыватьНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Include VAT</value>
+    </synonym>
+    <comment>Учитывать НДС</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак учета налога на добавленную стоимость</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>A sign of accounting for the value added tax</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="44948b11-9a4d-408d-a1d7-e2a06ff490bb">
+    <producedTypes>
+      <objectType typeId="f266897e-273e-4df7-9914-01ce431b29c4" valueTypeId="55dc1d6e-c232-4553-8fae-186fcf82f479"/>
+      <rowType typeId="ba9329bd-5b11-448f-b0e1-7a8865b27ebf" valueTypeId="8a2551aa-b09a-45e8-816b-0cdc5c543782"/>
+    </producedTypes>
+    <name>Услуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Services</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Услуги</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Services</value>
+    </toolTip>
+    <attributes uuid="f8deafd2-eb44-4c7b-bd89-6cf518c4f45b">
+      <name>Всего</name>
+      <synonym>
+        <key>ru</key>
+        <value>Всего</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Total</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sum</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ed4c5591-c63d-4e8b-9d27-1d22215e91be">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <comment>Количество</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество услуг</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Number of services</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d5a68760-1824-41d9-9152-dfe1215c703c">
+      <name>ПроцентСкидкиНаценки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Процент скидки или наценки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Percen of discount or surcharge</value>
+      </synonym>
+      <comment>(Общ) Процент скидки (если данная скидка детализируется по позициям номенклатуры, то является значением по умолчанию)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Процент скидки или наценки на услугу</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Percent of discount or surcharge for service</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ce353184-7664-41f9-8afe-ab2a57057add">
+      <name>СтавкаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка НДС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>VAT rate</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>EnumRef.СтавкиНДС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ставка налога на добавленную стоимость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Tax rate of added value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="074f1896-306a-4687-bb34-73426720472e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sum</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Payment amount</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="197f5aa2-3f61-4b98-9d4d-474949f96fbd">
+      <name>СуммаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма НДС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>VAT amount</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма налога на добавленную стоимость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Tax amount on added value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f4b3a22f-f1af-46fc-b6a1-b2d8d66ceef6">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Tariff</value>
+      </synonym>
+      <comment>Тариф</comment>
+      <type>
+        <types>CatalogRef.уатТарифыТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тариф.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Rate.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a6f8b8dc-3841-41ea-8281-d34a5f3a6e54">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <comment>Цена</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Цена услуги</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The price of the service</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="767eed62-f801-4e78-8b98-c0906ef303bb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e93f0e40-4cca-48c4-88a6-4d8daaf0ded9">
+    <name>ФормаПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

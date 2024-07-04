@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbe5a2f5-301a-4d39-971e-2cdefd43c08e">
+  <producedTypes>
+    <managerType typeId="761f6ce0-7978-4096-9758-83beb602e76b" valueTypeId="7ecbb82e-d568-4f3e-9ea0-db3af0908cbc"/>
+    <valueManagerType typeId="4d2ea0c7-22be-45a4-ba2c-bea9095b35b2" valueTypeId="900b5a19-ecc1-49b2-b3a2-adb40f411052"/>
+    <valueKeyType typeId="2a96ac68-9c12-5c7a-afce-8b5d096a65f4" valueTypeId="2020d51e-2dba-563a-915a-cb96468e4688"/>
+  </producedTypes>
+  <name>УдалитьуатТипЭлектронныхКарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Тип электронных карт</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Electronic maps type</value>
+  </synonym>
+  <comment>Тип электронных карт</comment>
+  <type>
+    <types>EnumRef.уатТипыЭлектронныхКарт</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <choiceParameters>
+    <name>Отбор.Ссылка</name>
+    <value xsi:type="core:FixedArrayValue">
+      <values xsi:type="core:ReferenceValue">
+        <value>Enum.уатТипыЭлектронныхКарт.EnumValue.OSM</value>
+      </values>
+      <values xsi:type="core:ReferenceValue">
+        <value>Enum.уатТипыЭлектронныхКарт.EnumValue.Яндекс</value>
+      </values>
+      <values xsi:type="core:ReferenceValue"/>
+    </value>
+  </choiceParameters>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

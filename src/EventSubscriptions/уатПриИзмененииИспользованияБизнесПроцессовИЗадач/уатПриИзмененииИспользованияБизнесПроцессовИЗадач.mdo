@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7cd50162-69c6-4923-82d8-4d79141c7e62">
+  <name>уатПриИзмененииИспользованияБизнесПроцессовИЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>При изменении использования бизнес-процессов и задач</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>When change the use of business processes and tasks</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.уатПриИзмененииИспользованияБизнесПроцессовИЗадач</handler>
+</mdclass:EventSubscription>

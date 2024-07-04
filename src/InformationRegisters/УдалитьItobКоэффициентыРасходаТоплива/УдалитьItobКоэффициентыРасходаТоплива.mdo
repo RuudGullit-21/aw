@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ac079f9-ea5c-4f4e-a820-eabb2a94022a">
+  <producedTypes>
+    <selectionType typeId="2d6049cd-77d3-4fbc-896e-7543063b9fd7" valueTypeId="e232f8cf-f2d7-44c9-bd23-de55ff012525"/>
+    <listType typeId="23067e8f-6630-4e99-a7ba-ca54328a980d" valueTypeId="93e1e45e-350d-4e57-9fa3-0190b1a3602a"/>
+    <managerType typeId="240325ae-e1de-4414-877a-0a0009c44ecb" valueTypeId="256fdaaa-edbb-4ea1-9b31-8d490a2abd72"/>
+    <recordSetType typeId="b971663a-a49e-4ee3-882e-44ebb7294f51" valueTypeId="58fb9497-6421-40c9-b666-ca2beaec2a92"/>
+    <recordKeyType typeId="106c7590-6172-4ee9-bfd4-9336f813ec2a" valueTypeId="5b06d256-8091-4d46-ab07-fa9f183261cd"/>
+    <recordType typeId="dfa74512-2761-496f-ab71-ab1a7da05071" valueTypeId="1030f39b-abb1-49ea-93e3-96d58d39d4a2"/>
+    <recordManagerType typeId="79f360ce-1338-415e-8f7f-a5243230af9d" valueTypeId="08af11fb-2b2f-44a0-aa53-ad9e4cb37c3e"/>
+  </producedTypes>
+  <name>УдалитьItobКоэффициентыРасходаТоплива</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Коэффициенты расхода топлива</value>
+  </synonym>
+  <comment>Коэффициенты расхода топлива</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала действия</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Valid from</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Коэффициенты расхода топлива транспортных средств</value>
+  </explanation>
+  <resources uuid="c6390642-7327-454a-b6e5-610e1d380362">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Coefficient</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Коэффициент расхода топлива</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9c1f55c6-78af-488c-ad64-df3ee1470e51">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство для которого устанавливается коэффициент расхода топлива</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a740f5e4-79a4-4162-80c9-0af894a82847">
+  <producedTypes>
+    <selectionType typeId="8cc23057-75a1-48f0-a7e4-bc779d52636e" valueTypeId="69a40628-286d-4077-bd30-b66cc34e6c43"/>
+    <listType typeId="c0742004-f835-4170-b5ea-7bab34320cc9" valueTypeId="3d0437ae-f2f4-4319-9c18-c05719445d2c"/>
+    <managerType typeId="6d7ea909-e5f8-4c84-9a70-5e4b6be4e0b9" valueTypeId="95558718-f5cb-4e5d-8fca-b620f45eafe5"/>
+    <recordSetType typeId="87481658-ef1f-442a-be31-1bb15d4ee872" valueTypeId="ce721346-5851-4b48-9eba-b357df36bdf7"/>
+    <recordKeyType typeId="af42c7ed-f5a9-4c51-b6be-0ca85ad344e8" valueTypeId="7e8a02d6-24d0-4c91-82d3-adb33e7a2a05"/>
+    <recordType typeId="ee8e503f-61af-4e57-a14e-9731005039dd" valueTypeId="08053509-da9a-4728-a4ec-d0fc62424ea8"/>
+    <recordManagerType typeId="23d07fe7-a8a5-40c1-b295-bc2636c9982d" valueTypeId="310b3f55-e729-43e9-9749-02eb404e9ced"/>
+  </producedTypes>
+  <name>УдалитьItobНастройкиПравДоступаГруппПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Настройки прав доступа групп пользователей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5cea0060-f827-4658-8b9b-2139f9336cbb">
+    <name>Запись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запись</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Запись</value>
+    </synonym>
+    <comment>Права на запись объекта</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг, есть ли права на запись объекта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="549ae85a-911e-496e-a796-59f035e166ab">
+    <name>ГруппаПользователей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа пользователей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Users group</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ГруппыПользователей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа пользователей, для которой устанавливаются права</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c460e4e0-21ae-4951-82f4-1c434df1f699">
+    <name>ОбъектДоступа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект доступа</value>
+    </synonym>
+    <type>
+      <types>DefinedType.УдалитьItobПредметОграниченийПравДоступа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект доступа, на который устанавливаются права</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10a265e8-0ea2-4d90-a661-733eb411937c">
+  <producedTypes>
+    <objectType typeId="a3b101bd-eb43-4214-962c-49a3c729a02b" valueTypeId="5ffa3708-c9f9-4616-b778-f47fe2fd3f68"/>
+    <managerType typeId="2d29bc33-3de0-4218-896b-ac23f3454df4" valueTypeId="07a1e59d-7a35-4411-8352-baea1eb1c669"/>
+  </producedTypes>
+  <name>уатРедактированиеТарифов_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактирование тарифов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Tariffs editing</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатРедактированиеТарифов_уэ.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="b9196575-f1dd-4a98-976e-62ac0f311e47">
+    <name>БазаТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>База тарифа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатБазыСкладскихТарифов_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>База для расчета цены тарифа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2b7b55de-1bba-4d41-adaa-5fcd2d39b5ea">
+    <name>ВидСкладскойОперации</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse operation type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вид складской операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыСкладскихОпераций_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для расчета по параметру выработки &quot;Складская обработка&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="83725f3e-d9ba-4005-a157-ca5c2fa3c385">
+    <name>ВидУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид упаковки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Packaging type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыУпаковки_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид упаковки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of package</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c63f633a-a87c-4717-9e48-8df24dc1757b">
+    <name>ГруппировкаТарифаОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Grouping tariff</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группировка тарифа.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Group tariff.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="431b0ee5-03ae-4cfa-afc1-711a025ebfe0">
+    <name>ЗначениеОбласти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение области.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Field value.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="187d7696-6a26-48cb-9c7d-697f5476173b">
+    <name>КоличествоБесплатныхЕдиниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество бесплатных единиц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="88aac3bf-257e-40b0-a0d1-3a8e9d326e42">
+    <name>МетодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод расчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculation method</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатМетодыРасчетаПоТарифам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение метода расчета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Calculation method value</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3f8b07f5-f1c1-4c38-9665-9b95ec07b3a8">
+    <name>НоменклатураУслугиОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Service</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Услуга.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The service.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1907899e-818b-415f-a9c0-5979807a4969">
+    <name>ОбластьДействияОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scope</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Область действия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Action area.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2969e426-f96f-4cc4-af38-a4b449abe2c2">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Output parameter</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите параметр выработки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Set output parameter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4a3a27ca-d91b-48e2-b8e6-a02df2c4c054">
+    <name>предБазаТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. база тарифа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатБазыСкладскихТарифов_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение базы тарифа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d761f319-a5cb-4d03-8787-1ab22e073c85">
+    <name>предВидСкладскойОперации</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse operation type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. вид складской операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыСкладскихОпераций_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение вида складской операции</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5e87ca0a-6f42-4562-9ee5-b97ba9dc00b4">
+    <name>предВидУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. вид упаковки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. packing type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыУпаковки_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение вида упаковки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous value of package type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="21989f0d-43d1-48fc-af1b-7bfaf3666b39">
+    <name>предГруппировкаТарифаОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Grouping tariff</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущая группировка тарифа.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous tariff group.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e0a252f4-70dc-418d-a2d8-84e65431f7c8">
+    <name>предЗначениеОбласти</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. значение области</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. field value</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение области</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous value of field</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="089dd400-bc74-452c-81c8-c7d5605a042d">
+    <name>предМетодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. метод расчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. method of calculation</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатМетодыРасчетаПоТарифам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение метода расчета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous value of calculation method</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e1a67b3f-5719-4cec-8085-8cf6feed67a5">
+    <name>предНоменклатураУслугиОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Services products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущая номенклатура услуги</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous products and services of services</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9c973526-65f0-416e-a4a7-3f1b001d6411">
+    <name>предОбластьДействияОтбор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scope</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущая область действия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous action area.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="96b53176-cef2-4d9e-9043-f9a100920dc3">
+    <name>предПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. параметр выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. parameter of output</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущий параметр выработки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous output parameter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="eeb0683f-3274-41e8-a6da-4ec0ba6af57e">
+    <name>предПрейскурант</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. прейскурант</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. price list</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПрейскурантыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущий прейскурант</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous price list</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="64912806-321d-44ce-9725-d7031eb74376">
+    <name>ПредТипПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. тип пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. point type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыПунктов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение типа пункта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous value of point type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f7481ac6-f4a9-4135-af91-0ee3baa5c485">
+    <name>предТипТочкиМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. тип точки маршрута</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. type route point</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыТочекМаршрута</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предыдущее значение типа точки маршрута</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Previous value of route point type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a016cb6b-852c-450d-9df0-f3e8fe484760">
+    <name>предУсловиеПримененияФиксТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пред. условие применения фикс. тарифа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Priv. condition to use fix. rate</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет применение тарифа при нулевой выработке. &quot;По условию&quot; - тариф будет применен только при наличии выработки по параметру, указанному в тарифе. &quot;Всегда&quot; - тариф применяется независимо от наличия выработки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Determines the application of tariff at zero output. &quot;By condition&quot; - the tariff will be applied only if there is an output for the parameter specified in the tariff. &quot;Always&quot; - the tariff is applied regardless of the availability of output.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e54b048c-61aa-490a-a352-4271d2fb744f">
+    <name>Прейскурант</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прейскурант</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Price list</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПрейскурантыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Прейскурант.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Pricelist.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d4b95c09-f2fd-4d4a-9bbf-801342035780">
+    <name>ТипКонтейнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип контейнера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыКонтейнеров_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6fa271f0-c509-4460-af03-13eb3ec76155">
+    <name>ТипПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыПунктов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для расчета по параметру выработки &quot;Количество точек по типу пункта&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>It is used for calculating the parameter &quot;Number of points by point type&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e6f2a9d3-6e3d-41e1-97a6-db9fd0b451b3">
+    <name>ТипТочкиМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transaction type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыТочекМаршрута</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для расчета по параметру выработки &quot;Количество операций погрузки и разгрузки&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>It is used for calculation by output parameter &quot;Number of loading and unloading operations&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cda8f37-a051-4406-bfea-b892955013fa">
+    <name>УсловиеПримененияФиксТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие применения фикс. тарифа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Application condition of fix. rate</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет применение тарифа при нулевой выработке. &quot;По условию&quot; - тариф будет применен только при наличии выработки по параметру, указанному в тарифе. &quot;Всегда&quot; - тариф применяется независимо от наличия выработки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Determines the application of tariff at zero output. &quot;By condition&quot; - the tariff will be applied only if there is an output for the parameter specified in the tariff. &quot;Always&quot; - the tariff is applied regardless of the availability of output.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d9f2fd90-f8c7-48cd-96ef-fa574c1fa3f2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5dcd87ef-239e-4290-951b-cc7f29594977">
+    <name>ПараметрыОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры округления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Rounding parameters</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="651c6f36-2d9c-4226-a47f-1d14df59dd20">
+    <name>ПараметрыИзмененияОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры изменения округления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Parameters changes rounding</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e616ef62-0009-4978-b8d9-15231c7e3f10">
+    <name>ДобавлениеИнтервала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавление интервала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Adding interval</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7102e7e0-c9fd-43a5-9388-91d2b427290a">
+    <name>СписокЗначенийОбластиДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список значений области действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Values list for scope</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="570da775-b90e-4d18-b62a-85533be9f256">
+    <name>ФайлВыгрузкиExcel</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл выгрузки excel</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Upload file excel</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

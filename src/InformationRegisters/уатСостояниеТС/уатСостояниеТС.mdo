@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96814ef8-9d07-463a-8f59-41f732921e5c">
+  <producedTypes>
+    <selectionType typeId="86700be4-37ea-451b-97f0-76d40ccaa182" valueTypeId="8a594910-de1e-43a6-8c51-73ea3f81c7a4"/>
+    <listType typeId="2e2394c7-e4f8-41ca-807e-b9bab124ef62" valueTypeId="82ed9eb1-550a-4a1f-92f3-90a4625b1c1d"/>
+    <managerType typeId="52adc99e-32b0-47d1-a5cc-0ea0f6930525" valueTypeId="edb14ea4-837d-4067-9d89-33cabb3540ba"/>
+    <recordSetType typeId="0921131f-9709-430b-99ce-6895e254e3f3" valueTypeId="a66665ee-236f-4c39-993f-bfeac9d85fa9"/>
+    <recordKeyType typeId="f9e52b02-40b1-4c5f-91de-71a996fe92a3" valueTypeId="6a227a19-95f5-4f50-a81f-55f2d4b52bf6"/>
+    <recordType typeId="bfce67da-17c3-4b3e-881c-54a33af64dd1" valueTypeId="17ffb398-4fdb-4043-bd49-3dd466c68393"/>
+    <recordManagerType typeId="28abd666-a36c-4ba5-9a17-2c4bd373becf" valueTypeId="c55e3c9c-e835-4531-973e-dacffab7211c"/>
+  </producedTypes>
+  <name>уатСостояниеТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Condition of  vehicle</value>
+  </synonym>
+  <comment>Состояние ТС (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатСостояниеТС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Состояние ТС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Condition of  vehicle</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Состояние ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Condition of  vehicle</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Состояние ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Condition of  vehicle</value>
+  </explanation>
+  <resources uuid="8d272e0d-3ef8-4e8f-a2ba-47be0b3308a6">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания прибывания в состоянии</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date of stay in the state</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bfca5ebe-1d73-4e6b-9883-1e756c49aa4c">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Order</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Order.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="d363af4f-6d1f-4fe7-8493-13145ae7defb">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="57137ddd-9818-49e9-af99-98685f2291d4">
+    <name>Местоположение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Местоположение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Location</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Местоположение ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Location of vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0234b07c-1f40-46be-ac84-79aa9726e34f">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>State</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСостояниеТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Condition of  vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b64f19ed-37d6-4838-b9a7-4a0248415fea">
+    <name>ЗагрузкаПоВесу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка по весу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Load by weight</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузка по весу, %</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Download by weight, %</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6a17a799-9b82-403f-8afe-069e3121c9e4">
+    <name>ЗагрузкаПоОбъему</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка по объему</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Download by volume</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загрузка по объему, %</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Download of volume, %</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f9f42b04-33ce-4908-ba40-86b17b2a029f">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="826536c9-8446-4244-a31e-36177c2d61d6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

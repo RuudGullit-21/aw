@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="053fcf72-0532-4845-9104-e7bf5e7fb8ab">
+  <name>уатРасчетСтатусовОбработкиСДпоЗаказамНаТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет статусов обработки сопроводительных документов по заказам на ТС</value>
+  </synonym>
+  <comment>Заполняет служебный регистр &quot;Статус обработки СД&quot;, предназначенный для построения отчета &quot;Невыставленные услуги по данным перевозчика&quot;</comment>
+  <methodName>CommonModule.уатОбщегоНазначения_проф.РасчетСтатусовОбработкиСДпоЗаказамНаТС</methodName>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

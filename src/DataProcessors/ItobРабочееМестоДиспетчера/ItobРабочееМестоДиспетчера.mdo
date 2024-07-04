@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e7a3286-b597-4cef-b5d4-2cee3464df16">
+  <producedTypes>
+    <objectType typeId="a6e63e90-ca0a-432a-815e-bea13045dcc4" valueTypeId="d68140a4-3517-48a9-b946-db6149575588"/>
+    <managerType typeId="581808a3-e6e5-4763-a9c0-b20eaffab72f" valueTypeId="45af40a9-807e-4bf6-a395-cc4578e6bf6b"/>
+  </producedTypes>
+  <name>ItobРабочееМестоДиспетчера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее место диспетчера</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ItobРабочееМестоДиспетчера.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="24157153-d614-4033-ab24-52ccf58e78d6">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43e7d7b1-85f1-49cc-a654-5f621a23cba3">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания периода</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="1cf708a9-7b2d-4a5c-9f25-a3b0abb64673">
+    <name>ВыбранныеОбъектыНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранные объекты на карте</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6be02d52-33ac-4c51-9d9d-a26477d1ceb3">
+    <name>Легенда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Легенда</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="29c9ac25-4d56-4268-bf0f-13beb6563d9f">
+    <name>Поиск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поиск</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1ed75a07-345a-49c7-bd22-b743154c7ba2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e8306f44-bd12-46d3-afcb-7087fba6224a">
+    <name>ГрупповаяНастройкаОтображенияТрека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Групповая настройка отображения трека</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="896d1d6b-19d3-4922-81d6-733177d26183">
+    <name>НастройкаУскоренияВоспроизведенияМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка ускорения воспроизведения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c9e2ac7f-5886-46a9-8339-29f5537f7c07">
+    <name>OnLineСлежение</name>
+    <synonym>
+      <key>ru</key>
+      <value>On-line слежение</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

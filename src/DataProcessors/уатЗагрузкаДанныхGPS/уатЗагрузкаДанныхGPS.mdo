@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39ea4d02-5778-464b-b59c-d71a87599e9f">
+  <producedTypes>
+    <objectType typeId="128cabf6-44fb-4a01-bc86-7fbaedfc48f9" valueTypeId="a286ace3-3620-4504-9f76-eaa56d371671"/>
+    <managerType typeId="9bf9c56b-70dc-465b-8f41-1aab5d7f8b2b" valueTypeId="f57f0a09-0881-4af3-aecd-78cf0dbc6b25"/>
+  </producedTypes>
+  <name>уатЗагрузкаДанныхGPS</name>
+  <synonym>
+    <key>en</key>
+    <value>Loading monitoring data from file</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных мониторинга из файла</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатЗагрузкаДанныхGPS.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Универсальная загрузка данных из системы мониторинга</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Universal download from the monitoring system</value>
+  </explanation>
+  <attributes uuid="03a3ad64-c3bb-437d-9732-fd4231e24c0f">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания загрузки данных</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date of data loading</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="85a7364a-20d6-4802-97b8-6190725dc580">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала загрузки данных</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start date of data download</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="425b95ac-5686-4989-ad40-8f1c83e75228">
+    <name>Разделитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разделитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Separator</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>2</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Разделитель полей файла</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>File field separator</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="de19ab1f-d32d-48fd-b9d5-c6f8829024a6">
+    <name>ФайлОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exchange file</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Файл обмена.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Exchange file.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="08c1ff66-3e5a-4416-8068-5aabadc39e9b">
+    <name>НомерПервойСтрокиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер первой строки данных</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="94de826b-dd76-49ca-93a5-7cd1ad944635">
+    <name>ЭтоЗагрузкаДанныхРегистра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это загрузка данных регистра</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="2eacd6df-d381-443c-9fa0-4fc7ea36dd66">
+    <producedTypes>
+      <objectType typeId="04a09512-3fdc-47d5-834d-e873f0cbf89a" valueTypeId="252da72f-ae69-4bba-8a03-792a4606feec"/>
+      <rowType typeId="14d01ca4-0b9d-4360-b2a5-ce1cab00537d" valueTypeId="99f93536-17ad-4a1f-9e1d-14a0647dab5a"/>
+    </producedTypes>
+    <name>ТаблицаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Data table</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ecb84bb8-ae7f-426f-ba06-c6b3ff61184c">
+      <name>Время</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Time</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Time</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Time.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a3456f86-526f-4390-88de-3ca8409fe83c">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Date.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8185eb8b-8c26-4842-b78f-9999ee1e539f">
+      <name>Пробег</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пробег</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Mileage</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пробег (км)</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Пробег (км)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fb8200d5-64e8-48b4-b2c2-b7efe5b49637">
+      <name>Лат</name>
+      <synonym>
+        <key>ru</key>
+        <value>Лат</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Lat</value>
+      </synonym>
+      <comment>Широта пункта назначения</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>21</precision>
+          <scale>17</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Широта пункта назначения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Latitude of destination</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a085a3c8-b256-4543-aa36-f963d6c58eb0">
+      <name>Лон</name>
+      <synonym>
+        <key>ru</key>
+        <value>Лон</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Lon</value>
+      </synonym>
+      <comment>Долгота пункта назначения</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>21</precision>
+          <scale>17</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Долгота пункта назначения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Longitude of destination</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6e0f5067-808c-4d5a-a716-68d58d350578">
+      <name>РасходТоплива</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расход топлива</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Расход топлива</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Расход топлива</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="910c820d-eef7-4a70-90bd-bfa0031cd37e">
+      <name>Пункт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Point</value>
+      </synonym>
+      <comment>Представление пункта местоположения</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Представление пункта местоположения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Introduction of location point</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="1dd73cd6-ad67-4f26-aecf-6aa25b776c79">
+      <name>Скорость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Скорость</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Speed</value>
+      </synonym>
+      <comment>Текущая скорость</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Текущая скорость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Current speed</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4839b7b9-d6d9-44b6-9e22-5ae85ab30028">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <comment>Транспортное средство</comment>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Транспортное средство</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillFromFillingValue>true</fillFromFillingValue>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="48f11f14-a570-4f07-b0f8-6855f834d229">
+      <name>УровеньТоплива</name>
+      <synonym>
+        <key>ru</key>
+        <value>Уровень топлива</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Fuel level</value>
+      </synonym>
+      <comment>Уровень топлива в баке</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Уровень топлива в баке (%)</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Fuel level in tank (%)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5f896951-6bda-4f02-8790-c1dd7cde1bb1">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Rate</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="96e47140-6e1d-4dbf-985b-b1761d0ba7ff">
+    <producedTypes>
+      <objectType typeId="10f36d9c-8c50-494f-9870-29afbbe29190" valueTypeId="06d0b9b9-f931-4d5f-885d-6d5b8803444a"/>
+      <rowType typeId="597cc5e6-5419-47ad-81b0-a1bea09d6320" valueTypeId="fb4deab0-5fe5-489d-bd7b-1bd83bbc0f5c"/>
+    </producedTypes>
+    <name>ПоляФайлаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поля файла обмена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>File fields of exchange</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="10f0222f-f050-41fd-a534-dc9ba67d7bb4">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Use</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак использования</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sign of use</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e8680c30-6e79-401b-a05a-b462308180aa">
+      <name>Поле</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поле</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Field</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Поле.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Field.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="fb2f8fa6-9df8-44d0-a6ee-8a0cf62b68aa">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="63912a0d-3134-4706-87c6-2bad43cfc0ea">
+    <name>НастройкиПостроителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки построителя</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Settings Builder</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="6ac693d2-d8d9-469a-83a0-920e0b3d29d3">
+    <name>СоответствиеЗаголовковФайлов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие заголовков файлов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Matching file headers</value>
+    </synonym>
+  </templates>
+  <templates uuid="d8185520-36d4-4350-b3ce-23c46c7b7ce8">
+    <name>ШаблонЗагрузкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон загрузки данных</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="1b3c3b76-809b-424d-bf89-851aac573063">
+    <name>ШаблонТаблицыДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон таблицы данных</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

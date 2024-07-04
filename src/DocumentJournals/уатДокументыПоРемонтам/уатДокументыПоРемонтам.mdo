@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c632480-1f72-4c3d-9f16-bd5162c94849">
+  <producedTypes>
+    <selectionType typeId="e04ab3de-b6ac-40ec-8845-88aa071469d4" valueTypeId="f281f6c3-5e2d-4d61-8330-9010bf4dd8c4"/>
+    <listType typeId="0ec7ea9a-d34e-492b-9612-421bb0c2842d" valueTypeId="7b92ff12-806d-45ba-a93a-fc67f77f5b55"/>
+    <managerType typeId="7376d078-f6f5-4215-9d8d-14c242c4ffa6" valueTypeId="6b925016-057a-4a76-86e3-3885169b5c3e"/>
+  </producedTypes>
+  <name>уатДокументыПоРемонтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по ремонтам</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Repairs documents</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатДокументыПоРемонтам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.уатЗаявкаНаРемонт</registeredDocuments>
+  <registeredDocuments>Document.уатРемонтныйЛист</registeredDocuments>
+  <registeredDocuments>Document.уатЗакрытиеЗаявокНаРемонты</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы по ремонтам</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Repairs documents</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы по ремонтам</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Repairs documents</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Документы по ремонтам</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Repairs documents</value>
+  </explanation>
+  <columns uuid="05e88aed-97e7-4403-a230-7b6f7090a2eb">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.Организация</references>
+    <references>Document.уатРемонтныйЛист.Attribute.Организация</references>
+    <references>Document.уатЗакрытиеЗаявокНаРемонты.Attribute.Организация</references>
+  </columns>
+  <columns uuid="d6441e66-b5f1-4188-9751-2770d4bd5c5f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.Ответственный</references>
+    <references>Document.уатРемонтныйЛист.Attribute.Ответственный</references>
+    <references>Document.уатЗакрытиеЗаявокНаРемонты.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="f93dfe6c-13ea-4c03-9120-cd5b390c7246">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.Комментарий</references>
+    <references>Document.уатРемонтныйЛист.Attribute.Комментарий</references>
+    <references>Document.уатЗакрытиеЗаявокНаРемонты.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="d5a6e8e5-0192-4ea3-9cf8-2287de3366ac">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.ТС</references>
+    <references>Document.уатРемонтныйЛист.Attribute.ТС</references>
+  </columns>
+  <columns uuid="3c4c1d0f-f500-4d4c-a687-2eed46090164">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <comment>Дата начала</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.ДатаНачала</references>
+    <references>Document.уатРемонтныйЛист.Attribute.ДатаНачала</references>
+  </columns>
+  <columns uuid="1f5db8fa-2c8d-435c-bfac-a97565641324">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <comment>Дата окончания</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.ДатаОкончания</references>
+    <references>Document.уатРемонтныйЛист.Attribute.ДатаОкончания</references>
+  </columns>
+  <columns uuid="32b3c249-1278-4977-9f9c-69c44284b02f">
+    <name>ПричинаОбращения</name>
+    <synonym>
+      <key>en</key>
+      <value>Reason of request</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Причина обращения</value>
+    </synonym>
+    <comment>Причина обращения</comment>
+    <references>Document.уатЗаявкаНаРемонт.Attribute.ПричинаОбращения</references>
+    <references>Document.уатРемонтныйЛист.Attribute.ПричинаОбращения</references>
+  </columns>
+  <columns uuid="d8eb8f29-9b45-4e5a-b928-8760563fd99b">
+    <name>Выполнен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнен</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Completed</value>
+    </synonym>
+    <comment>Выполнен</comment>
+    <references>Document.уатРемонтныйЛист.Attribute.Выполнен</references>
+  </columns>
+  <forms uuid="dc255817-7248-4ef3-a20d-f1c2e5d43ff5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

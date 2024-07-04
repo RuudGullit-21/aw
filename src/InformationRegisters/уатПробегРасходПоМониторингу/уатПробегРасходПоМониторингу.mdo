@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d42e2251-2027-4b1c-b577-1c95be84a1f3">
+  <producedTypes>
+    <selectionType typeId="72148ffe-2f7d-4a5d-81a4-c841882035bb" valueTypeId="5117c1b5-ae06-4c0c-9fad-cc04ff681a88"/>
+    <listType typeId="4e42903e-66f9-4504-94c5-738045a8259d" valueTypeId="ced2ef88-64e8-4376-b175-ca3f55c4d78d"/>
+    <managerType typeId="5c23371a-b2f2-4ef4-b6cd-2b742dfb1ea3" valueTypeId="4ddf025a-25e5-48f8-a889-fb26ebbc0b51"/>
+    <recordSetType typeId="ee2cff8b-fb29-4731-8cce-08a897ef6ae9" valueTypeId="f49b70b4-6e13-4b96-b8f2-3a464393d0e6"/>
+    <recordKeyType typeId="1067819b-fd84-4241-a8dd-1f05e7da4f17" valueTypeId="7cb4bb7a-d711-4a98-b792-c960c478cee9"/>
+    <recordType typeId="cff58097-7705-49cb-a974-cba15e3c8abc" valueTypeId="9f4a25ec-2236-47bb-b12d-bab12000691d"/>
+    <recordManagerType typeId="dc677ffa-b29c-4223-a2f2-eba628a93d7a" valueTypeId="33c37cb4-453a-444b-a7ca-57f53a92b47c"/>
+  </producedTypes>
+  <name>уатПробегРасходПоМониторингу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пробег и расход по мониторингу</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle location by GPS</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатПробегРасходПоМониторингу.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПробегРасходПоМониторингу.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7b683dd5-3ddb-4d65-b944-3a1c01257896">
+    <name>Пробег</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег, км</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mileage, km</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пробег транспортного средства за период</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1ed67fca-209e-45d4-95a6-b1e6fc0c11be">
+    <name>ВремяРаботыДвигателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время работы двигателя, ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время работы двигателя транспортного средства за период</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1d7f875b-ebaa-418a-bb05-86cb4b8f8bfe">
+    <name>РасходТоплива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход топлива, л</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuel consumption, l</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расход топлива транспортным средством за период</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="de32eba8-66aa-4d5c-be1d-43fb30d14cbe">
+    <name>УровеньТоплива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уровень топлива, л</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuel level, l</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уровень топлива в баке транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b43a58a3-1e22-4c93-af66-21acd6724dc4">
+    <name>ЗначениеОдометра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение одометра, км</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mileage, km</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение одометра транспортного средства за период. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="43cf6d02-8a1e-4b57-bf8f-fb6c2e591110">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c4e4dd73-2ed1-4580-87a3-3b98f3356cde">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4645f5eb-caa8-4307-ae92-689859ba6119">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

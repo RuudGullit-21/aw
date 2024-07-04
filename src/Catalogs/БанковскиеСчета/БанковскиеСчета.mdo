@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c5fe834-863c-4850-93c8-faadd4ad3a48">
+  <producedTypes>
+    <objectType typeId="b05bbf32-d1fe-4d68-8271-21cb66a1618b" valueTypeId="d747efd2-9ce4-44fd-89ac-eb46b2488796"/>
+    <refType typeId="82143a3f-07cf-473b-abc0-fa6e7cb50bcf" valueTypeId="e2c03154-5e81-4301-9bdd-cfb9e6119ffd"/>
+    <selectionType typeId="74a9a5a4-23e1-4fc0-9483-d99c13286f0a" valueTypeId="5f40c0b0-a273-4a2d-be63-cd323ea33b98"/>
+    <listType typeId="37b596fd-abff-4fdc-8095-9ec632ae2fa8" valueTypeId="01fe3781-b7d6-4aa7-a1be-cd3aca2fb9c3"/>
+    <managerType typeId="82909e2b-b984-45e7-abc4-e0ffd8d2ab24" valueTypeId="4f628079-438d-47a4-8cf9-a4c0c6dbab79"/>
+  </producedTypes>
+  <name>БанковскиеСчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Банковские счета</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Bank accounts</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.БанковскиеСчета.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.БанковскиеСчета.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация(Контрагент)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Owner</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Owner.</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Код</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Code</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_БанковскиеСчета</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Контрагенты</owners>
+  <owners>Catalog.Организации</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.БанковскиеСчета.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.БанковскиеСчета.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.БанковскиеСчета.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="6a358a74-2e91-4597-95ac-d297859a28a8">
+    <name>НомерСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер счета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Account number</value>
+    </synonym>
+    <comment>(Общ) Номер расчетного счета</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>34</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер расчетного счета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Account number</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="51687c28-3ac3-4ad3-889a-6625feedd469">
+    <name>Банк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Банки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банк, в котором открыт счет.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bank in which the account is opened.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07bd0020-b8b0-4aee-adfc-6445c2d5d8fc">
+    <name>Валютный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валютный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак валютного счета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of currency account</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="20b3227f-dad6-487e-a9e4-b2c3c7e73c9e">
+    <name>ВалютаДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cash currency</value>
+    </synonym>
+    <comment>(Общ) Валюта, в которой хранятся денежные средства</comment>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта, в которой хранятся денежные средства</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Currency in which funds are stored</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b21978d5-7d49-4c09-a1d9-2ab564d9f6f7">
+    <name>НомерИДатаРазрешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер и дата Разрешения ЦБ на открытие валютного счета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number and date of Permission of the Central Bank for opening foreign currency account</value>
+    </synonym>
+    <comment>(Регл) Номер и дата разрешения открытия счета</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Number and date of Permission of the Central Bank for opening foreign currency account</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="09c5d61a-5cc2-48fb-9d36-5487aad1d511">
+    <name>ДатаОткрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата открытия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Opening date</value>
+    </synonym>
+    <comment>(Общ) Дата открытия счета</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата открытия счета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date of account opening</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb64e922-700d-4158-a2fd-ddb0311dc89c">
+    <name>ДатаЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Closing date</value>
+    </synonym>
+    <comment>(Общ) Дата закрытия счета</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата закрытия счета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date of account closure</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="72153c2b-fe79-48bb-bb6e-e2d88618ea43">
+    <name>БанкДляРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банк для расчетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank for settlements</value>
+    </synonym>
+    <comment>(Регл) Банк, в случае непрямых расчетов</comment>
+    <type>
+      <types>CatalogRef.Банки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банк, в случае непрямых расчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bank for indirect settlements</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7db7eb7b-926c-49f4-8f7d-14f0697ca745">
+    <name>ВидСчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид счета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Account kind</value>
+    </synonym>
+    <comment>(Общ) Расчетный, депозитный, ссудный, иной</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расчетный, депозитный, ссудный, иной</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Current, deposit, loan, other</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value>Расчетный</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cfafb9a9-3d1a-4364-83bc-17117e645cfd">
+    <name>ТекстКорреспондента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст корреспондента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Correspondent text</value>
+    </synonym>
+    <comment>(Регл) Текст &quot;Плательщик\Получатель&quot; в платежных документах</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст &quot;Плательщик\Получатель&quot; в платежных документах</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Text &quot;Payer\Payee&quot; in payment documents</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d73a9a1e-e9c6-4db1-ad9b-4a31cacac0af">
+    <name>ТекстНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст назначения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Purpose text</value>
+    </synonym>
+    <comment>(Общ) Текст назначения платежа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текст назначения платежа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Payment purpose text</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9fc6befb-c869-4763-8db8-8209c0a649bd">
+    <name>МесяцПрописью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц прописью</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Month in words</value>
+    </synonym>
+    <comment>(Общ) Указывать в дате документа месяц прописью</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывать в дате документа месяц прописью</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify month in words in document date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4d7ac01d-5961-4ca4-9c2a-cb95295e9bc8">
+    <name>СуммаБезКопеек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма без копеек</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount without cents</value>
+    </synonym>
+    <comment>(Общ) Указывать сумму без копеек, если она в целых рублях</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указывать сумму без копеек, если она в целых рублях</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify amount without cents, if it is in whole rubles</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c826ff0-8791-4082-89e9-6e3a4f745ea4">
+    <name>ИностранныйБанк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иностранный банк</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Foreign bank</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет открыт в банке другого государства</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Account is opened in a foreign country bank</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3828bac-b0c5-4604-8edc-3369c7da50e3">
+    <name>Закрыт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Closed</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет закрыт банком и не используется.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bank account is closed by the bank and no longer used.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c466e44e-a8be-4184-be6a-5d4d050b0015">
+    <name>СчетВБанкеДляРасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счет в банке для расчетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank account for payments</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>34</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счет в банке-корреспонденте</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Account in correspondent bank</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3784813d-f003-410a-89b4-9d050e9ba1c4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5894a58d-3bb0-448d-be8a-89bafda924aa">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a2f8c4b4-abcc-472f-bebd-c999867b38da">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

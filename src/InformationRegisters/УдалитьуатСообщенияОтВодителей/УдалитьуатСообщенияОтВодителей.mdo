@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb80f39c-061c-463e-aeb9-80e48ee4f002">
+  <producedTypes>
+    <selectionType typeId="afb6820e-af20-415e-8dab-966b4d611fed" valueTypeId="48f575e1-7987-47c4-9e8f-2fd13d393ff7"/>
+    <listType typeId="1afb1bbc-6fcd-448c-b541-dba334761c58" valueTypeId="ed9c1a66-8274-407b-8889-39dca11b8950"/>
+    <managerType typeId="a56d3f72-207c-4289-9a92-a76ac938970b" valueTypeId="423cd53d-4877-463d-a75f-cb848e65ea4c"/>
+    <recordSetType typeId="f073a5df-6bdf-4c35-b25a-d2daa96bd0a7" valueTypeId="97d6418f-dccb-43eb-a68c-947edae5552a"/>
+    <recordKeyType typeId="d26a789a-9b85-4384-8292-3292705bf456" valueTypeId="d1043ed9-930e-46cf-aa3b-41392391006d"/>
+    <recordType typeId="b596c0e7-462e-4956-b96b-7b8819be14ea" valueTypeId="c762f1b9-620b-44e7-ae08-796132d12c6d"/>
+    <recordManagerType typeId="e5c414a0-fe7c-48bf-95cc-b28238dc9b18" valueTypeId="a8b17d11-4b7a-41e4-8bfa-7deb4b46fe6b"/>
+  </producedTypes>
+  <name>УдалитьуатСообщенияОтВодителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Cообщения от водителей</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Messages from drivers</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УдалитьуатСообщенияОтВодителей.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьуатСообщенияОтВодителей.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Cообщение от водителя</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Message from the driver</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Cообщение от водителя</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Message from the driver</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Cообщения от водителей</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Messages from drivers</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Cообщения от водителей</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Messages from drivers</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Регистр хранит дополнительные сведения по сообщениям водителей с мобильных устройств</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Register stores for more information on communications drivers with mobile devices</value>
+  </explanation>
+  <resources uuid="bd656825-e49a-48f6-9182-4a332b19159d">
+    <name>SOS</name>
+    <synonym>
+      <key>ru</key>
+      <value>SOS</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>SOS</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Это SOS</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>This SOS</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="91d948bf-2bb3-49dd-a654-bf5cad9f9952">
+    <name>Опоздание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Опоздание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Delay</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Это опоздание</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>It's lateness</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="98a93d8b-a5dc-4735-a22f-0afba879e5a9">
+    <name>Перенесено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенесено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="f2d4c472-ece7-4eb3-8ee4-8bed78a82cf3">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Водитель (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5bc957a4-a04f-4870-ab5b-20cfeb47d0ce">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Task</value>
+    </synonym>
+    <type>
+      <types>TaskRef.ЗадачаИсполнителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Задача.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Task.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="23425212-8853-4535-964a-5848261c2c34">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a1d8e994-6ca0-4508-8d01-fdf204793d83">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

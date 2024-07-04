@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76a02a29-f438-4dd8-bdd1-b948d7932382">
+  <producedTypes>
+    <selectionType typeId="81c49269-2300-45aa-83ee-cbd5dc730d38" valueTypeId="cb037b23-88f6-465c-817b-21f4449ea1a0"/>
+    <listType typeId="9853bce0-dc30-4c83-96a9-9ec0d123c7a0" valueTypeId="42cece77-0eaa-4775-a345-0813108fd120"/>
+    <managerType typeId="53dcde36-a268-48fd-ba53-f32bf070e0d5" valueTypeId="a9c92825-210d-4250-9c25-93189a319cbf"/>
+    <recordSetType typeId="63123259-761f-444a-ac52-a51917cd7278" valueTypeId="aaef8911-b483-4e1e-b523-d1f5fe8c53f0"/>
+    <recordKeyType typeId="792a9eec-90a2-4a97-8c05-d388a9e268a4" valueTypeId="df3feb50-4bbb-44ae-9349-649561836871"/>
+    <recordType typeId="57c73695-7225-4a4d-a1bb-921237e9ea33" valueTypeId="1cc05ff7-3707-4d5f-8fa4-810ec457c7b5"/>
+    <recordManagerType typeId="04786574-3652-4e9c-adb1-57571e831443" valueTypeId="f69bd3c4-f285-40c1-bed6-2e9c6cada22e"/>
+  </producedTypes>
+  <name>уатТекущееСостояниеЭДО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущее состояния ЭДО</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="766ad493-410e-452a-bf58-835c9c494805">
+    <name>СостояниеЭДО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние ЭДО</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СостоянияДокументовЭДО</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние версии электронного документа для указанного объекта информационной базы в рамках электронного документооборота</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="aee9a82c-7b51-4def-ba11-4ccb16c90cfc">
+    <name>ПредставлениеСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление состояния</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="2ae1a501-5dc4-43a1-ac9d-06f6eb5af945">
+    <name>ПредставлениеЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление ЭПД</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="8b718438-22c8-4fba-8cf5-ffe34c6b54da">
+    <name>ЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЭПД</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронныйЗаказНаряд</types>
+      <types>DocumentRef.ЭлектроннаяТранспортнаяНакладная</types>
+      <types>DocumentRef.ЭлектроннаяСопроводительнаяВедомость</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="bb9442f1-7c6a-436e-bcd3-2cdfa3c6b457">
+    <name>ДокументПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ перевозки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

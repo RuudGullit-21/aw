@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bc6b8f52-6272-442f-bcf3-915e5f7a1129">
+  <producedTypes>
+    <selectionType typeId="fe657038-2b22-440b-af4e-1091e837f869" valueTypeId="c5b0d060-dc5c-401d-8551-298e6f5c3eb2"/>
+    <listType typeId="d5652f0b-ad27-4b83-9031-97cdcbabf112" valueTypeId="0e939b25-fcd4-46ac-adf3-b351f7526d69"/>
+    <managerType typeId="f1efdee3-a8e6-4812-afe9-70360fb51255" valueTypeId="012b4ef0-f43d-45dc-81df-1884bf45c793"/>
+    <recordSetType typeId="60ae520a-2144-451a-8d63-c78b554ceb49" valueTypeId="777ecd46-14f4-4484-b113-0e67d264fd57"/>
+    <recordKeyType typeId="6c83a966-3d1a-4495-91d2-e0d9e569629c" valueTypeId="90cd9b0c-c417-4470-b921-4fe2d8b6e935"/>
+    <recordType typeId="04bdca18-9eb1-4812-8f24-109de80673d1" valueTypeId="429c0334-47ba-40cb-86c0-aa3bb6f76611"/>
+    <recordManagerType typeId="f45396a7-43e0-4282-9a54-d3dd5ced3b61" valueTypeId="b38324ea-5c69-49dd-bc5c-3fa0f7b8dbac"/>
+  </producedTypes>
+  <name>уатНоменклатураГСМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Fuels info</value>
+  </synonym>
+  <comment>Доп. сведения для ГСМ</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатНоменклатураГСМ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатНоменклатураГСМ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Fuels info</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Fuels info</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Fuels info</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Fuels info</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура ГСМ</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Fuels info</value>
+  </explanation>
+  <resources uuid="1ca8ce7e-3582-43d9-bfff-4e8e6f459a3b">
+    <name>ВестиУчетОстатковТЖ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вести учет остатков ТЖ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Keep record of liquids remains</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включает ведение учета остатков технических жидкостей на ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Includes remains accounting of liquids on vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f2ebf5cd-a969-4f0b-8b55-fa98883f9953">
+    <name>ГруппаГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group fuels</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатГруппыГСМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of fuels</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатГруппыГСМ.EnumValue.Топливо</value>
+    </fillValue>
+  </resources>
+  <resources uuid="a608a363-918f-41e9-a9fe-3171a7fe0717">
+    <name>ГСМТалона</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ Талона</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels coupon</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels coupon</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9695461-faeb-4674-aa5c-c18b46d2dc75">
+    <name>ЛитровыйТалон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Литровый талон</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Liter coupon</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак литрового талона. Если флаг снят, то талон рублевый</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of litre coupon. If flag is cleared, then coupon ruble</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3debb539-b524-46de-ab15-1bd50a1ff4bc">
+    <name>НоминалТалона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номинал талона</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Coupon value</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номинал талона.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Coupon nominal.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4e0b5bb-18bb-46d0-85ba-8619b49e0d30">
+    <name>Плотность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плотность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Density</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>12</precision>
+        <scale>6</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Плотность.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Density.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c3705877-6dfa-4491-babb-86dc9c13cf92">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="fd58f03b-c0f6-485e-b4e2-6537d67984f6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c93c8d02-10bd-45a9-9d42-2950e6c3ddc0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

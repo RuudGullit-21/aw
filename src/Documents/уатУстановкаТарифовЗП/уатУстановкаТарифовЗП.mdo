@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8816b58d-40a9-4897-94e1-3941184530b5">
+  <producedTypes>
+    <objectType typeId="e9e2bf49-e602-40a7-a215-dba05e409114" valueTypeId="079fb151-62f2-4ff1-8dc8-cc9e5324be46"/>
+    <refType typeId="527d3759-2d92-40af-a6dc-5faa53054a36" valueTypeId="a34497b8-6932-4199-ab66-e2f3d0d73980"/>
+    <selectionType typeId="242082c6-1b8d-439e-b4c3-4e86145b8130" valueTypeId="7c247b27-ee7e-41e3-b94c-4ec0efdf795d"/>
+    <listType typeId="f9e2cbdd-2435-4e14-a771-090593551925" valueTypeId="ca217e08-33bb-4648-9729-c8736686174d"/>
+    <managerType typeId="1429c571-df58-4433-a90c-451ded71459a" valueTypeId="3190eefe-6160-478b-ba78-f8d8809688ad"/>
+  </producedTypes>
+  <name>уатУстановкаТарифовЗП</name>
+  <synonym>
+    <key>en</key>
+    <value>Set payroll tariff of employees</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Установка тарифов зарплаты</value>
+  </synonym>
+  <comment>Установка тарифов зарплаты сотрудников</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатУстановкаТарифовЗП.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатУстановкаТарифовЗП</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатУстановкаТарифовЗП.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатУстановкаТарифовЗП.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатУстановкаТарифовЗП.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>InformationRegister.уатТарифыСотрудников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="025856b4-9c00-4c95-aae1-c541da2399cc">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of operation</value>
+    </synonym>
+    <comment>Вид операции</comment>
+    <type>
+      <types>EnumRef.уатВидыОперацийУстановкаТарифовЗП</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of operation.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатВидыОперацийУстановкаТарифовЗП.EnumValue.Сотрудники</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f262b9b9-08d3-43f3-bcde-643537f3a757">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Organization of company on whose behalf the document is issued</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="30679e66-1ba2-4396-8eb0-a8a3c11a7d8f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dbb4941f-1e3a-48a4-af23-fb26b0100988">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Any additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e4031465-55e4-4786-bfcc-e05fb1e5819c">
+    <name>ТребуетСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует согласования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Requires approval</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости согласования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of necessity for approval</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="77c8c8e4-e703-4ed6-bf54-2b874fdb5014">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f30651e4-cf0d-446b-95bd-10aa767099c0">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7b2777d3-a8fc-4b2c-b636-8072484acf6d">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d0fe17b5-16df-4781-af4e-221bcf030412">
+    <name>ФормаЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма заполнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="de5850ac-e7ff-4d73-98e7-bb5d4e5069a9">
+    <producedTypes>
+      <objectType typeId="9589f9bf-ab1f-4af6-8f57-5ed3f8bd0b2a" valueTypeId="1e14a18c-7fd0-4af8-91e2-589be68d111e"/>
+      <rowType typeId="e1a7f98b-056f-4931-bced-8a0b40513091" valueTypeId="3880be8a-6e88-45e9-91bc-e4afb432c80e"/>
+    </producedTypes>
+    <name>Тарифы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тарифы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tariffs</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Тарифы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Tariffs</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ab5e048b-d909-421c-b7b8-926a8baba8a7">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Start date</value>
+      </synonym>
+      <comment>Дата начала действия тарифа</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата начала действия тарифа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Effective date of tariff</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4e882a83-a747-4269-8089-505765fe506f">
+      <name>ДатаОкончания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата окончания</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>End date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата окончания действия тарифа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Expiry date of rate</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5e53915c-2bdb-414a-a459-d70eae45ada1">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Employee</value>
+      </synonym>
+      <comment>Сотрудник</comment>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сотрудник.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Employee</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9bb7a6ae-176c-4273-a8cf-5cbe43826315">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Tariff</value>
+      </synonym>
+      <comment>Тариф или тарифный план</comment>
+      <type>
+        <types>CatalogRef.уатТарифныеПланыЗП</types>
+        <types>CatalogRef.уатТарифыЗП</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тариф или тарифный план</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Rate or rate plan</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="6e98846e-2db4-4269-be19-39a77866b9cb">
+    <name>КомпоновкаДанныхСотрудники</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных сотрудники</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="91380442-a7d8-4bb9-8e7c-df92a985dde3">
+    <name>КомпоновкаДанныхФизическиеЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных физические лица</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Document>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5f80924-e581-4e3e-bc96-1c1c2772844d">
+  <name>уатИсторияИзмененияСтатусовПоНомеруПеревозки_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменения статусов по номеру перевозки</value>
+  </synonym>
+  <rootURL>tracking_api</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="b8104cb1-53bf-4897-9c99-87901198bb28">
+    <name>ШаблонЗапросаGET</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон запроса GET</value>
+    </synonym>
+    <template>/v1/{ИмяМетода}/{ТрекНомер}</template>
+    <methods uuid="7821cd9a-3605-4662-bcb4-d71455d1a34c">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ШаблонЗапросаGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

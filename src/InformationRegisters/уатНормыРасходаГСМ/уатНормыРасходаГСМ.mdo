@@ -1,0 +1,1392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c797d02e-0c96-4264-9775-71ffd3fa1ea0">
+  <producedTypes>
+    <selectionType typeId="e42e1029-265e-4321-aa77-01def686620c" valueTypeId="eaa161d2-9c4c-44ed-8d96-e78955e2c118"/>
+    <listType typeId="73e0971d-ef8a-4550-a8e2-5f07c5d31707" valueTypeId="817b8e4c-8f21-4b4e-afcc-052ff420a3d2"/>
+    <managerType typeId="b63945dd-d78b-424f-9856-14e7b07c4076" valueTypeId="fa9d852a-e054-4dd8-88f6-36e5f89d2f9b"/>
+    <recordSetType typeId="34292f90-57f4-4df2-9a0f-c44a5531e37e" valueTypeId="a04875c7-509e-4e77-b713-9d3f1f547e68"/>
+    <recordKeyType typeId="874735bf-2408-4ad7-8da5-1ca3dd443f46" valueTypeId="c38148dc-9933-4a64-954b-f5213cef49c7"/>
+    <recordType typeId="f77359f0-19a1-4e07-9d9f-7a1997128867" valueTypeId="1e1ef125-abc8-4f80-a021-30bd5bf32b70"/>
+    <recordManagerType typeId="f2ff4428-5a79-4288-8316-7341ae320d9e" valueTypeId="0e86ec9a-be2f-4051-bbcd-1b18ab6e0612"/>
+  </producedTypes>
+  <name>уатНормыРасходаГСМ</name>
+  <synonym>
+    <key>en</key>
+    <value>Fuels consumption norms</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы расхода ГСМ</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.уатНормыРасходаГСМ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатНормыРасходаГСМ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Норма расхода ГСМ</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Fuels consumption norm</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Норма расхода ГСМ</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Fuels consumption norm</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Fuels consumption norms</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Нормы расхода ГСМ</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Fuels consumption norms</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Нормы расхода ГСМ</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Нормы расхода ГСМ указываемые для моделей ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Fuels consumption norms specified for vehicle models</value>
+  </explanation>
+  <resources uuid="6e77b5c4-5f3d-4384-89c2-fb0d90ff37d6">
+    <name>ЛинейнаяНорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линейная норма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Linear norm</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Линейная норма расхода</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Linear consumption rate</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f9972bc-8d77-41ca-9a16-76c23fbe08ad">
+    <name>НормаНаЕздку</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on haul</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на ездку</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на ездку, л</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on haul, l</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="88f01c40-9bcb-4d63-893b-6204c80cda4b">
+    <name>НормаНаЗапуск</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на запуск</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Norm on cranking</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма расхода на запуск двигателя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Consumption rate for engine cranking</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="72ab0bb9-607b-4b5a-b8ce-28c2b7d731f7">
+    <name>НормаНаИзменениеСобственногоВеса</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on change of own weight</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на изменение собственного веса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на изменение собственного веса, л/100 т.км</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on change of own weight, l/100 t.km</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="30dd83ad-2c8f-4b0c-a596-2fa2bc1f501d">
+    <name>НормаНаОперацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на операцию</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Norm for operation</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на выполнение операции, л</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Norm for operation, l</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="49314107-ba2a-4bae-90cb-97f875b873a8">
+    <name>НормаНаОтопитель</name>
+    <synonym>
+      <key>en</key>
+      <value>Heater, conditioner, climat control norm</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на отопитель, кондиционер, климат-контроль</value>
+    </synonym>
+    <comment>Норма на отопитель, кондиционер, климат-контроль</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Consumption rate of heater, conditioner or climat control, l/h</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма расхода на отопитель, кондиционер, климат-контроль, л/ч</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b34928e7-daa6-4393-bd40-e0ba0307fc9c">
+    <name>НормаНаПростойСВклДвигателем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на простой с вкл. двигателем, км на 1 час простоя</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Downtime norm with engine on, km per 1 hour of downtime</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на простой с включенным двигателем, км на 1 час простоя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime norm with engine on, km per 1 hour of downtime</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1edf82df-f652-44bf-8c03-1afd253146cf">
+    <name>НормаНаПростойСВклДвигателемЛитры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на простой с вкл. двигателем, л/ч</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Downtime norm with engine on, h/p</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на простой с включенным двигателем, л/ч</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime norm with engine on, l/h</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="95a2c8f7-4272-4879-84a6-1004c08f184a">
+    <name>НормаНаПростойСВклДвигателемПроцентомОтБазовой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на простой с вкл. двигателем, % от базовой</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Downtime norm with engine on, % from basic</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на простой с включенным двигателем, % от базовой</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime norm with engine on, % from basic</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf0033e5-2d53-4dd9-a981-a26b18e87f77">
+    <name>СпециальнаяРабота1</name>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 1</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cc85aaef-eac5-4c84-9b71-1af60e90afe3">
+    <name>СпециальнаяРабота2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d0bc38b0-64b2-41b2-a3f9-e7cf969d88aa">
+    <name>СпециальнаяРабота3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 3</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 3</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a1d76e88-ebbf-4942-b478-19e50ddf79f1">
+    <name>СпециальнаяРабота4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 4</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 4</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 4</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="303e8b4b-3607-44f0-ab61-3c2cfe03283e">
+    <name>СпециальнаяРабота5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 5</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 5</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 5</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 5</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b1f17a59-1fdc-41ab-a5a5-57e9d4904e04">
+    <name>СпециальнаяРабота6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 6</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 6</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 6</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 6</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="417e2c48-befa-4052-ac81-d170803e51b1">
+    <name>СпециальнаяРабота7</name>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 7</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 7</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 7</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 7</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="01d254cd-6245-4564-83cd-0c0c3cb904df">
+    <name>СпециальнаяРабота8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 8</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 8</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 8</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 8</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5555ea6b-7e3b-4631-80ad-c5b0e8089fd6">
+    <name>СпециальнаяРабота9</name>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 9</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 9</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 9</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 9</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a8309016-6234-48cf-b313-aff9464b3565">
+    <name>СпециальнаяРабота10</name>
+    <synonym>
+      <key>en</key>
+      <value>Spec. work 10</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Спец. работа 10</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Специальная работа 10</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Special work 10</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bc6c786f-b570-44b6-bb4d-f93c54d5b19f">
+    <name>НормаНаСпециальнуюРаботу1</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 1</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 1</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 1</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на специальную работу 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d45325e6-02fa-47d8-8786-b95a71fad8cb">
+    <name>НормаНаСпециальнуюРаботу2</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 2</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 2</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d575b24f-8847-488f-b4a9-82a928e7d04c">
+    <name>НормаНаСпециальнуюРаботу3</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 3</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 3</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 3</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="528afa40-3d34-47c3-a41a-f6b22eb3df16">
+    <name>НормаНаСпециальнуюРаботу4</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 4</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 4</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 4</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="86fee0ea-4f57-4e6d-9352-fe9a9eb1b497">
+    <name>НормаНаСпециальнуюРаботу5</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 5</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 5</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 5</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 5</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f15a7999-3773-4a5e-b4ae-a505c898f966">
+    <name>НормаНаСпециальнуюРаботу6</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 6</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 6</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 6</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 6</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60790d4c-4148-4a0c-8a03-5d59a61d6b0b">
+    <name>НормаНаСпециальнуюРаботу7</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 7</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 7</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 7</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 7</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="51c54ae6-6596-499c-bd7f-d8a3c2fa45cf">
+    <name>НормаНаСпециальнуюРаботу8</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 8</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 8</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 8</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 8</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="51c55d87-94eb-4ccb-97ec-73a3cedd133a">
+    <name>НормаНаСпециальнуюРаботу9</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 9</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 9</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 9</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 9</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="aa30aaa0-fed3-487b-9dfc-5673dd331371">
+    <name>НормаНаСпециальнуюРаботу10</name>
+    <synonym>
+      <key>en</key>
+      <value>Norm on spec. work 10</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на спец. работу 10</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Norm on special work 10</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальной работы 10</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a20d9c6-3848-42fd-b270-80dc68149555">
+    <name>НормаНаТранспортнуюРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на транспортную работу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Norm for transport work</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на транспортную работу, л/100 т.км</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Norm for transport work, l/100 t.km</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="31aa8fda-3ac5-471e-8bc2-85aa0630187f">
+    <name>НормаСпециальнаяНаМоточас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма специальная на моточас</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Special norm on moto hour</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма специальная на моточас, л/ч</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Norm special to moto hour, l/h</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="500c74b9-7daa-4232-8afc-e6b1728282a7">
+    <name>СезоннаяНадбавка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сезонная надбавка, %</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Seasonal surcharge (%)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Seasonal surcharge, %</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7036922d-1187-4ee3-a77a-7a64e9c7e532">
+    <name>НадбавкаНаКондиционер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Надбавка на климат-контроль и кондиционер при движении, %</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a486e4eb-4b75-4eb0-ab18-7a4295187d84">
+    <name>УчитыватьПростоиДляРасчетаНормыМоточасов</name>
+    <synonym>
+      <key>en</key>
+      <value>To take into account the downtime to calculate moto hours norm</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать простои для расчета нормы моточасов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При установленном флаге для ТС со сч. м/ч норма на м/ч будет рассчитана от общего времени наработки минус время в простое</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>When the flag is set for the vehicle with the counter m/h the norm on m/h will be calculated from the total operating time minus the idle time</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7f7abe74-6d75-461e-a075-78350566e47a">
+    <name>АлгоритмРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм расчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Source value</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Алгоритм (формула) расчета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f895d616-8644-4366-956a-cd7c032c0431">
+    <name>ГСМ</name>
+    <synonym>
+      <key>en</key>
+      <value>Fuels</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <comment>ГСМ</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Горюче - смазочные материалы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Petroleum, oil and lubricants</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="22a59728-d6fa-4b6d-bc67-e941c226f358">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle model</value>
+    </synonym>
+    <comment>Модель ТС</comment>
+    <type>
+      <types>CatalogRef.уатМоделиТС</types>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Модель ТС для которой указывается норма</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle model for which norm is specified</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9d36295e-b1ee-4a9e-a00e-d4a6b95a6dca">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация для которой действуют текущие нормы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company for which there are current norms</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b3db7ee2-81b5-409e-ba8f-c91213392bda">
+    <name>РаботаНаДвухВидахТопливаОдновременно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа на двух видах топлива одновременно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>БЛ=Поочередно; БИ=Одновременно</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ=Поочередно; БИ=Одновременно</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Нормы расхода ГСМ задаются:
+1) Поочередно -  для работы двух видах топлива поочередно или на одном виде топлива,
+2) Одновременно - для работы на двух видах топлива одновременно.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9e7fd79d-59a5-40da-a858-ac0df5a08342">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5690780a-8e27-4057-939b-645972d876a9">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5136ae96-1011-40a4-b977-fa790807205b">
+    <name>КонструкторФормул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор формул</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>EqFMSion builder</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="acf170cf-509a-442c-9a94-f5108aa90692">
+    <name>КонструкторФормулы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор формулы</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ef04282b-4e76-4aff-91a6-abd665956e4a">
+    <name>ШаблоныФормул</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблоны формул</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="edbc424a-0461-44eb-b59c-15c113e2a417">
+    <name>ОписаниеШаблонЛегковые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание шаблон легковые</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="b6880d19-5922-44a7-9b31-d91997df4f76">
+    <name>ОписаниеШаблонАвтобусы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание шаблон автобусы</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="aa5b38a8-56bb-4492-bce1-de4b97252bbe">
+    <name>ОписаниеШаблонГрузовые</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание шаблон грузовые</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="07969c5d-e146-47e4-969a-55556dd285fa">
+    <name>ОписаниеШаблонСамосвалы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание шаблон самосвалы</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="42fb7bda-7c8b-4e1e-9d39-c80bea70e5ea">
+    <name>ОписаниеШаблонСпецавтомобили</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание шаблон спецавтомобили</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:InformationRegister>

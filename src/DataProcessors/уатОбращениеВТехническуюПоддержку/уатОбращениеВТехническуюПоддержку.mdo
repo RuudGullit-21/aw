@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec59b2a9-d532-4ccc-9e5c-d986888bebc4">
+  <producedTypes>
+    <objectType typeId="36f3ccb0-4c1a-43d3-904b-463ae5cab452" valueTypeId="9308ce69-8006-475c-b7f8-4313f8d1e4e5"/>
+    <managerType typeId="20bb3227-66c4-4c62-b828-784e5554510a" valueTypeId="3de2d182-e2ff-43e7-ba20-d60ff1c01bea"/>
+  </producedTypes>
+  <name>уатОбращениеВТехническуюПоддержку</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обращение в техническую поддержку</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатОбращениеВТехническуюПоддержку.Form.ОбращениеВПоддержку</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="ea9d8587-e6ea-4046-84d2-706b898a59ce">
+    <producedTypes>
+      <objectType typeId="f935a1af-6a7d-49bb-909b-257404eb0bdb" valueTypeId="7cbc312c-c2c4-451b-a0e6-c71a10ea1554"/>
+      <rowType typeId="9fd59972-c1f9-45e3-87f5-d915e1f6a812" valueTypeId="116c9276-3fd3-465c-bcfb-af470164f36a"/>
+    </producedTypes>
+    <name>Вложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вложения</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="557e9405-4e13-4a02-b1ea-75fd09bcae05">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="c25f8276-8f97-4453-9e51-17238a2de2c3">
+      <name>АдресВоВременномХранилище</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес во временном хранилище</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="6aec949b-6a58-420b-9ea9-6566268b0592">
+      <name>Идентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c7956659-c8c0-4326-a04e-3f3d7e28e1d5">
+    <name>ОбращениеВПоддержку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обращение в поддержку</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4f994414-ba2c-407b-b669-2bc8f8048e22">
+    <name>ПриложенныеФайлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приложенные файлы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e997339c-b9df-42ec-957c-699205932e36">
+    <name>РегистрационныеДанные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационные данные</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="780be2f6-d1a6-4437-8f5f-f9739232b8d1">
+    <name>СообщитьОбОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщить об ошибке</value>
+    </synonym>
+    <group>CommandGroup.уатОбращениеВТехническуюПоддержку</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="6566d988-7753-4bf8-be3a-c29faacfeff2">
+    <name>ЗадатьВопрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задать вопрос</value>
+    </synonym>
+    <group>CommandGroup.уатОбращениеВТехническуюПоддержку</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="19e13a67-0b4d-4462-90d0-31dd7b16bd6f">
+    <name>НаписатьПожелание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Написать пожелание</value>
+    </synonym>
+    <group>CommandGroup.уатОбращениеВТехническуюПоддержку</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="f8d09a5c-e5e9-4aa4-9d3b-d2f6b4092866">
+    <name>ОтправитьЗаявкуНаПодключениеМаршрутизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отправить заявку на подключение маршрутизации</value>
+    </synonym>
+    <group>CommandGroup.уатОбращениеВТехническуюПоддержку</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0b51b6ed-c565-42ff-aab7-cd35d9079c0f">
+  <producedTypes>
+    <selectionType typeId="4ead30b6-994f-482e-bcd3-eb626fe2f503" valueTypeId="d4404f6d-95a8-46b4-9bd7-fbdd9c81b057"/>
+    <listType typeId="0cee7c4e-5c3a-43ca-8e6d-7acc3ef01f53" valueTypeId="c5771574-a508-42c5-bc51-aba98f6fa189"/>
+    <managerType typeId="f5f6c55f-250c-42f2-a16b-dc1768a34f50" valueTypeId="9ae8a012-e6b1-4319-a6f8-25be23498b8e"/>
+    <recordSetType typeId="d44d61df-7dad-4d2a-9a49-b698f3468418" valueTypeId="af8cee95-826b-4e98-918a-22210ec444a4"/>
+    <recordKeyType typeId="88f70ff8-487e-472f-9189-1a3762b4914e" valueTypeId="b3e78cf0-32cc-4505-89b4-6123087589e3"/>
+    <recordType typeId="5fa4e1f0-4901-46e4-9fc5-aaacd60cd1c7" valueTypeId="9b068083-c37d-4f09-865b-e7395112a973"/>
+    <recordManagerType typeId="70b3f1e4-649c-4476-b1e6-bb0dde703711" valueTypeId="30bc0bc6-ea0f-4a9e-ac8c-cb5229e69332"/>
+  </producedTypes>
+  <name>уатДополнительныеСведенияПоGPS</name>
+  <synonym>
+    <key>en</key>
+    <value>Monitoring events</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>События по мониторингу</value>
+  </synonym>
+  <comment>Дополнительные сведения транспортных средств по данным системы спутникового мониторинга</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатДополнительныеСведенияПоGPS.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатДополнительныеСведенияПоGPS.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>События по мониторингу</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Monitoring events</value>
+  </explanation>
+  <resources uuid="4baab163-fec3-470e-b13c-c4c712559d58">
+    <name>ДлительностьСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность события</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Event duration</value>
+    </synonym>
+    <comment>Длительность события</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность события (с)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Event duration (s)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="784885d8-762a-44fe-8844-494568cb8bf6">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <comment>Значение</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для событий слива и заправки - объем топлива (л). Для событий превышения скорости - скорость ТС (км/ч).</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>For events of draining and fueling - fuel volume (l). For events exceeding speed - vehicle speed (km/h).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c6a353ea-38fd-4881-aacb-5e14ce1b15a0">
+    <name>ПредельноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предельное значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Limit value</value>
+    </synonym>
+    <comment>Предельное значение</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предельное значение (для событий превышения скорости, км/ч)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Limit value (for events of exceeding speed, km/h)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="820143bf-22a4-4245-8de4-b98207944ce5">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6a8801e4-8591-4b5f-8fe8-ebaefc660900">
+    <name>ТипСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип события</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Event type</value>
+    </synonym>
+    <comment>Тип события</comment>
+    <type>
+      <types>EnumRef.уатТипСобытияGPS</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип события.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Event type.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="829e410e-a65c-4628-818a-b3feacfa3328">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="06bec19b-3d0e-4fad-8a35-12028bc16e37">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25d7a7f5-003d-4e9d-8416-a17aa1b17279">
+  <producedTypes>
+    <selectionType typeId="db61c055-66a8-4524-9883-7af6684d472f" valueTypeId="32676517-acdd-4a1a-a069-d219a4e87b0c"/>
+    <listType typeId="681fe60f-83da-4a0c-ad37-6d1392083f78" valueTypeId="0b234750-e5fc-4afd-bee4-fcdcf80a90ef"/>
+    <managerType typeId="d9965383-2aed-47fc-baf9-9285ec5a1cef" valueTypeId="28ece660-51fd-4b50-8a8c-59901b16bfae"/>
+    <recordSetType typeId="13b3365d-bdc5-43c1-9a0c-5c71f385112b" valueTypeId="addf67bc-400a-425b-a97c-3d7826bc6031"/>
+    <recordKeyType typeId="74a01538-65f5-4613-9ae2-777d56e664d0" valueTypeId="c6802c61-d5c0-4f2f-8f1e-c14391ffaaea"/>
+    <recordType typeId="720470de-2d70-47c7-a1da-57636d458bd8" valueTypeId="69fe03a2-92ed-4b71-9a37-dacf24605a82"/>
+    <recordManagerType typeId="b9bb0881-aa4c-47d1-8202-1392d9d0fde8" valueTypeId="1654cf27-69e6-46a2-9b71-cc01544a5e5f"/>
+  </producedTypes>
+  <name>ItobСоответствияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствия объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="19765db0-13d4-425d-8b87-b5ec2f31bb36">
+    <name>ИдентификаторМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор метаданных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.ИдентификаторыОбъектовМетаданных</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Идентификаторы метаданных&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="02e09c2f-12b2-40c9-9b61-2c294cb067b6">
+    <name>ОбъектЦСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ЦСМ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ItobОбъектыСоответствия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект конфигурации ЦСМ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

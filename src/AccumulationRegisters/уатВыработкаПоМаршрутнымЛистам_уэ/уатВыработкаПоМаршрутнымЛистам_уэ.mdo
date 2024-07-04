@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a6edb3e-363e-4571-bc93-7e2501f5e101">
+  <producedTypes>
+    <selectionType typeId="a93711d2-2c25-438d-be64-bb869df2e2de" valueTypeId="b6d39226-a254-4662-ba3a-3d0eae3c5568"/>
+    <listType typeId="b5e4f9ef-0c6a-44a2-94d6-8577e9738ec2" valueTypeId="b6880675-7f9f-483e-9aae-f831fb89ce34"/>
+    <managerType typeId="60d8f155-f835-4d50-b207-4cb4e91dea25" valueTypeId="ddbf5139-cc4c-4146-82e2-26a237121b42"/>
+    <recordSetType typeId="bfe1fe15-f12b-4627-a0bc-32adfd61618b" valueTypeId="63b514ae-f911-4190-9fb0-574093a94264"/>
+    <recordKeyType typeId="8b535fdc-721b-446a-a5a6-f2fc215d1ac5" valueTypeId="8c84168f-a10c-410d-9b9f-a798b32bb70e"/>
+    <recordType typeId="9d56a789-4965-47d4-aa8a-11713e89aa30" valueTypeId="77e318a0-2087-4000-bb55-c50784058fb8"/>
+  </producedTypes>
+  <name>уатВыработкаПоМаршрутнымЛистам_уэ</name>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle output by Routing lists</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Выработка ТС по маршрутным листам</value>
+  </synonym>
+  <comment>(уэ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатВыработкаПоМаршрутнымЛистам_уэ.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>en</key>
+    <value>Vehicle output by Routing lists</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Выработка ТС по маршрутным листам</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Vehicle output by Routing lists</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Выработка ТС по маршрутным листам</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Vehicle output by Routing lists</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Выработка ТС по маршрутным листам</value>
+  </explanation>
+  <resources uuid="5fc2acd0-7936-477c-87e1-7e637104d1b9">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество (факт)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество параметра выработки фактическое</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity of output parameter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b429ddaa-dc29-4b8c-8f2e-3663310440b3">
+    <name>КоличествоПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество (план)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество параметра выработки плановое</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity of output parameter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="12e58248-08cf-4e50-8f44-dd9a20603899">
+    <name>ВидПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид перевозки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transportation type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыПеревозок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид перевозки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Transportation type.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8298e7d8-eddc-4cdb-b96e-3c54aed339a2">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Order</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ на ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Order for trucking</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a2787cec-fb8e-4ff4-9592-ca166eb285e5">
+    <name>Колонна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle department</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатКолонны</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Колонна.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle department.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="bde2415a-76a8-4002-80eb-3014b259bb22">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="63b70afc-b57f-4e4e-b5c0-b580c02d6e14">
+    <name>Маршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Route</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатМаршруты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Маршрут.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Route.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5c3c4659-f0cc-42ff-9119-2933ea0edb91">
+    <name>НаправлениеПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление перевозки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transportation direction</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатНаправленияПеревозок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Направление перевозки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Direction of transportation.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0eb9e990-ce24-421c-9721-29eaaa1d27d4">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Construction object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатОбъектыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект строительства.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Construction object.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f4673b7f-06aa-4e1c-b26b-1c55b0c43150">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="15520c33-26a5-4a04-ad29-0b69cd9b275d">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Output parameter</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметр выработки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Output parameter.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5e091413-83e3-471d-aaad-6eeac432b1a9">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Department</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение организации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company department</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1d2358ea-ddc9-4fce-82c0-9516decacdfc">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle or equipment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="636cdafd-9c59-46a8-9158-99e11daf420b">
+    <name>Менеджер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Менеджер</value>
+    </synonym>
+    <comment>Ответственный по Заказу на ТС</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный по Заказу на ТС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="4eec8bf5-d2d3-4da4-ab77-e854e457c52f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

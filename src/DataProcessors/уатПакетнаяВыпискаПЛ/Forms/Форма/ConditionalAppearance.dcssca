@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ПодготовкаНомерСтроки</field>
+			</item>
+			<item>
+				<field>ПодготовкаЗанятостьТС</field>
+			</item>
+			<item>
+				<field>ПодготовкаМаршрутныйЛист</field>
+			</item>
+			<item>
+				<field>ПодготовкаЗаказНаТС</field>
+			</item>
+			<item>
+				<field>ПодготовкаПЛрассчитан</field>
+			</item>
+			<item>
+				<field>ПодготовкаПЛ</field>
+			</item>
+			<item>
+				<field>ПодготовкаМодельТС</field>
+			</item>
+			<item>
+				<field>ПодготовкаРежимРаботыТС</field>
+			</item>
+			<item>
+				<field>ПодготовкаМаршрут1</field>
+			</item>
+			<item>
+				<field>ПодготовкаМаршрут2</field>
+			</item>
+			<item>
+				<field>ПодготовкаОбъектСтроительства1</field>
+			</item>
+			<item>
+				<field>ПодготовкаВодитель</field>
+			</item>
+			<item>
+				<field>ПодготовкаВодитель2</field>
+			</item>
+			<item>
+				<field>ПодготовкаДатаВыезда</field>
+			</item>
+			<item>
+				<field>ПодготовкаДатаВозвращения</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяВыезда</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяВозвращения</field>
+			</item>
+			<item>
+				<field>ПодготовкаГруз1</field>
+			</item>
+			<item>
+				<field>ПодготовкаВесБрутто1</field>
+			</item>
+			<item>
+				<field>ПодготовкаОбъем1</field>
+			</item>
+			<item>
+				<field>ПодготовкаГруз2</field>
+			</item>
+			<item>
+				<field>ПодготовкаВесБрутто2</field>
+			</item>
+			<item>
+				<field>ПодготовкаОбъем2</field>
+			</item>
+			<item>
+				<field>ПодготовкаКонтрагент</field>
+			</item>
+			<item>
+				<field>ПодготовкаПодразделение</field>
+			</item>
+			<item>
+				<field>ПодготовкаАдресПрибытия</field>
+			</item>
+			<item>
+				<field>ПодготовкаАдресУбытия1</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяПрибытия</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяУбытия</field>
+			</item>
+			<item>
+				<field>ПодготовкаКонтрагент2</field>
+			</item>
+			<item>
+				<field>ПодготовкаПодразделение2</field>
+			</item>
+			<item>
+				<field>ПодготовкаАдресПрибытия2</field>
+			</item>
+			<item>
+				<field>ПодготовкаАдресУбытия2</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяПрибытия2</field>
+			</item>
+			<item>
+				<field>ПодготовкаВремяУбытия2</field>
+			</item>
+			<item>
+				<field>ПодготовкаКондуктор</field>
+			</item>
+			<item>
+				<field>ПодготовкаКондуктор2</field>
+			</item>
+			<item>
+				<field>ПодготовкаОбъектСтроительства2</field>
+			</item>
+			<item>
+				<field>ПодготовкаВидПеревозки1</field>
+			</item>
+			<item>
+				<field>ПодготовкаНаправлениеПеревозки1</field>
+			</item>
+			<item>
+				<field>ПодготовкаВидПеревозки2</field>
+			</item>
+			<item>
+				<field>ПодготовкаНаправлениеПеревозки2</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Подготовка.ПЛ</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Документ.уатПутевойЛист.ПустаяСсылка</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#EBEBEB</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:MediumGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>Подготовка</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Подготовка.ПЛ</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Документ.уатПутевойЛист.ПустаяСсылка</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#EBEBEB</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:MediumGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

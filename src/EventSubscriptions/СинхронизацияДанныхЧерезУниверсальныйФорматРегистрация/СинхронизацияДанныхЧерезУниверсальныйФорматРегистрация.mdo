@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32a7952c-aff1-486e-8a9d-04bee6a3c8d4">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматРегистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат регистрация</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Synchronization of data via the universal registration format</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.уатПараметрыВыработки</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.СтраныМира</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ОсновныеСредства</types>
+    <types>CatalogObject.уатСтатьиРасходов</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУАТ.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияПередЗаписью</handler>
+</mdclass:EventSubscription>

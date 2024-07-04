@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="949b5d12-3250-4144-8a7a-685c4a613fe1">
+  <producedTypes>
+    <selectionType typeId="6b57ed01-ee4c-4c03-bc6b-27e88feba31d" valueTypeId="54528f15-72c9-44ec-a2c9-307a13e2f608"/>
+    <listType typeId="4a9b794d-e418-4482-b30b-063743479494" valueTypeId="8b01de8b-d0e9-4f32-8d46-e4fabb5b01e6"/>
+    <managerType typeId="dadf915f-c397-4b7a-a5da-5e32a222d230" valueTypeId="e9130963-03f3-4c68-8b68-642a349be36e"/>
+    <recordSetType typeId="42a8c8e9-8e9b-40b1-bf2a-b08ede5b8c89" valueTypeId="e542c255-86d4-4d45-b17e-7fd3147c00f6"/>
+    <recordKeyType typeId="03908e0b-9c29-470e-b29a-6199f3350c1e" valueTypeId="f7e77b8c-d285-4966-8f99-54e53345a0c1"/>
+    <recordType typeId="2e0ebb78-29d7-4dd3-996f-07c80d49b75e" valueTypeId="5d602fa9-dcbd-4eb2-82e2-7fc5610a3d8f"/>
+  </producedTypes>
+  <name>уатПростои</name>
+  <synonym>
+    <key>ru</key>
+    <value>Простои</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Downtimes</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатПростои.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2ac5b5f6-b17c-4fa0-8bec-b6b698605493">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time</value>
+    </synonym>
+    <comment>Время, с</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время простоя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1dcdbf24-326b-4300-a5c2-7ca532991e3a">
+    <name>ВидПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид простоя</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Downtime type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСостояниеТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид простоя. Дополнительная аналитика для учета простоев ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime type. Additional analyst to account of vehicle downtime</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9d6d569b-5790-4809-b29f-ba786fa73589">
+    <name>Водитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Водитель, сотрудник</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Driver, employee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="49e07e9f-f395-4c6a-a3d6-3dc1ced14618">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС учета простоев</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle accounting for downtime</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="0b2c3c27-f1b7-4a34-a3ce-2941e482961b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

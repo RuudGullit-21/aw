@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b136b6d9-4f62-4a5a-98cb-0c381bbeec8c">
+  <producedTypes>
+    <selectionType typeId="a4b6d10e-4c77-4491-af53-d5e3bcfdacb0" valueTypeId="123b35d1-2e20-4643-a397-3de01f27d841"/>
+    <listType typeId="05d6c6f5-726b-4a3c-b541-805be691ae46" valueTypeId="0f56dc02-55a9-4663-a77f-688413f0fe85"/>
+    <managerType typeId="c0e1726c-8f6c-4269-b122-9905320e730c" valueTypeId="ef4384c7-d582-426d-a281-44a4f39f5705"/>
+    <recordSetType typeId="9a83bafb-8835-45d2-b3ed-d36087ffdef4" valueTypeId="8aa9a357-7fd4-4176-b37e-e4de4db26fcb"/>
+    <recordKeyType typeId="bbea4038-6471-41de-be80-0d6cb3249c33" valueTypeId="dd756d4e-0a1a-4b84-ba4b-3d984df40fc6"/>
+    <recordType typeId="6ad8f13d-e8b3-4a57-949b-2122088077fd" valueTypeId="849410bb-cdfe-4230-834d-3bc1d8c17a87"/>
+    <recordManagerType typeId="293d53b8-e0bc-48df-8b42-928992412600" valueTypeId="1b6d291a-b7cc-4e9b-b14e-9b4f38f133a2"/>
+  </producedTypes>
+  <name>уатПланированиеРаботыТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Планирование работы ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Planning of vehicle work</value>
+  </synonym>
+  <comment>Планирование работы ТС (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатПланированиеРаботыТС.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>InformationRegister.уатПланированиеРаботыТС.Form.ФормаСписка</auxiliaryListForm>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Планирование работы ТС </value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Planning of vehicle work</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Планирование работы ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Planning of vehicle work</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Планирование работы ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Planning of vehicle work</value>
+  </explanation>
+  <dimensions uuid="d454b856-2522-4d3f-9208-3d1134632c4d">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала планирования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Planning start date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2ee5268e-8da3-4f58-b3b6-318c7d932eab">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания планирования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date of planning</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7785d482-cd20-44c0-a68a-235115766fab">
+    <name>ДокументПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ планирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Planning document</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатПутевойЛист</types>
+      <types>DocumentRef.уатЗаявкаНаРемонт</types>
+      <types>DocumentRef.уатТехнологическийПутевойЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ планирования.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Planning document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="64a02a5f-0b85-48b7-a68c-fec0b4c2c66d">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>State</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСостояниеТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние планирования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Planning state</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e10a51a4-3f45-4b9d-b494-e4401e37f935">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Планируемое ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Планируемое транспортное средство или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Plan vehicle or equipment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9eb338f4-d6f5-4a85-8530-cd914d9fc482">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

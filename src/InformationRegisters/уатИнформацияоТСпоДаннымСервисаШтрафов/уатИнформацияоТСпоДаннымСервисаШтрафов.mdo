@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3f7a7de-a887-477a-b3ed-c844a098c5c8">
+  <producedTypes>
+    <selectionType typeId="59fec8e2-f12c-412e-90bf-34f19811249a" valueTypeId="8d707e3c-2a27-4047-8f91-58e02fc2c080"/>
+    <listType typeId="247cc1d7-a32d-4391-89dc-29ada3216e0a" valueTypeId="0b7eaf33-ab69-4643-80a4-818285bff0d7"/>
+    <managerType typeId="974bb5e1-d918-4a69-b33c-a5c732150c6c" valueTypeId="8d12fcc0-5331-4094-bdd5-8aaec4c85860"/>
+    <recordSetType typeId="d788f525-956f-46ff-9442-df7f3526d593" valueTypeId="e7fba57b-ca5c-41fe-9051-94dfd4d2f0f0"/>
+    <recordKeyType typeId="62fdc46b-81b7-48b0-b06b-1d156f6678d5" valueTypeId="18b76240-4f7e-4a78-b8db-7b69115060b9"/>
+    <recordType typeId="2ec5bbfa-4155-474f-9e39-bc19df8e0036" valueTypeId="94a9c5c2-a98d-4014-a244-d26854b0ee4c"/>
+    <recordManagerType typeId="14162158-0c31-4594-8432-49a1e1631d48" valueTypeId="41e762c2-68a9-4682-ba5a-2f65dbe802a4"/>
+  </producedTypes>
+  <name>уатИнформацияоТСпоДаннымСервисаШтрафов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информация о ТС по данным сервиса штрафов</value>
+  </synonym>
+  <comment>(уат) Информация о ТС по данным сервиса штрафов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатИнформацияоТСпоДаннымСервисаШтрафов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатИнформацияоТСпоДаннымСервисаШтрафов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Информация о ТС по данным сервиса штрафов.</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Monitoring events</value>
+  </explanation>
+  <resources uuid="dd3d47e5-0e35-4304-a32c-f8384abdbc5b">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатусыШтрафов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус штрафа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6dea80d0-63a4-48a4-b6b0-b8e0057b741f">
+    <name>ПричинаНеактивности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина неактивности</value>
+    </synonym>
+    <comment>Причина неактивности</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="c7054bbc-16eb-4bc8-b21e-68a5f05c60fe">
+    <name>ДатаПоследнейПроверкивГИС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней проверки в ГИС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit time</value>
+    </synonym>
+    <comment>Дата последней проверки в ГИС.</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней проверки в ГИС.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time on line.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e70d4be7-bb82-43b1-a64b-081dd338f1f3">
+    <name>ДатаПоследнейПроверкивГИБДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней проверки в ГИБДД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit time</value>
+    </synonym>
+    <comment>Дата последней проверки в ГИБДД</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней проверки в ГИБДД.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time on line.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b85209f0-dc02-4dcc-95e9-bacc2e1277db">
+    <name>ДатаПоследнейПроверкивДИТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней проверки в ДИТ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit time</value>
+    </synonym>
+    <comment>Дата последней проверки в ДИТ</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата последней проверки в ДИТ.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time on line.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ec5a7eac-d0fd-4dba-bbbc-85be30cf827d">
+    <name>ДатаДобавленияТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата добавления ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit time</value>
+    </synonym>
+    <comment>Дата добавления ТС</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата добавления ТС.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time on line.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cb9ead4b-5353-4c2c-a59f-e1b9f0cfc36f">
+    <name>КоличествоШтрафов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество штрафов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <comment>Количество штрафов</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество штрафов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>For events of draining and fueling - fuel volume (l). For events exceeding speed - vehicle speed (km/h).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="38359980-a3bc-4e99-84aa-f0acd0235492">
+    <name>СуммаЗадолженности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма задолженности</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Limit value</value>
+    </synonym>
+    <comment>Сумма задолженности</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма задолженности.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Limit value (for events of exceeding speed, km/h)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4c28dd1-2029-4f67-a132-e2720c8b4597">
+    <name>Автопарк</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автопарк</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="49845853-74c5-4be4-87e9-4935fcf0b13f">
+    <name>IDАвтопарка</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDАвтопарка</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="6527a9cf-548b-48f9-9c0f-ca9e74134fec">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="8af11b5b-99c1-4454-b344-6e8f4141bb75">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="45525e39-6841-4654-b50e-7c09a56f2f64">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

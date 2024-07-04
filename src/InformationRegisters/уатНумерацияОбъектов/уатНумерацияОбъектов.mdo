@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eebade14-6868-4f2d-98e5-45d0a4b94b5d">
+  <producedTypes>
+    <selectionType typeId="c593e3ea-21a0-4a11-8999-2120639d1129" valueTypeId="4be02461-9569-4099-b050-169f0dd97efc"/>
+    <listType typeId="c88315a3-5e9d-4e3b-b5ea-ad6198b5a8a5" valueTypeId="ddc872bb-812b-4621-bcfb-f75c4429cd59"/>
+    <managerType typeId="b23df6dd-0a71-414d-9ea2-6dd99a3012ce" valueTypeId="eea79404-11e9-48d3-b1b2-a42d36afae2a"/>
+    <recordSetType typeId="21e65770-8ba1-40c8-8066-f4b0e7f88e4a" valueTypeId="3f68a797-a054-4c98-b74f-d480a488e140"/>
+    <recordKeyType typeId="5de9b32e-2a28-4160-896b-bc8ca6b50bdb" valueTypeId="0263dda6-ffda-4a75-b531-7f406b26575e"/>
+    <recordType typeId="c7dea138-f5d4-463d-820c-7f4f354abe36" valueTypeId="0b4f33df-0aa8-467c-af19-1fe63cc6ae05"/>
+    <recordManagerType typeId="e76269fa-f1d4-4f88-8b35-0dffa41af54e" valueTypeId="ee99b4d9-2d65-4571-82dd-8b6119e84e6f"/>
+  </producedTypes>
+  <name>уатНумерацияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нумерация объектов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Object numbering</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатНумерацияОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатНумерацияОбъектов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>РС предназначен для обеспечения нумерации печатных форм ЭСМ7, печатаемых из обработки ЭСМ за период</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>RS is designed to provide the numbering of printed forms ЭСМ7 printed from the processing of the ESM for the period</value>
+  </explanation>
+  <resources uuid="ea064798-c974-459d-bad9-e2d70e3022c0">
+    <name>ПоследнийНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Последний номер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Last number</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="1527544a-a2a6-4f49-bcbe-37cbd7f35b8f">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Year</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>DF=MM/dd/yyyy</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=дд.ММ.гггг</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>DF=MM/dd/yyyy</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e399153b-a506-41e0-b12e-d3d07ac232fd">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация для которой ведется нумерация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company is the numbering</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="06542255-f327-4c00-9f30-c9d1a30e2087">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="baf102dc-96ac-4de6-9d9a-2f9be3934f6e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bf7f041f-16f5-4736-b121-9ea2e56fa0b6">
+  <name>сфпОбработкаЗаполнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка заполнения объектов СофтФон</value>
+  </synonym>
+  <source>
+    <types>DefinedType.сфпКонтактВзаимодействияОбъект</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.сфпСофтФонПроСервер.сфпОбработкаЗаполненияОбработчик</handler>
+</mdclass:EventSubscription>

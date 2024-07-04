@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12d378cd-0224-4754-89db-91c8f3499c8f">
+  <producedTypes>
+    <objectType typeId="5d55215e-fac4-4611-9bce-8a0f6032605f" valueTypeId="110a093a-2c00-42d6-8daa-88c5440b0cfc"/>
+    <refType typeId="3e577b05-cb80-43d3-9a92-b82558077eec" valueTypeId="12c16b7b-bd6d-42d3-85d9-903bd104499c"/>
+    <selectionType typeId="d76a1de8-22f4-44f6-9a3e-fe6a8bd4d8c9" valueTypeId="609e2020-c6c3-4277-bc81-91c384bf0607"/>
+    <listType typeId="95bfee55-29bf-4ea9-b325-e6901bd15572" valueTypeId="fc67b18e-ac3f-4322-a659-64bfcca14960"/>
+    <managerType typeId="3f2fa428-4936-4d7e-8a5c-79a4d46c4243" valueTypeId="f8471879-a11c-4a12-95fe-cae5ef1f3bed"/>
+  </producedTypes>
+  <name>уатСпособыОпределенияМассы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы определения массы</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Methods of mass determining</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатСпособыОпределенияМассы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатСпособыОпределенияМассы</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатСпособыОпределенияМассы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатСпособыОпределенияМассы.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатСпособыОпределенияМассы.Form.ФормаВыбора</defaultChoiceForm>
+  <forms uuid="4cf14d4b-fc15-4dce-b40f-73ed2364b2c1">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0ccfd6ab-a73c-4f5d-b20b-1a770125ebbd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c80b0963-c5a4-4cf4-995e-d556dd722106">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

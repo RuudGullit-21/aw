@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="815b3ae9-9441-46cf-8f47-b919431cb4a7">
+  <producedTypes>
+    <selectionType typeId="bb4c4759-eff1-4238-b79a-b11a191b8ebb" valueTypeId="47a904f9-c8b9-4956-85f6-afcc72a18951"/>
+    <listType typeId="d5ba8d7a-7d51-448a-a27b-4fce561f4b28" valueTypeId="61dddc84-262b-4b57-a5e7-9fcb425fc64a"/>
+    <managerType typeId="47a9c1b1-fbe5-4d13-ba28-76fb929113cb" valueTypeId="b935619e-c0d2-4ae0-b9f7-60f7e80a96f8"/>
+    <recordSetType typeId="4dd49bdd-12a0-4863-9a5b-4c3ce07124de" valueTypeId="54abe64d-89c8-4657-b20b-c21e19e45da9"/>
+    <recordKeyType typeId="9bdcbf46-60d0-4f1d-850f-6c189389101a" valueTypeId="1ac3770a-73ad-4681-b1b9-d3f9a2ac680f"/>
+    <recordType typeId="b65e79c6-dfd1-45a8-9581-43a0c759222f" valueTypeId="b1371205-40f8-4259-b7d1-3915b55954a1"/>
+    <recordManagerType typeId="b3dc0bcc-20b2-49de-a7f5-72c74b3b52d7" valueTypeId="af255dec-1d30-406b-8ca3-5aeb2bf84d94"/>
+  </producedTypes>
+  <name>ItobПараметрыКомандДляТерминалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры команд для терминалов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6f428f96-b6d8-4826-afee-750a76d22f97">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Content</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текстовое содержание команды</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="37240ad8-46bb-475a-8be0-d30522fe3f46">
+    <name>МодельТерминала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель терминала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Model of terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobМоделиТерминалов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Модель ГЛОНАСС/GPS трекеров</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Модель ГЛОНАСС/GPS трекеров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8968c26e-6499-4a9e-8005-8d0fa17e00ee">
+    <name>Команда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Command</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УдалитьItobКомандыДляТерминалов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Команды для терминалов&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="173b2d91-21d5-4231-b1ae-aa4a60b74560">
+  <producedTypes>
+    <selectionType typeId="843ba2d9-7722-493a-9002-5662b9066aba" valueTypeId="2cbf7695-5bda-49a6-b9b7-d89937f50290"/>
+    <listType typeId="aa35e377-5e5a-4572-a514-12570ea06638" valueTypeId="0409fa8d-4c39-4b14-aa16-5111b9534dbf"/>
+    <managerType typeId="c8cfe457-e2d3-41ae-9421-986dc451ba44" valueTypeId="9815e3d8-28db-40d8-bf5f-aa9b44d6d3dc"/>
+    <recordSetType typeId="61dfd301-707b-45ea-97ed-852341066e42" valueTypeId="3bb59f45-378e-4cdd-9df4-6360b3025056"/>
+    <recordKeyType typeId="6aa0904a-e748-4dc2-88cd-9667a4e15879" valueTypeId="6e55ad50-b2c7-478c-b0e0-4de8bb214e61"/>
+    <recordType typeId="d512d07a-8fac-4dd6-9ff4-39138c4bdb22" valueTypeId="6753b809-b870-475c-acac-c1910e620021"/>
+    <recordManagerType typeId="f8f07077-70d3-42ab-b7f0-9569a3c8aa37" valueTypeId="6a6743e8-0651-48a7-9a5b-76177f79d032"/>
+  </producedTypes>
+  <name>уатКоординатыПоМониторингу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Координаты по мониторингу</value>
+  </synonym>
+  <comment>История местоположения транспортных средств по данным системы спутникового мониторинга (GPS)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатКоординатыПоМониторингу.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатКоординатыПоМониторингу.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Координаты ТС по мониторингу</value>
+  </explanation>
+  <resources uuid="b3509544-f8ac-440f-b85c-7be13e199b6d">
+    <name>Широта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Latitude</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Широта пункта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Point latitude</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c87d02b3-95e3-4d72-a654-4d242bfca892">
+    <name>Долгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Longitude</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Долгота пункта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Point longitude</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a9132451-cf86-49e6-bdec-ef2d1d6b4043">
+    <name>ПредставлениеАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление адреса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Address presentation</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ac58c329-ae87-46df-b7aa-0b1e970a5369">
+    <name>Скорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скорость, км/ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Скорость ТС (км/ч)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="78dfb2bc-b45e-48c5-86d1-1aa74481f5af">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Rate</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8751bd44-7c82-4566-9271-66230da06aeb">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5a059bd5-0e86-4bc4-814f-74da74744fe0">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8de54946-852d-46c0-aee9-a4dbe3d8f41e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

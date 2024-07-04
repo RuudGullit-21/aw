@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f3f5008b-16e4-4135-8a09-82d2e8433eed">
+  <producedTypes>
+    <selectionType typeId="acd56ae8-907e-446b-a7df-cd8a28acbe44" valueTypeId="007668be-18e2-4576-9cb0-a473ad7fce16"/>
+    <listType typeId="1e2bf9ae-166c-4623-8a3e-3d9d62d8a568" valueTypeId="c41c0651-a72e-457b-aec0-a6cfbd7caf6c"/>
+    <managerType typeId="babf5ab6-4c57-4427-83c6-5627a0b1385d" valueTypeId="77bae404-e11d-4966-83aa-844b2da4eb69"/>
+    <recordSetType typeId="2470321d-4fd1-4378-9ad7-f7b16bc74c7c" valueTypeId="56e61083-9884-4710-9afc-825cfc86bd6b"/>
+    <recordKeyType typeId="7376e544-7bb3-4827-a152-6eb9916143b8" valueTypeId="5fa5da7e-3b62-43c8-9c89-2c5b636775cd"/>
+    <recordType typeId="93b34c87-c24e-4cd4-9723-6458adea4cd2" valueTypeId="87f4a574-4b1e-4522-8042-856adc4d59e2"/>
+    <recordManagerType typeId="193c7998-2a30-47a2-ae56-a43575aab41e" valueTypeId="dab3c72b-795f-4e85-a831-157b7aa08a73"/>
+  </producedTypes>
+  <name>уатПрейскурантыТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прейскуранты ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle price lists</value>
+  </synonym>
+  <comment>Прейскуранты на транспортные услуги (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатПрейскурантыТС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Тариф сотрудника (уат)</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Employee's tariff</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Тариф сотрудника (уат)</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Employee's tariff</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Прейскуранты ТС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Vehicle price lists</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Прейскуранты ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Vehicle price lists</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Прейскуранты ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Vehicle price lists</value>
+  </explanation>
+  <resources uuid="ef7259b4-d814-472b-8ef9-1d44d5d675fe">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Начало действия прейскуранта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The beginning of the price list</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5c4cc1e7-a1ac-446f-bd92-3eb7ce514979">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>\Окончание действия прейскуранта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>\action end of price list</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8ff98405-ccc3-4a30-9079-cf4fdd9a4c8f">
+    <name>Прейскурант</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прейскурант</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Price list</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПрейскурантыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Прейскурант тарифов ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle price list rate</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bc48edf7-3411-462f-b7f6-e3349c063527">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

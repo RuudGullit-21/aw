@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf09178f-d50b-40c3-845c-dfb61b041568">
+  <producedTypes>
+    <objectType typeId="750e50bd-9c25-43c9-bf8b-1f0ec92eb7df" valueTypeId="49aebe6f-80d7-4449-88f1-c5bcecb3f848"/>
+    <managerType typeId="d876e762-7cce-4cf7-a820-59d314f9f726" valueTypeId="68cafd5f-2a6f-42e0-a92b-d8a23ccb9e45"/>
+  </producedTypes>
+  <name>уатПечатьЭСМ7заПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Печать ЭСМ7 за период</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Печать ЭСМ7 за период</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатПечатьЭСМ7заПериод.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="ee9b4259-623d-4f39-8411-33a51ae108a8">
+    <name>ДатаВыписки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выписки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Statement date</value>
+    </synonym>
+    <comment>Дата выписки</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выписки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата выписки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="d1991bf1-589a-4e4b-9b01-bb5f47ce1419">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <comment>Дата конца</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата конца.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fa5242ab-f750-40ed-a163-0e7665973b0d">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <comment>Дата начала</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ba64e083-9188-42c4-89ec-80e5f5d3c489">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <comment>Контрагент</comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="47245318-6b19-49e3-af45-83d60145319d">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Construction object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатОбъектыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект строительства.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Construction object.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="017bc908-d899-4ddd-82c3-1d9476caf9a6">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="8624dfba-a4ac-4d00-b4a5-15885d1f99ee">
+    <name>РежимОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим отбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Режим отбора</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Режим отбора.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Режим отбора.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fe089822-ba05-48e6-8d0c-8061f8d90b51">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="860ae151-83a3-40eb-ab28-5f615e13e525">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

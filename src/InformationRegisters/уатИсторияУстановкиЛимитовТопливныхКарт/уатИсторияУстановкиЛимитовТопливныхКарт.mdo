@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3907175-a974-4d8b-81a8-4bbd5ec05268">
+  <producedTypes>
+    <selectionType typeId="836264af-49bc-4c37-ace4-feda6e6f5e61" valueTypeId="b2ecd3b7-209e-4a18-a2a1-19859fd77885"/>
+    <listType typeId="557db0f7-a122-4d9d-bc37-4a7c8e0faada" valueTypeId="620c54e6-e0d3-47ec-b44d-e6a54af6bd19"/>
+    <managerType typeId="e83c475c-aeab-4a5e-aa04-107882d355c2" valueTypeId="d69ab806-c7db-4292-a3fe-e6d596775d26"/>
+    <recordSetType typeId="4d11b5c8-52f5-4a85-9d5f-4c8758cb4ab9" valueTypeId="a0d70e00-a9b3-4500-a7c1-02c0d8221806"/>
+    <recordKeyType typeId="664223d5-ea1c-448e-91d6-06927135bc69" valueTypeId="a2d61402-1150-491a-8ac7-fbcb48bc0e54"/>
+    <recordType typeId="fb205d13-505a-482a-9348-14f8c141338e" valueTypeId="6fcd5483-b298-4e52-9605-bf86faa49977"/>
+    <recordManagerType typeId="3b5e214e-03bf-4e64-abdb-c3eebbe421a3" valueTypeId="973206bd-e06f-4963-b57b-d449bf103801"/>
+  </producedTypes>
+  <name>уатИсторияУстановкиЛимитовТопливныхКарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </synonym>
+  <comment>Используется для хранения истории установки лимитов топливных карт</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>История установки лимитов топливных карт</value>
+  </explanation>
+  <resources uuid="22a2ded7-da81-4f34-a078-e257837ea9e8">
+    <name>Лимит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лимит</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Лимит</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Лимит топливной карты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fc27fce2-9eee-4979-b093-9d1b66c9650d">
+    <name>Карта</name>
+    <synonym>
+      <key>en</key>
+      <value>Fuel card</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Топливная карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПластиковыеКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d8a4b3c7-6cc3-483e-a38a-eef1c3a851c2">
+    <name>КомуВыдана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кому выдана</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или сотрудник за которым закреплена топливная карта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5ad7293b-341b-4812-ba41-76ed3424cc45">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Installation date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата установки лимита</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

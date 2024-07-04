@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="015e5810-eb05-494b-9c43-9143e81a5359">
+  <producedTypes>
+    <selectionType typeId="091f43f5-ea1d-4feb-8bac-966c24757072" valueTypeId="8ad00a0a-d319-4cd3-9cfa-a32cbc9b6fb3"/>
+    <listType typeId="e15ce785-5a90-41db-bf1e-7b4318d3c980" valueTypeId="d73cdaa2-0052-41d0-a4e6-124c9ff050ed"/>
+    <managerType typeId="e3b9d555-1ee6-4352-b865-77a2bd3409d3" valueTypeId="f20cd09b-fdfa-4cbc-838b-71db76ac6c83"/>
+    <recordSetType typeId="42942509-adc9-4f54-aa72-9a7439315c02" valueTypeId="80c00c3d-adbe-4e34-96ab-bb87b911398c"/>
+    <recordKeyType typeId="068522fa-a038-4a2e-a28f-ee18159790de" valueTypeId="d1845343-f61e-4d31-801c-a34a6ad061ef"/>
+    <recordType typeId="2ba71700-874e-45de-a0ab-b08449732e18" valueTypeId="1c2ede5f-2302-4101-9971-c078726a862a"/>
+    <recordManagerType typeId="b24d8a7a-0a16-4cd0-a436-0c29d57e9f98" valueTypeId="e8e7bf3d-ed1b-4ea7-acf3-e0990e8c6c34"/>
+  </producedTypes>
+  <name>уатИсторияЗакрепленияБортовыхУстройств</name>
+  <synonym>
+    <key>ru</key>
+    <value>История закрепления бортовых устройств</value>
+  </synonym>
+  <comment>История закрепления бортовых устройств учета платных дорог на транспортном средстве</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатИсторияЗакрепленияБортовыхУстройств.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатИсторияЗакрепленияБортовыхУстройств.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="14c35027-3f6b-4cff-969b-560526be400a">
+    <name>НомерБортовогоУстройства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер бортового устройства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="5d869dc1-4132-47d6-82f3-792564cc6821">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="86c76867-99fb-45e3-bc4b-fc600ad721e5">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипВнешнейСистемы</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.уатТипыВнешнихСистем.EnumValue.СистемаВзиманияПлаты</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="92bebc23-5623-4e30-aa79-fbdbd5fa7cc9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="55c7424d-0c0e-47a0-8e8f-71ea9260e218">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

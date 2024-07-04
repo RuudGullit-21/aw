@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0094cb13-d4bf-4b57-aa7e-0e72217eec52">
+  <name>уатРемонтыИАгрегаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонты и агрегаты</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Repairs and car parts</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.уатПодсистемаУправлениеРемонтами</picture>
+  </picture>
+  <content>CommonPicture.уатПодсистемаУправлениеРемонтами</content>
+  <content>CommonCommand.ДополнительныеОтчетыУатРемонтыИАгрегаты</content>
+  <content>CommonCommand.ДополнительныеОбработкиУатРемонтыИАгрегаты</content>
+  <content>CommonCommand.уатПанельОтчетовРемонтыИАгрегаты</content>
+  <content>CommonPicture.уатСервиснаяКнижка</content>
+  <subsystems>уатРемонты</subsystems>
+  <subsystems>уатАгрегаты</subsystems>
+  <subsystems>уатДТП</subsystems>
+</mdclass:Subsystem>

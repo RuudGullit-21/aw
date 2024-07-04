@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9013f3c-145c-4f74-8243-bf6f3756aab9">
+  <producedTypes>
+    <selectionType typeId="11dd9b90-b1c7-4e47-8b4f-562a53175d2b" valueTypeId="dc4e9e2c-9255-4a94-8ff8-608b6502e9ff"/>
+    <listType typeId="b1d99390-3095-4fa7-9204-c58292cfdeae" valueTypeId="5a9170a8-1817-4d86-8a66-f87e0ecae633"/>
+    <managerType typeId="d89188e8-1d13-48c7-abd0-24192b816b72" valueTypeId="034abedc-baf9-4e10-a932-d11f1003b482"/>
+    <recordSetType typeId="696727a5-ec15-48e9-b323-49be09a6b1e3" valueTypeId="1d5d9eb7-a18a-4627-8473-a343c9357133"/>
+    <recordKeyType typeId="12f1b24f-b644-4a87-afa9-6a2c855ac05e" valueTypeId="6110f76d-c3c7-4f49-8f35-1c4a66e8e372"/>
+    <recordType typeId="abb738ee-0f94-473b-9844-fbb94d4710b0" valueTypeId="51e3b272-ae0f-4ad7-be92-f62bccc28ad9"/>
+  </producedTypes>
+  <name>уатГрузыКПеревозке_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Грузы к перевозке</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cargos to transportation</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <defaultListForm>AccumulationRegister.уатГрузыКПеревозке_уэ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dd0d0201-2415-4c7a-a1a9-887223258667">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="35630843-c5e8-4155-9e5a-347bce8640f8">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f645081d-cf7c-42e1-9159-78b9761e44c3">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty contract</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор контрагента.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Contract of counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6b0a4fd2-e225-4db3-97ba-594c893297e5">
+    <name>ЗаказГрузоотправителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Order</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ грузоотправителя.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Consignor order.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f6d2a922-e312-4398-8dee-3f9f540eed15">
+    <name>ГрузовоеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузовое место</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Сargo space</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатГрузовыеМеста_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Грузовое место.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Сargo space.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="173a5675-21a8-4bbd-8069-2f9039b66efd">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура груза</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo info</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="b4d8e6c1-49c0-4f9f-a72a-55a17215286e">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Unit of measure</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыУпаковки_уэ</types>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+      <types>CatalogRef.уатТипыКонтейнеров_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Единица измерения.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Unit of measurement</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="17e59cb4-fd9b-4393-8081-35697121b21d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

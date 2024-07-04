@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8aebcd94-b21a-4af9-9e64-259e0fe557b5">
+  <producedTypes>
+    <selectionType typeId="acde47db-dd83-43e9-b6f8-1eb0ec21f16d" valueTypeId="17dc9978-b6b0-49e3-a845-2c48bed9fcd6"/>
+    <listType typeId="708d086d-135c-40ff-9a15-69eafeb9d6b7" valueTypeId="4b1a00d4-dd30-42f0-b4ef-ad0c683c2e92"/>
+    <managerType typeId="9b59434e-6c98-4b8a-b3e3-b79b3198550f" valueTypeId="ee726d41-a90e-4228-8ef2-54292011a717"/>
+    <recordSetType typeId="54f3ce78-56fd-409b-ae03-89615bef13d5" valueTypeId="db7da05b-2d9c-47a6-8636-8d67414c83ef"/>
+    <recordKeyType typeId="b0a38f47-7811-4d13-9894-7718fb3941e4" valueTypeId="a66ada16-3ce7-4a49-b45d-ffebbe646372"/>
+    <recordType typeId="18751a12-52b1-4114-8106-56adb0d07fca" valueTypeId="e4243008-8fc3-4f87-8957-4ab4e14d3014"/>
+    <recordManagerType typeId="eb3d2fe0-a090-4ba1-8b53-cad82e7be55a" valueTypeId="f737cc6f-0697-422d-ba7b-68b43b09d0a1"/>
+  </producedTypes>
+  <name>ItobСвойстваМаршрутныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свойства маршрутных заданий</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e41f236a-ee6f-482e-a493-f5f5f4c460c0">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Транспортные средства&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="b27a0f92-b5e7-48a4-b4c6-cb8274ac9175">
+    <name>Водитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobВодитель</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Сотрудники&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="8dd32399-635f-4c41-b6ba-66945e817d3e">
+    <name>ДатаВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выезда</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of departure</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Плановая дата начала маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="8a087a17-1340-4c19-a238-44a4a7071371">
+    <name>ДатаВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата возвращения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of return</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Плановая дата окончания маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="42d459e9-7afc-45a2-b0bd-157fef8031c8">
+    <name>ДлинаПутиФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина пути факт</value>
+    </synonym>
+    <comment>Фактически введенные пользователем данные (в маршрутном задании)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фактическое расстояние маршрутного здания (км)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f7420722-3406-4557-9406-235be996eb1f">
+    <name>ДлинаПутиПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина пути план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0596ebc2-8370-4250-ab66-4b0f00a6f263">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой зарегистрировано маршрутное задание</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b0309b65-32f6-43ba-8efe-494b925ed804">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Weight</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вес маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f810d00d-792f-4965-a55d-167acff49617">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объем маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a23bf63-a480-462a-9590-edaf58beb8af">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТерминал</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9084385e-a52f-402e-a6eb-12906a004d37">
+    <name>ЗаданПунктВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задан пункт выезда</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2af6a1b8-59f8-4417-aa7d-9d4b38fed233">
+    <name>ЗаданПунктВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задан пункт возвращения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="472305ee-8eb8-4b33-b250-1addfa1c068f">
+    <name>ДатаВыездаФактРучнойВвод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выезда факт (ручной ввод)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>ВВеденная вручную фактическая дата начала маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d9e5bbfa-7e4f-47fa-8314-537be6809f56">
+    <name>ДатаВозвращенияФактРучнойВвод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата возвращения факт (ручной ввод)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Введенная вручную фактическая дата окончания маршрутного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="efa08a64-760a-4851-91f5-556ecda41542">
+    <name>ТочекПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точек план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e52669b-c765-4873-bee8-a3119b53ecd0">
+    <name>ТочекФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точек факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5e37be55-b417-426d-8be6-c8b6e4645f2d">
+    <name>ПроцентВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент выполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Execution percentage</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="85804114-887d-44a9-ab50-35c8fac5a4c8">
+    <name>ДатаВыездаФактРасчетная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выезда факт (расчетная)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Фактическая дата начала маршрутного задания, рассчитанная по данным подсистемы &quot;План-Факт&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ca4382ae-9d01-4292-8ff0-a2dd08e087bb">
+    <name>ДатаВозвращенияФактРасчетная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата возвращения факт (расчетная)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ДФ='dd.MM.yyyy HH:mm'</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Фактическая дата окончания маршрутного задания, рассчитанная по данным подсистемы &quot;План-Факт&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a836c9b5-e19f-41cf-80da-600106bc1ceb">
+    <name>МаршрутноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутное задание</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobПутевойЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ &quot;Путевой лист&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

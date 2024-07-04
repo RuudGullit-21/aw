@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bac59ff-01b6-405c-a77f-1a445e2e77db">
+  <producedTypes>
+    <objectType typeId="b24def0a-1de3-4a33-9025-6c4be74478c0" valueTypeId="e8869a57-d5f7-4e3c-a0cc-acbb3544ad3b"/>
+    <managerType typeId="c4bcd79f-2fc2-45fc-b819-401a478ea088" valueTypeId="e6b90eeb-c2e9-4584-87f6-87bfb64a1887"/>
+  </producedTypes>
+  <name>ItobРаботаССервисомNominatim</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с сервисом Nominatim</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="1724dc69-47a8-4af6-9fc8-d17b79067b87">
+    <name>АдресСервера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Server address</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес Nominatim сервиса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="901ba228-e9b6-4dcf-9f25-6a3f4752a955">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Key</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ключ Nominatim</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+</mdclass:DataProcessor>

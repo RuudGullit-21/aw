@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5e542e8b-066e-4a58-9dbb-02c3fa376cde">
+  <producedTypes>
+    <managerType typeId="566e664c-d9f9-466f-b2ed-a1553a0bfd1e" valueTypeId="d4134b6e-46eb-46f0-8df5-671bbca65c65"/>
+    <valueManagerType typeId="6044cfc0-62ee-4fe2-a8e4-64a32098a512" valueTypeId="91daf289-ff7a-48fc-a80b-ad2eb1ad5c79"/>
+    <valueKeyType typeId="dd8e381a-db00-4cc9-bf1f-0aa0320a1152" valueTypeId="1dede7b4-70fa-4291-870f-54d69d4df240"/>
+  </producedTypes>
+  <name>уатДопустимоеОтклонениеОтВремениПрибытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Допустимое отклонение от времени прибытия (мин.)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Allowable deviation from the arrival time (min.)</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>4</precision>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Порог времени, превышение которого при прогнозировании считается опозданием. Используется при прогнозировании опозданий в Маршрутных листах</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

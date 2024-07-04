@@ -1,0 +1,871 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e23438a-e159-4999-afdc-00aced50c8dc">
+  <producedTypes>
+    <selectionType typeId="5a3775aa-d04a-4e2f-a472-ee3af3553a04" valueTypeId="0c8c6a2d-ff91-4556-a1cb-c1d21cb9bcc7"/>
+    <listType typeId="a5c0afa0-509b-4bfc-a000-cde80b2df1bc" valueTypeId="12db8695-c62f-4120-bb07-e24c98a11c2b"/>
+    <managerType typeId="060266b6-6c50-4ed2-ba37-5f108134892a" valueTypeId="d52b7355-3171-40d9-b3a7-b7e21f124870"/>
+    <recordSetType typeId="f38dc0fd-d7a3-46ec-91c7-d359ed148cdd" valueTypeId="82b23fed-1b9f-4016-9b24-8b45c9b400d7"/>
+    <recordKeyType typeId="63eeba5b-6288-42ab-a9ea-4679cc45f95f" valueTypeId="a25f13cd-868b-4274-98a5-ee6630506679"/>
+    <recordType typeId="d8aa89b7-651a-4771-a163-16fe4a0d8014" valueTypeId="fcb5a55c-5786-4ea2-aa00-693c4e0e9d5a"/>
+    <recordManagerType typeId="1e2569de-8097-4c41-b0eb-785cde78ef14" valueTypeId="edc7d52c-9e42-45eb-90f9-17d59b879c06"/>
+  </producedTypes>
+  <name>ПравилаПолученияФактаПоПоказателямБюджетов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Правила получения фактических данных по показателям бюджетов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Rules of receiving actual data on budget indicators</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ПравилаПолученияФактаПоПоказателямБюджетов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ПравилаПолученияФактаПоПоказателямБюджетов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Правило получения фактических данных по показателю бюджетов</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Rule for receiving actual data on indicator of budgets</value>
+  </recordPresentation>
+  <resources uuid="99ada2c6-8a81-45b7-b8ac-bc4c254da922">
+    <name>ТипИтога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип итога</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Тип итога</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыИтогов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип итоговых данных по счету.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Тип итоговых данных по счету.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ТипыИтогов.EnumValue.Сальдо</value>
+    </fillValue>
+  </resources>
+  <resources uuid="41118986-4846-4803-a1b1-cf4bcd8615ef">
+    <name>КомпоновщикНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновщик настроек</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Settings composer</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительный отбор данных источника.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дополнительный отбор данных источника.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="15573c68-3aa9-44b6-ba19-a200f46f47eb">
+    <name>ПредставлениеОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный отбор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Дополнительный отбор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Представление дополнительного отбора данных источника.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Представление дополнительного отбора данных источника.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="07a50d71-c5c1-4a4a-98b3-d077601f9e6d">
+    <name>СхемаИсточникаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема источника данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Схема источника данных</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Схема произвольного источника данных.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Схема произвольного источника данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3b62218a-12b9-453d-84ca-fda11d384a50">
+    <name>РасширеныйРежимНастройкиЗаполненияАналитики</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширенный режим настройки заполнения аналитики</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Расширенный режим настройки заполнения аналитики</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется расширенный режим настройки заполнения аналитики.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Используется расширенный режим настройки заполнения аналитики.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5052d6da-22c0-4b41-aa27-9eddf6b02306">
+    <name>ВыражениеЗаполненияАналитики1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 1</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="61f97d3b-f3ee-4c41-bfa4-c7a38174b175">
+    <name>ВыражениеЗаполненияАналитики2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 2</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="8f523415-db4e-4d58-8fb2-2f6929da7556">
+    <name>ВыражениеЗаполненияАналитики3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 3</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 3</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="9f0ca5fb-7240-486c-af95-9fa094259645">
+    <name>ВыражениеЗаполненияАналитики4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 4</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 4</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 4</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="7d7d6e79-a1df-4671-8cde-595bd0f17414">
+    <name>ВыражениеЗаполненияАналитики5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 5</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 5</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 5</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 5</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="793adb15-6663-4a6f-83f2-79a4578fca78">
+    <name>ВыражениеЗаполненияАналитики6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выражение заполнения аналитики 6</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выражение заполнения аналитики 6</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выражение для заполнения Аналитики 6</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выражение для заполнения Аналитики 6</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="366b56fa-10b2-4d40-bdbd-f021887cd869">
+    <name>ЗаполнятьУказаннымЗначениемАналитику1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 1 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 1 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 1 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 1 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3b7f3053-185e-41bd-9909-4c52cf7c4de0">
+    <name>ЗаполнятьУказаннымЗначениемАналитику2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 2 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 2 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 2 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 2 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="498fc5d4-0bf9-4034-ae55-a130a6d1aa68">
+    <name>ЗаполнятьУказаннымЗначениемАналитику3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 3 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 3 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 3 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 3 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e0ca4f83-e194-4c7b-90f0-074e2ecbbc02">
+    <name>ЗаполнятьУказаннымЗначениемАналитику4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 4 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 4 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 4 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 4 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="002ad6bf-1eb3-49bc-8203-ad425d6e3d4c">
+    <name>ЗаполнятьУказаннымЗначениемАналитику5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 5 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 5 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 5 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 5 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5734ba95-bea3-4e2a-81ce-1087d722cc48">
+    <name>ЗаполнятьУказаннымЗначениемАналитику6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять аналитику 6 указанным значением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Заполнять аналитику 6 указанным значением</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что Аналитика 6 заполняется указанным значением</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак того, что Аналитика 6 заполняется указанным значением</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6e9d5f75-cc2b-44d5-bc11-bf3a38d621d6">
+    <name>ЗначениеАналитики1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики1</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d378f41-1ede-4d79-b74d-7de9b97f5645">
+    <name>ЗначениеАналитики2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики2</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1477dbc7-5b59-4a4d-bd79-db1a994f3802">
+    <name>ЗначениеАналитики3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики3</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 3</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0b2a0139-b449-4dea-8d27-69957caa4187">
+    <name>ЗначениеАналитики4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики4</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики4</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 4</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7f00d551-4e61-4705-8069-e5d09516c49e">
+    <name>ЗначениеАналитики5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики5</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики5</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 5</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 5</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3343ca89-15cf-40c8-a1c2-ab5b2fc7a441">
+    <name>ЗначениеАналитики6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение аналитики6</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Значение аналитики6</value>
+    </synonym>
+    <type>
+      <types>Characteristic.АналитикиСтатейБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фиксированное значение Аналитики 6</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Фиксированное значение Аналитики 6</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="9f2de383-6581-44af-b2ae-150aee4a7d07">
+    <name>РазделИсточникаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел источника данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Раздел источника данных</value>
+    </synonym>
+    <type>
+      <types>EnumRef.РазделыИсточниковДанныхБюджетирования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Раздел, к которому относится источник данных.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Раздел, к которому относится источник данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="052a125b-3f0e-43c8-a3f1-247c9a78bf30">
+    <name>ПоказательБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель бюджетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Indicator of budgets</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиБюджетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Показатель бюджетов, получение фактических данных которой определяет правило.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Показатель бюджетов, получение фактических данных которой определяет правило.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="415ca0aa-70e5-40ee-9be3-b54561e320ca">
+    <name>ИсточникДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Data source</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник получения фактических данных.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Источник получения фактических данных.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="587f54f5-f2a1-452b-9216-28e914ef688d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e0ca53c8-3452-4a20-988e-c6311f95b1b1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4c22b5d1-b2e1-4782-a0ed-1f883c364b90">
+    <name>ФормаСпискаКонтекстПоказательБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка для показателя бюджетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма списка для показателя бюджетов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1f1f9eb7-412d-44ca-8c48-056575bcd9d1">
+    <name>ПравилаПолученияФакта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила получения факта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Правила получения факта</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:InformationRegister>

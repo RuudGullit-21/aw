@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e156de37-a285-4766-a94a-9247bf4e4474">
+  <producedTypes>
+    <selectionType typeId="4ce5afdc-a2b3-4a43-ae9e-8ca4e39c7694" valueTypeId="b68e6223-2128-4612-8643-de63a20941dc"/>
+    <listType typeId="1cc209b0-b3ea-4fd2-b4e3-c26b0c898565" valueTypeId="935812ab-1108-44a6-a78c-528dd22eff26"/>
+    <managerType typeId="14e4030f-006a-4813-b097-4492dfdbf3b4" valueTypeId="94fde44d-e108-4ec0-9305-2b66a825993e"/>
+    <recordSetType typeId="84516afc-1d79-4720-b333-8b6180dd707a" valueTypeId="96a8931f-020b-476d-9a84-e8f3bc23de3a"/>
+    <recordKeyType typeId="35ca01c4-86d2-4626-aa8c-786cd1b04584" valueTypeId="addcacee-0c55-45ef-8cb5-e92f08eab68b"/>
+    <recordType typeId="8ed68d1b-1773-47e3-bc89-847a082ff062" valueTypeId="3a639fd1-b3b1-4f84-8b52-0a5693d87365"/>
+    <recordManagerType typeId="649d26c8-7735-426a-aaba-32216833b395" valueTypeId="c6fbe261-2eb2-43fb-891d-f7766a321653"/>
+  </producedTypes>
+  <name>ItobЦистерныТопливозаправщиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цистерны топливозаправщиков</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c9fc82a8-9dac-4a3b-b983-04c1bf886d72">
+    <name>Топливозаправщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Топливозаправщик</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="aa5af742-443c-4ef0-88a9-5ebe6e202a18">
+    <name>Цистерна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цистерна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tank</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobАЗС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

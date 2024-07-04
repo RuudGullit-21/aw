@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de948ccc-98a0-45db-86f0-bd38d6995048">
+  <producedTypes>
+    <objectType typeId="38112b49-e0eb-4707-a11b-bd1c6f63c450" valueTypeId="d17cd9be-029b-4e38-a51e-f61f700e1264"/>
+    <refType typeId="20802b9b-fd51-4b46-8aa3-4fb8f373269e" valueTypeId="e9f50032-bd8e-4b0c-bf02-260d2a94105b"/>
+    <selectionType typeId="eee41d38-27b4-4d30-9b89-f71f71f45e89" valueTypeId="73d94d95-c65d-4b7c-bdf3-7755b3ec8f06"/>
+    <listType typeId="d706e8d4-6983-4fee-b81e-4352a9b442f6" valueTypeId="cedd1e6c-9a27-4c3a-9842-04fdc29c3c00"/>
+    <managerType typeId="c28f14ec-ac88-4796-be90-5e843ee40e9c" valueTypeId="1ecef033-26cc-4ea8-a326-a99420536f8e"/>
+  </producedTypes>
+  <name>ItobПеремещениеМобильногоУстройства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение мобильного устройства</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ItobПеремещениеМобильногоУстройства.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Document.ItobПеремещениеМобильногоУстройства</basedOn>
+  <basedOn>Document.ItobПоступлениеМобильныхУстройств</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numerator>DocumentNumerator.ItobРегистрацияУстройств</numerator>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ItobПеремещениеМобильногоУстройства.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <registerRecords>InformationRegister.ItobПривязкиТрекеров</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="22415599-c05c-4d23-89a0-fdef7a8e81e1">
+    <name>ОбъектПривязки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект привязки</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект привязки терминала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="46e960ab-de56-4885-b8d4-098075023e6c">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.мкСтатусыРегистрацииМобильныхУстройств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус мобильного устройства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d107690a-f4f7-4c02-8da4-cf3bfd31e018">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Терминалы&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3f5426fb-1f1b-4e54-98eb-fea376559219">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b80b3e9-f473-4d10-afbe-44afbdc8f001">
+  <name>ПриУстановкеНовогоКодаСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>При установке нового кода справочника</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>When setting a new catalog element code</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.НоменклатурныеГруппы</types>
+    <types>CatalogObject.ВидыКонтактнойИнформации</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.Должности</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.КонтактныеЛица</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ОсновныеСредства</types>
+    <types>CatalogObject.ВидыНоменклатуры</types>
+    <types>CatalogObject.ТипыЦенНоменклатуры</types>
+  </source>
+  <event>OnSetNewCode</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.уатПриУстановкеНовогоКодаСправочникаПриУстановкеНовогоКода</handler>
+</mdclass:EventSubscription>

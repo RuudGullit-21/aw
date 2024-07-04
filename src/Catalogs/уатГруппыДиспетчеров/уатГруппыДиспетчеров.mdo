@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="549e64e3-9386-4385-b771-892a81d92d84">
+  <producedTypes>
+    <objectType typeId="08bfb864-25af-452f-a6ad-160468f3accf" valueTypeId="c03e8f3d-70d2-4284-951f-8b4bfebad288"/>
+    <refType typeId="d2930e82-0c4f-4570-8b41-bd25c1b235df" valueTypeId="261a47fa-595b-489a-9781-abdfdd3d6609"/>
+    <selectionType typeId="012f8e2b-9d45-4fd6-ad76-3907aa8717ee" valueTypeId="7561b0bd-1f41-4d29-8f49-a70b0cc6cae2"/>
+    <listType typeId="ed640593-8778-4f4c-9b8c-f473cb425921" valueTypeId="c1cef5fa-df84-446f-a987-991fdf7fd944"/>
+    <managerType typeId="e2fe7e35-6737-47ae-b7d5-ad40fe0e0d0a" valueTypeId="30fd48ee-c8b5-461f-a109-95aa49b88413"/>
+  </producedTypes>
+  <name>уатГруппыДиспетчеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы диспетчеров</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатГруппыДиспетчеров.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатГруппыДиспетчеров.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатГруппыДиспетчеров</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Группа диспетчеров</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Группа диспетчеров</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Группы диспетчеров</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Группы диспетчеров</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="d408ddc8-b57c-43d3-832c-0a2b07715b7a">
+      <name>ПолучателиСообщений</name>
+      <description>Получатели сообщений</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатГруппыДиспетчеров.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатГруппыДиспетчеров.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="7cf3a22a-b404-4f05-9a85-54a14e46fe0e">
+    <name>ИдентификаторОбсуждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор обсуждения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="d787814d-87df-44a7-aaec-2ef9bf7e8aeb">
+    <producedTypes>
+      <objectType typeId="be292c19-a833-49be-91a1-5b2868326548" valueTypeId="31c8bae6-1852-4509-b9f1-d6e9852585f6"/>
+      <rowType typeId="a4c133e2-9f3d-43d8-b871-78fcf1a4867e" valueTypeId="e44b8759-5a5e-45e6-997a-3bdad1fc6769"/>
+    </producedTypes>
+    <name>Диспетчеры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчеры</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Users</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Список пользователей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>List of users that will be automatically substituted in the generated tasks.</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="8aaeff1b-8ee6-4d71-b292-0ddd6f91429f">
+      <name>Диспетчер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Диспетчер</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>User</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Диспетчер.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>User.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c850c0e6-36fd-4f7e-91cf-4dcf3f356528">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3707b62c-e376-4e5a-b0f2-4a216b0452cf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

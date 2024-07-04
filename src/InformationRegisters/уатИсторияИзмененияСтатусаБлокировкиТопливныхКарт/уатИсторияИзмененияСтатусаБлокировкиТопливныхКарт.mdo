@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a564adc0-56ae-4925-9362-53fae3172720">
+  <producedTypes>
+    <selectionType typeId="be41b90e-66a8-4e13-a352-7de7a13dbb8d" valueTypeId="b285dd76-c8c0-4773-994c-fe3f41d84189"/>
+    <listType typeId="e7b6b2ee-1d39-4d93-be6d-a2bf289fdc6f" valueTypeId="57444ab6-7f0e-42a6-9e31-4f4c5046a7fd"/>
+    <managerType typeId="00dbbbcd-fd8f-40ea-b09f-85cb61117b01" valueTypeId="3bf3a9a0-b664-4b3a-9d39-bdcb8902111c"/>
+    <recordSetType typeId="bb9ee024-159a-40c6-8115-be945b9d7337" valueTypeId="f7253a78-ca10-445a-86ac-c49d5ee7e927"/>
+    <recordKeyType typeId="5b47a02d-b323-4fd7-9fbc-7d285016153c" valueTypeId="3b581652-8d3d-4999-bdb6-aa807dc9ec94"/>
+    <recordType typeId="fdda2581-1e4d-4e4e-9204-a539d3ca5649" valueTypeId="dc207a4a-311f-4867-b982-74dd71c473da"/>
+    <recordManagerType typeId="cdab6c97-25f3-4592-b85a-bbd5a34f5f9f" valueTypeId="5562e750-4c16-4891-bfd1-cfdc5433774e"/>
+  </producedTypes>
+  <name>уатИсторияИзмененияСтатусаБлокировкиТопливныхКарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </synonym>
+  <comment>Используется для хранения истории изменения статуса блокировки топливных карт</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>История изменения статуса блокировки топливных карт</value>
+  </explanation>
+  <resources uuid="d224726c-93a2-4ecb-b2ef-0cd452d0c8a3">
+    <name>Заблокирована</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заблокирована</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Топливная карта заблокирована</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0773d2f2-1149-40cc-90aa-c448c81ba228">
+    <name>Карта</name>
+    <synonym>
+      <key>en</key>
+      <value>Fuel card</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Топливная карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПластиковыеКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fe475a62-449a-4491-9e0c-63683f233892">
+    <name>КомуВыдана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кому выдана</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или сотрудник за которым закреплена топливная карта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="77ff2161-5372-414b-8e36-c0c4a6a5f341">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Installation date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата установки блокировки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

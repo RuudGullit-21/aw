@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9621b66b-28bd-4235-8391-fcf7591e3a26">
+  <producedTypes>
+    <selectionType typeId="bb4c845f-a095-4aa4-89c7-4b1904f35dc5" valueTypeId="766ec304-0083-46cf-a292-3556d132bab7"/>
+    <listType typeId="122aad9a-f807-4453-befb-38223c1fe70c" valueTypeId="a1c7f50f-3b5d-47fa-ae01-d0e5203a45d7"/>
+    <managerType typeId="dfc5350e-a1ae-48a0-80c5-f3bb2de71239" valueTypeId="7fe15728-390d-408e-b404-bcdfd289c2be"/>
+    <recordSetType typeId="881b32bc-18a6-4828-b497-6380f2264e6f" valueTypeId="d28e3be1-a612-4849-8e52-f7c0ad50291a"/>
+    <recordKeyType typeId="358182b4-504b-49d1-8710-0cb7bbebf2ba" valueTypeId="b59dc657-ecfe-495e-9869-439ad506ecff"/>
+    <recordType typeId="97926cd7-a916-4ddf-aee2-2bea83811f0d" valueTypeId="c10d8c1a-4d3b-44e5-8af9-e984f926d8b6"/>
+  </producedTypes>
+  <name>уатИзносПробегШин</name>
+  <synonym>
+    <key>ru</key>
+    <value>Износ и пробег шин</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Wear and mileage of tires</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатИзносПробегШин.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>AccumulationRegister.уатИзносПробегШин.Form.ФормаСписка</auxiliaryListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4b99e5a4-8ef1-4ad3-9b08-530189cba003">
+    <name>Пробег</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mileage</value>
+    </synonym>
+    <comment>Пробег</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пробег, в зависимости от модели может измеряться в километрах или в часах</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mileage, km</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="0613a3ae-1e5c-4a75-a869-47258d31297e">
+    <name>Износ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Износ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Wear</value>
+    </synonym>
+    <comment>Износ в валюте шины</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Износ в валюте шины</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Wear-off in tire currency</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="58b770e5-f827-4fa3-9fc6-14c2aaa4ef71">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4213c61f-c9f2-4fb3-8a6d-eb10a60b31fa">
+    <name>СерияНоменклатуры</name>
+    <synonym>
+      <key>en</key>
+      <value>Car part</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Агрегат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСерииНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Агрегат ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Car part</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f79ffeb3-de17-4f83-851b-a26e732a1da6">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="a29aef52-c979-4806-866f-75be10343641">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

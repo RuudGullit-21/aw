@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="511332ae-48de-477e-bde7-b7ae58ee9c96">
+  <producedTypes>
+    <selectionType typeId="c48c311f-0431-4ee9-a1e8-02b4df77c252" valueTypeId="9d23b7fc-76bb-4bd8-bf44-9f14d9196d19"/>
+    <listType typeId="c99733bb-8170-4e3d-94cd-85a2d0814912" valueTypeId="21c99739-c3a7-402f-b119-a425af3039af"/>
+    <managerType typeId="cd734a17-fe3c-47f9-8b0c-5a30fa01f93c" valueTypeId="1200fde6-ad1c-4d9a-a33e-2670c520ba27"/>
+    <recordSetType typeId="8730cee5-d680-4945-b797-410d599a4447" valueTypeId="0bde4852-c982-4018-8a1d-b7e240d7a9b7"/>
+    <recordKeyType typeId="fcd2805c-3e6c-4898-aa10-b202da3cb7af" valueTypeId="a8c3898a-20c0-4d82-af46-117287f9df49"/>
+    <recordType typeId="7f372af4-21b1-42f3-ab07-818c0826558f" valueTypeId="22dc34d2-f3ca-423d-a3e8-8d181e835b1b"/>
+    <recordManagerType typeId="230a4f37-f4b7-41bf-b832-166adca28516" valueTypeId="2438c922-0760-4467-b3ae-14d315d61e73"/>
+  </producedTypes>
+  <name>ItobНастройкиОтображенияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки отображения объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ItobНастройкиОтображенияОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0843db72-3c56-41f0-948a-a36b317f2793">
+    <name>ДлинаШлейфаOnlineСлежение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина шлейфа online слежение</value>
+    </synonym>
+    <comment>Длина шлейфа при online слежении (кол-во точек)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длина хвоста при online-слежении (число точек)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f6f915ee-a8b7-446a-99ac-ae68fb97a913">
+    <name>НеПоказыватьСтрелкуНаправленияДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не показывать стрелку направления движения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флажок стоит, то будет отображаться стрелка направления объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a9fd735c-0eb0-4f93-864b-d0fc59f98b4b">
+    <name>ЦветМаршрутаНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет маршрута на карте</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>The route color on the map</value>
+    </synonym>
+    <comment>B*256*256 + G*256 + R</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Цвет маршрута на карте, число (B*256*256 + G*256 + R)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f318c7e6-fd55-4285-9ee8-d73e1e8db02b">
+    <name>ЦветНадписиНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет надписи на карте</value>
+    </synonym>
+    <comment>B*256*256 + G*256 + R</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Цвет надписи на карте, число (B*256*256 + G*256 + R)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="792481f0-9bac-4fee-811d-2e4053a0f164">
+    <name>ИконкаНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Иконка объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobИконкиОбъектов</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5085bada-8356-4035-8b20-b6e072184b3d">
+    <name>ДополнительнаяИконкаНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительная иконка на карте</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobИконкиОбъектов</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="cf625158-81e8-4247-8196-7e99bcee8375">
+    <name>ВариантОтображенияТрека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отображения трека</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВариантыОтображенияТрека</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cb735ef1-714a-471b-bf92-e16fcb3e4b56">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1d50c0d2-ed8d-4406-8240-e324da91ef0c">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

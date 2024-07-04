@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74504512-7c4e-475d-903b-1e9aeb475c00">
+  <producedTypes>
+    <objectType typeId="2c4c3cd6-6ab3-4490-b0a7-a7d4d10f26e9" valueTypeId="ad4cef55-bdce-4a43-864f-52d551f38309"/>
+    <refType typeId="a80ec805-7174-4a50-af65-0b7b6399f6df" valueTypeId="d4dfff60-c61d-4594-97d0-be96eec6488c"/>
+    <selectionType typeId="7c9c83bc-411a-4cc5-bd9d-bfaa8a1cc9ae" valueTypeId="e82c81d4-da24-457b-b4de-eb4c64376c94"/>
+    <listType typeId="a716ab61-5e9b-4bde-925c-29e7aa4521e3" valueTypeId="35a65513-2232-44ea-9a95-eeb19ffa6f4d"/>
+    <managerType typeId="7e4b8167-8be0-4db5-8822-a5f6e5e9ab1b" valueTypeId="cdb8e793-5217-4a3e-ac94-631c7713ca0a"/>
+  </producedTypes>
+  <name>уатВыходыМаршрутов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выходы на маршруты</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Departures to routes</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатВыходыМаршрутов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Route</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Owner.</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатМаршруты.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер выхода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit number</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>UUID</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатВыходыМаршрутов</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.уатМаршруты</owners>
+  <codeLength>9</codeLength>
+  <codeType>String</codeType>
+  <codeSeries>WithinOwnerSubordination</codeSeries>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатВыходыМаршрутов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатВыходыМаршрутов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатВыходыМаршрутов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="1d6cfc7d-019c-4e99-bf8b-dc8a710a4e54">
+    <name>ВозвращениеВГараж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвращение в гараж</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Return to garage</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата возвращения в гараж</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Return date to garage</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4f03287-7936-4aef-b7d1-fc8ed76ac9de">
+    <name>ВремяНаМаршрутеВодителя1</name>
+    <synonym>
+      <key>en</key>
+      <value>Time on driver's route (1 shift)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Время на маршруте водителя (1 смена)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Time on driver's route (1 shift).</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Время на маршруте водителя (1 смена).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2844dc53-7567-44f3-8a69-8a9317b15433">
+    <name>ВремяНаМаршрутеВодителя2</name>
+    <synonym>
+      <key>en</key>
+      <value>Time on driver's route (2 shift)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Время на маршруте водителя (2 смена)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Time on driver's route (2 shift).</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Время на маршруте водителя (2 смена).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="41b6feb0-0be0-477d-a358-93cb3966cc30">
+    <name>ВремяНаМаршрутеКондуктора1</name>
+    <synonym>
+      <key>en</key>
+      <value>Time on conductor’s route (1 shift)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Время на маршруте кондуктора (1 смена)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Time on conductor’s route (1 shift).</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Время на маршруте кондуктора (1 смена).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="05eab098-9244-4d43-ae4c-5b529246a256">
+    <name>ВремяНаМаршрутеКондуктора2</name>
+    <synonym>
+      <key>en</key>
+      <value>Time on conductor’s route (2 shift)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Время на маршруте кондуктора (2 смена)</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Time on conductor’s route (2 shift).</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Время на маршруте кондуктора (2 смена).</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d6d4c72-d9c6-48f3-ae10-62b4aa21c518">
+    <name>ВыездИзГаража</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выезд из гаража</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Departure from garage</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выезда из гаража</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date of departure from garage</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="077b415d-3109-43ed-87d5-b00dd89ac6d1">
+    <name>ВыездИзКонечногоПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выезд из кон. пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Departure from end. point</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Date of departure from final point</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выезда из конечного пункта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1708323b-9344-4281-a070-a2a4361ebcc2">
+    <name>ПрибытиеНаНачальныйПункт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прибытие на нач. пункт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Arrival to beginning point</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Date of arrival to initial point</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата прибытия на начальный пункт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="14e12098-be46-4e06-ae4e-b37617a00c79">
+    <producedTypes>
+      <objectType typeId="ecdfd799-8690-4eee-84e4-f414cb104d54" valueTypeId="f5c04274-d8d9-476e-8765-bf494d7f00b3"/>
+      <rowType typeId="403845ca-4a20-4289-96b0-3060e71bf442" valueTypeId="5267ec2c-9d19-466b-901c-edf2f5782bee"/>
+    </producedTypes>
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортные средства</comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3072ffc9-d68c-41c1-83ab-1c107156893f">
+      <name>Смена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Смена</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Shift</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСмены</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Смена.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Shift.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6a5e3d09-2d18-4953-adc1-ec5c97880a3a">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Транспортное средство</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="0fb1af7a-7af2-4f68-9386-55c1eda28f1f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4ff5ca35-9f0a-41cf-bbdb-cdd50450d06f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3a00be0e-913d-4ebb-af54-c332897e8343">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

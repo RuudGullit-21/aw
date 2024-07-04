@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39d92677-9702-4af0-bc13-36bdcf118044">
+  <producedTypes>
+    <selectionType typeId="08f1985e-4577-4607-a67e-a5f310af79ef" valueTypeId="1c20ff6a-7852-48f4-9335-183b6a0963da"/>
+    <listType typeId="21d574e1-5fa6-4de0-9472-2c32ff4b7ca5" valueTypeId="98670f77-8af6-44d0-88d1-9eeb89c8691a"/>
+    <managerType typeId="66b281e0-8a8b-4780-adc6-7dd68c3a1151" valueTypeId="cb808827-87bb-4fe2-a4ae-dcd4c26b713c"/>
+    <recordSetType typeId="0ad1e85a-8675-4ada-8647-8838c25d6aa6" valueTypeId="2118d6c0-7322-4852-a555-471213319abf"/>
+    <recordKeyType typeId="35b0032c-5280-46c7-a475-6d8e03d259ce" valueTypeId="3547828f-5db0-4467-8fed-0abbe140f580"/>
+    <recordType typeId="4ddf4c47-f354-4419-ab4d-9b080680db5c" valueTypeId="f368521d-6ddb-409f-80c6-c64938280ca5"/>
+    <recalcsType typeId="587e32cc-ff8f-41eb-9ade-00ab2ad081c3" valueTypeId="e7eee608-d52a-4738-89d6-9333d39ba29b"/>
+  </producedTypes>
+  <name>уатОсновныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Basic accruals</value>
+  </synonym>
+  <comment>Основные начисления (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>CalculationRegister.уатОсновныеНачисления.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>CalculationRegister.уатОсновныеНачисления.Form.ФормаСписка</auxiliaryListForm>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.уатОсновныеНачисления</chartOfCalculationTypes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Basic accruals</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Basic accruals</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Основные начисления</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Basic accruals</value>
+  </explanation>
+  <resources uuid="4b920e82-98af-4267-bf1d-51f5df29ff4e">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Result</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Результат начисления в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Result of calculation in currency of management accounting</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="bf00743c-4f2b-4c5b-8d97-5db80f61a89c">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="673ebeeb-5dc6-4658-87b8-36106ffb5f96">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой ведется расчет начислений заработной платы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company, for accounting of salary accrual</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="b8f650e1-1984-486a-bc55-a1a48bea1285">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <comment>Сотрудник</comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, по которому ведется расчет начислений заработной платы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee, under which the calculation of salary</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <baseDimension>true</baseDimension>
+  </dimensions>
+  <forms uuid="d98a241f-2130-46d9-b732-4f466ceedf07">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:CalculationRegister>

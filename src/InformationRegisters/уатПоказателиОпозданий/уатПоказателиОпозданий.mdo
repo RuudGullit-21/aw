@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a5a7444-0835-4929-a67c-28d70f02d0ef">
+  <producedTypes>
+    <selectionType typeId="189a1c4c-6b49-47a7-b458-ae04563a8239" valueTypeId="ef4073c2-829b-405e-ba9e-f66933ea34d1"/>
+    <listType typeId="afd2739b-273f-4cd8-91b8-e957d0c41eaf" valueTypeId="9832da02-7ded-4c17-86c7-af94be183b8c"/>
+    <managerType typeId="89c71395-3129-43eb-a7c2-cffb85ee9e30" valueTypeId="dcc8815e-bf86-4fd5-8d85-bb56ecb329d6"/>
+    <recordSetType typeId="62f03371-1308-447c-b47e-f554a821b860" valueTypeId="a09b94f2-92d2-4f5b-86ee-e901b5ba9f1c"/>
+    <recordKeyType typeId="c1e628c2-e489-4bda-a49a-7b6ed32bdb64" valueTypeId="35345203-4cfa-436d-9b5b-03e74d3f7265"/>
+    <recordType typeId="2d1af4e9-ce92-4890-9c54-0bf4eaa84102" valueTypeId="e9a18458-dd4a-48d8-b9ae-e8c4421bf9b5"/>
+    <recordManagerType typeId="adb86ce4-bcf7-4dfc-95f6-e1f429a86375" valueTypeId="264bcbd1-f67d-4c79-8733-aef7e02e548f"/>
+  </producedTypes>
+  <name>уатПоказателиОпозданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели опозданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатПоказателиОпозданий.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4892608d-e2af-4f8c-b1ad-0ae09156fd3f">
+    <name>ЦелевойПоказатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Целевой показатель, %</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Целевой процент количества опозданий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="072786cc-ad8c-40bf-b451-e78534fd551a">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="93a8097b-53a7-458b-9594-f9b78e633679">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="47f8e2e5-d845-4337-b204-26d5f27dfb65">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7b3347be-eded-4f71-a2db-3749009d74fe">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

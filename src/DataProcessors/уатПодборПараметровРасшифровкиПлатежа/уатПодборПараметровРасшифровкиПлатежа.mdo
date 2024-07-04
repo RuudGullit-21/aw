@@ -1,0 +1,522 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47060ebe-e97b-4aae-a72e-e6d8d2fc7205">
+  <producedTypes>
+    <objectType typeId="a52190af-6e56-4c2e-b793-f794c36b144e" valueTypeId="12abe9c8-7b04-4cfc-9263-870fc4344f53"/>
+    <managerType typeId="12c1d355-34b7-4fd1-a1b2-701ee632f73a" valueTypeId="2836f21d-7cdd-4734-81a5-6b1a57e75c1c"/>
+  </producedTypes>
+  <name>уатПодборПараметровРасшифровкиПлатежа</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор параметров расшифровки платежа</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Selection parameters of payment decrypt</value>
+  </synonym>
+  <comment>Подбор параметров расшифровки платежа (уат)</comment>
+  <defaultForm>DataProcessor.уатПодборПараметровРасшифровкиПлатежа.Form.ФормаПодбораЗадолженностей</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Подбор параметров расшифровки платежа</value>
+  </extendedPresentation>
+  <extendedPresentation>
+    <key>en</key>
+    <value>Selection parameters of payment decrypt</value>
+  </extendedPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Подбор параметров расшифровки платежа</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Selection parameters of payment decrypt</value>
+  </explanation>
+  <attributes uuid="88597b98-d28e-4459-947b-647abe579e6d">
+    <name>ПлатежПоСуммеВзаиморасчетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Платеж по сумме взаиморасчетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Payment by amount of mutual settlements</value>
+    </synonym>
+    <comment>Определяет, будет ли пересчитываться сумма платежа при изменении суммы взаиморасчетов или наоборот</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак платежа по сумме взаиморасчетов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of payment for amount of mutual settlement</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7332114f-6772-4c01-8022-af2c0be81be5">
+    <name>ПодбиратьСумму</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбирать сумму</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Select amount</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак подбора суммы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum selection sign</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae64ffda-b377-4652-a4b1-a50fa0c4012a">
+    <name>ПоЗаявкам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По заявкам</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>By requests</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак подбора по заявкам</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Selection sign on requests</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="62e1f5d0-f996-49cf-b66c-75258de5b6da">
+    <name>СпособЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ заполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Filling method</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ заполнения платежа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Payment filling method</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5508f1da-b83c-4a79-8fd0-37f212b9af19">
+    <name>СуммаДляПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма для подбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum for selection</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма для подбора платежа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum for payment selection</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="54127537-ca71-43f3-a145-076bac7cd86f">
+    <producedTypes>
+      <objectType typeId="926efaef-5547-4d52-a27e-03e6426eb393" valueTypeId="69741783-7c17-4c0c-883b-46855693fac0"/>
+      <rowType typeId="c6ab1986-fae6-44a5-8bd8-288dba69f3b4" valueTypeId="cda58c08-53af-40d2-9de7-7dde3342c028"/>
+    </producedTypes>
+    <name>РасшифровкаПлатежа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка платежа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Decoding of payment</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fbb64df8-7dbc-44b5-9e73-6386361c1e01">
+      <name>ВидВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Mutual settlements kind</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>20</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид взаиморасчетов.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Mutual settlements type.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aade240e-df4b-4528-9a93-be88488f4465">
+      <name>ДатаВозникновения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата возникновения</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Occurrence date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата возникновения платежа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Date of payment</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fa8598dc-278e-42d0-b618-c134e316a179">
+      <name>ДвиженияДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Движения документа</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Document records</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Движения документа.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Document flow.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d336becf-2d34-44c4-a241-adb41f04a91a">
+      <name>ДоговорКонтрагента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Договор контрагента</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Counterparty contract</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>CatalogRef.ДоговорыКонтрагентов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Договор контрагента.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Contract of counterparty.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4074d104-4b67-4ac8-9019-383422025995">
+      <name>КратностьВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кратность взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Multiplicity of mutual settlements</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Кратность валюты взаиморасчетов по договору или валюты взаиморасчетов с подотчетником</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Multiplicity of currency for settlements under contract or currency of settlements with advance holder</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b4bbaea6-fc20-4c85-92a8-a914c1060509">
+      <name>КурсВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Rate of mutual settlements</value>
+      </synonym>
+      <comment>(Общ) Курс валюты взаиморасчетов по договору или валюты взаиморасчетов с подотчетником</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Курс валюты взаиморасчетов по договору или валюты взаиморасчетов с подотчетником</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency of mutual settlements under contract or currency of settlements with advance holder</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aad070ca-8e43-4928-acf7-22ed94d16b7b">
+      <name>Сделка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сделка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Deal</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>DocumentRef.уатРеализацияУслуг</types>
+        <types>DocumentRef.уатЗаказГрузоотправителя</types>
+        <types>DocumentRef.уатСчетНаОплатуПокупателю</types>
+        <types>DocumentRef.уатСчетНаОплатуПоставщика</types>
+        <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сделка.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Deal.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="80e5f67a-8b58-43da-b31c-97ba9e422dd9">
+      <name>СуммаВзаиморасчетов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма взаиморасчетов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Mutual settlements amount</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма взаиморасчетов.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sum of mutual settlements.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="41945a0d-b2e9-4a39-929b-4888a8882cca">
+      <name>СуммаПлатежа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма платежа</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Payment amount</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма платежа.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Payment amount.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7eb61704-10bc-4506-b4ce-67d5fb5d4fe8">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Currency</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9986e529-35e4-481a-8f3d-455eb26452b3">
+      <name>ВалютаПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта представление</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="e419fe0a-a12b-4f54-860d-69b71fa58d6a">
+    <name>ФормаПодбораЗадолженностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора задолженностей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form of debt</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="86af62fd-9bdc-4650-bdcf-59e8ce1d2c06">
+    <name>ПараметрыЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры заполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Filling parameters</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="04104a2a-f935-4071-90e2-691331651ecd">
+    <name>НастройкиОтбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки отбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Filter settings</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:DataProcessor>

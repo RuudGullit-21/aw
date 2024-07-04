@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd1b449a-3543-41ce-b959-38b7ecb6092f">
+  <producedTypes>
+    <selectionType typeId="73690972-dad3-4880-9c5f-3f01f2b77161" valueTypeId="d5c7ab75-c9b2-48a4-b03a-faaa612312e8"/>
+    <listType typeId="ceb06bfa-46b9-43aa-a35e-bf385f6a41a1" valueTypeId="af6e5fc2-9739-4e0c-9686-10cfaab53aee"/>
+    <managerType typeId="7d3d25eb-b688-4622-9b1c-9597dc94b986" valueTypeId="93533c3d-6983-418c-8114-b411d399d38c"/>
+    <recordSetType typeId="00e6f3db-41d0-48b1-ac46-1ee088aadfbc" valueTypeId="46947f80-faf1-47b5-a088-ffc38b968442"/>
+    <recordKeyType typeId="573d4b31-982b-4fce-82e7-b25c249ff464" valueTypeId="994581fd-ea12-4847-ab9a-26f975833b9f"/>
+    <recordType typeId="e76f2811-03d8-4a1b-8f5c-df5525a664bb" valueTypeId="bea25f90-5646-4092-89b1-80a33db67c84"/>
+  </producedTypes>
+  <name>ItobВыработка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выработка</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Output</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активность</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Активность записи</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Line number</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер строки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Line number</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистратор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Recorder</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Регистратор</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Recorder</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Record period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="009df008-6aee-45b8-95ae-0d147f923c7f">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение параметра выработки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Output parameter value</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="fee536a0-f923-478e-8356-300ac8b714ef">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0e552a32-5358-4a48-8d69-10e2aa821188">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТерминал</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Терминалы&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2d210cd9-4cae-41d9-ba74-9ad0367d5e00">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobПараметрВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Параметры выработки&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

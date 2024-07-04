@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ecc7afe-ad03-4350-848a-b6e5e35bd2cd">
+  <name>уатПереопределитьПолучаемуюФормуПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму присоединенного файла</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Override the received form of the attached file</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.уатПодписиПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатРегистрационныеДокументыПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатРассылкаЭлектронныхПисем_уэПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатЖурналПредрейсовогоИПослерейсовогоКонтроляТСПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатЖурналУчетаПоказанийОдометраПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатЖурналМедицинскогоОсмотраВодителейПрисоединенныеФайлы</types>
+    <types>CatalogManager.уатВидыСопроводительныхДокументовПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.РаботаСФайламиКлиентСервер.ОпределитьФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

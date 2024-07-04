@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a61a197-efec-485d-822b-e27fe6e59dfa">
+  <producedTypes>
+    <selectionType typeId="85d316ed-d74d-44d7-bf26-18836b933066" valueTypeId="f462fa3b-6c42-49ed-97dd-cecff81191a6"/>
+    <listType typeId="6ec0a447-480f-4e92-9349-96bbfe2da90d" valueTypeId="21c8d18e-7f5e-43ae-a279-fd8dd440f0a7"/>
+    <managerType typeId="d28af996-897e-4edc-9310-cbcdb1cd31f0" valueTypeId="10e4ba11-0830-495c-b85a-95fdb5435936"/>
+    <recordSetType typeId="f7b63495-7b8c-4a87-b23e-88d19ec921a0" valueTypeId="74cc4446-4c7c-4155-8766-973155e5d6ad"/>
+    <recordKeyType typeId="9023b84b-dc39-49d1-b272-7be22848e540" valueTypeId="8826ece4-cdc9-4db2-803a-76153740e950"/>
+    <recordType typeId="177551ce-d20f-4d25-a824-1b5d75e7dff6" valueTypeId="614d33d3-bd8f-47dd-b561-f8d894d2da18"/>
+    <recordManagerType typeId="ff2e1035-c2ba-4bbe-a5e3-84610e64a72c" valueTypeId="eaef3e49-5279-4888-bb00-9088de7e97ac"/>
+  </producedTypes>
+  <name>УдалитьItobДанныеДатчиков</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Данные датчиков</value>
+  </synonym>
+  <comment>Данные датчиков</comment>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата время точки</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Данные датчиков</value>
+  </explanation>
+  <resources uuid="0b4ef6c9-eb31-4eb6-b7e5-23826af0f9ce">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>14</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение датчика</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="66b8e8ad-d1db-4359-b5cf-eee4fa44ab2a">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на терминал объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="96aaa401-ef68-4820-9e71-3c062b9ae275">
+    <name>Датчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Датчик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sensor</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobДатчики</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Датчик, по которому терминал прислал данные</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

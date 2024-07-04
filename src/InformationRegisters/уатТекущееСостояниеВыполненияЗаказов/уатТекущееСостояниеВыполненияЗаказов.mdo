@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ab31b58d-ebd8-4f92-873e-df16e82d61ac">
+  <producedTypes>
+    <selectionType typeId="d4d24088-48eb-4150-be68-8e24fb663aef" valueTypeId="9b07335f-3c90-4f3b-bb8c-96e4ad0c46e2"/>
+    <listType typeId="cefad5d4-38fb-4891-a271-5c495532cbf4" valueTypeId="cd39fd57-e6fa-41c0-a370-8370771841ff"/>
+    <managerType typeId="b4e9c96a-c3d6-4e36-be31-fadf6ad42ac8" valueTypeId="64570350-a897-4931-8892-f084c03ef28c"/>
+    <recordSetType typeId="b0d97634-81a5-4dd4-ac04-5dd794c139e3" valueTypeId="604b256d-bb05-4fa1-903f-4fe982eee095"/>
+    <recordKeyType typeId="12aa6e4e-73c8-4fb1-8c4a-3ced72e92f81" valueTypeId="de602599-b3df-4e0c-89e4-31c85aa57303"/>
+    <recordType typeId="a1623e20-5d0a-4d25-bd59-eb1bfddedb1b" valueTypeId="aec042c5-5c72-4e1d-843b-e391df90ab84"/>
+    <recordManagerType typeId="a24ff920-b818-45ea-b15f-86ab2f21c32b" valueTypeId="ae513c09-1359-47f1-85c1-497de3e4eb4d"/>
+  </producedTypes>
+  <name>уатТекущееСостояниеВыполненияЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущее состояние выполнения заказов</value>
+  </synonym>
+  <comment>Текущее состояние выполнения заказов (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатТекущееСостояниеВыполненияЗаказов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатТекущееСостояниеВыполненияЗаказов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Текущее состояние выполнения заказов</value>
+  </explanation>
+  <resources uuid="55536616-5815-44ae-a620-1c9ee7b5ef50">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияВыполненияЗаказов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущее состояние заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d3f8f7a-42fe-441c-9935-394ba9663fec">
+    <name>ПроцентВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент выполнения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="aa85391e-1b29-401d-948c-e751e9837068">
+    <name>КоличествоВыполнено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество выполнено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="878d3eec-8825-4763-8e1d-e757aa19f8ea">
+    <name>КоличествоВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество всего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d97da9f1-6610-40ae-af72-c1a0130a1164">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="62795d9d-2bbe-43b1-802e-46ba14b2a751">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="78091c21-f3c3-4286-8361-6161c72f8925">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

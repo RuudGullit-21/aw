@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3df7347b-a1b7-439e-80fd-23ae7362cd21">
+  <producedTypes>
+    <selectionType typeId="1e5ee06f-0c5c-4fd1-bb7e-ec17139ae0ce" valueTypeId="d992c40e-931e-4cf3-817a-48d09b8ef728"/>
+    <listType typeId="a2219290-7250-47e6-a456-496cd7e44877" valueTypeId="a689143a-a85e-4631-865b-17a189acfbd3"/>
+    <managerType typeId="6372f16a-e59d-4fcc-bb93-f7e4e028fbe7" valueTypeId="05fc34eb-5204-4a6a-b84e-fe2b6d72e883"/>
+    <recordSetType typeId="5fda3144-2a89-45f0-b935-f02ecadd1edc" valueTypeId="7dc50319-2580-4221-bf92-834387ac6c4e"/>
+    <recordKeyType typeId="021ca417-18ed-47ad-8716-61b6f5bd5594" valueTypeId="0beea3a5-34a6-4806-8b86-271f80e9c74e"/>
+    <recordType typeId="c11bbccd-29c0-46ad-a1cf-364251986c59" valueTypeId="18262657-5e14-488c-8254-58897a1cfe74"/>
+    <recordManagerType typeId="9cce6df3-42b3-4abd-95d3-92b728ffade2" valueTypeId="2a36663e-d15b-4050-855b-aa2b8c7e8d3b"/>
+  </producedTypes>
+  <name>уатСоответствиеГрузовЭПД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие грузов ЭПД</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9dda2e93-3424-43a5-897e-2a03dfe7826f">
+    <name>ГрузовоеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузовое место</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатГрузовыеМеста_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1357599c-ada5-474c-80e2-642a68c47bdc">
+    <name>ОтгрузочноеНаименованиеГруза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отгрузочное наименование груза</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="891d9486-c7c6-4074-8049-0da60d4ce5f3">
+    <name>ВидТары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид тары</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

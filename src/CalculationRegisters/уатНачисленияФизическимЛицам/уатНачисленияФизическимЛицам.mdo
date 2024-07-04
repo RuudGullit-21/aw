@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32652b0d-ac0c-4a59-821f-cdbc17aebd19">
+  <producedTypes>
+    <selectionType typeId="9d3fb0be-5f9e-4992-86c6-bcc56df355ed" valueTypeId="cd6869ba-f713-4aac-8716-036f49414237"/>
+    <listType typeId="f8299031-49ce-47ea-b731-8f5bbb0ec548" valueTypeId="fda8174c-f2b0-49a0-85c9-9b8858ed6cd0"/>
+    <managerType typeId="2a6dad81-ad9b-46e8-a0b5-39f3f5e4e0e0" valueTypeId="6b0deba6-9077-45d6-a194-1de7dfbf184e"/>
+    <recordSetType typeId="b43067c3-f5fc-4790-bcda-20787ceaafda" valueTypeId="9b4a3c48-ea7a-49df-896a-dbcbda11fed8"/>
+    <recordKeyType typeId="7e0e5bca-1df8-4a55-9314-7a56e312d4a1" valueTypeId="90a26b3e-7399-4a3c-a16e-1e014eccd3c9"/>
+    <recordType typeId="a317fac7-1c0c-466c-8ecc-5b329e21321d" valueTypeId="253d1e00-bc77-41a1-829b-5a70eafe529b"/>
+    <recalcsType typeId="859d83cf-3aa9-4eab-ad4b-ce8bc8e7adbe" valueTypeId="e41cb1c6-53a7-42e4-934e-17cd3d55d04f"/>
+  </producedTypes>
+  <name>уатНачисленияФизическимЛицам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Начисления физическим лицам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>CalculationRegister.уатНачисленияФизическимЛицам.Form.ФормаСписка</defaultListForm>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.уатОсновныеНачисления</chartOfCalculationTypes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e7125856-3561-4ede-834d-4dcaa778191e">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Result</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Результат начисления в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Result of calculation in currency of management accounting</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="9d6d1721-0461-4e86-8c17-4246b208aeba">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой ведется расчет начислений заработной платы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company, for accounting of salary accrual</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="8bccd1db-3b5c-4019-84f9-2088d29f27b7">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Физическое лицо, по которому ведется расчет начислений заработной платы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <baseDimension>true</baseDimension>
+  </dimensions>
+  <forms uuid="ffbeff59-fc3c-45d5-981e-21953d4f5ec4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:CalculationRegister>

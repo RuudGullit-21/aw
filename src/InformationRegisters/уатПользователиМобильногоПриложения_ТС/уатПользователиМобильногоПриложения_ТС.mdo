@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5124cf4d-bffa-4ab5-90df-28395ce1d520">
+  <producedTypes>
+    <selectionType typeId="0ffbe9ee-3e08-4a7b-a168-f70b94c5af89" valueTypeId="b788b015-b9eb-4000-9a89-e999d5a3c080"/>
+    <listType typeId="f4a19c4f-6324-4c27-9aec-d4cb1a7d9741" valueTypeId="5aac7550-9884-44fc-b012-b98f653908e0"/>
+    <managerType typeId="ad0ec30c-ec88-4d0c-91a0-87222a772983" valueTypeId="f034256f-2278-42b0-a464-042e52a694e6"/>
+    <recordSetType typeId="0f279c14-3260-4dd4-baf1-9be750503f42" valueTypeId="e9c1058d-eaaa-4ac8-b9c0-b3a3a16846a2"/>
+    <recordKeyType typeId="f54b7933-1e68-44c3-87a7-8b52a3029f42" valueTypeId="d9744a07-d11a-434b-ba34-3bb3c24325f9"/>
+    <recordType typeId="6ffbee21-5c9f-451f-aacd-3de45dd0d654" valueTypeId="bf7f49c1-821e-4971-bd6f-236dae9dbe12"/>
+    <recordManagerType typeId="5561f4c8-13bb-4e66-b08a-c000fb7fe936" valueTypeId="e40e7927-385d-4f50-9f51-d377476039f6"/>
+  </producedTypes>
+  <name>уатПользователиМобильногоПриложения_ТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Транспортные средства пользователей мобильного приложения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатПользователиМобильногоПриложения_ТС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПользователиМобильногоПриложения_ТС.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="af382dce-8adc-4ce7-9821-8b2a263248f0">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Водитель (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="4c66b150-a7fb-4fa7-bcb2-333af70fb145">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Plan vehicle or equipment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1147c3de-eef7-466e-9036-89830822716b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d906d37a-5f1a-4b7e-aab3-4b25cd3fa447">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

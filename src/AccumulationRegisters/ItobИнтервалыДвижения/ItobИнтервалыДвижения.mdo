@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eb56d16e-1495-47b1-9799-67fdd503f5fe">
+  <producedTypes>
+    <selectionType typeId="bb06e769-f275-495f-88c7-049a49f36042" valueTypeId="fb8c9175-f27f-4613-b5ed-013b50ed657c"/>
+    <listType typeId="572d66cb-e233-4088-9fab-67fa92293b84" valueTypeId="47a9dc12-7d5c-4257-99d7-b86f26f67263"/>
+    <managerType typeId="3eeab7cf-e3d3-405b-a146-bc62b3988249" valueTypeId="24e6a8d6-2cbe-4458-abb8-e4f8f7c6422f"/>
+    <recordSetType typeId="47301597-c53e-4bfa-a32c-36d28538ccd9" valueTypeId="67b8dca1-ca20-4fc0-91ed-e2fa1fcec609"/>
+    <recordKeyType typeId="24f1d893-8a25-45ea-89fa-b225fe9b5c3d" valueTypeId="0b0da7b3-cb2b-4d72-a96f-8d6fabd1a373"/>
+    <recordType typeId="f3772fa5-2eab-4927-b729-0fa0b2754aea" valueTypeId="0336adc4-4df3-4ac6-91de-092ae8cfb5fd"/>
+  </producedTypes>
+  <name>ItobИнтервалыДвижения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интервалы движения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период интервала движения</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="80e11076-da44-473f-be94-df6a540b93a5">
+    <name>Длительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длительность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Duration</value>
+    </synonym>
+    <comment>В секундах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длительность времени состояния объекта мониторинга в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ca0abc33-4015-435e-802c-ef692c8f34c3">
+    <name>СредняяСкорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Средняя скорость</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Средняя скорость  объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1a16b30b-d16f-4a83-94f1-9fa5a3f41ee5">
+    <name>МаксимальнаяСкорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная скорость</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Maximum speed</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальная скорость  объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="735b848c-2ddd-4d45-b629-ef8ea3de93be">
+    <name>Пробег</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mileage</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>5</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пробег объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="18a191b1-2b26-47d8-ad42-14a277eadba8">
+    <name>НачалоИнтервала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало интервала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала интервала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="322d3bce-0402-4cea-b184-5931ce7d2088">
+    <name>КонецИнтервала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец интервала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата конца интервала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="db144f5a-93ad-4d91-a6fa-6d96f02482fa">
+    <name>МестоСтоянки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место стоянки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место стоянки объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="da0234ee-2b8d-4d98-ae64-cea18c2f9fd0">
+    <name>ДанныеВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные выработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>данные выработки объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="67819433-20c8-44a1-958f-f7d211af1441">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f0fb0fb9-a487-44fa-b7fc-f32167181721">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Терминалы&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="db2c167f-5eb3-447d-a0e7-29c75190afee">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>State</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ItobСостоянияТерминалов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Состояние терминала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>

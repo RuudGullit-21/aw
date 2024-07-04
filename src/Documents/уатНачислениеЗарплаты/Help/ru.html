@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.9600.17631"></meta></head><body class="Usual">
+<div id="V8TopicString">
+<h1 class="V8TopicText"><span style="color: rgb(0, 0, 128);">Документ "Начисление зарплаты"</span></h1></div>
+<h3 style="font-size: 13px;" valign="bottom"><span style="font-size: 11px; font-weight: normal;">Документ предназначен для:</span></h3>
+<blockquote style="font-size: 11px; font-weight: normal;">
+<div valign="bottom">
+<li>отражения в оперативном учете сумм, начисленных 
+водителям и сотрудникам сдельно по <a href="Document.уатМаршрутныйЛист/Help">Маршрутным листам</a>, <a href="Document.уатПутевойЛист/Help">Путевым листам</a> и <a href="Document.уатРемонтныйЛист/Help">Ремонтным листам</a>; </li></div>
+<li>выгрузки данного документа в типовые конфигурации 
+"1С:Бухгалтерия Предприятия", "1С:Зарплата и Управление 
+Персоналом", "1С:ERP".</li></blockquote>
+
+<h3 style="font-size: 13px;">Заполнение 
+полей документа</h3>
+<p><span style="font-size: 11px;">Табличную часть документа можно 
+заполнять автоматически из подменю "Заполнить" или вручную. </span></p>
+<p><span style="font-size: 11px;">В соответствующих полях документа 
+указываются: </span></p>
+<p></p>
+<ul><li><span style="font-size: 11px;">Организация</span></li>
+<li><span style="font-size: 11px;">Подразделение</span></li>
+<li><span style="font-size: 11px;">Ответственный (по умолчанию это ответственный, 
+указанный в настройках пользователя). </span></li>
+<li><span style="font-size: 11px;">Месяц начисления (по умолчанию текущий месяц) - 
+определяет, в каком месяце регистрируются данные;    </span></li>
+<li><span style="font-size: 11px;">Период с / по - отображается интервал времени, 
+за который вводятся начисления и удержания. </span></li></ul><p></p>
+<h3 style="font-size: 13px;">Автоматическое 
+заполнение документа</h3>
+<p><span style="font-size: 11px; font-weight: normal;">Меню «Заполнить» позволяет 
+автоматически заполнить документ. Документ заполняется на основании 
+данных:</span></p>
+<p></p>
+<ul><li><span style="font-size: 11px;">регистра расчета </span><a href="CalculationRegister.уатОсновныеНачисления/Help" style="font-size: 11px;">"Основные 
+начисления"</a><span style="font-size: 11px;"> по зарплате водителей, полученных в результате проведения <a href="Document.уатМаршрутныйЛист/Help">Маршрутных листов</a>, </span><a href="Document.уатПутевойЛист/Help" style="font-size: 11px;">Путевых 
+листов</a><span style="font-size: 11px;"> и </span><a href="Document.уатРемонтныйЛист/Help" style="font-size: 11px;">Ремонтных 
+листов</a><span style="font-size: 11px;">;</span></li>
+<li><span style="font-size: 11px;">регистра накопления </span><a href="AccumulationRegister.уатРабочееВремяСотрудников/Help" style="font-size: 11px;">"Рабочее 
+время сотрудников"</a><span style="font-size: 11px;">, откуда берутся данные по количеству отработанных дней и 
+часов.</span></li></ul><p></p>
+<p class="Usual" style="font-size: 11px; font-weight: normal;">Если 
+у сотрудника есть отработанное время, но нет начислений вида "Оплата по часовому 
+тарифу", то отработанные дни и часы подставляются:</p>
+<ol><li>
+<div style="font-size: 11px; font-weight: normal; margin: 0.5em 0em 0em;">в 
+строку начислений, если строка начислений всего одна,</div></li>
+<li>
+<div style="font-size: 11px; font-weight: normal; margin: 0.5em 0em 0em;">в 
+новую строку, в которой заполняется вид начисления "Оплата по часовому 
+тарифу", а результат остается нулевым.</div></li></ol><p style="font-size: 11px; font-weight: normal; margin: 0.5em 0em 0em;">Это 
+сделано для корректной выгрузки в некоторые типовые конфигурации 1С.</p>
+<p class="Usual" style="font-size: 11px; font-weight: normal;">Подразделение 
+в табличной части заполняется в зависимости от значения настройки организации (Установка прав и настроек) "Параметры системы / Персонал / Начислять зарплату по подразделению документа":</p>
+<p class="Usual" style="font-size: 11px; font-weight: normal;"></p>
+<ul><li>из первичного документа, закладка Дополнительно, при установленном флаге,</li>
+<li>из текущего места работы сотрудника (кадровая история) на дату документа.</li></ul><p></p>
+
+<h3 style="font-size: 13px;" valign="bottom">Выгрузка</h3>
+<h3 valign="bottom">
+</h3>
+<p class="Usual" style="font-size: 11px; font-weight: normal;" valign="bottom">Документ полностью выгружается в конфигурацию "1С:Бухгалтерия 
+Предприятия". При выгрузке документа в конфигурации "1С:Зарплата 
+и Управление Персоналом" и "1С:ERP" не будут выгружены строки табличной части документа с 
+нулевыми суммами, но с заполненным количеством отработанных часов и дней.</p></body></html>

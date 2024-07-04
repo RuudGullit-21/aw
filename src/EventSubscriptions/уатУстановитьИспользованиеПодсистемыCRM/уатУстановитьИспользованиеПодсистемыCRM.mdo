@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ffa64cf0-e882-4a45-a7e9-fa303637ce3f">
+  <name>уатУстановитьИспользованиеПодсистемыCRM</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить использование подсистемы CRM</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Install using the CRM subsystem</value>
+  </synonym>
+  <source>
+    <types>ConstantValueManager.ИспользоватьЗаметки</types>
+    <types>ConstantValueManager.ИспользоватьНапоминанияПользователя</types>
+    <types>ConstantValueManager.ИспользоватьПочтовыйКлиент</types>
+    <types>ConstantValueManager.уатИспользоватьРассылкуЭлектронныхПисем_уэ</types>
+    <types>ConstantValueManager.ИспользоватьПрочиеВзаимодействия</types>
+    <types>ConstantValueManager.уатИспользоватьСогласованиеДокументов</types>
+    <types>ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.уатУстановитьИспользованиеПодсистемыCRMПриЗаписи</handler>
+</mdclass:EventSubscription>

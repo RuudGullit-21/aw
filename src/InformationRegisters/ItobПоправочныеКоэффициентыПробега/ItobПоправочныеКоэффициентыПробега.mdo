@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ca46906-df3e-4790-b287-f0a8e0d0d062">
+  <producedTypes>
+    <selectionType typeId="85f957b0-5591-47c6-a57a-d25095663b0a" valueTypeId="68335645-fa20-417f-b7c0-c2067ed0416b"/>
+    <listType typeId="f081bf11-b97f-4478-a9af-06109baea27f" valueTypeId="5053e767-3d08-4b7d-9d52-a1808e645848"/>
+    <managerType typeId="319b4077-b491-426d-a47e-cbaca821c2ed" valueTypeId="82ab22cb-ce8b-49a9-bc7b-1c925ba817d3"/>
+    <recordSetType typeId="4f57c685-1fee-428f-8c3b-26c8e582fcd3" valueTypeId="6524d814-f88b-4562-8ba8-9a0a00b2bbb1"/>
+    <recordKeyType typeId="d04a36f5-fb9f-4158-a08a-3cdac8677948" valueTypeId="9b5ecfa4-4262-47a0-aff0-d0ec705b2e09"/>
+    <recordType typeId="b9d5783b-1269-41f1-82a7-5d9f0d8416c5" valueTypeId="9f8ded12-22b3-4c4f-a2fc-ff3306873e9b"/>
+    <recordManagerType typeId="23962b66-0fda-4737-98f7-6e1c5687504d" valueTypeId="999d4a6a-c318-43d4-b65e-61a95af54db7"/>
+  </producedTypes>
+  <name>ItobПоправочныеКоэффициентыПробега</name>
+  <synonym>
+    <key>ru</key>
+    <value>Поправочные коэффициенты пробега</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="9d6434c3-0a5f-42d2-b1e2-9621198ae51f">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Coefficient</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>4</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Поправочный коэффициент, на который умножается пробег GPS</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a1a02840-ab4a-4ad8-a335-8ee400a6abc5">
+    <name>МаркаТранспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Марка транспорта</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobМодельТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Марки транспорта&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="17670bd2-bb54-49ef-a370-87769dc9e5e4">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство (если не указано, то все)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

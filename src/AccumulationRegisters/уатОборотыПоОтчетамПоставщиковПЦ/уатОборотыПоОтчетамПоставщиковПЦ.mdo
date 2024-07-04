@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bc69a30-e8ff-401d-ba67-cda19b70c51c">
+  <producedTypes>
+    <selectionType typeId="93dc43a0-8ff3-4900-a4bc-ebbf50d7f777" valueTypeId="edbe7e8a-c5d9-44c7-9cc1-4cb69f03a670"/>
+    <listType typeId="a3759b64-8640-46b4-8b78-94c992097454" valueTypeId="79aee715-b792-4d3a-a046-43a94c715b2b"/>
+    <managerType typeId="e0cf89bb-1996-47f0-a16a-8e2a7d5da03f" valueTypeId="246d4399-53db-4a21-8b53-bea58f30d698"/>
+    <recordSetType typeId="19e15949-cecd-44a2-ad7e-302dedae5923" valueTypeId="2cb417cd-3d24-493b-bb8d-e8f683d47b78"/>
+    <recordKeyType typeId="3038eb35-9361-4444-8c17-8b127ab5c1a1" valueTypeId="2497abe4-7ba3-4c1b-a6f9-33f0fd0fc410"/>
+    <recordType typeId="ef89592a-c016-46d5-8ac1-1a7adf9c4907" valueTypeId="9e57cf2f-f82f-429a-95e2-ed0b4b4fde81"/>
+  </producedTypes>
+  <name>уатОборотыПоОтчетамПоставщиковПЦ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты по отчетам поставщиков (процессинговых центров)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Turnovers on reports of suppliers (processing centers)</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатОборотыПоОтчетамПоставщиковПЦ.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="742f7ae8-4167-4f4f-8ef6-7dd98a35d674">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="1b5db2f7-bb72-4acf-955d-d4de767acd7e">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость (регл.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cost (compl.)</value>
+    </synonym>
+    <comment>Стоимость в валюте регламентированного учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Cost in currency of compliance accounting with VAT</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость в валюте регламентированного учета с НДС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="355e5659-c989-4708-a71a-ebd965ae4506">
+    <name>СтоимостьУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость (упр.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cost (manag.)</value>
+    </synonym>
+    <comment>Стоимость в валюте управленческого учета</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Cost in currency of management accounting with VAT</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b58a1498-72d4-4bfa-8c50-aaef16dc14cf">
+    <name>СуммаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>VAT amount</value>
+    </synonym>
+    <comment>Сумма НДС в регл. валюте</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма НДС в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>VAT amount in the compliance accounting currency</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="495f04ac-fd2d-4c6b-a045-3bec4cce5b0e">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Currency.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="d50b2ec6-b1cb-44b4-8b96-235a1034fd12">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="a80ae1ce-0c48-4e83-9635-fc26bd142c8e">
+    <name>ПластиковаяКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Топливная карта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuel card</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПластиковыеКарты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Топливная карта заправки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuel card of fueling</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="3b6e76b0-bd4f-48b7-bdef-5ae30dc915ca">
+    <name>Проверено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Checked</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак проверки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign checks</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="404a7357-e77e-423e-b0e4-f685d745c912">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="294049cf-9fb4-4973-bb65-17184f57a91c">
+    <name>ТСотчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС отчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle report</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС по отчету</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle by report</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="9ffd9513-01b6-47a1-9b7f-2395eb381a80">
+    <name>СтавкаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>VAT rate</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтавкиНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="be8430a8-fb0d-4dc8-abf1-5be3faca903b">
+    <name>Транзакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транзакция</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transaction</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="38d4fbeb-5cd2-44a1-b30d-a9d7456d3dbf">
+    <name>АЗС</name>
+    <synonym>
+      <key>ru</key>
+      <value>АЗС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Gas station</value>
+    </synonym>
+    <comment>АЗС</comment>
+    <type>
+      <types>CatalogRef.уатАЗС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0903099c-c390-47d8-af1b-80570aa22c34">
+    <name>НоменклатураОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура отчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Report products and services</value>
+    </synonym>
+    <comment>Номенклатура отчета</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура по отчету</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services by report</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9e169837-8c51-42f2-9957-f25e6ddb98d4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3f82103e-97cc-4487-9c7a-4d1569ecf8aa">
+    <name>ПластиковаяКартаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Топливная карта отчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Report fuel card</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Топливная карта по отчету</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuel card by report</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="e2235f18-53cc-453d-97e4-2961204c74f9">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

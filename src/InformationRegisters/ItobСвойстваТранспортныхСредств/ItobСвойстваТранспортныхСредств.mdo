@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e56ef73-0b6e-466e-9986-bad30c0188e5">
+  <producedTypes>
+    <selectionType typeId="f23a3b32-a827-4762-979d-2655fe037a10" valueTypeId="19ac0b39-e755-4e23-a1e9-aea5c33cd9bb"/>
+    <listType typeId="21be970b-c436-4032-8d95-9a9cc27d5d92" valueTypeId="a96857c8-12e6-49a0-93b8-fe9e853dae1c"/>
+    <managerType typeId="100868d4-7804-4f42-95c9-4125000e1817" valueTypeId="93fec548-ebc8-4cd8-853e-2d10be242029"/>
+    <recordSetType typeId="9d676732-3a17-48ef-a4d3-e96f01c59173" valueTypeId="e2b5a59d-9d32-426b-967f-8545bc3f440e"/>
+    <recordKeyType typeId="9d4d9286-13da-4280-8198-4e91f9faa11e" valueTypeId="2e6cf379-0f76-4481-9de1-a889a972e64a"/>
+    <recordType typeId="f6103029-b14b-4989-ae24-2b745b909342" valueTypeId="a0125c32-3c33-441b-ad1b-4c2922904ef1"/>
+    <recordManagerType typeId="624ddaa8-6d4e-4ded-94ac-c651b1e48a29" valueTypeId="734bd6bd-233f-446e-9607-99d2a41593cb"/>
+  </producedTypes>
+  <name>ItobСвойстваТранспортныхСредств</name>
+  <synonym>
+    <key>ru</key>
+    <value>Свойства транспортных средств</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d70fd1e4-e547-4391-a9a1-3c0fc2f9cf26">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Марка ТС</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobМодельТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Марки транспорта&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b58c8143-9d42-4093-b611-2a6fd3cfd399">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>DefinedType.Организация</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Организации&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Ссылка на справочник &quot;Организации&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5632e585-0c45-4190-9ac9-f4032436e6ac">
+    <name>ГосНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гос номер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>License plate number</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Государственный номер транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="92203bb7-fca1-4216-9dc4-41e019b19972">
+    <name>ГаражныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гаражный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Гаражный номер транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e64b12f8-50d3-42e0-87c8-f4feb6d1f5cc">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыТранспорта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e5f69c96-a28b-412c-9e83-53a1a4e96a2c">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Транспортные средства&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,5620 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="949fd64d-7ca7-4997-9128-446139f9b18e">
+  <producedTypes>
+    <objectType typeId="bfc48760-46b9-4249-b11d-429801df2783" valueTypeId="9a703803-c438-4172-946f-384821d865fa"/>
+    <refType typeId="9869b2eb-ac24-47e6-9277-d5ee8b9bfc50" valueTypeId="3ef291ad-0c6f-454a-aacf-f3cbaabd61b9"/>
+    <selectionType typeId="55462fa1-f992-476b-aaac-0ef684db6519" valueTypeId="a1c9691f-8708-4a76-8ced-360610634113"/>
+    <listType typeId="88ac9aa5-860c-43b6-9b28-baf317fa1ede" valueTypeId="6c1abfd1-ebc7-4ca6-975c-bd5294e23aa6"/>
+    <managerType typeId="76eacd83-c385-4b02-98b0-059dd079f4b1" valueTypeId="55136cec-07bc-4c37-8e57-10deb06c24b9"/>
+  </producedTypes>
+  <name>уатПутевойЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путевой лист</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Waybill</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатПутевойЛист.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:StringValue">
+      <value>           </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатПутевойЛист</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатПутевойЛист</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>Document.уатПутевойЛист.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Document.уатПутевойЛист.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Document.уатПутевойЛист.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Document.уатПутевойЛист.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Document.уатЗаказГрузоотправителя</basedOn>
+  <basedOn>Document.уатМаршрутныйЛист</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Путевой лист</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>en</key>
+    <value>Waybill</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Путевой лист</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Waybill</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Путевые листы</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Waybills</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Путевые листы</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Waybills</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Путевой лист</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Waybill</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатПутевойЛист.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатПутевойЛист.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатПутевойЛист.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.уатОстаткиГСМнаТС</registerRecords>
+  <registerRecords>AccumulationRegister.уатОстаткиТЖнаТС</registerRecords>
+  <registerRecords>CalculationRegister.уатОсновныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.уатВыработкаСотрудников</registerRecords>
+  <registerRecords>AccumulationRegister.уатЗаказыГрузоотправителей</registerRecords>
+  <registerRecords>AccumulationRegister.уатПростои</registerRecords>
+  <registerRecords>AccumulationRegister.уатИзносПробегШин</registerRecords>
+  <registerRecords>InformationRegister.уатСостояниеТС</registerRecords>
+  <registerRecords>AccumulationRegister.уатВыработкаТС</registerRecords>
+  <registerRecords>AccumulationRegister.уатРасходГСМнаТС</registerRecords>
+  <registerRecords>InformationRegister.уатПланированиеРаботыТС</registerRecords>
+  <registerRecords>AccumulationRegister.уатГрузыКПеревозке_уэ</registerRecords>
+  <registerRecords>InformationRegister.уатСчетчикиТС</registerRecords>
+  <registerRecords>InformationRegister.уатСтатусыГрузов_уэ</registerRecords>
+  <registerRecords>AccumulationRegister.уатРабочееВремяСотрудников</registerRecords>
+  <registerRecords>AccumulationRegister.уатРасходы</registerRecords>
+  <registerRecords>AccumulationRegister.уатВыработкаАгрегатов</registerRecords>
+  <registerRecords>AccumulationRegister.уатОборотыТЖнаТС</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b1a6600f-bff1-4029-b026-4face2001d69">
+    <name>ВидПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид перевозки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыПеревозок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите вид перевозки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d0b637d5-fd12-4c4a-98bf-f2d7dc957d19">
+    <name>ВидПЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ПЛ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Waybill type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыПЛ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Waybill type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c193cfb-7676-43b3-8dee-5da19fbbde59">
+    <name>ВидСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыСообщения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите вид сообщения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7a4a1cfd-1f43-4d23-9665-77caaa0a21d4">
+    <name>Водитель1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Основной водитель</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Main driver</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="aee44466-052c-4343-9682-d5e7d8efe36e">
+    <name>Водитель2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Второй водитель</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Second driver</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="e0e936dd-1c76-414f-b01c-c1d1d88d42d4">
+    <name>Водитель2Стажер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель 2 стажер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver 2 Intern</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Второй водитель - стажер</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Second driver - trainee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="09c31158-4796-4c99-a700-a330c73314f8">
+    <name>ВремяРаботыОтопителя</name>
+    <synonym>
+      <key>en</key>
+      <value>Working time of heater, conditioner, climat control</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Время работы отопителя, кондиционера, климат-контроля</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Total operation time of heater, conditioner, climat control</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Общее время работы отопителя, кондиционера, климат-контроля</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f488647f-d96b-4976-b614-25fea3789d1d">
+    <name>ВыдалДиспетчер</name>
+    <synonym>
+      <key>en</key>
+      <value>Issued by dispatch operator</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчер при выезде</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Диспетчер, выдавший лист</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Dispatch operator issuing sheet</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c105e8b-3a08-4b54-835a-9b6b30321020">
+    <name>ВыдатьГорючее</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдать горючее</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Give fuel</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c8c65287-44e7-4fad-961e-401189488965">
+    <name>ВыдатьКоличествоГорючего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдать количество горючего</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Issue quantity of fuel</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity of fuels</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="86aefe62-0858-4550-8e4a-8149eed05694">
+    <name>ВыпустилМеханик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС при выезде</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Released by mechanic</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС (выезд)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mechanic who released vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c458dc1c-2b30-4e7a-8bb6-6a6b89c6bbca">
+    <name>Гараж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гараж</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Garage</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Гараж ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle garage</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da913dc8-667d-4f0a-9212-3d239bb7637b">
+    <name>ДатаВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата возвращения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of return</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата и время возвращения с маршрута</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date и time of return from route</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="593c2311-0115-4fa5-92de-905abf74233a">
+    <name>ДатаВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выезда</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of departure</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата и время выезда на маршрут</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date and time of departure on route</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a6e80617-3485-411c-b247-ea30d6387561">
+    <name>ДатаЗакрытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата закрытия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Closing date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата закрытия путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Closing date of waybill</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63fdf053-447a-48b4-a7b8-eed5b60704f6">
+    <name>ДействителенДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действителен до</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Expiration date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок действия документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document expiration date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ef4c54df-1041-4880-abaf-2b7134f6fbcb">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ основание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Basis document</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, на основании которого введен данный документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The document, based on which you entered the document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7f13d1eb-30f7-4955-97e8-ce2c9fa2c86e">
+    <name>Журнал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Журнал</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатЖурналыТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ВидЖурнала</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.уатВидыЖурналовТранспортныхДокументов.EnumValue.ЖурналУчетаДвиженияПутевыхЛистов</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="baf43be1-29bd-4ec3-a9ea-422c32c504bc">
+    <name>ЗакрытВодителем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Закрыт водителем</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Closed by driver</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путевой лист закрыт водителем. Закрытие производится в терминале выписки путевых листов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Waybill is closed by driver. Closure is performed in the terminal for waybills.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="805f36de-cd6c-4f6d-94f9-ae1d36e97229">
+    <name>КоличествоЗапусков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество запусков</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество запусков двигателя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a4f1df78-881d-43ac-a408-fa82e0b83801">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>(Общ) Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arbitrary comment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9cb4346d-937a-4153-8939-43f91814e953">
+    <name>Контрагент</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент, по которому выполнялись работы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty for which the work was performed</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1838ad3b-84ff-4347-a534-f8419308fa75">
+    <name>НачислятьЗПВодителю1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять з/п водителю 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculate salary for driver 1</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг расчета и начисления зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Flag calculation and payroll</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5c93322a-9ba0-4485-ab2c-44bbd2f804db">
+    <name>НачислятьЗПВодителю2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять з/п водителю 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculate salary for driver 1</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг расчета и начисления зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Flag calculation and payroll</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78e4d453-55ba-4fe6-bed4-5d7ff4f4aca7">
+    <name>НачислятьЗПСотруднику1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять з/п сотруднику 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Run salary calculations employee 1</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг расчета и начисления зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Flag calculation and payroll</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="65fcbe29-2efe-43a5-adce-67bfece0e293">
+    <name>НачислятьЗПСотруднику2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять з/п сотруднику 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Run salary calculations to employee 2</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флаг расчета и начисления зарплаты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Flag calculation and payroll</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c28946d5-5fec-47d9-881e-3a077aef5791">
+    <name>НеВыполнятьАвтоРасчетФОВ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не выполнять авто расчет ФОВ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Not to perform auto calculation FAUVE</value>
+    </synonym>
+    <comment>Если флаг установлен, то при расчете итогов перерасчет фактически отработанного времени не будет производиться</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не обновлять фактически отработанное время при пересчете итогов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Do not update the actual hours worked while recalculating the totals</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="25fd0dc7-3a31-48f6-b72b-3b51784eecfd">
+    <name>НеПересчитыватьРасходГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не пересчитывать расход ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Not recalculate fuels consumption</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не пересчитывать автоматически нормативный расход ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Do not automatically recalculate the standard fuels consumption</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="96b6c6e1-2f11-4168-95fc-c7ade4ae0606">
+    <name>НомерПачки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пачки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bundle number</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер пачки документов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Batch of documents number</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c8002fd-1c18-40e1-8304-688e863e2827">
+    <name>НулевойПробегВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нулевой пробег возвращения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Zero mileage return</value>
+    </synonym>
+    <comment>В километрах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расстояние (в км), пройденное от последнего пункта маршрута до гаража</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Distance (km) travelled from the last point of the route to the garage</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8cd83874-83af-4728-8c52-4575db03497f">
+    <name>НулевойПробегВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нулевой пробег выезда</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Zero mileage departure</value>
+    </synonym>
+    <comment>В километрах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расстояние (в км), пройденное от гаража до первого пункта маршрута</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Distance (km) travelled from garage to first point on route</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="222534f2-8cdf-48e4-abe3-d793dcc3da61">
+    <name>ОборудованиеПрицеп1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование прицеп1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Equipment trailer1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный реквизит для отображения в списке документов ПЛ оборудования или прицепа из ТЧ Прицепы </value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Service attribute for displaying in list of documents WB of equipment or trailer from TP Trailers</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b571bcf4-a9cd-4fd6-a295-30745870e47d">
+    <name>ОборудованиеПрицеп2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оборудование прицеп2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Equipment trailer2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный реквизит для отображения в списке документов ПЛ оборудования или прицепа из ТЧ Прицепы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Service attribute for displaying in list of documents WB of equipment or trailer from TP Trailers</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5235619a-1e01-4b57-bc07-e29c89325a1e">
+    <name>ОбъектСтроительства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект строительства</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Construction object</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатОбъектыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект строительства.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Construction object.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c709393d-347c-4e8a-ba51-0a212e6d2c6b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Organization of company on whose behalf the document is issued</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ac4397b-599f-48f0-a92a-10a2c1c7774b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за  документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9247b61-3b1d-44b9-a51e-ae4bfcbe0ab0">
+    <name>ПланЗатрат</name>
+    <synonym>
+      <key>en</key>
+      <value>Cost plan</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>План затрат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПланыПримененияЗатрат</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>План затрат.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Payout plan.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="21466eda-e2a3-4b64-8be6-c4e84456a08c">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Department</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение организации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company department</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e99c0413-8fad-443c-a8d1-624814d1330f">
+    <name>ПринялДиспетчер</name>
+    <synonym>
+      <key>en</key>
+      <value>Received by dispatch operator</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчер при возврате</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Диспетчер, принявший путевой лист при возвращении</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Dispach operator who took waybill while returning</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6b0cb776-3c07-4145-9233-857aaf478cf2">
+    <name>ПринялМеханик</name>
+    <synonym>
+      <key>en</key>
+      <value>Accept by mechanic</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС (возврат)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС при возврате</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mechanic who took vehicle while return</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="438d3f7e-2ae9-4893-a3d7-8af926f44360">
+    <name>ПробегПоGPS</name>
+    <synonym>
+      <key>en</key>
+      <value>Mileage by monitoring</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег по мониторингу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Mileage according to monitoring data</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Пробег по данным мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9fb715f4-a956-4390-a1f9-4109fbc4ece3">
+    <name>РаботаНаДвухВидахТоплива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа на двух видах топлива</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Work on two fuels types</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак работы ТС на основном и дополнительном топливе</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of vehicle work on main and additional fuel</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1a3c5985-8acb-48b1-9999-987a3840c182">
+    <name>РаботаНаДвухВидахТопливаОдновременно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа на двух видах топлива одновременно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a336bf69-defc-4c58-b15e-8620198a0543">
+    <name>Рассчитан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитан</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculated</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Sign that totals calculated by document</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что по документу рассчитаны итоги</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4bd63406-5bc8-4bbe-a58f-4f86ecc1162e">
+    <name>РасчетФактРасходаГСМ</name>
+    <synonym>
+      <key>en</key>
+      <value>Calculation of fact. fuels consumption</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет факт. расхода ГСМ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыРасчетаРасходаГСМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ расчета фактического расхода ГСМ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Calculating method of actual fuels consumption</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <quickChoice>Use</quickChoice>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатВидыРасчетаРасходаГСМ.EnumValue.НеРассчитывать</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="dc3b9046-e603-489b-885a-987a0d4f44cf">
+    <name>РежимРаботыТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим работы ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle operating schedule</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатРежимыРаботыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>График работы ТС, определяющий продолжительность смены и обеденного перерыва</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The schedule of the vehicle, which determines the duration of the shift and lunch break</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85e20d0e-42e4-4241-8939-84d3774e7b2e">
+    <name>РежимРасчетаВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим расчета выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculation mode of output</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатРежимыРасчетаВыработкиПЛ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Режим расчета выработки путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mode of calculation of waybill output</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0e3da486-4499-46d7-8dcc-5f9c7640795d">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Shift</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСмены</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Смена, по которой осуществляется работа ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The change in the work of the vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d9d6be82-b741-4d2c-9b93-5636d74fd2d4">
+    <name>Сотрудник1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сопроводительное лицо 1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Accompanying person 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="3446e891-0d62-46a1-b34c-16a8407220c3">
+    <name>Сотрудник1Стажер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник 1 - стажер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee 1 - trainee</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сопроводительное лицо 1 - стажер</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Accompanying person 1 - trainee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="92665a1b-be0b-4f42-92a3-b112d21f539f">
+    <name>Сотрудник2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сопроводительное лицо 2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Accompanying person 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  </attributes>
+  <attributes uuid="1daf3d41-4727-445c-a556-3e41dd5b8872">
+    <name>Сотрудник2Стажер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник 2 - стажер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee 2 - trainee</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сопроводительное лицо 2 - стажер</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Accompanying person 2 - trainee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8d4fd614-5e5e-4627-b1b8-4769b46c1409">
+    <name>СпидометрВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Одометр возвращения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Speedometer return</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Показания одометра при возвращении</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Speedometer reading at return</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="afc76ee5-f5d1-472c-8c30-e24575357444">
+    <name>СпидометрВыезда</name>
+    <synonym>
+      <key>en</key>
+      <value>Odometer departure</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Одометр выезда</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Odometer registration at departure</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Показания одометра при выезде</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0f189af-2d21-4c6c-858a-18f461fe1932">
+    <name>Температура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Температура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Temperature</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Температура эксплуатации ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle operating temperature</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="63d0ce94-7565-431a-8185-ceeb00ecfc81">
+    <name>ТранспортноеСредство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство, по которому введен путевой лист</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle, which entered the waybill</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a7cbdb04-e9b8-44a7-a819-1d212f302d2a">
+    <name>УсловиеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие работы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Work condition</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатУсловияРаботы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Условия работы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Work conditions</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ae8f6a56-2461-4342-886e-300f78aaf34f">
+    <name>ОбязательныйПослерейсовыйМедосмотр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обязательный послерейсовый медосмотр</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6cc8e18f-82e6-42c0-9e92-fd2c55aaee3b">
+    <name>Медорганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медорганизация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa61d7af-749f-40a6-a5ab-d982ba3e5c74">
+    <name>МедработникВыезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник (выезд)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Examined by a doctor</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Медработник при выезде</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Doctor, who examined drivers</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80472140-de42-44aa-a0aa-e8a45e3a78df">
+    <name>МедработникВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник (возврат)</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Медработник при возврате</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ba646a5-7d88-4572-b216-68925936cdb9">
+    <name>КонтрольТранспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль транспорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f74b8d89-c8af-4d67-8355-d66a46a932aa">
+    <name>ПоказанияОдометра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показания одометра</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e33d310-7d6f-436c-920a-ba818b5e2478">
+    <name>УполномоченныйНаПроставлениеОдометраПриВыезде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра при выезде</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сведения о лице, уполномоченном на проставление данных при выезде транспортного средства с парковки (парковочного места)/при приеме транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3dec5016-d888-41d8-bbc4-766b763ad4d2">
+    <name>УполномоченныйНаПроставлениеОдометраПриВозврате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра при возврате</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сведения о лице, уполномоченном на проставление данных при выезде транспортного средства с парковки (парковочного места)/при приеме транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3f8e0fc9-6055-40ea-86d9-43922dc95619">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1cc9b489-66cc-43f6-b3ba-d8eef0668720">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bd54cc55-a36b-4ac9-ad5b-99991ef5f4f1">
+    <name>ФормаСпискаБезПанелиОтборов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка (без панели отборов)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form (without selections panel)</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="edcc0185-d29f-45f4-8511-47321c97f989">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="91bf3a6c-7cf1-4a89-ad77-27aa630f7d5b">
+    <name>ЗаполнениеПоРасписанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнение по расписанию</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Filling by schedule</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="15c00407-19f6-4f2c-a6fa-28fd6d871de6">
+    <name>ВводЗначенийПробега</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ввод значений пробега</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Enter mileage values</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b0761815-8b7c-4003-8f05-39c6f9ee843e">
+    <name>ФормаВыработкиАгрегатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка агрегатов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Car parts output</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="416f051c-a5f4-4571-b83e-40e060f1fa0d">
+    <name>РасшифровкаНормыРасходаГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расшифровка нормы расхода ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Decryption of fuels consumption norms</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="54a25ae3-2e66-4540-a204-e1696ea36396">
+    <name>ФормаРедактированияСпецРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма редактирования спец. работ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Edit form spec. works</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="db2a7e0e-1e06-4ad9-aea0-8daacf7d0b94">
+    <name>УсловияРаботыДетально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия работы детально</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3d46342a-5025-4953-a442-b326c4f09eb8">
+    <name>ФормаПодписейОтвЛица</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подписей ответственного лица</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="80fb2d62-e827-4b6e-829b-3cdea7d43620">
+    <producedTypes>
+      <objectType typeId="cb160fc0-9910-4f06-afa4-d4ecf755faba" valueTypeId="9f4d3d67-2c25-4982-bb07-9bc170aa5122"/>
+      <rowType typeId="9dbbe6bf-4416-4c57-b7df-b95a32e530bb" valueTypeId="4da3acda-4250-4507-969d-5c9926ff05da"/>
+    </producedTypes>
+    <name>ВыработкаСотрудников</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка сотрудников</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee output</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Выработка сотрудников</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee output</value>
+    </toolTip>
+    <attributes uuid="f5f249e5-4f09-42c4-b8ee-94bba3b698bb">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество по параметру выработки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity by output value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5209cc52-b999-4731-9dbf-6c62ef2f0098">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Counterpartу</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Контрагент, по которому выполнялись работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Counterparty for which the work was performed</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="994f86c2-7cf0-4159-b81d-9c18b980ea09">
+      <name>ПараметрВыработки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр выработки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Output parameter</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Параметр выработки сотрудников</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Output parameter of employees</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0764ddec-733d-4261-bc57-f9331395f9d5">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Department</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение организации, которое выполняло работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Company department that performed works</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2bd65920-8d15-4fd3-9927-dc0757c6085c">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Employee</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сотрудник или водитель, по которому рассчитывается выработка</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Employee or driver for which being calculated output</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9419ce3f-95cd-4175-ba97-0007ff02a36c">
+      <name>ОбъектСтроительства</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект строительства</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Construction object</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатОбъектыСтроительства</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект строительства.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Construction object.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c5d08c61-2e06-4f09-a614-18e61e50f56f">
+      <name>Маршрут</name>
+      <synonym>
+        <key>ru</key>
+        <value>Маршрут</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Route</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатМаршруты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Маршрут.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Route.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Статус</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.уатСтатусыДействия.EnumValue.Действует</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="30fa29b7-b186-45ac-bcac-d0c5dfeb0e74">
+      <name>ВидПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатВидыПеревозок</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид перевозки.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Transportation type.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fde46770-81a8-40f8-b3e9-a457256bceb4">
+      <name>НаправлениеПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Направление перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation direction</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатНаправленияПеревозок</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8847604a-3417-4eb4-af26-f5c9acbee2e0">
+    <producedTypes>
+      <objectType typeId="6c48c6b2-8705-4e52-a200-da94f093ef77" valueTypeId="df20c555-deb7-4cc2-9de0-8d7de3508f4f"/>
+      <rowType typeId="28174f0f-5b34-46e7-a6ba-f1241749ee10" valueTypeId="e589c10c-9a12-4bee-a851-0c80a4dd1a16"/>
+    </producedTypes>
+    <name>ВыработкаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle output</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Выработка ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle output</value>
+    </toolTip>
+    <attributes uuid="ff9bca26-552d-4056-b77f-04c875226a7c">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество по параметру выработки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity by output value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="74bce8f9-71c8-4c36-89fa-a0a3e9f63d9d">
+      <name>Контрагент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Counterpartу</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Контрагент, по которому выполнялись работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Counterparty for which the work was performed</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="492370ec-3a56-444d-aed9-a73b908feb03">
+      <name>ПараметрВыработки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр выработки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Output parameter</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Параметр выработки ТС</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle output parameter</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c737027f-1a23-4899-bd5f-84e6e93a6f45">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Department</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение организации, которое выполняло работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Company department that performed works</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="41c979e5-f82f-4e4a-9e22-6affb66bff44">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <comment>Транспортное средство или оборудование</comment>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>ТС или оборудования</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>vehicle or equipment</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="222cc9b6-b613-4af8-9d33-8d228fd91456">
+      <name>ОбъектСтроительства</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект строительства</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Construction object</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатОбъектыСтроительства</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект строительства.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Construction object.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="29d8d2d8-c725-492a-bb67-091611e7e604">
+      <name>Маршрут</name>
+      <synonym>
+        <key>ru</key>
+        <value>Маршрут</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Route</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатМаршруты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Маршрут.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Route.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Статус</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.уатСтатусыДействия.EnumValue.Действует</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="447a96f7-c3c1-4b19-88a6-00ae6f4fc85b">
+      <name>ВидПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатВидыПеревозок</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид перевозки.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Transportation type.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4b5bed5a-6171-4014-8dfd-1e57dbcf2235">
+      <name>НаправлениеПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Направление перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation direction</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатНаправленияПеревозок</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="7aa9add3-b8ea-4ad1-abf3-9210c4620108">
+    <producedTypes>
+      <objectType typeId="a8a8d6b7-1940-4eb3-ae84-fb69f9c83c89" valueTypeId="28c610d4-b204-43c8-94f1-77cb132e8fe0"/>
+      <rowType typeId="cf84ba8c-cae7-404e-b9b2-956f8d8fab4e" valueTypeId="e6ee8e12-25a9-482b-a04a-3499dd4b1026"/>
+    </producedTypes>
+    <name>Задание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Job</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Задание</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Job</value>
+    </toolTip>
+    <attributes uuid="0f4a94f2-527e-4ebf-af62-d068d65c2157">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>ID</value>
+      </synonym>
+      <comment>Идентификатор строки Задания</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Identification of requirement's row</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Используется для ввода детальных условий работы по строкам Задания</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8d45857e-8050-4234-90c6-7456f8cf8bbf">
+      <name>АдресПрибытия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес прибытия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Arrival address</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПунктыНазначения</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Адрес прибытия на маршрут</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Arrival address to route</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c5fd84de-ed34-4fe2-b42b-7d78c6c19a2e">
+      <name>АдресУбытия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес убытия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Departure address</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПунктыНазначения</types>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Адрес убытия с маршрута</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Address of departure from route</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f7e5ef88-517a-40a4-ae03-6d08af5e7848">
+      <name>ВремяПрибытия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время прибытия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Time of arrival</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время прибытия на маршрут</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Arrival time to route</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="cdeff4b4-ec07-430c-85aa-e9f53ff91372">
+      <name>ВремяУбытия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время убытия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Time of departure</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время убытия с маршрута</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Time of departure from route</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7b153e2f-efff-4b4c-a620-a06a6fe13356">
+      <name>Выполнено</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выполнено</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Completed</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак того, что задание выполнено</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>A sign that the task is done</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a7c35408-97f4-486a-b0c2-1f4bddc9d148">
+      <name>КоличествоЕздок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество ездок</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Hauls quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество ездок строки задания</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Hauls quantity lines tasks</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1c5809c1-7c06-4b2b-9ae4-2c2fbd687615">
+      <name>КоличествоКмГруз</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество километров</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of kilometers</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пробег с грузом</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Mileage with cargo</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b2985ac8-e3fe-49aa-b956-1c1166572295">
+      <name>КоличествоКмПорожний</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество км порожний</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of km empty</value>
+      </synonym>
+      <comment>В км</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пробег порожний</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Mileage empty</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e070e705-117b-4ada-b988-0daa6db5dec9">
+      <name>СпецРабота1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Спец. работа 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Spec. work 1</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Специальная работа 1</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Special work 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2d3aa99a-2940-4f5e-9ced-b080cbad7602">
+      <name>СпецРабота2</name>
+      <synonym>
+        <key>en</key>
+        <value>Spec. work 2</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Спец. работа 2</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Special work 2</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Специальная работа 2</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9864aab1-107e-4fd0-87f1-25e26ad2cd9c">
+      <name>СпецРабота3</name>
+      <synonym>
+        <key>en</key>
+        <value>Spec. work 3</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Спец. работа 3</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Special work 3</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Специальная работа 3</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9bae38a1-0840-457f-b25f-14fd5891f8ca">
+      <name>СпецРабота4</name>
+      <synonym>
+        <key>en</key>
+        <value>Spec. work 4</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Спец. работа 4</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Special work 4</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Специальная работа 4</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="431ac1d9-c3ec-4268-ad1c-3741d8996425">
+      <name>СпецРабота5</name>
+      <synonym>
+        <key>en</key>
+        <value>Spec. work 5</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Спец. работа 5</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Special work 5</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Специальная работа 5</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8165dee4-a613-4a13-9fbe-6a98fc73fc94">
+      <name>КоличествоСпецРаботы1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество спец. работы 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity of special work 1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество специальной работы 1</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity of special work 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f1c134ee-f5cf-4e6a-898a-60780e257f3f">
+      <name>КоличествоСпецРаботы2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество спец. работы 2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity of special work 2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество специальной работы 2</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>number of special work 2</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4fe27fef-1634-429c-a4ed-73df668a1143">
+      <name>КоличествоСпецРаботы3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество спец. работы 3</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity of special work 3</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество специальной работы 3</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Number of special work 3</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e3d824f1-0b40-4c0e-97d0-47bbe1aa8f2b">
+      <name>КоличествоСпецРаботы4</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество спец. работы 4</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity of special work 4</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество специальной работы 4</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>number of special work 4</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="75940709-d4ca-4e65-b165-79b455dacc28">
+      <name>КоличествоСпецРаботы5</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество спец. работы 5</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity of special work 5</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество специальной работы 5</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity special works 5</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6c49d317-ef55-48e2-9c12-a017264f0c4a">
+      <name>КоличествоОпераций</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество операций</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of operations</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Общее количество операций для выполнения строки задания</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Total number of operations to perform the job</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6023469c-4785-400a-b2f6-fed2df11324a">
+      <name>КоличествоПассажиров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество пассажиров</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of passengers</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество пассажиров.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Number of passengers.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b6429a97-a108-4b53-b088-1af80ff8f050">
+      <name>КоличествоТонн</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество тонн</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of tons</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вес перевезенного груза</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Weight of transported cargo</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bad44901-adaf-4fbf-ad4b-4a7cc79f39b7">
+      <name>КоличествоЧасов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество часов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of hours</value>
+      </synonym>
+      <comment>Ч,Мин</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Working time</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b74c0aa9-dbd7-449c-8a4c-4aafd49f616f">
+      <name>Контрагент</name>
+      <synonym>
+        <key>en</key>
+        <value>Counterpartу</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Контрагент</value>
+      </synonym>
+      <comment>Грузоотправитель или грузополучатель</comment>
+      <type>
+        <types>CatalogRef.Контрагенты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Грузоотправитель или грузополучатель</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Consignor or consignee</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4903d04a-1101-4a44-b433-fb56f48a5613">
+      <name>Маршрут</name>
+      <synonym>
+        <key>ru</key>
+        <value>Маршрут</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Route</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатМаршруты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Маршрут.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Route.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Статус</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.уатСтатусыДействия.EnumValue.Действует</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c0e826e3-898b-497c-87ab-f6fb5c7ccf84">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Products and services</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Перевозимый груз</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Carried cargo</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3a5a0763-7047-4d20-a4d3-d03106e4db1d">
+      <name>НомерЕздки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер ездки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Haul number</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>2</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер ездки.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Haul number.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="13ac41e8-9b60-4dbf-a876-6d4e3f0c59d9">
+      <name>ОбъектСтроительства</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект строительства</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Construction object</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатОбъектыСтроительства</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект строительства.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Construction object.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b1bd9b44-8c74-4643-afb6-20431ae4215d">
+      <name>Объем</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объем</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Volume</value>
+      </synonym>
+      <comment>Объем, м3</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объем груза</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Cargo volume</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b0d49a35-9718-444c-8fcd-00bd3c67a3bd">
+      <name>Подача</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подача</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Supply</value>
+      </synonym>
+      <comment>Ч.Мин</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подача.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Supply.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="419819b5-ef3d-4e05-ba33-7888464fbce6">
+      <name>Подразделение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Подразделение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Department</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПодразделенияОрганизаций</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подразделение организации</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Company department</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="80bd5a6b-6709-4a57-beb4-57b1865c6eb2">
+      <name>Прицеп1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прицеп1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Trailer</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Прицеп 1</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Trailer</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="171cfe23-1f5f-4090-8e7e-2a3e50309494">
+      <name>Прицеп2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Прицеп2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Trailer2</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Прицеп 2</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Trailer</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="802b6c99-8835-4969-904b-a2f69c783890">
+      <name>КоличествоЧасовПрицеп1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество часов прицеп 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of hours trailer 1</value>
+      </synonym>
+      <comment>Ч,Мин</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время работы прицепа 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c77be59c-bb6a-4308-8d2f-16d8dd278172">
+      <name>КоличествоЧасовПрицеп2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество часов прицеп 2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of hours trailer 2</value>
+      </synonym>
+      <comment>Ч.Мин</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время работы прицепа 2</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="83e94778-5bd7-4302-a993-7afd85e6173b">
+      <name>УсловиеРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Условие работы</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Work condition</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатУсловияРаботы</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Условия работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Work conditions</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="118bcda8-787d-4555-8715-9d83254023e7">
+      <name>ВидПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатВидыПеревозок</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид перевозки.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Transportation type.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="239955ea-0b13-408b-951e-b15b592ecc40">
+      <name>НаправлениеПеревозки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Направление перевозки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Transportation direction</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатНаправленияПеревозок</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0ed6d23f-6a1e-4a50-908d-45434f8efa15">
+      <name>ВремяПрибытияФакт</name>
+      <synonym>
+        <key>en</key>
+        <value>Time of arrival (fact)</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Время прибытия (факт)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Fact arrival time to route</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Фактическое время прибытия на маршрут</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0073a5d7-ccb4-42f7-a829-4cbbb604de8a">
+      <name>ВремяУбытияФакт</name>
+      <synonym>
+        <key>en</key>
+        <value>Time of departure (fact)</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Время убытия (факт)</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Fact time of departure from route</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Фактическое время убытия с маршрута</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1ba2f1c6-66fd-4bca-be52-41cd69933d75">
+      <name>ЗаказНаТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ на ТС</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0b3b2c41-2b7f-4ef8-9699-f70c04e57a33">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество перевозимого груза</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="a3b85faf-2190-4331-a98e-7b882ae8cab7">
+    <producedTypes>
+      <objectType typeId="50230ad2-81b6-46c8-aff1-d5fff1091370" valueTypeId="e3816657-bac6-422a-b04c-f3c148cb2268"/>
+      <rowType typeId="d4861ace-04b3-4547-8ae2-fb31c61eab74" valueTypeId="af4d2698-f16c-4655-8033-c5cf3949c535"/>
+    </producedTypes>
+    <name>Зарплата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарплата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Payroll</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Начисляемая зарплата</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Accrued salary</value>
+    </toolTip>
+    <attributes uuid="4614c234-7e2b-4829-a1d3-82be05ce9219">
+      <name>ВидНачисления</name>
+      <synonym>
+        <key>en</key>
+        <value>Accrual type</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Вид начисления</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.уатОсновныеНачисления</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид начисления зарплаты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Salary accounting type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e475c686-52ea-47ad-9dc6-b059708f2a85">
+      <name>ПараметрВыработки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр выработки</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Output parameter</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительная аналитика для учета начислений, используется в отчетности</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional Analytics for accrual used in reporting</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e132f1e1-0abf-4d2e-8f94-bd150c69169e">
+      <name>РучнойВвод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ручной ввод</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Manual input</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Использовать ручной ввод начислений</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Use manual input of accruals</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7f552cde-084c-4405-90b5-21be2af89b27">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Employee</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сотрудник или водитель, по которому производится начисление зарплаты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>employee or the driver, which is payroll</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="19dcd256-ff6a-4344-8651-d225cdfb594e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sum</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма начислений в валюте управленческого учета</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Amount of charges in currency of management accounting</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fc9b4c20-7f3f-4655-8216-f1467b850e26">
+    <producedTypes>
+      <objectType typeId="f3262b85-0c03-442c-bb50-198e6295aeea" valueTypeId="11b54952-57c7-4d57-a7d1-524e955697de"/>
+      <rowType typeId="85514f5c-c4ca-4cd1-800e-2ed8e6e51c09" valueTypeId="ff3993da-b421-4aef-ab71-db98355b50cf"/>
+    </producedTypes>
+    <name>Прицепы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прицепы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Trailers</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Прицепы и оборудование ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Trailers and vehicle equipment </value>
+    </toolTip>
+    <attributes uuid="6b2410df-8008-4d56-9c5a-01ec1bf1f86b">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <comment>Транспортное средство или оборудование</comment>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Прицеп - ТС или оборудование</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Trailer - vehicle or equipment</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f74e61f6-4298-4272-bdcf-2a9fde71f94b">
+      <name>СчетчикМЧGPS</name>
+      <synonym>
+        <key>en</key>
+        <value>Counter m/h on monitoring</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Счетчик м/ч по мониторингу</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Hourmeter by monitoring data</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Счетчик моточасов по данным мониторинга</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="86d8f008-0820-473f-ba4f-37139f11a653">
+      <name>СчетчикМЧВыезда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счетчик м/ч выезда</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Counter m/h departure</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Счетчик моточасов при выезде</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Hourmeter at departure</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1dc68575-2e99-4413-b6ad-0418f5c90964">
+      <name>СчетчикМЧВозвращения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Счетчик м/ч возвращения</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Counter m/h return</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Счетчик моточасов при возвращении</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Hourmeter at return</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="32263ce4-4c90-41e7-b592-c40685890598">
+    <producedTypes>
+      <objectType typeId="05b83116-03b8-4a7d-a16a-9dcb109d1093" valueTypeId="b51a1715-8cd8-465c-858d-d591549cfc32"/>
+      <rowType typeId="e57204f6-408f-41f4-be85-a00803244058" valueTypeId="604bdf90-d08d-423a-b57a-c911a77863e0"/>
+    </producedTypes>
+    <name>Простои</name>
+    <synonym>
+      <key>ru</key>
+      <value>Простои</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Downtimes</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Список простоев</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Downtime list</value>
+    </toolTip>
+    <attributes uuid="907a2d36-b64e-4dbc-b2b5-9ebda9b20099">
+      <name>ВидПростоя</name>
+      <synonym>
+        <key>en</key>
+        <value>Downtime type</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Вид простоя</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСостояниеТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид простоя ТС</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle downtime type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ff37d32e-0d2b-48e0-8894-ec7b7e22b8f1">
+      <name>ВключенДвигатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Включен двигатель</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Power on</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак включенного двигателя во время простоя</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Attribute of power on during down time</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7a549498-b959-4d9a-9196-f1f39e859c0b">
+      <name>ВремяПростоя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время простоя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Downtime</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ДФ=ЧЧ:мм</value>
+      </format>
+      <format>
+        <key>en</key>
+        <value>ДФ=ЧЧ:мм</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ДФ=ЧЧ:мм</value>
+      </editFormat>
+      <editFormat>
+        <key>en</key>
+        <value>ДФ=ЧЧ:мм</value>
+      </editFormat>
+      <toolTip>
+        <key>ru</key>
+        <value>Продолжительность простоя</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Downtime duration</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8b314749-3041-4fd6-91ad-a65741c4589c">
+      <name>КонецПростоя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конец простоя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Down time end</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ДФ=' ЧЧ:мм'</value>
+      </format>
+      <format>
+        <key>en</key>
+        <value>ДФ=' ЧЧ:мм'</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ДФ=' ЧЧ:мм'</value>
+      </editFormat>
+      <editFormat>
+        <key>en</key>
+        <value>ДФ=' ЧЧ:мм'</value>
+      </editFormat>
+      <toolTip>
+        <key>ru</key>
+        <value>Конец простоя.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>End of downtime.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="63211f77-afec-4952-a05e-82ba96c9d89d">
+      <name>НачалоПростоя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начало простоя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Start of down time</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Начало простоя.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Begin of downtime.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="94d1d829-a269-437a-b0ea-b4faa2495a14">
+    <producedTypes>
+      <objectType typeId="30cfa0fa-7323-4a67-a893-4def0cc1be33" valueTypeId="f8e2ac61-9481-4186-b116-107efbd3ecf3"/>
+      <rowType typeId="9fcec883-f5af-40f6-8fdc-3db15ab583db" valueTypeId="afc1055a-6607-458b-87e2-bfd6c67b1ec0"/>
+    </producedTypes>
+    <name>ПрочиеРасходы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прочие расходы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Other expenses</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f1f3068e-eff5-491b-ad60-c8fe1d9037c6">
+      <name>СтатьяРасходов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статья расходов</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Expense item</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСтатьиРасходов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статья расходов.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Expense item.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.ПорядокОтнесенияЗатрат</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.уатПорядкиОтнесенияРасходов.EnumValue.ПрямыеРасходы</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3c26dca5-5dd9-4024-b3b5-40731f04618c">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sum</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Amount in the compliance accounting currency</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="377f2bc2-d0b5-4526-b6e6-e0ba893e31c6">
+      <name>СуммаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма НДС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>VAT amount</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма НДС в валюте регламентированного учета</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>VAT amount in the compliance accounting currency</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f80a3d39-1238-4d3a-b47d-5f8d91ae58b2">
+      <name>СтавкаНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ставка НДС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>VAT rate</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>EnumRef.СтавкиНДС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ставка налога на добавленную стоимость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Tax rate of added value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e588a90-da2b-4338-9617-5372b6317cc5">
+      <name>УчитыватьНДС</name>
+      <synonym>
+        <key>en</key>
+        <value>Include VAT</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Учитывать НДС</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Учитывать налог на добавленную стоимость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Take into account the value added tax</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f078a748-4373-4872-a0db-d5e67f1c1f69">
+      <name>СуммаВключаетНДС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма включает НДС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Amount includes VAT</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма включает налог на добавленную стоимость</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Total include value-added tax</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="567b89fd-7d40-44de-915b-a81a99974827">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Currency</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Валюта расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Expenses currency</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ee522b3-ebf2-4300-84c3-2f68c8add8fc">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Rate</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Курс валюты расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Expenses currency rate</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b4096c2c-c34b-4f73-a216-0c054f82cbbc">
+      <name>Кратность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кратность</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Multiplicity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Кратность валюты расходов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Ratio of expenses currency</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="acc9c080-0159-4815-8dc9-b97a6a39c822">
+    <producedTypes>
+      <objectType typeId="9780c28e-1fb7-48b9-a31f-04a84f291b78" valueTypeId="25af201d-90b7-4a83-ad2e-11768ad1883c"/>
+      <rowType typeId="b18590d7-7e19-4efe-be6f-a3a058482858" valueTypeId="c2466132-9258-4835-98e9-e8296ea2c1ed"/>
+    </producedTypes>
+    <name>РасходГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels consumption</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Расход ГСМ (нормативный и фактический)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels consumption (normative and actual)</value>
+    </toolTip>
+    <attributes uuid="c54d3b56-6a55-4079-bcba-7dd9e2e0ad70">
+      <name>Активен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Активен</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Active</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак учета строки при расходе ГСМ</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sign of line accounting in fuels consumption</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="712faa79-ef61-41ab-9a32-3577f4d2e9e2">
+      <name>ВремяРаботыДвигателя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время работы двигателя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Power duration</value>
+      </synonym>
+      <comment>В часах и минутах</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Time</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время работы двигателя ,ч</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Power duration ,h</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d60670a1-31c3-46a5-bc37-7bf9c58be4ab">
+      <name>ВремяРаботыСпецоборудования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время работы спецоборудования</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Working time of special equipment</value>
+      </synonym>
+      <comment>В часах</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Time</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время работы спецоборудования, ч</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Working time of special equipment, h</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0c8b7968-6275-4eb5-9534-cd4171b39cc2">
+      <name>Выдано</name>
+      <synonym>
+        <key>ru</key>
+        <value>Выдано</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Issued</value>
+      </synonym>
+      <comment>Литров</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Выдано топлива при выезде, л</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Issued fuel at departure, l</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ea01a7f8-bb6c-45bc-be4d-5d0f5f47b0b8">
+      <name>ГСМ</name>
+      <synonym>
+        <key>ru</key>
+        <value>ГСМ</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Fuels</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номенклатура ГСМ</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Fuels info</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="055dc702-8cc4-4dae-bedc-472c809d0f7d">
+      <name>ОстатокПриВозвращении</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток при возвращении</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Remains for return</value>
+      </synonym>
+      <comment>Литров</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток ГСМ в ТС после возвращения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Fuels remains in vehicle after return</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ff2ea756-cbdf-4eb6-8434-31881a712d3a">
+      <name>ОстатокПриВыезде</name>
+      <synonym>
+        <key>ru</key>
+        <value>Остаток при выезде</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Remain by departure</value>
+      </synonym>
+      <comment>Литров</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Остаток ГСМ в ТС перед выездом</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Remain of fuels in vehicle before departure</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1010ce6a-b216-4fa7-b25e-2b340a38cb16">
+      <name>Пробег</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пробег</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Mileage</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Общий пробег, км</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Total mileage, km</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="788a6765-ba7b-4d0a-887a-255710d1a906">
+      <name>РасходПоGPS</name>
+      <synonym>
+        <key>en</key>
+        <value>Consumption by monitoring</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Расход по мониторингу</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Fuel consumption on monitoring data, l</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Расход топлива по данным мониторинга, л</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ccb9ff34-905d-4405-a09d-59eb69e17f91">
+      <name>РасходПоНорме</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расход по норме</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Consumption by norm</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Нормативный расход топлива, л</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Normative fuel consumption, l</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6f77dc69-a84c-454c-8c65-68a1606b13ff">
+      <name>РасходПоФакту</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расход по факту</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Expense by fact</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Фактический расход топлива, л</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Actual fuel consumption, l</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a2aefe3-432b-47af-86d9-9221a1b40b31">
+      <name>Сдано</name>
+      <synonym>
+        <key>en</key>
+        <value>Return</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Сдано</value>
+      </synonym>
+      <comment>Литров</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сдано обратно на склад, л</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Returned to warehouse, l</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ceb1c3f9-491d-4235-89ed-39712f21d316">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>ТС или оборудование</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="9eea1a35-ccff-4225-bcac-24e7659214c7">
+    <producedTypes>
+      <objectType typeId="3d13173a-0d71-4b8c-9a99-3f0339b89d18" valueTypeId="4c65b764-d842-41d2-922e-d6791aea8d45"/>
+      <rowType typeId="75285e90-4dee-4087-b1be-1f30f03d18d4" valueTypeId="d3d305a4-ced9-4aef-b31e-e4d20d77fefc"/>
+    </producedTypes>
+    <name>РасходТехническихЖидкостей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход технических жидкостей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Liquids consumption</value>
+    </synonym>
+    <comment>Расход технических жидкостей</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Расход технических жидкостей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Liquids consumption</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3599b9e1-b32a-4a14-aa8c-ef133cdffb91">
+      <name>ТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Транспортное средство</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7551e7f4-092d-4550-8e6a-e5eb4ea4a08d">
+      <name>ГСМ</name>
+      <synonym>
+        <key>ru</key>
+        <value>ГСМ</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Fuels</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Горюче - смазочные материалы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Petroleum, oil and lubricants</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e180ae8d-593a-4a86-8472-4ff0909cd282">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="14ee2fa5-b2ab-45bd-a238-d46aaf114bf3">
+    <producedTypes>
+      <objectType typeId="71de4857-7324-4579-a548-f5912eca6f04" valueTypeId="4e3de73f-2343-4928-a317-edb8b649f5a9"/>
+      <rowType typeId="9579647c-4dfe-4218-82d8-c4c0da61d26a" valueTypeId="f8e1569e-465e-4693-a907-260cdaed43a9"/>
+    </producedTypes>
+    <name>ФактическиОтработанноеВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фактически отработанное время</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Actual hours worked</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Фактически отработанное время</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Actual hours worked</value>
+    </toolTip>
+    <attributes uuid="db145007-68ab-434d-ba21-cae59dff9e03">
+      <name>ВремяДневное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время дневное</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Day time</value>
+      </synonym>
+      <comment>Время в формате числа часы.минуты</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Продолжительность времени работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Duration of work time</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c3bacf8c-9a70-4b49-985f-ffa6ea9c96f2">
+      <name>ВремяНочное</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время ночное</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Night time</value>
+      </synonym>
+      <comment>Время в формате числа часы.минуты</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Продолжительность ночного времени</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Duration of night time</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="afcf0f03-b87b-4d6e-9346-45b1f6570017">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата учета времени</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Track of time date</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="93439f2d-65b7-446f-b9d2-4d191ef35c53">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Employee</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сотрудник или водитель, по которому производится начисление зарплаты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>employee or the driver, which is payroll</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="2a56593d-4df4-4eb8-9b39-44a9ed8d843f">
+    <producedTypes>
+      <objectType typeId="3697756e-6068-40ab-95fd-f2e370ce07ed" valueTypeId="b90e1396-301f-4e39-aa75-a94a080a5b95"/>
+      <rowType typeId="272300fa-bda6-48cc-af2a-e9546c8bea7b" valueTypeId="4c30f082-b8ca-430c-ab6b-ba2ac8c999d0"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional details</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="e43c486e-c7c2-48eb-afd7-4a377654bb2b">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Value</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.уатПутевойЛист.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dfc8af12-d563-4992-9abc-8369f21a5008">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Property</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9b80c45b-6351-46b7-8fb8-e807ff3a6f8c">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Text string</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Full text of additional attribute of string type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="6fb559b0-7b81-4c44-a216-6b8d23dd2316">
+    <producedTypes>
+      <objectType typeId="1f6759b3-b83f-4a26-96fb-80b7d07db80e" valueTypeId="2d0253c1-13e2-4ea1-8f09-f80acafe377e"/>
+      <rowType typeId="f78021ba-6eb8-48a0-905a-4efed3add57a" valueTypeId="d5cf1f02-bfc3-4ac9-8ec7-8951eb344ebe"/>
+    </producedTypes>
+    <name>УсловияРаботыДетально</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия работы детально</value>
+    </synonym>
+    <attributes uuid="2caff4a0-1af0-4412-bffe-bd7465635646">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>ID</value>
+      </synonym>
+      <comment>Идентификатор строки Задания</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Identification of requirement's row</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Используется для ввода детальных условий работы по строкам Задания</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6589aeee-6a36-4192-9ab1-40ee4839557e">
+      <name>УсловиеРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Условие работы</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Work condition</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатУсловияРаботы</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Условия работы</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Work conditions</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="991c612f-7008-41f1-b883-0217414dcad6">
+      <name>КоличествоКмГруз</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество километров</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of kilometers</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пробег с грузом</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Mileage with cargo</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6589823d-14e2-4109-9264-bed48d5d20c1">
+      <name>КоличествоКмПорожний</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество км порожний</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number of km empty</value>
+      </synonym>
+      <comment>В км</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пробег порожний</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Mileage empty</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="d4da4d13-abd2-4763-b70a-b2ec590f186a">
+    <name>ПФ_MXL_3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №3</value>
+    </synonym>
+  </templates>
+  <templates uuid="489cf45d-819d-4f98-aabf-c3e2a5ca9c5d">
+    <name>ПФ_MXL_3спец</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №3 спец</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №3 спец</value>
+    </synonym>
+  </templates>
+  <templates uuid="c12f0a09-ad57-4527-b859-ac944f3505b6">
+    <name>ПФ_MXL_412_АПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма № 412-АПК</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма № 412-АПК</value>
+    </synonym>
+  </templates>
+  <templates uuid="32492e59-fcd6-47c4-8c6b-d4640826e4e1">
+    <name>ПФ_MXL_4М</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №4-М</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №4-М</value>
+    </synonym>
+  </templates>
+  <templates uuid="7be753ec-b263-4843-952b-98625500f8cb">
+    <name>ПФ_MXL_4П</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №4-П</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №4-П</value>
+    </synonym>
+  </templates>
+  <templates uuid="fb6b5532-6ff2-46dc-b598-100c24d0567c">
+    <name>ПФ_MXL_4С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №4-С</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №4-С</value>
+    </synonym>
+  </templates>
+  <templates uuid="4401a7c1-8a6d-49d2-8bcc-e07bacf57996">
+    <name>ПФ_MXL_6_пп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №6</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №6</value>
+    </synonym>
+    <comment>Путевой лист автобуса</comment>
+  </templates>
+  <templates uuid="d26faad2-c59e-4a01-ab7e-a60eca40ea53">
+    <name>ПФ_MXL_6С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма №6 спец.</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма №6 спец.</value>
+    </synonym>
+  </templates>
+  <templates uuid="8011cec1-a167-4dc6-b95b-e2252e0c3b71">
+    <name>ПФ_MXL_Автокран_стм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автокран</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Truck crane</value>
+    </synonym>
+  </templates>
+  <templates uuid="65c83b3c-bcd6-4acb-a62b-861b3aa8c2ad">
+    <name>ПФ_MXL_ПА1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ПА-1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма ПА-1</value>
+    </synonym>
+    <comment>Путевой лист автобуса индивидуального предпринимателя</comment>
+  </templates>
+  <templates uuid="1b7b2003-3020-425e-bb1f-1740152faef3">
+    <name>ПФ_MXL_ПГ1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ПГ-1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма ПГ-1</value>
+    </synonym>
+    <comment>Путевой лист грузового автомобиля индивидуального предпринимателя</comment>
+  </templates>
+  <templates uuid="2c83697a-034f-4f8c-865a-daeea9f7ee16">
+    <name>ПФ_MXL_ПЛ1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ПЛ-1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма ПЛ-1</value>
+    </synonym>
+    <comment>Путевой лист легкового автомобиля индивидуального предпринимателя</comment>
+  </templates>
+  <templates uuid="48bb966a-b3a4-4570-9f55-b4064f332f19">
+    <name>ПФ_MXL_ЭСМ1_стм</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЭСМ1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>ЭСМ1</value>
+    </synonym>
+  </templates>
+  <templates uuid="03787945-002f-4ad4-9115-c0d239b7c769">
+    <name>ПФ_MXL_ЭСМ2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ЭСМ-2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма ЭСМ-2</value>
+    </synonym>
+    <comment>Путевой лист строительной машины</comment>
+  </templates>
+  <templates uuid="82f14eb6-2502-4a79-9666-739de9994675">
+    <name>ПФ_MXL_ЭСМ3_стм</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЭСМ3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>ЭСМ3</value>
+    </synonym>
+  </templates>
+  <commands uuid="8797fc47-7d87-40a9-9ae1-59127b3f1776">
+    <name>ПрисоединенныеФайлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Присоединенные файлы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Attached files</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>DocumentRef.уатПутевойЛист</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Document>

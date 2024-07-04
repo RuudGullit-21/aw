@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99b54186-2a05-4d89-b678-fe3d3d573e81">
+  <producedTypes>
+    <selectionType typeId="15219090-9fbd-400e-812e-ba21d67dd946" valueTypeId="dce61e20-d65e-43dd-9877-0c347aefe4fb"/>
+    <listType typeId="325b3d0d-5725-471f-b69c-cd8bdc79f799" valueTypeId="fd7fa20e-a85c-4140-b76d-0446c179f081"/>
+    <managerType typeId="f92092a0-afad-4bf7-87bb-9246f2345742" valueTypeId="69b17edf-e547-4de4-b138-c20c8be25113"/>
+    <recordSetType typeId="ab38ce20-f712-48aa-b178-c7715b8ba0fc" valueTypeId="958951cd-93a2-4d6f-b0ad-56f0d9ee30eb"/>
+    <recordKeyType typeId="ab48a74a-5900-4d27-a655-8756c2ddc181" valueTypeId="54a5c3c5-f13c-4d69-b20e-f339aa3b8a15"/>
+    <recordType typeId="93827129-0e56-4b5e-af4e-83652e7d48ce" valueTypeId="6ffc0347-1e2d-4f68-861a-8a2f094badd6"/>
+    <recordManagerType typeId="43c220f6-449c-408d-9042-d555f5a48cad" valueTypeId="1793bdc9-5766-4bf2-87de-1d7367fc6d61"/>
+  </producedTypes>
+  <name>ItobНормыРасходаГСМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы расхода ГСМ</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Fuels consumption norms</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ItobНормыРасходаГСМ.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные о периоде</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="7738c877-d76a-448b-8b8b-d612c93d5dd4">
+    <name>БазоваяНорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовая норма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сведения о базовой норме</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3ed3cedd-9cbf-4ea5-86f0-f6f8c9f70c66">
+    <name>НормаНаТранспортнуюРаботу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на транспортную работу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Norm for transport work</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма, которая устанавливается на транспортную работу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7f6a3fa2-510b-4c47-a9f3-782a0ad2ab48">
+    <name>НормаНаИзменениеСобственногоВеса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на изменение собственного веса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Norm on change of own weight</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные  о норме на изменение собственного веса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7d5d04d2-9077-4257-98d2-e72882e9b007">
+    <name>НормаНаРаботуСпецОборудованияПоМЧ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на работу спец оборудования </value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма на работу специального оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5c458fac-9b18-4fc9-9939-f715221a218d">
+    <name>НормаНаРаботуСпецОборудованияПоПробегу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на работу спец оборудования по пробегу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные о норме на работу спец оборудования по пробегу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="438fb3eb-45ca-4a9d-82a1-b03db5962188">
+    <name>НормаНаРейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на рейс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Норма, устанавливаемая на рейс</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="effabf1b-7449-4e64-8e53-3bb20057d040">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Марка ТС</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobМодельТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование модели транспортного средства</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7bf13549-162f-456f-b255-7c48ef041ff0">
+    <name>ГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobНоменклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Горюче-смазочные материалы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Petroleum, oil and lubricants</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e8f2edd0-0206-4292-995d-80c83df09e3e">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

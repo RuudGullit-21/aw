@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f39bc23f-aa7c-40fa-a6ce-b27bc80d5de9">
+  <name>уатУдалениеЗаписиПрисоединенныхФайловВМаршрутныхЛистах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удаление записи присоединенных файлов в маршрутных листах</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Deleting the record of attached files in the routing lists</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.Файлы</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.уатОбщегоНазначения.уатУдалениеЗаписиПрисоединенныхФайловВМаршрутныхЛистахПередУдалением</handler>
+</mdclass:EventSubscription>

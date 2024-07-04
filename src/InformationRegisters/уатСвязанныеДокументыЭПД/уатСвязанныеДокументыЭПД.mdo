@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00e74c20-a2f6-4b59-b3e7-13f7e85f00c1">
+  <producedTypes>
+    <selectionType typeId="b1bbfc6b-7dd4-4983-b357-aa1c07dd3eab" valueTypeId="db3526bf-11c4-4ac5-b2bb-858d8da2e078"/>
+    <listType typeId="db1085bf-df8b-4391-89f3-23089639ed2a" valueTypeId="2844fd18-43e0-4b8b-9145-b1fab6c03998"/>
+    <managerType typeId="2deca905-819f-4f7d-9f1e-c935472a906c" valueTypeId="294b7a34-cca2-44a9-8745-06eb885d7c23"/>
+    <recordSetType typeId="1bc28916-90c9-4df9-968b-f98cc3c13422" valueTypeId="34f0e8e8-0fa4-48cd-bbb2-f610118ef770"/>
+    <recordKeyType typeId="8b43a014-87e2-459d-ad5b-3fdcc27e0f9d" valueTypeId="5e8f9ba2-3535-4247-9ab8-152d7c55278b"/>
+    <recordType typeId="590a31e8-bc40-4199-8ced-463e28315e6b" valueTypeId="bc7cfa2f-0753-4ca6-92b2-d5b6fb6984bd"/>
+    <recordManagerType typeId="23725f6e-34f7-41aa-9de1-eac541f0d963" valueTypeId="ece83f4d-5f34-44b5-bf9b-36258581fb75"/>
+  </producedTypes>
+  <name>уатСвязанныеДокументыЭПД</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы ЭПД</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатСвязанныеДокументыЭПД.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cb8e15c8-637b-49af-8b7d-c94742dfd1e4">
+    <name>QR</name>
+    <synonym>
+      <key>ru</key>
+      <value>QR</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="3bb32a2a-85a0-493c-9522-b5c483022c33">
+    <name>ЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>ЭПД</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЭлектронныйЗаказНаряд</types>
+      <types>DocumentRef.ЭлектронныйПутевойЛист</types>
+      <types>DocumentRef.ЭлектроннаяТранспортнаяНакладная</types>
+      <types>DocumentRef.ЭлектроннаяСопроводительнаяВедомость</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="010497fe-eb42-4831-af40-08a1add9a699">
+    <name>ЗаказНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на ТС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5248d3bc-3c48-4c5d-807d-312114656aef">
+    <name>Рейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейс</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+      <types>DocumentRef.уатПутевойЛист</types>
+      <types>DocumentRef.уатЗаказПеревозчику_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7cecca36-cc40-4be7-989e-5e4a8552e23e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

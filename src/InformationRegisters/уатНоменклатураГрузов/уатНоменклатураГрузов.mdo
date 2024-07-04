@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="196e2e78-db05-4468-abd1-b5fa245adb50">
+  <producedTypes>
+    <selectionType typeId="bf725078-7972-478b-81d0-a5efe59289dc" valueTypeId="e7e27e10-33ed-41fe-bd63-f677c5f85a2a"/>
+    <listType typeId="72419726-4a8a-4b33-9390-fbefb9ae8a3b" valueTypeId="dbd20bb4-d257-4583-9d4a-7b8c9b8ae651"/>
+    <managerType typeId="37e8eaca-50d0-4514-a297-adb739dbd1ce" valueTypeId="0b01d823-42b4-4991-9111-065a6d3d5d62"/>
+    <recordSetType typeId="06fc18b1-1b1b-4c69-a52a-eb767f25c2d5" valueTypeId="9db19f8b-1fef-4fe7-870a-f0047c093b08"/>
+    <recordKeyType typeId="66b655b3-f64b-44d0-93a7-09fef9b83e3d" valueTypeId="6c4ff659-e5ba-4f29-8cb8-a123c43b0fef"/>
+    <recordType typeId="6cbda1d0-6159-4807-a982-0c77eac8cd63" valueTypeId="c5a4620c-ed36-42ac-8ffd-ab680b2d0212"/>
+    <recordManagerType typeId="a32b5f94-5b87-44d1-95ea-a0df437e23c9" valueTypeId="32f37110-50cd-47dc-b187-28c39eebd85d"/>
+  </producedTypes>
+  <name>уатНоменклатураГрузов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cargos info</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатНоменклатураГрузов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатНоменклатураГрузов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Cargos info</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Cargos info</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Cargos info</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cargos info</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Номенклатура грузов</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cargos info</value>
+  </explanation>
+  <resources uuid="7915a3c8-ae04-4cfb-aa16-1e93d6c745a9">
+    <name>Вес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вес</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Weight</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вес груза</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo weight</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2c996876-505f-4109-a4e4-1b9e61220579">
+    <name>ВысотаГруза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Высота, м</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Height, m</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Высота груза, м</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo height, m</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4f7eef44-4814-4fcd-abea-1dd4b7eb3394">
+    <name>ДлинаГруза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Длина, м</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Length, m</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Длина груза, м</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo length, m</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dbefffeb-11df-4f4f-9031-20879cc9f3a0">
+    <name>ШиринаГруза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ширина, м</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Width, m</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ширина груза, м</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo width, m</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3cdae52-a197-4181-b152-c2aefc65e3a7">
+    <name>Класс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Класс груза</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cargo class</value>
+    </synonym>
+    <comment>Класс груза</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=1; ЧРД=.</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=1; ЧРД=.</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=1; ЧРД=.</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=1; ЧРД=.</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Класс груза согласно &quot;ГОСТ 19433-88 Грузы опасные. Классификация и маркировка&quot; или по другой произвольной классификации на усмотрение пользователя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo class according to &quot;GOST 19433-88 Dangerous Goods. Classification and Labeling&quot; or other arbitrary classification at the discretion of the user</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3cf5eaa3-7f99-4777-877b-fc9fc31d5c60">
+    <name>Объем</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объем</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Volume</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объем груза</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo volume</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e198207c-9f8c-4540-aa5d-9bb0fcb372e4">
+    <name>ТемператураДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Т макс</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>T max</value>
+    </synonym>
+    <comment>Значение конца диапазона температуры в градусах цельсия хранения/транспортировки груза</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение конца диапазона температуры в градусах цельсия хранения/транспортировки груза</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Value of the end of the temperature range in degrees Celsius storage / transportation</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="83192f4d-2fdd-4eda-9a44-54adc3e198cc">
+    <name>ТемператураОт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Т мин</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>T min.</value>
+    </synonym>
+    <comment>Значение начала диапазона температуры в градусах цельсия хранения/транспортировки груза</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение начала диапазона температуры в градусах цельсия хранения/транспортировки груза</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Value of beginning of the temperature range in degrees Celsius of storage / transportation</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7b901fe7-a48a-470e-bd29-c36e19f0fffd">
+    <name>ЕдиницаИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Unit of measure</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЕдиницыИзмерения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Единица измерения номенклатуры</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services unit of measure</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="503b9e9b-a899-4b54-8bf3-373995def6c6">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <comment>Номенклатура</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Груз</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9a12cd3c-4de1-425f-8192-14e2d1759900">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fa7832d1-0284-4c4c-862f-376a3a98f503">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e464de2c-c36b-4422-b2d8-79a0f6db5ca7">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="14206468-8979-4b65-a8b2-5f559b4483a2">
+    <name>КлассификацияОпасныхГрузов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификация опасных грузов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Classification of dangerous cargos</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

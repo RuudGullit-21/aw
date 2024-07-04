@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06de0863-89f3-4422-8e5b-f353bc81c351">
+  <producedTypes>
+    <objectType typeId="038339c5-2e2a-436a-9129-e474c658972d" valueTypeId="7e9b73ec-94c4-4e2e-8476-7be4f88cc7dc"/>
+    <refType typeId="53aac282-b735-42b0-a825-15c601bb383c" valueTypeId="2811a6af-15aa-4a85-bbb4-85ac85d958b2"/>
+    <selectionType typeId="9e90cdca-04ba-45a0-b05b-29d23344b446" valueTypeId="e3fd7f78-dd3c-429a-a373-d54162878fe2"/>
+    <listType typeId="34d0fc7f-0eeb-48f8-af48-068b085a9850" valueTypeId="f52da742-f047-4438-ac65-32a028816d52"/>
+    <managerType typeId="cf428517-0532-4012-b79c-3ddb30a56a32" valueTypeId="7fe47b2d-bc81-49fa-9dff-77c0e7783e25"/>
+  </producedTypes>
+  <name>уатБилетныйЛист</name>
+  <synonym>
+    <key>ru</key>
+    <value>Билетно-учетный лист</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Ticket accounting list</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатБилетныйЛист.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатБилетныйЛист</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Document.уатПутевойЛист</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатБилетныйЛист.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатБилетныйЛист.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатБилетныйЛист.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecordsWritingOnPost>WriteModified</registerRecordsWritingOnPost>
+  <registerRecords>AccumulationRegister.уатБилетыНаСкладах</registerRecords>
+  <registerRecords>AccumulationRegister.уатВыручка</registerRecords>
+  <attributes uuid="557a8e78-2bd8-40f6-81db-c522d108970b">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8422da92-eb67-4b51-a8a5-82aaa52cf56a">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник организации, получивший билеты</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee who got tickets</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d2d2c5ba-bc27-4294-9a6f-14f669ee101f">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство, на котором осуществляется продажа билетов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The vehicle on which tickets are sold</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e638ec97-c7db-42c0-88af-89a7581331ac">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2666d85c-aa63-45d7-b637-7f4da74dff2b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ad06c0b7-7b4a-40a6-a08e-7857fd2bc87f">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document amount</value>
+    </synonym>
+    <comment>(Общ) Сумма в валюте документа, налоги включены согласно флагам</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in the document currency</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3523630e-f6d6-40cb-950f-08255e5eb94c">
+    <name>СуммаПринятоВКассу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма принято в кассу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>The amount taken in the cashier</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма принятая в кассу</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum accepted in cash</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="464ac5e7-1e5d-4e54-a94f-f8d946b06ec8">
+    <name>СуммаПроданоБилетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма продано билетов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum of sold tickets</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма проданных билетов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum of sold tickets</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc4a6176-9973-4a06-bc54-4dbda4e4dac4">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>(Общ) Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d16bb4ef-cea6-4a63-872c-4684f797acc2">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="27b0787a-42a8-4cfb-983c-efb739c786b0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0373c23b-4c00-4242-93ff-8b143de1715b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="55dcf3eb-6dd6-4912-a6d2-6323696b07ef">
+    <producedTypes>
+      <objectType typeId="65558aba-d3fb-4251-ab84-df0b94d5d2c2" valueTypeId="2d86175c-3ea1-4ffa-abc1-821401e5a633"/>
+      <rowType typeId="c6e9ad38-b19c-4c3c-9ea4-f49500dc7d7a" valueTypeId="233a8e5d-8322-4e69-8079-9bebe5a57313"/>
+    </producedTypes>
+    <name>Билеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билеты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tickets</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="fa0241a0-d049-4543-92ac-ec50515261ed">
+      <name>Билет</name>
+      <synonym>
+        <key>ru</key>
+        <value>Билет</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Ticket</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатБилеты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Проданные билеты 
+</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sold tickets</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="de6baa81-ee00-429e-ad22-d6499983b2eb">
+      <name>Маршрут</name>
+      <synonym>
+        <key>ru</key>
+        <value>Маршрут</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Route</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатМаршруты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Маршрут на котором выполнялась продажа билетов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Route on which ticket sold</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <choiceParameters>
+        <name>Отбор.Статус</name>
+        <value xsi:type="core:ReferenceValue">
+          <value>Enum.уатСтатусыДействия.EnumValue.Действует</value>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3c84ebca-d4be-4cc2-90f2-9c9931dce27c">
+      <name>НомерКонечный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер конечный</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>End number</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Конечный номер билета</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Final ticket number</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e20e0f64-a05b-460f-b50b-bc1d2cd7c1fc">
+      <name>НомерНачальный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер начальный</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Number initial</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Начальный номер билетов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Starting number of tickets</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2cd3af1f-aee4-475a-b738-1bdec04b9c54">
+      <name>ПутевойЛист</name>
+      <synonym>
+        <key>ru</key>
+        <value>Путевой лист</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Waybill</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.уатПутевойЛист</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Путевой лист по которому выполнялась продажа билетов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Waybill at which was selling of tickets</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f9bdc70c-449a-4498-a9b1-a5acb8999619">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество проданных билетов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity of sold tickets</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="6fbe51fa-ec41-4cd1-a437-490e9bc2de4e">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sum</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма проданных билетов</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sum of sold tickets</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="151b463e-9777-4580-ae0e-d5c0e1d40854">
+    <name>БилетноУчетныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билетно-учетный лист</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Ticket accounting list</value>
+    </synonym>
+  </templates>
+  <templates uuid="50ea3649-afc4-4b5d-be77-5b9a2375eee6">
+    <name>БилетноУчетныйЛистОбратнаяСторона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билетно-учетный лист обратная сторона</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Ticket accounting list reverse side</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f01c0e02-6f01-4fcc-bae0-12cbc3abf37a">
+  <producedTypes>
+    <objectType typeId="7f49caea-6ca0-481c-9165-0fc7ed66828d" valueTypeId="11090a9e-b3f4-467f-a193-de245a6e52ae"/>
+    <managerType typeId="c230d180-d584-4913-a93d-38fc2195605b" valueTypeId="aa74f1ec-4d04-4cf0-8487-cc3c092ebd3e"/>
+  </producedTypes>
+  <name>уатПакетнаяВыпискаПЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пакетная выписка путевых листов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Batch waybills extract</value>
+  </synonym>
+  <comment>Пакетная выписка путевых листов (уат)</comment>
+  <defaultForm>DataProcessor.уатПакетнаяВыпискаПЛ.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Пакетная выписка путевых листов</value>
+  </extendedPresentation>
+  <extendedPresentation>
+    <key>en</key>
+    <value>Batch waybills extract</value>
+  </extendedPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Пакетная выписка путевых листов</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Batch waybills extract</value>
+  </explanation>
+  <attributes uuid="a91d10aa-a8f6-437a-bce4-0b9a467044b1">
+    <name>ВариантПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант печати</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Print option</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант печати путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Waybill print options</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="24ae3cd6-e806-4bdb-a68d-5ec23e4554d5">
+    <name>ВыдалДиспетчер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выдал диспетчер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Issued by dispatch operator</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Диспетчер, выдавший путевой лист</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Dispatch operator, issuing waybill</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dcaa72ed-e459-4e9d-9417-4f1c5a2f7dc2">
+    <name>ВыпустилМеханик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выпустил механик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Released by mechanic</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Механик, проверивший ТС перед выездом</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mechanic who check the vehicle before departure</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f574da2a-5391-4d54-89c1-335d62d6fda0">
+    <name>Гараж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гараж</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Garage</value>
+    </synonym>
+    <comment>Гараж</comment>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Гараж нахождения ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Garage of vehicle location</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="30effd5a-2ca4-4d15-b5a3-4f526a7a6df2">
+    <name>ДатаФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата формирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Generation date</value>
+    </synonym>
+    <comment>Дата формирования</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата формирования путевых листов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Formation date of waybills</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d0e44f74-fc38-4fc6-b94c-681b784c6629">
+    <name>ЗаполнятьПоДокументам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заполнять по документам</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fill by documents</value>
+    </synonym>
+    <comment>Заполнять по документам</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак заполнения по документам</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign fill documents</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2daf24e1-17b4-49aa-a08d-2d9cc320c758">
+    <name>Колонна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle department</value>
+    </synonym>
+    <comment>Колонна</comment>
+    <type>
+      <types>CatalogRef.уатКолонны</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Колонна ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle department</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fda03329-85c7-4856-8724-73cb423bfadc">
+    <name>КопироватьЗаданияСПредыдущегоПЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Копировать задания с предыдущего ПЛ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cpy tasks from previous WB</value>
+    </synonym>
+    <comment>Копировать задания с предыдущего ПЛ</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак копирования задания с предыдущего путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>A sign copy of the task with the previous waybill</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5cb0cf2c-4fbb-4157-8928-d238a59fb340">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle model</value>
+    </synonym>
+    <comment>Модель ТС</comment>
+    <type>
+      <types>CatalogRef.уатМоделиТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Модель транспортного средства</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle model</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a776ad28-c33f-4373-8515-d29fb8f4b0ad">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация от имени которой будут выписываться путевые листы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company on behalf of which will be issued waybills</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c405ec06-2cca-4cb3-b7bc-89bdec98e44a">
+    <name>МедработникВыезд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник выезд</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Examined by a doctor</value>
+    </synonym>
+    <comment>Осмотрел врач</comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Врач, выполнивший осмотр</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Doctor who performed checkup</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5e15e11b-17ef-4546-9cc4-92d69067de00">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Department</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение организации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company department</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f9d8ba6f-06d0-49f8-a526-3d0f360e5574">
+    <name>ПринялДиспетчер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принял диспетчер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Received by dispatch operator</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Диспетчер, принявший путевой лист при возвращении</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Dispach operator who took waybill while returning</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ae4c13d2-3f64-4d1e-85b4-9cd38cb0bc9c">
+    <name>ПринялМеханик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Принял механик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Accept by mechanic</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Механик, принявший ТС при возвращении</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Mechanic who took vehicle while return</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="60327a17-879f-428e-bbd4-4f570341bda5">
+    <name>Температура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Температура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Temperature</value>
+    </synonym>
+    <comment>Температура</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Температура воздуха</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Air temperature</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f8ab288b-a0a2-4b2d-bc6f-01fe1fae8697">
+    <name>ТипЗаполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип заполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Population type</value>
+    </synonym>
+    <comment>Заполнять таблицу: 0 - по разнарядкам, 1 - по маршрутным листам, 2 - по заказам на ТС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип заполнения путевого листа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type waybill filling</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8b6c73e4-c52b-4311-bf26-73a87c612ae4">
+    <name>МедработникВозврат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник при возврате</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e12f249-9319-453c-84aa-d2cc989bb5a6">
+    <name>ПоказанияОдометра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показания одометра</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9534a76a-90ef-46bc-aff3-87195c41ac96">
+    <name>УполномоченныйНаПроставлениеОдометраПриВыезде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра при выезде</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="34c31d9c-073e-42c5-b485-31eac81fcd5e">
+    <name>УполномоченныйНаПроставлениеОдометраПриВозврате</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра при возврате</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a616266f-87ef-4841-9d1c-ff84a4baae77">
+    <name>Медорганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медорганизация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aaae66ed-95ce-46c9-8c86-293ae755ca1d">
+    <name>КонтрольТранспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контроль транспорта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="d869e675-c08c-4448-82e2-b661167eaef1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6781635e-48a4-4064-9f14-10c7b21477ba">
+    <name>ФормаСортировки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сортировки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sorting form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ec22cb9a-2910-4671-b2ff-ed62a32902c9">
+    <name>КомпоновкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Data composition</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="d28fe4a6-78a4-48e0-b89b-d3d789f064a2">
+    <name>КомпоновкаДанныхСортировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных сортировка</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="dce798ce-aad0-46ad-9f09-081a67753e6c">
+    <name>уатПакетнаяВыпискаПЛ</name>
+    <synonym>
+      <key>en</key>
+      <value>WB batch extract</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Пакетная выписка ПЛ</value>
+    </synonym>
+    <comment>Пакетная выписка путевых листов</comment>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

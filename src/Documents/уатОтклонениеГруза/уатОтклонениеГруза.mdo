@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed35d417-ba0e-4942-a862-f39e90ea1020">
+  <producedTypes>
+    <objectType typeId="bbeff056-ece7-4e92-a5c9-b9fffe736846" valueTypeId="9bff422d-ab91-4b4a-b355-ee2af7ad59c7"/>
+    <refType typeId="0e61f0e7-6601-448e-a840-3d5feab7d50d" valueTypeId="fe1c3205-4569-4859-8c1c-8fc6a58163a1"/>
+    <selectionType typeId="12224d53-2ad3-47e5-b985-a51af6545e86" valueTypeId="4990561a-3f03-459b-871e-06f557c4a99c"/>
+    <listType typeId="56eab676-1521-4785-9fc0-4aa607d1667c" valueTypeId="dd4cd1a1-67b4-435c-be42-a798e3bcabb8"/>
+    <managerType typeId="3f13e9f5-f79b-419a-9510-a222eb70a8ee" valueTypeId="8d37d094-8847-4011-a11b-646a5dd90744"/>
+  </producedTypes>
+  <name>уатОтклонениеГруза</name>
+  <synonym>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Закрытие заказов на ТС</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатОтклонениеГруза.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатОтклонениеГруза</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Document.уатЗаказГрузоотправителя</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Закрытие заказов на ТС</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Закрытие заказов на ТС</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Закрытия заказов на ТС</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Закрытия заказов на ТС</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Orders for trucking closing</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Закрытия заказов на ТС</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатОтклонениеГруза.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатОтклонениеГруза.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатОтклонениеГруза.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.уатЗаказыГрузоотправителей</registerRecords>
+  <registerRecords>AccumulationRegister.уатГрузыКПеревозке_уэ</registerRecords>
+  <registerRecords>AccumulationRegister.УдалитьУатГрузыВПути_уэ</registerRecords>
+  <registerRecords>InformationRegister.уатСтатусыГрузов_уэ</registerRecords>
+  <registerRecords>InformationRegister.уатПричиныОтклоненияЗаказов</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="21c2ecf8-c780-441c-a7ce-56b3c5647d2e">
+    <name>Заказчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Customer</value>
+    </synonym>
+    <comment>Заказчик</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец закрываемых заказов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Owner of closed orders</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd558727-fabb-42cf-8133-b72f4799cabb">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Any additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="eb876e54-e5cd-4bc7-a080-1ed49b3a5b38">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ инвентаризации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company on whose behalf inventory document issued</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d4d1c3a-8d77-403e-b4f7-28bde9efad32">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за  документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="344e7b1d-a1e9-4adb-9c8b-f4be75d65972">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="665c3a8d-2d76-4f1e-9156-403b782db828">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="616675ab-5fe0-4f9e-bf30-0876ae6a39b2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="3e1fcc51-4386-411d-8591-113e0c7a1eae">
+    <producedTypes>
+      <objectType typeId="c1a29b22-bbd0-4221-b530-2842586cd881" valueTypeId="28c16dbe-9eb2-4ce1-a400-57d3c86ed6f7"/>
+      <rowType typeId="0430a935-c4ab-4146-8bb7-38405edf2050" valueTypeId="383aad4b-4fde-4003-a877-2e39a770b1ee"/>
+    </producedTypes>
+    <name>Заказы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Orders</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Закрываемые заказы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Close orders</value>
+    </toolTip>
+    <attributes uuid="36b6ba31-1fe0-4c95-bae2-986db2fd5605">
+      <name>ЗаказГрузоотправителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Заказ на ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Order for trucking</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      </type>
+      <toolTip>
+        <key>en</key>
+        <value>Order for trucking</value>
+      </toolTip>
+      <toolTip>
+        <key>ru</key>
+        <value>Заказ на транспортное средство</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f182ef1-ad66-4712-b531-3dd2197a0bda">
+      <name>ПричинаОтклонения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Причина закрытия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Reason for closing</value>
+      </synonym>
+      <comment>Причина закрытия</comment>
+      <type>
+        <types>CatalogRef.уатПричиныЗакрытияЗаказов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Причина закрытия заказа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Reasons of closing order</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f7f3926b-70a2-4e0f-93b8-92da8c339f94">
+      <name>Статус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Статус</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Status</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСтатусы_уэ</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Статус закрытия</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Status of closing</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>Use</quickChoice>
+      <createOnInput>DontUse</createOnInput>
+      <dataHistory>Use</dataHistory>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

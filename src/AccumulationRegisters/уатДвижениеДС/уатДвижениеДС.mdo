@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0ee08930-fe33-4906-855c-a6f27c6548b5">
+  <producedTypes>
+    <selectionType typeId="ef8c3909-0d85-479f-9588-cc9d3c329b5a" valueTypeId="6ccb14ab-9a7a-497b-bbf5-b09b7085b190"/>
+    <listType typeId="fa5aa278-c78a-41b0-900f-db86e7795fe1" valueTypeId="8e534547-4638-4535-8b81-1b3204c7cb36"/>
+    <managerType typeId="2f8126d7-0e3c-4343-89c9-1cf808fd5a5f" valueTypeId="2da59a8a-9207-4e41-a046-7826bd3f9050"/>
+    <recordSetType typeId="b8a92580-f295-4ac3-91ac-7022b0d874eb" valueTypeId="044942c9-d181-4aac-b9b0-6164d0def5d4"/>
+    <recordKeyType typeId="b0117950-9175-49df-9353-1b650b8eb447" valueTypeId="81f4c9da-bb98-491d-9135-11d897f11e54"/>
+    <recordType typeId="ec5f7f45-beb9-4a0a-b0dd-01aee74239a5" valueTypeId="c11843ba-cb4d-4205-b497-3edc12532c26"/>
+  </producedTypes>
+  <name>уатДвижениеДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Движение ДС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cash movement</value>
+  </synonym>
+  <comment>Движение денежных средств (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатДвижениеДС.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Движение денежных средств</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Cash flows</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Движение денежных средств</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cash flows</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Движение денежных средств</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cash flows</value>
+  </explanation>
+  <resources uuid="c43aa673-963a-4cb2-bf7c-e472b8a46ab8">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма взаиморасчетов с НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum of mutual settlements with VAT</value>
+    </synonym>
+    <comment>Сумма в валюте взаиморасчетов с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте взаиморасчетов с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum in mutual settlements currency with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="3f359816-7063-4290-b4ca-d286b7ba2f90">
+    <name>СуммаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (упр.) с НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount (manag.) with VAT</value>
+    </synonym>
+    <comment>Сумма в валюте управленческого учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency management accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="548f0eb5-8de2-4f3e-b8cd-74a87c5c432d">
+    <name>БанковскийСчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет / касса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank account / cash fund</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.БанковскиеСчета</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет / касса.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bank account / cash fund.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4b8422ff-533c-4760-ae51-fb9675e35086">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Currency.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4b011c3c-b150-4248-bfe6-825a7b726c2e">
+    <name>ВидДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cash kind</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатФормыОплаты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of cash.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="22871cb4-ce7c-4312-bd83-ea980c38d9f9">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty contract</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор контрагента.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Contract of counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8b4eefed-2747-4d26-abdc-07530800bef4">
+    <name>ДокументДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ движения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Movement document</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатПлатежноеПоручениеИсходящее</types>
+      <types>DocumentRef.уатПлатежноеПоручениеВходящее</types>
+      <types>DocumentRef.уатПриходныйКассовыйОрдер</types>
+      <types>DocumentRef.уатРасходныйКассовыйОрдер</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ движения.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cash flow document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="343e4b0e-93cc-4c8b-ae8a-4d7b4682c105">
+    <name>Контрагент</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty / Accountable person</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент / Подотчетное лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty or Accountable person</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент или подотчетное лицо</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6ebe5f30-8700-4b41-88ab-04ac24a6c0ca">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0d52bca2-f772-4486-a2b5-2bc0b82b7368">
+    <name>ПриходРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход/Расход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Inflow expenditure</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыДвиженийПриходРасход</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Приход расход.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Inflow expense.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="49e33d64-110f-4393-83cb-567773dc0304">
+    <name>Сделка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сделка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Deal</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>DocumentRef.уатРеализацияУслуг</types>
+      <types>DocumentRef.уатСчетНаОплатуПокупателю</types>
+      <types>DocumentRef.уатСчетНаОплатуПоставщика</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сделка.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Deal.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e8114a40-488b-4658-86ae-e25add1d26f1">
+    <name>СтатьяДвиженияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cash flow item</value>
+    </synonym>
+    <comment>(Регл)</comment>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья движения денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cash flow item.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="6aa1f035-4461-4733-afae-8fe50423a2dc">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

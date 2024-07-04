@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="471082b7-e515-4908-abc7-60c74e66efda">
+  <producedTypes>
+    <objectType typeId="a9d90551-34b8-47be-a56e-3c352aa609de" valueTypeId="bad9092d-a36d-4ab9-8f93-a6d4d114ae69"/>
+    <refType typeId="a61b48e4-104d-4c79-a84c-cdd59d776d07" valueTypeId="7e21e352-467f-4619-ad55-4ca590202882"/>
+    <selectionType typeId="5dbd2846-40ba-42d5-8d47-fb510423b9d1" valueTypeId="010cb9cd-995e-4fda-82a9-5fd2796da7da"/>
+    <listType typeId="6c1a11f6-b1c3-454a-98b3-1debe9958c9d" valueTypeId="769d7b1e-7460-488a-860a-111040455952"/>
+    <managerType typeId="dd55c76a-3e79-4d2b-9095-a857efa18bf2" valueTypeId="1ad5f18b-31d8-4dfc-839b-442b35f76b45"/>
+  </producedTypes>
+  <name>уатПрофилиОбменаСВнешнимиСистемами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профили обмена с внешними системами</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатПрофилиОбменаСВнешнимиСистемами.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Профиль обмена с внешней системой</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Профили обмена с внешними системами</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Профили обмена с внешними системами</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="ba2a8d31-85c5-4cfc-a5d4-a37521a44a7c">
+      <name>Автодор</name>
+      <description>Автодор</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="2df4188c-f6d6-4f53-86d1-f6c4c3270986">
+      <name>Газпромнефть</name>
+      <description>Газпромнефть</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="c0d26b79-050c-4720-be0c-de07be5eaaa7">
+      <name>Лукойл</name>
+      <description>Лукойл</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d1fc82c4-fa85-4117-8f8a-c34a834a81c6">
+      <name>ПлатонВыпискаОпераций</name>
+      <description>Платон (Выписка операций)</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="58b2f922-ae32-448f-a204-2beb1cb46487">
+      <name>ПлатонЛогистическийОтчет</name>
+      <description>Платон (Логистический отчет)</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="453fbc07-c6d3-4a41-bbde-d5d97e656588">
+      <name>ППР</name>
+      <description>ППР</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7be01096-50fb-4cfa-a1ed-7dd695f244ad">
+      <name>Роснефть</name>
+      <description>Топливные карты Роснефть</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатПрофилиОбменаСВнешнимиСистемами.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатПрофилиОбменаСВнешнимиСистемами.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатПрофилиОбменаСВнешнимиСистемами.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="b6c14db4-d7c7-4b39-8114-496fa6837e86">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1b75755f-c3ff-42bb-a093-9d601b7d09b9">
+    <name>ГлубинаПоискаПЛДоВыезда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глубина поиска путевых листов до выезда</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Search depth of waybills before departure</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧН=0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧН=0</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Глубина поиска путевых листов до выезда, часов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Depth of waybill search before departure, hours</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="88979faf-0d7d-4ac5-b5c8-084a17884272">
+    <name>ГлубинаПоискаПЛПослеВозвращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Глубина поиска путевых листов возвращения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Search depth of return waybills</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧН=0</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧН=0</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧН=0</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Глубина поиска путевых листов после возвращения, часов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Search depth of waybills after return, hours</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="69c180df-bc54-4c57-a9b4-a4d572f948b7">
+    <name>ЗаменятьАналогНаОсновноеТопливо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заменять аналог на основное топливо</value>
+    </synonym>
+    <comment>Заменять аналог на основное топливо (уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг установлен, то при загрузке данных в документ “Заправка ГСМ” происходит замена топлива из отчета ПЦ на основное топливо для данного ТС. Замена происходит если топливо из отчета ПЦ является аналогом основного топлива ТС. В самом отчете ПЦ топливо остаётся в том виде, как у поставщика и прописано в таблице соответствия. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="77e3e5cd-8991-4bc7-bc1d-d42cc6ff8d2f">
+    <name>КомментироватьХодВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментировать ход выполнения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Комментировать ход выполнения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="14a49246-dfb6-4f90-9ee8-9f9377368de1">
+    <name>ОбрабатыватьРассчитанныеПутевыеЛисты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обрабатывать рассчитанные путевые листы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг установлен, то заправки будут подставляться и в рассчитанные путевые листы. При этом будет выполнен перерасчет расхода ГСМ в ПЛ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ffc1aa50-f5d3-444b-814a-4b2432810623">
+    <name>ОткрыватьФормыЗаписанныхЗаправок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Открывать формы записанных заправок и сливов ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Открывать формы записанных заправок и сливов ГСМ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e56e0975-e209-4db8-85fa-32a09f84b19d">
+    <name>ПересчитатьПутевыеЛисты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пересчитать расход ГСМ в путевых листах</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>После загрузки заправок ГСМ и привязки их к путевым листам, будет выполнен перерасчет количества выданного ГСМ в табличной части &quot;Расход ГСМ&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="50bd1ba7-82d3-476e-923f-c18878224a54">
+    <name>ПроверятьНаличееДублейПоСозданнымРанееДокументам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять наличие дублей по созданным ранее документам</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Create fuel drains for negative fuelling</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Под дублем здесь понимается новая загружаемая заправка ГСМ, данные которой совпадают с данными какой-либо имеющейся в базе заправки ГСМ. Варианты обработки данной ситуации
+Не проверять - дубль будет загружен в любом случае, никаких сообщений не выводится,</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c831865-0a00-4922-821f-b49a6e79161a">
+    <name>ПроводитьСозданныеЗаправкиГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить созданные заправки и сливы ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг установлен, то созданные заправки будут проведены, иначе только записаны.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6ce506ee-c445-4e8f-aeb9-cf3ffcbf3868">
+    <name>СоздаватьСливыДляОтрицательныхЗаправок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создавать сливы ГСМ для отрицательных заправок</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ДФ=; ДП=00:00</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДФ=; ДП=00:00</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Создавать сливы ГСМ для отрицательных заправок.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="06c7f351-927e-4c5c-9b80-2c305f17288a">
+    <name>ТипСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип системы</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыВнешнихСистем</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатТипыВнешнихСистем.EnumValue.ПроцессинговыйЦентр</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bd1e10ee-cd0c-43cb-a7a4-bba928f4b402">
+    <name>ТипСоответствияКолонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип соответствия колонок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="edbc1576-09e8-4919-8b0d-de775317b7dd">
+    <name>ТолькоПроверенные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Только проверенные</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Only checked</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Загружать только проверенные заправки (отмеченные флагом &quot;Проверено&quot;) из отчетов ПЦ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Download only verified gas stations (checked &quot;Checked&quot;) reports</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52d6096c-6f03-41ab-a3b2-b3f340179100">
+    <name>УчитыватьНаценкиСкидки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учитывать наценки/скидки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:BooleanValue">
+      <value>true</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="0ed5be46-f983-4d5d-a36c-af7e3f264b16">
+    <producedTypes>
+      <objectType typeId="f5ad4f16-b5be-4f1e-bfdb-f5c0e1612208" valueTypeId="f6e50e6b-6a5c-4351-a3de-334cdfa6a0d8"/>
+      <rowType typeId="3d0addf1-63cd-40dc-93b4-a7645b06153f" valueTypeId="e9a9d477-5f2a-4995-b668-4b27ade642fb"/>
+    </producedTypes>
+    <name>СоответствиеКолонок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Соответствие колонок</value>
+    </synonym>
+    <attributes uuid="40d270b7-106d-40c8-a99b-1db0d974ecd0">
+      <name>КолонкаДокумента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Колонка документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eba4ebf9-f55b-4cae-a4db-69da91909069">
+      <name>ИмяКолонкиФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя колонки файла</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="636f04c8-a574-4f40-8731-8a1a3a6470a7">
+      <name>КолонкаДокументаПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Колонка документа</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b7cc938a-8554-4e78-bdfd-58c9283014c9">
+      <name>НомерКолонкиФайла</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер колонки файла</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>3</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0b925603-c1cc-494e-a459-adfec1224848">
+      <name>Использование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Use</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bf69cb71-ff7d-4d87-b5ce-e13d0ca2b773">
+      <name>ИспользованиеВсегда</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использование всегда</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1535e30a-f70a-464a-8bb6-4964435621c8">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c2369d0c-fe0d-4637-a6eb-5236bac2898d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6d910611-65d1-49da-9192-3d718913e888">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

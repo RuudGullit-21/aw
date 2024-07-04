@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33cc256b-a7f4-4151-8b9c-1eb79f20d601">
+  <producedTypes>
+    <selectionType typeId="070958a4-37da-4b0f-8f7a-a8cfc85551c3" valueTypeId="51958d16-85f9-4f0f-a1d3-550f0aa41773"/>
+    <listType typeId="6165d5e9-7089-478f-9935-953f5d0a4f89" valueTypeId="38a04a06-d544-4757-ae21-578fe62315e8"/>
+    <managerType typeId="9e7403d2-3c60-4609-9c0d-1bdc59c4931f" valueTypeId="f079abbd-dcf3-47f3-b33c-c9eb925641e4"/>
+    <recordSetType typeId="4bc6abd7-a565-4428-885f-50952727ca02" valueTypeId="9a051380-6139-4e16-acfd-c017a4350b4f"/>
+    <recordKeyType typeId="1b802a5e-ee20-4dde-b1df-2cf2718b20b8" valueTypeId="33dca8c6-bc79-4f27-876a-ec630f002c01"/>
+    <recordType typeId="86d19eda-cf87-42cd-b394-a982d371a2ff" valueTypeId="6b68b631-9225-4b36-a3b6-37b3e28da567"/>
+    <recordManagerType typeId="3ceb1fcc-34f2-459f-aa0e-3ee59f923c41" valueTypeId="a0da0934-9f9e-4cfc-824f-c133bb128a67"/>
+  </producedTypes>
+  <name>УдалитьУатДокументыТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Документы ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle documents</value>
+  </synonym>
+  <comment>Регистрационные документы ТС (уат)</comment>
+  <editType>BothWays</editType>
+  <defaultListForm>InformationRegister.УдалитьУатДокументыТС.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Документ ТС</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Vehicle document</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Регистрационный документ ТС</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Registration document of vehicle</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы ТС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Vehicle documents</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Регистрационные документы ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Registration documents of vehicle</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Регистрационные документы ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Registration documents of vehicle</value>
+  </explanation>
+  <resources uuid="cf6058c6-b38e-4c83-9871-7c4b507a166e">
+    <name>ДатаВыдачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата выдачи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of issue</value>
+    </synonym>
+    <comment>Дата выдачи документа</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата выдачи документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date of document issue</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="88105df5-8fca-4df1-8f0c-ff4be2435de9">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Validity period</value>
+    </synonym>
+    <comment>Дата окончания срока действия</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания срока действия</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Validity period end date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="5e0e9836-bcf4-44fc-9c47-3347ee5ca1c8">
+    <name>Архив</name>
+    <synonym>
+      <key>ru</key>
+      <value>В архиве</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>In archive</value>
+    </synonym>
+    <comment>Документ в архиве</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ в архиве</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document in archive</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="7e78252a-e4d9-4825-ae3f-e065ea2fbde6">
+    <name>КемВыдан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кем выдан</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Issued by</value>
+    </synonym>
+    <comment>Кем выдан документ</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кем выдан документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Issuing authority of document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bf558947-d18d-4bf3-a955-44ef0534fb21">
+    <name>Категория</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Category</value>
+    </synonym>
+    <comment>Категория документа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Категория документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document category</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bbdb4bd5-63f3-42f2-bd7b-77dd55756038">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Any additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e1fce61c-85be-436e-92a3-06908eb6c299">
+    <name>ПрисоединенныйФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Присоединенный файл</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Attached file</value>
+    </synonym>
+    <comment>Хранилище данных файла</comment>
+    <type>
+      <types>CatalogRef.Файлы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Присоединенный файл к объекту</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Attached file to object</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="861c800c-b10d-4fd6-bc02-f50e97830d59">
+    <name>Изображение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изображение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Image</value>
+    </synonym>
+    <comment>Изображение</comment>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Скан документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Scan of document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d6334740-7ea7-4978-b837-3d342fa9953b">
+    <name>ФлагПереноса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Флаг переноса </value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transfer check box</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебный реквизит. Истина, если данные были перенесены в справочник Регистрационные документы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Service attribute. True if the data was moved to gas station catalog.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="7e6b7b65-256b-455e-80ac-d2fd29ba1d2e">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document type</value>
+    </synonym>
+    <comment>Вид документа</comment>
+    <type>
+      <types>CatalogRef.уатВидыДокументов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид документа водителя - ПТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Driver document - VCO</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f036487d-8b22-4ff3-ab1b-144241af0f89">
+    <name>Номер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number</value>
+    </synonym>
+    <comment>Номер документа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document number</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="91f4fc72-de2d-4e9c-a8ea-805ceab5bc68">
+    <name>Серия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Series</value>
+    </synonym>
+    <comment>Серия документа</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Серия документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document series</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e0435f16-8084-4ea0-8e90-df5912c4fd05">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="cd495e0a-b056-4964-a3cf-412a67560500">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd2f45f1-3b41-4137-95c9-82c09ddeb16c">
+  <producedTypes>
+    <objectType typeId="82b7c609-bffd-4eef-b9bd-2408b5ec1b32" valueTypeId="8b987487-f039-4af5-95ca-b628b04eb282"/>
+    <refType typeId="f907e539-449b-4a94-80dd-02300a1221be" valueTypeId="b0aed744-775a-4560-b5d0-8ed067659bc9"/>
+    <selectionType typeId="94ad3bb5-32eb-47c8-ba5f-5ea49b991916" valueTypeId="98b9138b-4905-4172-95f8-620dc5b92038"/>
+    <listType typeId="786fed76-cfca-488d-8cf1-3b1309a94a2c" valueTypeId="e77a761a-b44f-4b35-9c20-48d4a682ea71"/>
+    <managerType typeId="3a50073d-97d0-4bc5-9d96-26adab83ae31" valueTypeId="54b1ed4e-4af6-48a1-b9f2-cf89d28f4899"/>
+  </producedTypes>
+  <name>уатСтатусыТопливныхКарт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы топливных карт</value>
+  </synonym>
+  <comment>Статусы топливных карт</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатСтатусыТопливныхКарт.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатСтатусыТопливныхКарт.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Статус топливных карт</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Статус топливных карт</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статусы топливных карт</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Статусы топливных карт</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Статусы топливных карт</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="347f647a-63ad-43b2-ad83-5e11dcbc7c25">
+      <name>Действует</name>
+      <description>Действует</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="36f3e9d4-0b06-4f92-ae52-a01bbbf99b27">
+      <name>НеДействует</name>
+      <description>Не действует</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатСтатусыТопливныхКарт.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатСтатусыТопливныхКарт.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатСтатусыТопливныхКарт.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a374da6f-2116-481a-8439-d16520f62966">
+    <name>НаименованиеВСистемеПоставщика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование в системе поставщика</value>
+    </synonym>
+    <comment>(уат)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2e6bdb17-6bf2-47d7-b7f2-6194899589b9">
+    <name>Действует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Valid</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="562440b8-5c78-4fca-93d7-007192c01ba9">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="47dd9883-b8b3-46a3-bdfa-3ec2b9dd5b66">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3394cc91-e9a7-4cb4-9d02-d3fee0947d0c">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

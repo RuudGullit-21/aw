@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22192000-a494-4e2b-a3e5-d73258b7f6fb">
+  <producedTypes>
+    <objectType typeId="18bac0f3-49d1-43d8-ab02-953319ece2fb" valueTypeId="edd8d932-08a4-49ca-81c1-734c39748ddd"/>
+    <managerType typeId="2003dcd1-543e-4715-878a-579b17e36a36" valueTypeId="df22401f-0ffe-46b7-b867-cc424b686087"/>
+  </producedTypes>
+  <name>уатВыгрузкаДанныхВЗУП8</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в конфигурацию &quot;Зарплата и Управление Персоналом&quot;</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Выгрузка данных в конфигурацию &quot;Зарплата и Управление Персоналом&quot;</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <defaultForm>DataProcessor.уатВыгрузкаДанныхВЗУП8.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="adbe0ba8-dab4-4b89-a745-1818be15cf8f">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата начала выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="13f666f0-9966-47a0-8e03-61cdb52b3c9e">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата окончания выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="89e09d03-da8c-4391-b2ac-71e8047b1b5c">
+    <name>ФайлВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export file</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя файла выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Имя файла выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8929b086-4afd-41ad-a59d-eed4acccca3f">
+    <name>ТаблицаПравилВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export rule table</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица правил выгрузки объектов и свойств</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Таблица правил выгрузки объектов и свойств</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5e33d794-304e-4eb4-b228-894b136bada3">
+    <name>ТаблицаПравилКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил конвертации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Conversion rule table</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица правил конвертации объектов и свойств</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Таблица правил конвертации объектов и свойств</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f2d0f4cd-d61e-400c-88de-d6dbd34c7ccd">
+    <name>ФлагКомментироватьОбработкуОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментировать выгрузку объектов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Комментировать выгрузку объектов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак комментирования выгрузки объектов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак комментирования выгрузки объектов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d0c3a881-c29c-4e55-9c0f-276b51003eb1">
+    <name>НеЗамещатьДокументыПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не замещать документы при загрузке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Не замещать документы при загрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не замещать документы при загрузке.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Не замещать документы при загрузке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8f420c80-6e38-434a-b902-4cb0984379f8">
+    <name>НеЗамещатьСправочникиПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не замещать справочники при загрузке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Не замещать справочники при загрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не замещать справочники при загрузке.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Не замещать справочники при загрузке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="8ca93cac-5a42-4803-8274-6922c731f586">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4e2ba77f-7a14-4b49-b431-4be88ff836ed">
+    <name>ПравилаОбменаТекст25</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена ЗУП 2.5</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Правила обмена ЗУП 2.5</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ccc20d03-463a-4624-a50d-849d583d1c4e">
+    <name>ПравилаОбменаТекст31</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена ЗУП 3.1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Правила обмена ЗУП 3.1</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="6a41d236-f49c-46aa-80ef-c08d74670398">
+    <name>ВыгрузкаДанныхВЗУП8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка данных в конфигурацию &quot;Зарплата и Управление Персоналом&quot;</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выгрузка данных в конфигурацию &quot;Зарплата и Управление Персоналом&quot;</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

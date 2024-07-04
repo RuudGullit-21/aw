@@ -1,0 +1,1941 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b3da23e-2ff5-4687-8d48-7fac01dcd42b">
+  <producedTypes>
+    <objectType typeId="766bf554-9056-4aeb-83d4-ebb341a358b3" valueTypeId="ccc697f6-4421-4de1-822b-46e8966ea036"/>
+    <refType typeId="19682eeb-86a0-44ae-82c1-eb0c003d71ae" valueTypeId="30c8ec30-7dfa-4e97-a572-ba9fa940ae8a"/>
+    <selectionType typeId="e7ad998c-b0f0-4398-968b-2c8d6203b835" valueTypeId="95c1b2dc-ffb6-475e-a9bf-f6556eb9bffe"/>
+    <listType typeId="8159ed5b-2f8e-4e54-8bec-dc2174682c3d" valueTypeId="7843163c-05ba-46eb-a8df-18c53652073f"/>
+    <managerType typeId="5851cbf0-8036-4597-a463-4493579b7845" valueTypeId="36d79554-a7c9-48cc-8f89-e51861048402"/>
+  </producedTypes>
+  <name>уатТарифыТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тарифы на транспортные услуги</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </synonym>
+  <comment>Тарифы на транспортные услуги (уат)</comment>
+  <inputByString>Catalog.уатТарифыТС.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прейскурант</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Price list</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Владелец</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Owner</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатПрейскурантыТС.EmptyRef</value>
+    </fillValue>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в группу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Included in group</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа тарифов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Group tariffs</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатТарифыТС.EmptyRef</value>
+    </fillValue>
+    <choiceParameterLinks>
+      <name>Отбор.Владелец</name>
+      <field>Catalog.уатТарифыТС.StandardAttribute.Owner</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатТарифыТС</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Тариф на транспортные услуги</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Тариф на транспортные услуги</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Тарифы на транспортные услуги</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Тарифы на транспортные услуги</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Тарифы на транспортные услуги</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Tariff on transport services</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <limitLevelCount>true</limitLevelCount>
+  <levelCount>5</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.уатПрейскурантыТС</owners>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатТарифыТС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.уатТарифыТС.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.уатТарифыТС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатТарифыТС.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.уатТарифыТС.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="afdde092-c3e5-4ef5-b1a6-6073fa87a4b2">
+    <name>БазаТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>База тарифа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатБазыСкладскихТарифов_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>База для расчета цены тарифа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатБазыСкладскихТарифов_уэ.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3e409d7c-92c1-4e5f-87c2-8d48b5459e85">
+    <name>ВидСкладскойОперации</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse operation type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вид складской операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыСкладскихОпераций_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для расчета по параметру выработки &quot;Складская обработка&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c8bcf526-abc3-42bc-95b4-704ec10b4ddc">
+    <name>ВидУпаковки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид упаковки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Packaging type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыУпаковки_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид упаковки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of package</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d4cd8ef0-3959-47fb-9e94-872c0beb5814">
+    <name>ГруппировкаТарифа1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group tariff 1</value>
+    </synonym>
+    <comment>Группировка тарифа 1</comment>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите группировку тарифа 1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tariff group 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0af8cc05-054f-4ecb-8e4b-47d085531fc5">
+    <name>ГруппировкаТарифа2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group tariff 2</value>
+    </synonym>
+    <comment>Группировка тарифа 2</comment>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите группировку тарифа 2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tariff group 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="feea8447-80fa-4398-b267-8b834c1586b9">
+    <name>ГруппировкаТарифа3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа 3</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group tariff 3</value>
+    </synonym>
+    <comment>Группировка тарифа 3</comment>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите группировку тарифа 3</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tariff group 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f9d277f2-3f66-472a-8815-3d371f42dc3a">
+    <name>ГруппировкаТарифа4</name>
+    <synonym>
+      <key>en</key>
+      <value>Group tariff 4</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Группировка тарифа 4</value>
+    </synonym>
+    <comment>Группировка тарифа 4</comment>
+    <type>
+      <types>EnumRef.уатГруппировкиТарифов</types>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tariff group 4</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите группировку тарифа 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="974ef86a-8749-498c-9914-3b819961f13d">
+    <name>ДобавлятьСкидкуНаценкуОтдельнойСтрокой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлять наценку отдельной строкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет, в каком виде наценка будет добавлена в табличную часть Доходы: отдельной строкой или суммой наценки в строке с базовым тарифом (базовой услугой). Флаг используется в табличных частях, в которых есть колонки &quot;Процент скидки&quot; и &quot;Сумма скидки&quot;, в остальных документах наценка всегда добавляется отдельной строкой.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="708326c8-1889-4445-803c-5a06340b19c1">
+    <name>ИспользуютсяГеозоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используются геозоны</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Use geozones</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>В области действия тарифа есть отбор по геозонам</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>In area of tariff validity is selection of geozones</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c3c39d1-5d5f-4939-af2b-65c325e020f8">
+    <name>КоличествоБесплатныхЕдиниц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество бесплатных единиц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При расчете стоимости по тарифу количество выработки уменьшается на это значение.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="382f9552-725e-44a6-ba6c-ff4396798307">
+    <name>КоличествоПервыхЗаказовНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество первых заказов на ТС</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тариф будет применен, если количество Заказов на ТС по договору контрагента (ранее введенные документы плюс текущий документ) не превышает указанное число.
+Если значение не указано, то тариф применяется всегда.
+Не учитывается при расчете по тарифам поставщиков.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="035f09ac-fb5b-4232-8179-29470665881d">
+    <name>МетодРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод расчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculation method</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатМетодыРасчетаПоТарифам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Метод расчета по тарифу</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Calculation method by rate</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатМетодыРасчетаПоТарифам.EnumValue.ПоПараметруВыработки</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8e10d6f2-3e3d-4928-84dd-81f9d1a55e73">
+    <name>МинимальнаяВыработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная выработка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Minimum output</value>
+    </synonym>
+    <comment>Минимальная выработка</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify minimum output</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите минимальное количество.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="edd0a6f2-30b7-4dec-9067-1080257caf25">
+    <name>МинимальнаяСтоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная стоимость</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Minimum cost</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Minimum cost.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимальная стоимость.
+При наличии скидки минимальная стоимость будет уменьшена на сумму скидки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61d8287e-6ae0-41e7-9ec8-67c75176795f">
+    <name>НоменклатураУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Services products and services</value>
+    </synonym>
+    <comment>Номенклатура услуги</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите номенклатуру услуги</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify products and services of services</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fac9d439-36af-4110-bedc-2d55c002e1a3">
+    <name>ОбластьДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scope</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Область действия тарифа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Tariff validity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fe899437-a435-49e1-afac-826b750276bb">
+    <name>ОбластьДействияПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Область действия представление</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>The scope of representation</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Область действия тарифа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Tariff validity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d89b25c1-4280-4ca1-a25e-58346b3085f4">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Output parameter</value>
+    </synonym>
+    <comment>Параметр выработки</comment>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите параметр выработки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Set output parameter</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a136cc8b-9124-4d6e-878e-0d505280d15d">
+    <name>Скидка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скидка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2810517d-c4a4-40c6-b349-99120e4e8d2d">
+    <name>СложныйТариф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сложный тариф</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Complex tariff</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что тариф сложный</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign that rate is complex</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="43828475-b548-45c8-8ecf-7012f79786ea">
+    <name>СпособЗаполненияКоличества</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ заполнения количества</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of filling quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ заполнения количества услуги в документе при использовании минимального тарифа. Минимальный тариф используется только в случаях, когда:
+- количество услуги меньше, чем минимальная выработка
+- расчитанная стоимость услуги меньше, чем минимальная стоимость</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="950b8849-c98b-4de7-ad25-636183ab611b">
+    <name>Тариф</name>
+    <synonym>
+      <key>en</key>
+      <value>Tariff</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Тариф</value>
+    </synonym>
+    <comment>Тариф</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите тариф</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tariff</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7b4198d2-4e55-404e-8250-319c79736197">
+    <name>ТарифнаяСетка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тарифная сетка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tariff scale</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тарифы типа &quot;Тарифная сетка&quot; подходят для табличных тарифов и позволяют существенно ускорить расчет стоимости услуг в документах</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Rates type &quot;Scale of charges&quot; fit for table rates and significantly accelerate the calculation of cost of services in documents</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3ef377d2-75c3-4d0a-bc92-1e9c754fab45">
+    <name>ТипКонтейнера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип контейнера</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыКонтейнеров_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0e61b029-982c-4dfe-8bf8-385ace957df2">
+    <name>ТипПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыПунктов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bb98e04d-d43d-40e2-801c-0ac86d0f9d01">
+    <name>ТипТочкиМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of operation</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыТочекМаршрута</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для расчета по параметру выработки &quot;Количество операций погрузки и разгрузки&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>It is used for calculation by output parameter &quot;Number of loading and unloading operations&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2019de7c-ff46-49ba-8612-45412c8c0580">
+    <name>УсловиеПримененияФиксТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условие применения фикс. тарифа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Application condition of fix. rate</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определяет применение тарифа при нулевой выработке. &quot;По условию&quot; - тариф будет применен только при наличии выработки по параметру, указанному в тарифе. &quot;Всегда&quot; - тариф применяется независимо от наличия выработки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Determines the application of tariff at zero output. &quot;By condition&quot; - the tariff will be applied only if there is an output for the parameter specified in the tariff. &quot;Always&quot; - the tariff is applied regardless of the availability of output.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="23174194-a68b-4188-933d-3827da188a86">
+    <producedTypes>
+      <objectType typeId="f5369386-e140-423f-bea8-9d8524777fbc" valueTypeId="a57017f2-3a28-4339-b865-a773d1b5493a"/>
+      <rowType typeId="86871fa4-ec7c-442d-95f3-3a0c12d1ecc2" valueTypeId="7ba09706-fc24-46ba-b683-62e1da677e7c"/>
+    </producedTypes>
+    <name>Тарифы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тарифы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tariffs</value>
+    </synonym>
+    <comment>Тарифы</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица расчета (для сложных тарифов)</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Calculation table (for complex rates)</value>
+    </toolTip>
+    <attributes uuid="6d857d61-8d99-42fb-8982-b70d759246a5">
+      <name>ЗнакГруппировки1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Знак группировки 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Grouping sign 1</value>
+      </synonym>
+      <comment>Знак группировки 1</comment>
+      <type>
+        <types>EnumRef.уатЗнакиСравнения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Первый знак группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>First sign of group</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4a840ea6-cd71-48f4-a56f-aee18996b6ca">
+      <name>ЗнакГруппировки2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Знак группировки 2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Grouping sign 2</value>
+      </synonym>
+      <comment>Знак группировки 2</comment>
+      <type>
+        <types>EnumRef.уатЗнакиСравнения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Второй знак группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Second sign of group</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0a418b57-34dc-4dfa-a7f8-b5aa3020b5df">
+      <name>ЗнакГруппировки3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Знак группировки 3</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Grouping sign 3</value>
+      </synonym>
+      <comment>Знак группировки 3</comment>
+      <type>
+        <types>EnumRef.уатЗнакиСравнения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Третий знак группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Third sign of group</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9229c18f-a3f3-46a6-9253-7849986027f0">
+      <name>ЗнакГруппировки4</name>
+      <synonym>
+        <key>en</key>
+        <value>Grouping sign 4</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Знак группировки 4</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатЗнакиСравнения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Четвертый знак группировки</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1e8eb237-24bb-4ea8-9979-d582fcdc47b9">
+      <name>ЗначениеГруппировки1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 1</value>
+      </synonym>
+      <comment>Значение группировки 1</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Первое значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>First grouping value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4be4eee9-94ed-4a35-9ddd-6be0cecddc07">
+      <name>ЗначениеГруппировки2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 2</value>
+      </synonym>
+      <comment>Значение группировки 2</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Второе значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Second meaning of grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c95c9c50-080a-4f07-a347-69d6f37aaf50">
+      <name>ЗначениеГруппировки3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 3</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 3</value>
+      </synonym>
+      <comment>Значение группировки 3</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Третье значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Third meaning grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="446ac578-f923-4b31-9f19-94397e046528">
+      <name>ЗначениеГруппировки4</name>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 4</value>
+      </synonym>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 4</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Четвертое значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Third meaning grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="bae9242c-bc0a-432a-8f3f-883ba45e712d">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Tariff</value>
+      </synonym>
+      <comment>Тариф</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тариф ТС</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle tariff</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="de994f0e-5ca7-41e9-a96f-e6f4f667a540">
+    <producedTypes>
+      <objectType typeId="d2dcfcae-513f-40a5-b62c-1f94f0188a8c" valueTypeId="0d24c1e1-ba9a-4eb5-b3d0-605caba0098e"/>
+      <rowType typeId="fbd94a77-aa40-4c9c-95ae-94f8bd33e865" valueTypeId="2bd2165a-5015-4ad2-8dda-79e57fbabdff"/>
+    </producedTypes>
+    <name>БазовыеУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовые услуги</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Basic services</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="960a56f6-ba19-4227-816f-c38f99e59e85">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Услуга</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Service</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Базовая услуга. Используется для расчета по тарифам с методом &quot;Процентом от суммы&quot;</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Basic service. Used for calculating tariffs with the method of &quot;Percent of amount&quot;</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fb6c9641-fd87-4078-aeeb-136835ef8a4b">
+    <producedTypes>
+      <objectType typeId="4b8f10bd-8ffb-407f-9a76-49af761daf35" valueTypeId="9e931ef1-3ad4-46a2-8d73-74860ea49b74"/>
+      <rowType typeId="ffd04e6c-e050-4450-a697-4079e760d4bb" valueTypeId="38dd9054-d812-4e9b-ad06-e62ee0058fe3"/>
+    </producedTypes>
+    <name>СтрокиТарифнойСетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строки тарифной сетки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scale of charges lines</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6c082677-4b80-4fc6-a5f4-b65beddaba4c">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>ID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентификатор строки тарифной сетки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The ID of tariff scale</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9f7ae0c8-2233-4198-8888-f36cb6d6d1af">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Tariff</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение тарифа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Tariff value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="393056fb-a0f9-4de7-b9fd-d80bf6529e8d">
+      <name>МинимальнаяВыработка</name>
+      <synonym>
+        <key>ru</key>
+        <value>Минимальная выработка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Minimum output</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Минимальная выработка.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Minimal output.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eec2b067-bf03-4115-a989-5674a9feb468">
+      <name>МинимальнаяСтоимость</name>
+      <synonym>
+        <key>ru</key>
+        <value>Минимальная стоимость</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Minimum cost</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Минимальная стоимость.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Minimum cost.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e2110480-128e-4c66-a8dd-5a7d18d78af2">
+      <name>СпособЗаполненияКоличества</name>
+      <synonym>
+        <key>ru</key>
+        <value>Способ заполнения количества</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Type of filling quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>1</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>0 - значение равно фактическому, 1 - значение равно минимальному, 2 - значение равно 1</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>0 - value is actual, 1 - minimum value 2 - value 1</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="77239084-8cc5-4318-a772-03ff47bc7e56">
+      <name>ОбластьДействияПредставление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Область действия представление</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The scope of representation</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Область действия представление.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>scope of representation.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="1e7f7f3c-f1cf-4a8e-a032-9f856ab1f23e">
+    <producedTypes>
+      <objectType typeId="931764ae-ccb6-4646-9e3d-8a70dd2e2871" valueTypeId="762c157c-fcd7-4306-a738-78454c1bcc85"/>
+      <rowType typeId="b04a40f6-9a77-4c97-ba75-c802395c510c" valueTypeId="1beb7277-ed63-4ba0-95cb-ae0b457afcf0"/>
+    </producedTypes>
+    <name>ОбластиТарифнойСетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Области тарифной сетки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scale of charges areas</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1863cffb-f83a-439e-8af1-11a4f3fcb23d">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>ID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентификатор строки тарифной сетки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The ID of tariff scale</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="ad42d5fa-40b3-4644-b34a-199810b916cb">
+      <name>ВидОбластиДействия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид области действия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Action area type</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатВидыОбластейДействияТарифовТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид области действия.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Action area type.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8f0e6eaa-8da1-4bd1-9d45-695dbfd88cd1">
+      <name>ЗначениеОбластиДействия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение области действия</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Action area value</value>
+      </synonym>
+      <type>
+        <types>DefinedType.уатВидыОбластейДействияТарифа</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение области действия.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Value of action area.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="22fb6d8c-ba81-4327-b8a4-fb9c384638ad">
+      <name>ЭтоГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Это группа</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>This is a group</value>
+      </synonym>
+      <comment>Признак того, что значение области - это группа. Служебный, используется для ускорения расчета по тарифам</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="cb0585c3-6ab2-4f36-9e5b-fac23fc8de54">
+    <producedTypes>
+      <objectType typeId="69bb3695-d95d-4df4-8484-8c4daad2d712" valueTypeId="00a3e684-3ec6-4a88-9a45-c10ac04dd7b5"/>
+      <rowType typeId="a70faa80-3fa7-4211-ad81-706aa939fa9c" valueTypeId="d5dd3593-36f0-4c86-b849-38962ea110ff"/>
+    </producedTypes>
+    <name>ЗначенияТарифнойСетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значения тарифной сетки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scale of charges values</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="37448691-4f51-4acc-9a9a-4ad5b9be4ed2">
+      <name>ID</name>
+      <synonym>
+        <key>ru</key>
+        <value>ID</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>ID</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>36</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Идентификатор строки тарифной сетки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>The ID of tariff scale</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5fafec2f-de44-4402-877d-398098100511">
+      <name>ЗначениеГруппировки1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 1</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 1</value>
+      </synonym>
+      <comment>Значение группировки 1</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Первое значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>First grouping value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7b686832-dbe2-4803-b799-959594ef4202">
+      <name>ЗначениеГруппировки2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 2</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 2</value>
+      </synonym>
+      <comment>Значение группировки 2</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Второе значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Second meaning of grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0bf76a68-324c-4ef8-9917-d8f9e23123c3">
+      <name>ЗначениеГруппировки3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 3</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 3</value>
+      </synonym>
+      <comment>Значение группировки 3</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Третье значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Third meaning grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e1f45ede-0e51-463e-a323-eba27e544bb9">
+      <name>ЗначениеГруппировки4</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение группировки 4</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>The grouping value 3</value>
+      </synonym>
+      <comment>Значение группировки 4</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Четвертое значение группировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Third meaning grouping</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="56194276-86fc-4d6e-a4ad-8cb02c1c11f1">
+      <name>Тариф</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тариф</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Tariff</value>
+      </synonym>
+      <comment>Тариф</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение тарифа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Tariff value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="889e577d-e7dd-4334-a217-5d4b335a3104">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cdb51392-9899-4ff1-8c9b-fd497a251f62">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="17a71487-72b7-4263-bf0c-2c991fe9d88b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b3844540-8697-473e-a3a1-3164cd484e40">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="14ff2f77-8fba-49db-b6f1-f67315285482">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92bdb655-a676-4912-b9ca-24491be519af">
+    <name>ФормаВыбораГруппировкиТарифа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группировки тарифа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="13e168ff-488a-43eb-bfab-a80b109f1e14">
+    <name>КомпоновкаДанныхОбластьДействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных область действия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>layout of the data scope</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="bb5356b2-61eb-411d-86eb-79f82bbf0104">
+    <name>КомпоновкаДанныхОбластьДействияКонтрагенты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных область действия для сторонних контрагентов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Compose of the data scope for third-party counterparties</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="fb226369-3da2-4971-8236-adc4cc501c5a">
+    <name>КомпоновкаДанныхОбластьДействия_проф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных область действия (проф)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Layout of data action area (prof)</value>
+    </synonym>
+    <comment>Используется в решении УАТ Проф</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="b0e93628-b17f-4245-b56a-415b44c20f1a">
+    <name>КомпоновкаДанныхОбластьДействияКонтрагенты_проф</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компоновка данных область действия для сторонних контрагентов (проф)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Compose of the data scope for third-party counterparties (prof)</value>
+    </synonym>
+    <comment>Используется в решении УАТ Проф</comment>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="8a9f7461-c0f8-4203-88af-df6c8e47c4a8">
+    <name>ИнструкцияТарифнаяСетка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция тарифная сетка</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+  <templates uuid="60efccd7-e1e1-45ca-ac32-fa6d009e6300">
+    <name>ИнструкцияГеозоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструкция геозоны</value>
+    </synonym>
+    <templateType>HTMLDocument</templateType>
+  </templates>
+</mdclass:Catalog>

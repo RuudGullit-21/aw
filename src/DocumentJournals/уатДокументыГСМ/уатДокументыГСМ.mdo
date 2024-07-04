@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8b15d9c4-51f9-43f5-b136-614b1dfcb4b2">
+  <producedTypes>
+    <selectionType typeId="42d7e1a5-52d1-45b9-a8b6-967465af3f1b" valueTypeId="69352f85-d746-46d6-b4e9-594b8fb6fb1c"/>
+    <listType typeId="7a81ac04-4a1e-4fdd-b990-d1054654d44e" valueTypeId="60bd279d-91e0-410b-8492-6c55fbbdcef1"/>
+    <managerType typeId="739d1992-dbf6-4c6a-88af-344bbf6f13fa" valueTypeId="8c1dcedb-58b2-4d92-ab41-2c452f9f720b"/>
+  </producedTypes>
+  <name>уатДокументыГСМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы ГСМ</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Fuels documents</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатДокументыГСМ.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.уатСливГСМ</registeredDocuments>
+  <registeredDocuments>Document.уатЗаправкаГСМ</registeredDocuments>
+  <registeredDocuments>Document.уатОперацииСТехническимиЖидкостями</registeredDocuments>
+  <registeredDocuments>Document.уатВводОстатковГСМ</registeredDocuments>
+  <registeredDocuments>Document.уатОтчетПоставщикаПЦ</registeredDocuments>
+  <registeredDocuments>Document.уатИнвентаризацияГСМвТС</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы ГСМ</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Fuels documents</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы ГСМ</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Fuels documents</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Документы ГСМ</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Fuels documents</value>
+  </explanation>
+  <columns uuid="1cdc91ac-574f-4740-a175-62585e51dfa3">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <references>Document.уатВводОстатковГСМ.Attribute.Организация</references>
+    <references>Document.уатЗаправкаГСМ.Attribute.Организация</references>
+    <references>Document.уатОперацииСТехническимиЖидкостями.Attribute.Организация</references>
+    <references>Document.уатОтчетПоставщикаПЦ.Attribute.Организация</references>
+    <references>Document.уатСливГСМ.Attribute.Организация</references>
+    <references>Document.уатИнвентаризацияГСМвТС.Attribute.Организация</references>
+  </columns>
+  <columns uuid="8cc3f5f0-d102-4875-a546-9c6f67caf516">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <references>Document.уатВводОстатковГСМ.Attribute.Ответственный</references>
+    <references>Document.уатЗаправкаГСМ.Attribute.Ответственный</references>
+    <references>Document.уатОперацииСТехническимиЖидкостями.Attribute.Ответственный</references>
+    <references>Document.уатОтчетПоставщикаПЦ.Attribute.Ответственный</references>
+    <references>Document.уатСливГСМ.Attribute.Ответственный</references>
+    <references>Document.уатИнвентаризацияГСМвТС.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="3ca07478-e9ca-4f37-8461-272bd696f83b">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <references>Document.уатВводОстатковГСМ.Attribute.Комментарий</references>
+    <references>Document.уатЗаправкаГСМ.Attribute.Комментарий</references>
+    <references>Document.уатОперацииСТехническимиЖидкостями.Attribute.Комментарий</references>
+    <references>Document.уатОтчетПоставщикаПЦ.Attribute.Комментарий</references>
+    <references>Document.уатСливГСМ.Attribute.Комментарий</references>
+    <references>Document.уатИнвентаризацияГСМвТС.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="0b7171bd-d2f2-4e16-bba4-07a2830e0652">
+    <name>АзсСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>АЗС/склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Gas station / warehouse</value>
+    </synonym>
+    <comment>АЗС/склад</comment>
+    <references>Document.уатЗаправкаГСМ.Attribute.АЗС</references>
+    <references>Document.уатОперацииСТехническимиЖидкостями.Attribute.Склад</references>
+    <references>Document.уатОтчетПоставщикаПЦ.Attribute.АЗС</references>
+    <references>Document.уатСливГСМ.Attribute.АЗС</references>
+    <references>Document.уатИнвентаризацияГСМвТС.Attribute.АЗС</references>
+  </columns>
+  <columns uuid="1e81a97e-f9a9-4fba-b6b3-6b282ed6775f">
+    <name>ВидЗаправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид заправки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of fueling</value>
+    </synonym>
+    <comment>Вид заправки</comment>
+    <references>Document.уатЗаправкаГСМ.Attribute.ВидДвиженияГСМ</references>
+  </columns>
+  <forms uuid="421df42c-411d-4cfb-9621-4f04eb023f35">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

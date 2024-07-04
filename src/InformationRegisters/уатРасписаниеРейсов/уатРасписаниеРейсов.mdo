@@ -1,0 +1,702 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="870d7a8e-119b-4420-ae46-d708679453e8">
+  <producedTypes>
+    <selectionType typeId="c1e6462f-4039-4c0f-838c-bfb40f92ec29" valueTypeId="14aa3781-a853-44db-ad4d-92ee1f2253f0"/>
+    <listType typeId="e3d05b04-2dc6-4395-98b5-e474cc9c9e94" valueTypeId="2d6c0532-20b1-4814-b4c3-cc78f702a10d"/>
+    <managerType typeId="884a35b9-0475-4171-a02f-7341d1c47df9" valueTypeId="0f7c704b-b678-442a-a3bf-f95a9ba87cc3"/>
+    <recordSetType typeId="977ec24a-d797-4ce9-abde-829bbf60e5bd" valueTypeId="9337629b-c7ff-4ec8-b3ff-a01093ed4035"/>
+    <recordKeyType typeId="5ec9423f-456f-4e36-99e9-46f8b6cd3ad2" valueTypeId="0e382561-ae07-49d5-8d07-04471cdf409b"/>
+    <recordType typeId="f2c49ec5-4276-47d5-b9cc-2ce8a3af7841" valueTypeId="20b4ab47-5681-489c-9aab-69ae05856741"/>
+    <recordManagerType typeId="62513a1a-331f-4e1a-a226-ca6390326fc6" valueTypeId="00e5fc5f-f9f6-4cf5-a2eb-879808506b28"/>
+  </producedTypes>
+  <name>уатРасписаниеРейсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание рейсов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Trip schedule</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.уатРасписаниеРейсов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатРасписаниеРейсов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="e7dcdec5-a457-4c26-82d7-22b713904ff1">
+    <name>Пн</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пн</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mo</value>
+    </synonym>
+    <comment>Понедельник</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Понедельник</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Monday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b2268d52-dba5-4d2e-889e-d47662464533">
+    <name>Вт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tu</value>
+    </synonym>
+    <comment>Вторник</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вторник</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Tuesday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3e60e92e-0cd4-4cc2-975a-b8e02c382252">
+    <name>Ср</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ср</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>We</value>
+    </synonym>
+    <comment>Среда</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Среда</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Wednesday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6bced38a-a576-4839-a26a-81cdc8a4677e">
+    <name>Чт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Th</value>
+    </synonym>
+    <comment>Четверг</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Четверг</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Thursday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3215ae5a-267e-4621-be92-9cea8cb6efe5">
+    <name>Пт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fr</value>
+    </synonym>
+    <comment>Пятница</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пятница</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Friday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d240ad38-4d65-4060-a162-90afb6119e63">
+    <name>Сб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сб</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sa</value>
+    </synonym>
+    <comment>Суббота</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Суббота</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Saturday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ba7556a3-2fba-401e-9be3-b0b464fca8fd">
+    <name>Вс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вс</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Su</value>
+    </synonym>
+    <comment>Воскресенье</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Воскресенье</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sunday</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="76ed0575-4de2-4f45-8b3f-e1133b5faef8">
+    <name>ДнейДоОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до отправления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Days before receipt</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество дней до даты отправления. Рассчитывается от даты документа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b03a8925-68ba-499f-b8e8-492b443b53b3">
+    <name>ДнейВПути</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней в пути</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сколько дней выделено на движение между пунктом отправления и прибытия. Используется для автоматического заполнения дат отправления в Заказе на ТС и в Потребности в перевозке. 
+Используются, только когда расписание задано для пунктов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1342f41-bbc4-4e42-aeca-22ca678b2b01">
+    <name>FTL</name>
+    <synonym>
+      <key>ru</key>
+      <value>FTL</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>FTL</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Автоматически устанавливает признак FTL в Заказе на ТС и Потребности в перевозке. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="21eaef9e-0229-471e-b2bf-025d5bb0c201">
+    <name>ВремяПрибытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время прибытия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time of arrival</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время прибытия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arrival time.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="66e38dcb-990b-4448-b175-0318794aea35">
+    <name>ВремяУбытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время убытия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time of departure</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время убытия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2eae27d5-aed7-413a-816e-01a74dd96df5">
+    <name>Маршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Route</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатМаршруты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Маршрут рейса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Trip route</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4218b390-7e2b-48a7-b076-0d73b925bee1">
+    <name>Выход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВыходыМаршрутов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выход на маршрут</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Access to route</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9d83c8d7-49de-440a-9669-cae811df821c">
+    <name>Рейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейс</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Trip</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатРейсыМаршрутов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рейс.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Trip.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5832b15f-46a4-4678-a6cb-3b09a00c891f">
+    <name>УИДПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>УИД пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point UID</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор пункта в маршруте</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Unique identifier of point</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c3d31e20-34f6-4906-b7ff-b7fb729e26e2">
+    <name>ПунктОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт отправления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point of departure</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="66b69696-67fa-4547-8b26-623f66aaad3b">
+    <name>ПунктНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт назначения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f04ecaee-9fc3-4e21-92b4-b855258e1296">
+    <name>Грузоотправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузоотправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ff636502-2870-4c7b-b36b-c8b04836acff">
+    <name>Грузополучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузополучатель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Consignee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="360cd112-47bc-40b9-8c10-7bca66b1ebf1">
+    <name>ДатаУстановки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Installation date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата установки расписания (более свежие расписания считаются более приоритетными)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0132ef24-7d8a-4f2a-be8a-d4616f6d2362">
+    <name>ДействуетС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует с</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Valid from</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала периода действия данного графика. Если не заполнено - действует без ограничения периода.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="86173b2e-bb5d-490c-8463-516cf3fa70ce">
+    <name>ДействуетПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действует по</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Valid until</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания периода действия данного графика. Если не заполнено - действует без ограничения периода.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="26b8e5b9-109f-4ee5-8797-7e26e9cb5c32">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5fa8a219-2143-4ce3-acf0-7ad2dff43f97">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

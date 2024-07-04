@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cca65839-c6e2-4780-a404-0f9f1f51eefc">
+  <name>сфпПриЗаписиОбъектаОпределенияБизнесРегиона</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи объекта определения Бизнес-региона</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ТелефонныйЗвонок</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.сфпСофтФонПроСервер.сфпПриЗаписиОбъектаОпределенияБизнесРегиона</handler>
+</mdclass:EventSubscription>

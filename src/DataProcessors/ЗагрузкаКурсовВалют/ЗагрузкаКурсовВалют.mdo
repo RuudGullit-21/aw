@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cdaf99f0-c63e-47c1-94e1-4b4f802710f9">
+  <producedTypes>
+    <objectType typeId="02898f02-f2af-4aea-9b2f-917123b6ef9e" valueTypeId="1222f5da-83d2-4893-b247-61ad186a343c"/>
+    <managerType typeId="9bb07b9c-5a65-4ba4-a265-ca8cf55f7a75" valueTypeId="9ecbcf73-5972-4ae9-94e9-c76bada4acb6"/>
+  </producedTypes>
+  <name>ЗагрузкаКурсовВалют</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка курсов валют</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Import exchange rates</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаКурсовВалют.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="4737e029-17df-440f-aa4f-9db8ee513744">
+    <name>НачалоПериодаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода загрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Import period start</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала периода загрузки курсов валют</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start date of exchange rate import period</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="532f9170-39b5-41c5-a51f-c8ddb3a729fb">
+    <name>ОкончаниеПериодаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Окончание периода загрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Import period end</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания периода загрузки курсов валют</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date of exchange rate import period</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <tabularSections uuid="a07f894b-221b-4f04-bd8e-f6b1e50b43e4">
+    <producedTypes>
+      <objectType typeId="f50d5169-d7cf-4d0c-bf27-813353134948" valueTypeId="d4b38110-f682-437e-8d09-5018f38ab565"/>
+      <rowType typeId="e0771e3e-6131-48a6-a2e7-a0bc6eef2483" valueTypeId="cc53ee3a-5d70-467d-97f1-d0d607898817"/>
+    </producedTypes>
+    <name>СписокВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список валют</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency list</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="1b3f88a3-2c54-46c5-bc5c-9acd6451402a">
+      <name>КодВалюты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Код валюты</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Currency code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>3</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Цифровой код валюты по общероссийскому классификатору валют</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency numeric code according to All-Russian Classifier of Currencies</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="e83cf10b-d826-407d-8cde-c2c60a738020">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Символьный код валюты по общероссийскому классификатору валют</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency alphabetic code by All-Russian Classifier of Currencies</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <quickChoice>DontUse</quickChoice>
+      <createOnInput>Use</createOnInput>
+      <fillValue xsi:type="core:ReferenceValue">
+        <value>Catalog.Валюты.EmptyRef</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="0805f473-d954-4828-abb3-4479f6983057">
+      <name>ДатаКурса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата курса</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Currency date</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата последней загрузки курса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Date of last rate export</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:DateValue">
+        <value>0001-01-01T00:00:00</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="ae6444ed-ebca-4cf9-b35f-b878011c34f0">
+      <name>Курс</name>
+      <synonym>
+        <key>ru</key>
+        <value>Курс</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>4</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Последний загруженный курс</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Last imported rate</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:NumberValue">
+        <value>0</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="51f9097e-e627-4bbb-b7c9-f1263b4c5572">
+      <name>Кратность</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кратность</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Кратность валюты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency multiplicity</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:NumberValue">
+        <value>0</value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="74228950-8a4b-4dd6-a053-8650de202521">
+      <name>Загружать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Загружать</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Import</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Загружать курс</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Import rate</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6b9ce91e-08b9-4972-9878-1724c67b68ec">
+      <name>Представление</name>
+      <synonym>
+        <key>ru</key>
+        <value>Представление</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Presentation</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Название валюты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency name</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="640814f2-6082-475e-8006-25fd5b24afdb">
+      <name>СимвольныйКод</name>
+      <synonym>
+        <key>ru</key>
+        <value>Символьный код</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Character code</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Символьный код валюты</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency character code</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <forms uuid="af4bc8ba-47f2-4676-8d29-47e86d9dfc21">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="569047c2-0879-4fba-a814-44812d21043b">
+    <name>СообщенияОбОшибках</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения об ошибках</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Error messages</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0c3c4494-c037-431e-9eeb-9b6cfd7372c3">
+    <name>ПараметрыПрописиВалюты_ru</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры прописи валюты на русском языке</value>
+    </synonym>
+    <comment>АПК:58</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="80512d95-5458-4934-98ae-a7b58099196b">
+    <name>ПодборВалютИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор валют из классификатора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Pick currencies from classifier</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6f2354cd-4a34-4921-96bb-b786486f85cf">
+    <name>ОбщероссийскийКлассификаторВалют</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общероссийский классификатор валют</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>All-Russian Classifier of Currencies</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

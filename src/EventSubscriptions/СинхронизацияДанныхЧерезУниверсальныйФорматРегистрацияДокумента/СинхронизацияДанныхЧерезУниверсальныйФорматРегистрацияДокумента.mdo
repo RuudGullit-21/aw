@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2c655421-fb7a-45bd-bd0c-a4a04ae13045">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат регистрация документа</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Data sync via universal format registration document</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.уатВозвратТоваров</types>
+    <types>DocumentObject.уатСписаниеТоваров</types>
+    <types>DocumentObject.уатПлатежноеПоручениеИсходящее</types>
+    <types>DocumentObject.уатРемонтныйЛист</types>
+    <types>DocumentObject.уатИнвентаризацияТоваров</types>
+    <types>DocumentObject.уатПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.уатАвансовыйОтчет</types>
+    <types>DocumentObject.уатПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.уатЗаправкаГСМ</types>
+    <types>DocumentObject.уатСчетНаОплатуПоставщика</types>
+    <types>DocumentObject.уатОперацииСТехническимиЖидкостями</types>
+    <types>DocumentObject.уатСливГСМ</types>
+    <types>DocumentObject.уатСчетНаОплатуПокупателю</types>
+    <types>DocumentObject.уатПриходныйКассовыйОрдер</types>
+    <types>DocumentObject.уатТТД</types>
+    <types>DocumentObject.уатПутевойЛист</types>
+    <types>DocumentObject.уатВыдачаРасходныхМатериалов</types>
+    <types>DocumentObject.уатРасходныйКассовыйОрдер</types>
+    <types>DocumentObject.уатНачислениеЗарплаты</types>
+    <types>DocumentObject.уатРеализацияУслуг</types>
+    <types>DocumentObject.уатПеремещениеТоваров</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУАТ.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

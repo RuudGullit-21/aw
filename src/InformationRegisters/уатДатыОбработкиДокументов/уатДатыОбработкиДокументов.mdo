@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="721578f0-ff04-4436-b665-f6f0e6cd9eb6">
+  <producedTypes>
+    <selectionType typeId="e85945bf-5695-408c-8469-337a0b41a53b" valueTypeId="48960369-ac82-4681-8f85-74f0996e38fa"/>
+    <listType typeId="946183b6-9b91-438a-a8d5-a1bc3db0c12a" valueTypeId="74744437-8ef0-4d6e-9b8b-0292e645657a"/>
+    <managerType typeId="c1f66e09-db77-4a67-9a63-76719f3732e9" valueTypeId="53c47672-0c12-48f1-83eb-ef934f263977"/>
+    <recordSetType typeId="ed4aba30-4554-42b9-8ec2-4c1abdf60e35" valueTypeId="1f0d5c50-461c-472b-a6db-08382f316c11"/>
+    <recordKeyType typeId="dafde331-0745-4477-b9a0-9a8d8dfcb485" valueTypeId="e379b235-1553-4fee-af4c-002b27da6823"/>
+    <recordType typeId="d22020bc-6681-4967-85b9-a66cbf90f1f1" valueTypeId="27103688-680c-42b9-ba7d-11270f27aa99"/>
+    <recordManagerType typeId="de17bc25-3bd7-45e2-bf02-d8c4a6986551" valueTypeId="1eba1e9e-1669-4629-b4f1-aa9855ad001f"/>
+  </producedTypes>
+  <name>уатДатыОбработкиДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты обработки документов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f3b088ae-629b-4bc8-a8fe-a24eaeac21a4">
+    <name>ПлановаяДатаОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая дата обработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ff4d2a87-3d89-449c-8051-401d2a0ed88b">
+    <name>КоличествоДнейНаОбработку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней на обработку</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="61179e0a-30c8-4101-86f8-7c93e2281df0">
+    <name>СопроводительныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сопроводительный документ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСопроводительныеДокументы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

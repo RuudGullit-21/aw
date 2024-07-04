@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2dc42c2-8cd1-44a4-82c3-40e833f4f425">
+  <producedTypes>
+    <objectType typeId="fb0cfb50-21b1-42ba-ac07-034eeed401b0" valueTypeId="1b5c7cca-1870-42f0-b4a3-c37b1743f01e"/>
+    <refType typeId="b48d5a0f-5b82-4e53-bd7e-0223f47805f9" valueTypeId="2f6b38c1-0c33-456d-bb65-0d476b9684ae"/>
+    <selectionType typeId="d8bce44f-6b24-43d7-9ce9-e4f8bc86426f" valueTypeId="7bdc47d2-f096-47aa-9433-f0ea37705cbd"/>
+    <listType typeId="2952335b-21d5-47c7-ba48-26929f0135af" valueTypeId="becf2348-b4f8-47f3-bff6-e4b51802974c"/>
+    <managerType typeId="29b1a681-92c9-4978-a3b4-00f7b8fc80a8" valueTypeId="dc2d3cde-75e3-43a6-828e-ad915174e23c"/>
+  </producedTypes>
+  <name>уатПеремещениеТоваров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перемещение материалов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Materials movement</value>
+  </synonym>
+  <comment>Перемещение материалов (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатПеремещениеТоваров.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатПеремещениеТоваров</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <basedOn>Document.уатПоступлениеТоваровУслуг</basedOn>
+  <basedOn>Document.уатРемонтныйЛист</basedOn>
+  <basedOn>Document.уатВыдачаРасходныхМатериалов</basedOn>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Перемещение материалов</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>en</key>
+    <value>Materials movement</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Перемещение материалов</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Materials movement</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Перемещения материалов</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Materials movements</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Перемещения материалов</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Materials movements</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Перемещения материалов</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Materials movements</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатПеремещениеТоваров.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатПеремещениеТоваров.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатПеремещениеТоваров.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>AccumulationRegister.уатПартииТоваровНаСкладах</registerRecords>
+  <registerRecords>AccumulationRegister.уатТоварыВЯчейках</registerRecords>
+  <registerRecords>InformationRegister.уатДатыДвиженияТоваровНаСкладах</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="2df6c5cb-bfe4-4624-a21b-2dfb7aea9b2c">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Basis document</value>
+    </synonym>
+    <comment>Документ, на основании которого введен данный</comment>
+    <type>
+      <types>DocumentRef.уатВыдачаРасходныхМатериалов</types>
+      <types>DocumentRef.уатРемонтныйЛист</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, на основании которого введен данный</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document on the basis of which introduced this</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b8c37797-4568-42a0-bf7a-6f5928a561b6">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arbitrary comment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="504fbb11-d672-4d32-a7fa-bae1336ccb58">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ инвентаризации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company on whose behalf inventory document issued</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24fc7221-4109-43de-8ec7-0b26127d397f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за  документ.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1025446d-235a-42bc-ada6-a3b3a5ab5da5">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Department</value>
+    </synonym>
+    <comment>(Упр)</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение организации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company department</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd2d1319-f3f2-4527-a532-d07c998abc0f">
+    <name>СкладОтправитель</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse-shipper</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Склад-отправитель</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад, с которого передаются товары</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse from which goods are transferred</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a52228e-d928-4c18-8595-63f75e69b6f7">
+    <name>СкладПолучатель</name>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse-receiver</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Склад-получатель</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад, на который приходуются товары</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse in which placing in property</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f07523b-4db0-4982-b051-5f455f69a1c5">
+    <name>Отпустил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отпустил</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="90c5019e-ec9b-4de9-861e-2df4da5981ce">
+    <name>Получил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получил</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="056c060c-fa02-4264-a594-91368aa972d4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a7b857e9-89a5-4928-b645-9f5707fd5ae8">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ae03c546-9f3e-4888-b1ab-7c69f832c135">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="80404d47-0455-4726-a837-7b3b5405d4a6">
+    <producedTypes>
+      <objectType typeId="3a405c82-8ebf-420c-9286-c458cc09c3ac" valueTypeId="12ff9c80-3ede-48d4-862b-e5cabdf196b5"/>
+      <rowType typeId="4984419c-d8ba-4b80-9bb3-eb49b55c9c6b" valueTypeId="2fd3abf9-511c-44ab-b726-16fda1d7e6a3"/>
+    </producedTypes>
+    <name>Товары</name>
+    <synonym>
+      <key>ru</key>
+      <value>Товары</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Goods</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Товары</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Goods</value>
+    </toolTip>
+    <attributes uuid="0892262a-e3db-4392-bfeb-15e968239d7b">
+      <name>ЕдиницаИзмерения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Единица измерения</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Unit of measure</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>CatalogRef.ЕдиницыИзмерения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Единица измерения номенклатуры</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Products and services unit of measure</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="873a7a7d-21b7-4721-a7e5-fba50730aeb0">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Перемещаемое количество</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Replacement quantity</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="011ba51d-7b3c-4a55-886a-7f938bf4be7d">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Products and services</value>
+      </synonym>
+      <comment>(Общ)</comment>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Перемещаемая номенклатура</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Moving products and services</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ff566a3-c545-44a6-856e-5409d59cad90">
+      <name>ЯчейкаОтправитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ячейка-отправитель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСкладскиеЯчейки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ячейка, с которой передаются товары</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.уатПеремещениеТоваров.Attribute.СкладОтправитель</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3db8fa94-3953-4021-8f15-df9c3a609519">
+      <name>ЯчейкаПолучатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ячейка-получатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСкладскиеЯчейки</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Ячейка, на которую приходуются товары</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Document.уатПеремещениеТоваров.Attribute.СкладПолучатель</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <templates uuid="bdc6fdc4-fb1d-4263-a9f8-e4595797f840">
+    <name>ПФ_MXL_Накладная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накладная</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Consignment note</value>
+    </synonym>
+  </templates>
+  <templates uuid="6f0f93d5-058e-4fb6-a0be-98674890f61c">
+    <name>ПФ_MXL_СборочныйЛист</name>
+    <synonym>
+      <key>en</key>
+      <value>Assembly sheet</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Сборочный лист</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

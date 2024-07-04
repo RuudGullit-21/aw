@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0c5b6491-c539-448d-8f39-6353a2f67249">
+  <producedTypes>
+    <selectionType typeId="4bfcf32b-40ed-4cff-bf18-81b0849ff887" valueTypeId="b560c10f-72f1-4b85-8b2e-db2d6940c04f"/>
+    <listType typeId="4d8003a7-fd19-4cd7-8ac6-38e074d1b147" valueTypeId="5e72cabf-c560-4112-9c52-c23bf3e16bb6"/>
+    <managerType typeId="1b504d9e-de1d-4601-b45a-bcc5d2d71d19" valueTypeId="ea76b6f0-b5bb-4947-8510-9f4c8af13363"/>
+    <recordSetType typeId="cafa374a-3256-4f92-96f6-bdc55935cd5c" valueTypeId="5daf8b09-66b0-4aa8-8ed0-f85af943ec4f"/>
+    <recordKeyType typeId="1097e35d-084b-4dba-b96f-ba73adf87f8c" valueTypeId="6a41de6d-808a-4154-a3b4-2947d4316996"/>
+    <recordType typeId="72b6e66a-11aa-4f3b-adb6-e496dee06108" valueTypeId="350b5029-2a28-45eb-bfa1-151b11e3db87"/>
+  </producedTypes>
+  <name>уатРекламации_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рекламации</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Reclamations</value>
+  </synonym>
+  <comment>Рекламации (уэ)</comment>
+  <defaultListForm>AccumulationRegister.уатРекламации_уэ.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cab7ee9e-bf8c-4b6a-9919-6d92a3965493">
+    <name>СуммаРегл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (регл.) с НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>The sum with VAT (compl.)</value>
+    </synonym>
+    <comment>Сумма в валюте регламентированного учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте регламентированного учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency of compliance accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="41b1cf9c-a193-41dd-93c7-2756118d72d8">
+    <name>СуммаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (упр.) с НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount (manag.) with VAT</value>
+    </synonym>
+    <comment>Сумма в валюте управленческого учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency management accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="c3653896-8f8a-4d19-8c21-fb0f809906e4">
+    <name>Виновник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виновник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Culprit</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.Организации</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Виновник.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Culprit.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="eda18114-9695-49f7-9058-cd5596063133">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Expense item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья расходов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Expense item.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c054ece9-e5d8-4b30-8a9f-4a50fe7f0491">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказчик</value>
+    </synonym>
+    <comment>Контрагент или подразделение</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty-cargo owner</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент или подразделение - владелец груза</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="620b136b-7def-447b-bdfd-8915e38240fa">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty contract</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Договор контрагента.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Contract of counterparty.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d530d3a1-dd83-4d4d-8b9e-8dba332f3912">
+    <name>ЗаказГрузоотправителя</name>
+    <synonym>
+      <key>en</key>
+      <value>Consignor order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ грузоотправителя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ грузоотправителя.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Consignor order.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="12a8b22b-86cf-45c0-b1c9-8070459d38b4">
+    <name>МаршрутныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Routing list</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Маршрутный лист.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Routing list.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="cc56db52-a7ac-4fd1-8c5f-be9980822d73">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

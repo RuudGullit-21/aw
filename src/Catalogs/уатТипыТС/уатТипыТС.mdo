@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5402ea60-ccd7-4ca9-bebb-9f2b97cda296">
+  <producedTypes>
+    <objectType typeId="99934b05-3643-4a59-aca9-4a4defab1c60" valueTypeId="2614b315-8edf-428f-a2cd-0e54d4045098"/>
+    <refType typeId="60deb949-c537-4d67-89e0-0b23f19b8a71" valueTypeId="c793f426-907b-41d9-b6b6-289f2483dd84"/>
+    <selectionType typeId="0d5dfc7d-6b8b-4295-b6c7-08a0c5dea3f3" valueTypeId="ce754e30-ae8b-40d4-8801-160eac1eabe8"/>
+    <listType typeId="3dbc09b1-923b-4080-b89f-4b9a82e80d58" valueTypeId="7cd0777f-4c8d-46d1-8c12-3810ed6c2a01"/>
+    <managerType typeId="799b39d6-f4f3-4256-af8b-16bad688a405" valueTypeId="6c52eb6d-1cb4-46ae-8892-8aa17a438667"/>
+  </producedTypes>
+  <name>уатТипыТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle types</value>
+  </synonym>
+  <comment>Типы ТС (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатТипыТС.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатТипыТС.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа к которой относится тип ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Group of vehicle type</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатТипыТС.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Код</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Code</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value>     </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатТипыТС</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатТипыТС</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>Catalog.уатТипыТС.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Catalog.уатТипыТС.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Catalog.уатТипыТС.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Catalog.уатТипыТС.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>70</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатТипыТС.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатТипыТС.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатТипыТС.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="4a4dc91b-81c3-47dc-b0cc-a8b064ab6fdf">
+    <name>ВидТС</name>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle type</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ТС</value>
+    </synonym>
+    <comment>Вид ТС</comment>
+    <type>
+      <types>EnumRef.уатВидыТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите вид ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify vehicle type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ff3f68c1-40a8-4e11-ac61-473858fd42e9">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Any additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5e7e534c-5b4a-450e-934c-6e4c9e968b33">
+    <name>Грузоподъемность</name>
+    <synonym>
+      <key>en</key>
+      <value>Carrying capacity (t)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Грузоподъемность (т)</value>
+    </synonym>
+    <comment>Грузоподъемность, тонн</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Carrying capacity, tons</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Грузоподъемность, тонн</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fc3d39f0-06bb-4267-a9a9-72051258823b">
+    <name>Самосвал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Самосвал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Dump truck</value>
+    </synonym>
+    <comment>Является самосвалом</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Является самосвалом</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="aa03b165-80da-4652-a89b-278acc699a1a">
+    <name>ПолезныйРазмерВысота</name>
+    <synonym>
+      <key>en</key>
+      <value>Useful height (mm)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Полезная высота (мм)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify useful height (mm)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите полезную высоту (мм)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="85e28258-4d6b-425a-b09b-73aa61477844">
+    <name>ПолезныйРазмерДлина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Полезная длина (мм)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Useful length (mm)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify useful length (mm)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите полезную длину (мм)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="48fa8a74-a344-470a-83d8-3a72f07d2263">
+    <name>ПолезныйРазмерШирина</name>
+    <synonym>
+      <key>en</key>
+      <value>Useful width (mm)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Полезная ширина (мм)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify useful width (mm)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите полезную ширину (мм)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="856d1e54-bcde-4b5f-afff-07b199959b3a">
+    <name>ОбъемКузова</name>
+    <synonym>
+      <key>en</key>
+      <value>Body volume (m3)</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Объем кузова (м3)</value>
+    </synonym>
+    <comment>Объем кузова (м3)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Specify body volume (m3)</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите объем кузова (м3)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b9f729e6-fdf6-4fb8-ac9d-7137ad5d245d">
+    <name>ТипКузова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип кузова</value>
+    </synonym>
+    <comment>Тип кузова</comment>
+    <type>
+      <types>CatalogRef.уатТипыКузовов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="55378740-ed53-4dd1-9aac-9a4184267850">
+    <producedTypes>
+      <objectType typeId="2de7458f-8bdd-41fd-89a4-c788fc4670b7" valueTypeId="1d0e714d-9050-42ed-90e5-5781777288b8"/>
+      <rowType typeId="eaef180c-6d48-41b0-b72b-cc91dcdfc0cf" valueTypeId="5bc0bfc2-fe99-4ab1-9a3f-b3e9e8b0e784"/>
+    </producedTypes>
+    <name>СовместимыеТипыТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Совместимые типы ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Compatible vehicle types</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Типы ТС, использование которых возможно взамен данного типа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Types of vehicles, use of which is possible in exchange for this type</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="62e283a2-b022-4699-9ec3-9e1cd395208c">
+      <name>ТипТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТипыТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип транспортного средства</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="91a2fb4b-3dfa-4fa4-bed6-f20379067931">
+    <producedTypes>
+      <objectType typeId="1b15a09e-45b8-4f96-bf4a-4de45d6e2124" valueTypeId="23c4c92f-cba2-42a7-9687-abeb4f2124ed"/>
+      <rowType typeId="0cf4e7ad-442a-41c3-a400-0db3033f28d4" valueTypeId="aeb909a8-b280-4d4c-a884-47e230739db7"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional details</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="4af303e4-05a2-400d-b816-f101ff924904">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Value</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.уатТипыТС.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="9ebcb6cb-3721-400e-9921-c178a1a3e1bf">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Property</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5a4ea1d0-e46d-4929-b634-779f3d4ae910">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Text string</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Full text of additional attribute of string type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ff687a4f-6e82-44d4-b754-35306c8e3f62">
+    <producedTypes>
+      <objectType typeId="32ede420-8139-4d54-8fca-ea303f516c7e" valueTypeId="033b8bbf-1721-4aa1-b232-12097f164e27"/>
+      <rowType typeId="01891a85-bf4a-4c8f-b5e6-ea0f5ab270db" valueTypeId="797bffd0-8692-4a9f-99b5-26227eeb068c"/>
+    </producedTypes>
+    <name>УдалитьДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional details</value>
+    </synonym>
+    <comment>Удалено в 1.1.10.1 из-за расхождения идентификаторов в Стд и Корп</comment>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="2346311a-ac7b-4534-997a-516026b41e6b">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Value</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.уатТипыТС.TabularSection.УдалитьДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="5844d8fd-2fb3-4580-8228-c06dfa9a0676">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Property</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="202746b5-b248-415c-b360-8afa97c982bb">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Text string</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Full text of additional attribute of string type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bd8edb7d-69b1-4b96-8117-250e9518238b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8086e03b-64a8-4712-bb03-3256663750d1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="bb96a7f8-96a1-4982-b1e9-dad5ad1b23d2">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d3f2fe7c-b740-4ca3-b77a-a422ccd5ac12">
+    <name>ПодборТиповТСИзКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор типов транспортных средств по классификаторам</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="b362d1c8-1a78-4d9a-baad-6b3f13f58eb5">
+    <name>МакетКлассификатораОН</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные классификатора ОН 025 270-66</value>
+    </synonym>
+    <comment>Это - предопределенные значения из старых версий программы</comment>
+  </templates>
+  <templates uuid="f885e9f1-f761-4cb3-a0e4-cecc65eed646">
+    <name>МакетКлассификатора2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные по видам грузового транспорта</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

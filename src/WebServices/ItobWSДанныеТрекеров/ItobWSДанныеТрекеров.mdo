@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae729431-6ce2-4947-a6e7-93146c429982">
+  <name>ItobWSДанныеТрекеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>WS Данные трекеров</value>
+  </synonym>
+  <comment>Данные трекеров</comment>
+  <namespace>http://www.itob.ru/csm/gpsdata</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.ItobGPSДанныеОбъектов</value>
+  </xdtoPackages>
+  <descriptorFileName>gpsdata.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="1e2a6a1d-329a-4c72-915d-851719b29332">
+    <name>ПолучитьИнтервалыДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить интервалы движения</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ИнтервалыДвижения</name>
+      <nsUri>http://www.itob.ru/csm/gpsdata</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьИнтервалыДвижения</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="5ca7b6e2-58c0-4e66-ae83-b86e5f34a3ab">
+      <name>НачДата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нач дата</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="38a5285c-345c-4003-b5c1-82cb1188ec14">
+      <name>КонДата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кон дата</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="a30ce48b-3adf-4010-a253-682cfc4c444c">
+      <name>ТипИдентификации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип идентификации</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="bde86601-6a31-43f4-a707-8b7dd1c3a136">
+      <name>ИдентификаторОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор объекта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Object ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="3acc755f-d4ff-4d2b-add1-2e06900dc3b0">
+      <name>ГеокодироватьАдреса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Геокодировать адреса</value>
+      </synonym>
+      <xdtoValueType>
+        <name>boolean</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="8dd4d2ae-61d9-4031-94d4-94aa9c35d513">
+      <name>ДанныеДатчиков</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные датчиков</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="1d812135-9363-4779-ae03-ad37199650ca">
+    <name>ПолучитьДанныеПоТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить данные по ТС</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ДанныеПоТС</name>
+      <nsUri>http://www.itob.ru/csm/gpsdata</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьДанныеПоТС</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="7022db33-40e7-4be6-bd44-d0a0cbcd445c">
+      <name>НачДата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нач дата</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="e9e52342-2dbf-413d-aa8c-a065d7f0716f">
+      <name>КонДата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Кон дата</value>
+      </synonym>
+      <xdtoValueType>
+        <name>dateTime</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="dd698ec3-f406-4d44-a3a7-0c3c1b112cc9">
+      <name>ТипИдентификации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип идентификации</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5e17e951-1106-4002-8160-a7ffba6bf090">
+      <name>ИдентификаторОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор объекта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Object ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="76424a7a-f888-48b0-9a5b-2d9df9d436ea">
+    <name>ПолучитьМестоположениеОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить местоположение объекта</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ЭлементДанныеТерминала</name>
+      <nsUri>http://www.itob.ru/csm/gpsdata</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьМестоположениеОбъекта</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="80bebb6f-752e-4542-b1e2-476347228463">
+      <name>ТипИдентификации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип идентификации</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="153d81e3-aec3-4db2-8376-2c9f8205c549">
+      <name>ИдентификаторОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор объекта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Object ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="5f794ca7-79cc-4440-b5dc-d90ae239d013">
+    <name>ПолучитьМестоположениеГруппыОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить местоположение группы объектов</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>ЭлементыДанныеТерминала</name>
+      <nsUri>http://www.itob.ru/csm/gpsdata</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьМестоположениеГруппыОбъектов</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="71e34633-8676-4b45-b0c6-782092634ce9">
+      <name>ТипИдентификации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип идентификации</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="56880363-3f14-4071-aac0-8523d03d907e">
+      <name>ИдентификаторыОбъектов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификаторы объектов</value>
+      </synonym>
+      <comment>Через запятую</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

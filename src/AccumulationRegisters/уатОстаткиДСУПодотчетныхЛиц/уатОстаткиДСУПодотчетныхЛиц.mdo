@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fc5a4fc-c6dc-4216-a657-e609ea3fb5b1">
+  <producedTypes>
+    <selectionType typeId="ae75e45e-91a8-4d4b-a23c-c8aeb3c5fde7" valueTypeId="5adbd7de-23d7-499c-b264-7868dd72040f"/>
+    <listType typeId="6ee38f86-0bc0-4d35-86dc-8d01bda8ac6f" valueTypeId="13dd309f-f034-46f8-946f-b7de74038e72"/>
+    <managerType typeId="01c466f0-6885-490b-a062-3cad4f2c225b" valueTypeId="877f0c8b-e027-45db-8eac-fd54c6465ad7"/>
+    <recordSetType typeId="da6f6573-1093-43ad-a603-d5c8f4aaea24" valueTypeId="ec79997a-5ed1-44cb-9aa6-a57a3b267348"/>
+    <recordKeyType typeId="ee99a087-01c3-4379-a7d6-bb120d811820" valueTypeId="d730a3f7-d3d7-4738-8efa-ed6ef8be4200"/>
+    <recordType typeId="fa352ca2-5c0f-4983-8655-f9728da01292" valueTypeId="a1c38dc5-1e23-4336-8864-75e3e24a34ff"/>
+  </producedTypes>
+  <name>уатОстаткиДСУПодотчетныхЛиц</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки денежных средств у подотчетных лиц</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cash balances at accountable individuals</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатОстаткиДСУПодотчетныхЛиц.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период движений</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Movements period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Остатки денежных средств у подотчетных лиц</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Cash balances at accountable individuals</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Остатки денежных средств у подотчетных лиц</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cash balances at accountable individuals</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Остатки денежных средств у подотчетных лиц</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cash balances at accountable individuals</value>
+  </explanation>
+  <resources uuid="70ec8f97-88b4-4cec-965a-f4942204ba9f">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма в валюте остатков</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum in balances currency</value>
+    </synonym>
+    <comment>Сумма в валюте остатков</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте остатков с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency of balances with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="e24325b3-227f-458b-a6e6-d47845272de1">
+    <name>СуммаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (упр.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount (manag.)</value>
+    </synonym>
+    <comment>Сумма в валюте управленческого учета</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency management accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="0632c074-8834-43e5-9d36-149902db6f0d">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document company</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f2ca98a2-5da9-4d9e-b687-d2ad3d3cd282">
+    <name>ПодотчетноеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подотчетное лицо</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Accountable person</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, по которому ведется учет ДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Officer on whom kept records on cash</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="887f5edd-964b-48da-a256-9f70796cba8e">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cash currency.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="3295f8de-0351-4599-8824-3ae89cdbe153">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbac532a-7ec0-4f7d-ab65-5c622ab4de7a">
+  <producedTypes>
+    <objectType typeId="8f6e84af-2cac-4164-9dcf-04938cc2f033" valueTypeId="0bab3a20-94c8-45e9-8fb4-0c957b5aab58"/>
+    <managerType typeId="656ebb3c-173e-4426-bfe2-1a7e21a8c797" valueTypeId="a7ed1119-5d9f-4f22-966e-7255bee94997"/>
+  </producedTypes>
+  <name>уатРасстоянияМеждуПунктами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расстояния между пунктами</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Distance between points</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <defaultForm>DataProcessor.уатРасстоянияМеждуПунктами.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="cd917d1e-fc96-4c91-b756-4bf38d07818f">
+    <name>Пункт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пункт назначения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Point of destination</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="9c575079-fd31-4ad4-8887-89ee522ceeb9">
+    <producedTypes>
+      <objectType typeId="b56c5a57-c67a-4e1d-a57d-edfe6694e62e" valueTypeId="ecf491d5-77fd-423c-a8c1-12c1dd351661"/>
+      <rowType typeId="f6ca0cc8-1214-4b8e-851b-39223a322e72" valueTypeId="09079371-5dab-4ec3-a485-a897b4f90d4c"/>
+    </producedTypes>
+    <name>ТаблицаРасстояний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица расстояний</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Distances table</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица расстояний</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Distances table</value>
+    </toolTip>
+    <attributes uuid="bdc139cd-e6d5-4565-8f0e-3307d6665e9d">
+      <name>Пункт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пункт</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Point</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПунктыНазначения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Пункт назначения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Point of destination</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f747ed33-a1dd-41f2-8047-c6ef14a6f69f">
+      <name>Расстояние</name>
+      <synonym>
+        <key>ru</key>
+        <value>Расстояние</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Distance</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>7</precision>
+          <scale>1</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Расстояние до пункта назначения</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Distance to destination point</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="b25a1ea5-647b-40d6-b18d-d5eba72c7e0d">
+      <name>Время</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Time</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+      </format>
+      <format>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+      </editFormat>
+      <editFormat>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+      </editFormat>
+      <toolTip>
+        <key>ru</key>
+        <value>Время в пути</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Time in transit</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="bdea0ab6-e7f3-422b-858e-28454d21dff6">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

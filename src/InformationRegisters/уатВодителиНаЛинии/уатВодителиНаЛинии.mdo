@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f1ec98c-bd35-4570-90cb-0a62ad6b517b">
+  <producedTypes>
+    <selectionType typeId="8ffca555-ec8b-4364-b5fa-bf05254509b2" valueTypeId="83b782f8-9308-45b6-b56d-43d98d48d198"/>
+    <listType typeId="b83f1520-bc50-4d01-b7a5-11af6a8b5d7c" valueTypeId="0aa4c26a-918f-4399-a598-d33016ef93f6"/>
+    <managerType typeId="d898d6db-3b51-4438-946c-b9daa48b6797" valueTypeId="5728304f-7591-41db-bdad-260123719e84"/>
+    <recordSetType typeId="2935f43a-f2a0-476b-9178-dc72b77c0832" valueTypeId="46ab37df-7449-408c-af7c-add32270cb0f"/>
+    <recordKeyType typeId="c199a672-9cf4-4170-9586-a1e09790ba97" valueTypeId="59e96ce4-0d05-4245-9f48-7cd30ba9a117"/>
+    <recordType typeId="036aef87-9d39-462c-9c04-012881d4236d" valueTypeId="4577c27c-d455-4381-8ab4-7bae65e8f5df"/>
+    <recordManagerType typeId="4b59e519-a28e-4ee3-8fb7-a60cd56d60ce" valueTypeId="ef7d9f00-594e-4151-9e05-a15f18f4fea5"/>
+  </producedTypes>
+  <name>уатВодителиНаЛинии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Водители на линии</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Drivers on line</value>
+  </synonym>
+  <comment>Водители на линии (УАТ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатВодителиНаЛинии.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатВодителиНаЛинии.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Водитель на линии</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Driver on the line</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Водитель на линии</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Driver on the line</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Водители на линии</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Drivers on line</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Водители на линии</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Drivers on line</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Водители, вышедшие на линию с мобильного приложения</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Drivers that get on line with mobile app</value>
+  </explanation>
+  <resources uuid="e87bd85d-83d6-4faf-bf39-578240a1678b">
+    <name>ВремяВыхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время выхода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit time</value>
+    </synonym>
+    <comment>Время выхода на линию</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время выхода на линию.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Departure time on line.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="a10d2cb7-91b4-4e3b-af82-3d65721b5e41">
+    <name>pushID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Push ID</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Push ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Push идентификатор</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Push ID</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="928b97f6-75cc-4121-bfed-3d2b6e349f14">
+    <name>ДатаПоследнегоСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего события</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of last event</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата и время последнего события</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date and time of last event</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="aa58fc0e-8df7-412a-b6aa-35b7de84d99f">
+    <name>ДатаПоследнейОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней отправки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of last send</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата и время последней отправки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date and time of last send</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="944a3172-f11e-4fdf-b229-8b83162cf887">
+    <name>ОбновитьМаршрутныеЛисты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить маршрутные листы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Update routing lists</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости обновления маршрутных листов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>A sign that it is necessary to update the routing lists</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="603c74ed-34ba-403f-b4cb-f4ebc7b0e9db">
+    <name>ОбновитьЗаявкиНаРемонт</name>
+    <synonym>
+      <key>en</key>
+      <value>Update Orders for repairs</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить заявки на ремонт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости обновления заявок на ремонт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ebcb9271-0a86-4702-bb5c-4d3b5a14d8b1">
+    <name>ОбновитьСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновить сообщения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Update messages</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак необходимости обновления сообщений</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>A symptom of the need to update messages</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="4d4df058-f61c-4f6c-adb2-f557e9186dfb">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Водитель (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="711d87a6-cd4b-47d8-8c61-5f192fd14385">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="681a9a87-7b13-44cb-91fa-15b6cc23944d">
+    <name>МобильноеУстройство</name>
+    <synonym>
+      <key>en</key>
+      <value>Mobile device</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильное устройство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатМобильныеУстройства</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Mobile device</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Мобильное устройство (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d325d3d8-9de4-415e-ac2b-3024b9781793">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d71517b0-e734-4fb2-bc49-66b61b6eee22">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

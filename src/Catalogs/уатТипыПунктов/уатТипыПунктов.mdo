@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0a0e461-5b1e-4071-bbc3-362057fb73d5">
+  <producedTypes>
+    <objectType typeId="9ac09e77-5a15-4737-9041-1d1016f0f20e" valueTypeId="ff94a1ed-353c-450b-90d1-03f592210aef"/>
+    <refType typeId="633ead44-1ff1-45b1-a48f-e7e219588277" valueTypeId="01379bb7-a460-4fdb-8a98-a8757192497b"/>
+    <selectionType typeId="168ee0e6-4f94-495c-8397-832f570d9e0a" valueTypeId="ad3435cc-af60-474a-a5ec-3f480b5ccc08"/>
+    <listType typeId="acf2df35-ec47-4e7c-b48f-30fe28527408" valueTypeId="ed9df937-4caf-4802-a19c-a1453a7b2e59"/>
+    <managerType typeId="b736f863-ba3c-42cc-816e-64db68a2e5b5" valueTypeId="a5b2d57b-d270-4bcc-bb96-2b842aa491f0"/>
+  </producedTypes>
+  <name>уатТипыПунктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы пунктов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Points types</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатТипыПунктов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="affc4958-3ef9-4afd-a299-eae6b36af876">
+      <name>Адрес</name>
+      <description>Адрес</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатТипыПунктов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатТипыПунктов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатТипыПунктов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="13eb9686-0601-404e-b9f5-f6146e144088">
+    <name>СтоянкаДоп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоянка (доп.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Park</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Время дополнительной стоянки. Это время является общим для разных заказов в одном пункте. Может включать время на заезд и выезд из территории, оформление документов и т.д.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Duration of stop in point</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d48a975a-70f6-4f5c-8147-8ab79207d7f1">
+    <name>СтоянкаПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоянка (п/р)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Park</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Время стоянки для погрузочно-разгрузочных операций в пункте. Используется для подстановки в документ в качестве времени погрузки или разгрузки по умолчанию.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7b5a8827-0c32-4488-9094-ccb337d40199">
+    <name>Картинка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Картинка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Picture</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d960485f-04ef-4e2b-bb10-55b7cf004d93">
+    <name>НаименованиеКартинки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование картинки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee4fbb96-29db-4171-8c2a-e7064d0c06d6">
+    <name>Служебный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебные пункты отображаются в Маршрутном листе серым цветом и не отображаются на картах. Аналогично в приложении &quot;Водитель УАТ&quot;.
+</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="555fe392-8c49-499f-acb0-2d59d9d5d7ce">
+    <producedTypes>
+      <objectType typeId="24c61c34-dcfd-4b95-98fc-51d745719fe7" valueTypeId="18a5c107-7176-424f-98b3-1c5bc4488fae"/>
+      <rowType typeId="45c224b6-4a05-437f-8fd6-db640e1c4d03" valueTypeId="fa6d04bd-6541-40aa-b6e2-dadf029dac8a"/>
+    </producedTypes>
+    <name>РазрешенныеТипыТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные типы ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Permitted types of vehicle</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5e8c0db1-468b-4040-abe1-2de77f51a455">
+      <name>ТипТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТипыТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип транспортного средства</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="aa1bfffc-2422-4edf-8563-b2dd49f6192a">
+      <name>СтоянкаДоп</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоянка (доп.)</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Park</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </format>
+      <format>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </editFormat>
+      <editFormat>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </editFormat>
+      <toolTip>
+        <key>ru</key>
+        <value>Время дополнительной стоянки. Это время является общим для разных заказов в одном пункте. Может включать время на заезд и выезд из территории, оформление документов и т.д.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Parking duration</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5e53f7c0-30f6-4173-82ff-fb5460867540">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9715f819-8a84-4c39-888c-4927795eb01f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2144868a-ca61-4ab0-aa68-fdd5ad10d5c2">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5b36bd23-912f-430b-99a3-df079b7fc3de">
+    <name>ПодборТиповПунктов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подбор типов пунктов</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="30dcfec0-a5ce-4f00-b447-c164f2fc8258">
+    <name>МакетТиповПунктов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типы пунктов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Points types</value>
+    </synonym>
+  </templates>
+  <templates uuid="c9a86f17-9ae5-4611-b80c-3cd8c2feaafc">
+    <name>КартинкаАвтосервис</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автосервис</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Car service</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="8874d8d7-8612-434b-b081-733a1e193dc2">
+    <name>КартинкаАдрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Address</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ad6c87dd-a35a-4306-a021-90de2eb652e7">
+    <name>КартинкаАЗС</name>
+    <synonym>
+      <key>ru</key>
+      <value>АЗС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Gas station</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="02ccbe92-5c93-4037-9ae5-2882a8cdf696">
+    <name>КартинкаГараж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гараж</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Garage</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f34dada7-4a83-4dbb-b33e-ba2d6bb893f8">
+    <name>КартинкаЗавод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завод</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5b5ba597-f038-46fc-a8e9-2a1e5b4fafdd">
+    <name>КартинкаКонтрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5dff6ef4-bc0f-4b58-b3de-62374220f80f">
+    <name>КартинкаМагазин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Магазин</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="e21defaf-e346-45ad-a078-8091cdb791e9">
+    <name>КартинкаМестоДТП</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место ДТП</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Scene of road accident</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="a352de6b-31b0-470f-93b8-78aa6b7f3917">
+    <name>КартинкаМестоНарушенияПДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место нарушения ПДД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Current point on the map</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="ee0bcd9f-71fc-403a-8bf7-42d30bad1c64">
+    <name>КартинкаМестоОтдыха</name>
+    <synonym>
+      <key>ru</key>
+      <value>Место отдыха</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="79df3075-9bb3-4f72-b0ec-170edd0984fc">
+    <name>КартинкаПарковка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Парковка</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="63f7b0d5-ecef-4cd6-8f99-9298bed2b09b">
+    <name>КартинкаПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Почта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Mail</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f9345735-8d1a-4c6e-ba86-450dd549d47c">
+    <name>КартинкаСклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:Catalog>

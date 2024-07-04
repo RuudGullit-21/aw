@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b63f86a8-d865-4f52-a56c-ef255cd20026">
+  <name>ItobЦентрСпутниковогоМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>ЦСМ</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>CSM</value>
+  </synonym>
+  <comment>Не включенная в КИ (для создания поставки). ОБЯЗАТЕЛЬНО ВКЛЮЧАТЬ ВСЕ ОБЪЕКТЫ В ЭТУ ИЛИ ПОДЧИНЕННЫЕ ЕЙ ПОДСИСТЕМЫ</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ItobПодсистемаСпутниковыйМониторинг16</picture>
+  </picture>
+  <content>CommonModule.ItobЗаполнениеПутевыхЛистовВызовСервера</content>
+  <content>Enum.УдалитьItobВидыФильтровНаКартах</content>
+  <content>DocumentNumerator.ItobРегистрацияУстройств</content>
+  <subsystems>CsmHandler</subsystems>
+  <subsystems>CsmSvc</subsystems>
+  <subsystems>БазоваяФункциональность</subsystems>
+  <subsystems>ВариантыОтображенияТрека</subsystems>
+  <subsystems>ВариантыОтчетов</subsystems>
+  <subsystems>ГеографическиеЗоны</subsystems>
+  <subsystems>ГеографическиеКарты</subsystems>
+  <subsystems>ГеографическиеСервисы</subsystems>
+  <subsystems>ДанныеТрекеров</subsystems>
+  <subsystems>ДинамическоеОформление</subsystems>
+  <subsystems>ЗаполнениеПоДаннымТрекеров</subsystems>
+  <subsystems>ЗаполнениеПутевыхЛистов</subsystems>
+  <subsystems>КомандыДляТрекеров</subsystems>
+  <subsystems>НормативноСправочнаяИнформация</subsystems>
+  <subsystems>ОтчетыПоТопливу</subsystems>
+  <subsystems>ПараметрыВыработки</subsystems>
+  <subsystems>Репликация</subsystems>
+  <subsystems>СлужебныеОбъекты</subsystems>
+  <subsystems>УчетТоплива</subsystems>
+</mdclass:Subsystem>

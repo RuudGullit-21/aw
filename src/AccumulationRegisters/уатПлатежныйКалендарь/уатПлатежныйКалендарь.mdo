@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abd08668-1f0a-44a9-a068-57b797503ce8">
+  <producedTypes>
+    <selectionType typeId="82b0142a-238d-4b41-8d21-f2a538f338ee" valueTypeId="01d17fc6-274f-413b-b479-bd1a951dd18a"/>
+    <listType typeId="ca875723-e49f-49c6-806c-61f782355bc2" valueTypeId="5143ac20-65dd-4bf8-befb-fd7eee4b223e"/>
+    <managerType typeId="5bd1965a-93c1-453c-add6-73d1c38b62f7" valueTypeId="70cc281e-b302-49bf-906c-b226e05e4fc9"/>
+    <recordSetType typeId="a56021ad-e8d7-4467-aab1-5ab3bb03a5e4" valueTypeId="a9df8d23-b546-41f3-b810-e6289f19ac4e"/>
+    <recordKeyType typeId="d0d60441-a1c0-4a27-8ba4-f405c780acff" valueTypeId="a098d4d4-abf2-4cef-b91a-a3287c53ac14"/>
+    <recordType typeId="3db9a4f2-de11-4ead-976e-b1c9e907c123" valueTypeId="68f8463a-90fb-4b61-8f2c-b9ffa234da13"/>
+  </producedTypes>
+  <name>уатПлатежныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Платежный календарь</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Payment calendar</value>
+  </synonym>
+  <comment>Платежный календарь (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатПлатежныйКалендарь.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="06a81cc1-591e-49de-86a0-0d2813955beb">
+    <name>СуммаПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма Приход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum</value>
+    </synonym>
+    <comment>Сумма увеличения долга в валюте взаиморасчетов с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма увеличения долга в валюте взаиморасчетов с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum in mutual settlements currency with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="8111ed8c-b77b-437f-a72a-e6390d7069bd">
+    <name>СуммаПриходУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма Приход (упр)</value>
+    </synonym>
+    <comment>Сумма увеличения долга в валюте управленческого учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма увеличения долга в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency management accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="40071821-16df-4663-a017-c42308344605">
+    <name>СуммаРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма Расход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum</value>
+    </synonym>
+    <comment>Сумма уменьшения долга в валюте взаиморасчетов с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма уменьшения долга в валюте взаиморасчетов с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sum in mutual settlements currency with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="b1d094cb-d324-4a7b-9f3b-437a997a4de0">
+    <name>СуммаРасходУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма Расход (упр)</value>
+    </synonym>
+    <comment>Сумма уменьшения долга в валюте управленческого учета с НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма уменьшения долга в валюте управленческого учета с НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in currency management accounting with VAT</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4c872dc6-85bb-417d-b0d0-bece4530e4a0">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f4bc591f-5391-4e6d-a7ba-499f27b4bb38">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4abec4cb-3cc8-420d-a659-78ac87f9ff91">
+    <name>ДоговорКонтрагента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор контрагента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterparty contract</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6b6ee9ee-1964-4827-acdc-68cdbc917462">
+    <name>ЗаказНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на ТС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="341e5eb0-344d-4c6a-8431-3b9f4e6b901a">
+    <name>ПолучательУслуг</name>
+    <synonym>
+      <key>en</key>
+      <value>Recipient of service</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель услуг</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатПолучателиУслуг</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Получатель услуг.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The recipient of the service.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7494042c-e8b1-48a0-b291-bf69409550b6">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f8633e9e-1237-49f5-93f0-e63ca939c9cc">
+    <name>Сделка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сделка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатРеализацияУслуг</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      <types>DocumentRef.уатСчетНаОплатуПокупателю</types>
+      <types>DocumentRef.уатСчетНаОплатуПоставщика</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7dbfd528-708a-4404-9946-e28af37fc167">
+    <name>ЭтапОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап оплаты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Payment date</value>
+    </synonym>
+    <comment>Этап по графику оплаты из договора</comment>
+    <type>
+      <types>CatalogRef.уатЭтапыОплаты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Этап по графику оплаты из договора</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="3fd37f7a-9811-4623-8bad-a5c96b4dbb22">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fc4bb2d7-b55e-47be-87c1-1bafed885fb9">
+  <producedTypes>
+    <selectionType typeId="a6efd129-57f8-4c1a-b276-258c3e1e9c02" valueTypeId="17896e7b-17dc-4acc-a075-7b5e8a63bb15"/>
+    <listType typeId="0ea72286-d652-4aaa-9e45-3a0b4e083ac2" valueTypeId="90c99f56-c6a5-41f9-85df-b40028934632"/>
+    <managerType typeId="47a6da9d-3514-4204-924e-ee3fd3de3a85" valueTypeId="df4d5d8a-0528-42ce-9d12-b1169837b068"/>
+  </producedTypes>
+  <name>уатКассовыеИБанковскиеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кассовые и банковские документы</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cash and bank documents</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатКассовыеИБанковскиеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.уатРасходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.уатПлатежноеПоручениеВходящее</registeredDocuments>
+  <registeredDocuments>Document.уатПриходныйКассовыйОрдер</registeredDocuments>
+  <registeredDocuments>Document.уатПлатежноеПоручениеИсходящее</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Кассовые и банковские документы </value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Cash and bank documents </value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Кассовые и банковские документы </value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cash and bank documents </value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Кассовые и банковские документы </value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cash and bank documents </value>
+  </explanation>
+  <columns uuid="7f4b2ab6-b206-4041-a42e-7bc5b73d2503">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.Организация</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Организация</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.Организация</references>
+  </columns>
+  <columns uuid="6bf190ea-9d99-413c-9290-ad884a3bf8c7">
+    <name>Оплачен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачен</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Paid</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.Оплачено</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Оплачено</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.Оплачено</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Оплачено</references>
+  </columns>
+  <columns uuid="c452c745-483a-4cd4-8404-6f6335c75014">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of operation</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.ВидОперации</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.ВидОперации</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.ВидОперации</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.ВидОперации</references>
+  </columns>
+  <columns uuid="2a822ad9-3a67-4e9e-b09e-4e4384c57048">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.Контрагент</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Контрагент</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.Контрагент</references>
+  </columns>
+  <columns uuid="4affcf4a-960c-40c4-8e62-bcdcb3afaa17">
+    <name>БанковскийСчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет / касса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank account / cash fund</value>
+    </synonym>
+    <comment>Банковский счет / касса</comment>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.БанковскийСчет</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Касса</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.БанковскийСчет</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Касса</references>
+  </columns>
+  <columns uuid="c7bcde01-c09e-4e21-900d-7d4c554d1417">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.ВалютаДокумента</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.ВалютаДокумента</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.ВалютаДокумента</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.ВалютаДокумента</references>
+  </columns>
+  <columns uuid="d2804326-d601-4344-a5e2-557f60d1b54d">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.Ответственный</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Ответственный</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.Ответственный</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="7b8adede-25dc-4bc0-b558-7da8691962c2">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.Комментарий</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.Комментарий</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.Комментарий</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="5e0815fd-eebb-4534-800c-0b3ffdd58e6f">
+    <name>СуммаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма </value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>amount </value>
+    </synonym>
+    <references>Document.уатПлатежноеПоручениеВходящее.Attribute.СуммаДокумента</references>
+    <references>Document.уатПриходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+    <references>Document.уатПлатежноеПоручениеИсходящее.Attribute.СуммаДокумента</references>
+    <references>Document.уатРасходныйКассовыйОрдер.Attribute.СуммаДокумента</references>
+  </columns>
+  <forms uuid="aece15b8-2aa2-41a1-b81b-545a9409cde3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

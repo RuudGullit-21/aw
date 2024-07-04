@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7df3711-f210-4c5d-b56b-51e98ca8f15d">
+  <producedTypes>
+    <objectType typeId="9f3a67e9-b677-4009-870f-917281f99e03" valueTypeId="5f54bcd0-deee-43cf-8280-de1a98ad26a6"/>
+    <managerType typeId="ce9804fa-01ab-4c83-ac74-e14682990898" valueTypeId="acdb10e9-c0c4-4fb3-838c-4ec23a37b31b"/>
+  </producedTypes>
+  <name>уатСообщенияМобильногоПриложения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чаты с водителями</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Messages of mobile applications</value>
+  </synonym>
+  <defaultForm>DataProcessor.уатСообщенияМобильногоПриложения.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="e12b5967-5d58-4bfd-baf1-567b9d34d335">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="52909abe-4869-4182-8edd-d0f9b5fca304">
+    <name>СообщенияМобильногоПриложения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чаты с водителями</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Messages of mobile applications</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="78cb0be0-d511-4ac9-97e0-7ac5db01a381">
+    <name>СообщенияВодителяМаршрутногоЛиста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщения мобильного приложения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Messages of mobile applications</value>
+    </synonym>
+    <group>CommandGroup.Взаимодействия</group>
+    <commandParameterType>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+    </commandParameterType>
+    <parameterUseMode>Multiple</parameterUseMode>
+    <representation>PictureAndText</representation>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.уатСообщениеНаУстройство</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

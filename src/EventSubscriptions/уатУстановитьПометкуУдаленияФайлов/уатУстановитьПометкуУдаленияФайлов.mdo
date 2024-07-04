@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fad1242-41b4-4c63-bf27-b22c01c4ed60">
+  <name>уатУстановитьПометкуУдаленияФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить пометку удаления файлов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Set deletion mark for files</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.уатПланыПримененияЗатрат</types>
+    <types>CatalogObject.уатТарифыЗП</types>
+    <types>CatalogObject.уатШиныПрофиль</types>
+    <types>CatalogObject.уатКлассификаторВидыТранспортныхСредств</types>
+    <types>CatalogObject.уатСпособыПогрузки</types>
+    <types>CatalogObject.уатТипыСобытий_уэ</types>
+    <types>CatalogObject.уатШаблоныТребованийКонтроляТСиВодителей</types>
+    <types>CatalogObject.уатПрейскурантыТС</types>
+    <types>CatalogObject.уатКолонны</types>
+    <types>CatalogObject.уатТребованияКонтроляТС</types>
+    <types>CatalogObject.уатТС</types>
+    <types>CatalogObject.уатВидыИспользованияРабочегоВремени</types>
+    <types>CatalogObject.уатАЗС</types>
+    <types>CatalogObject.уатМакетыТС</types>
+    <types>CatalogObject.уатВидыОбслуживанияТС</types>
+    <types>CatalogObject.уатТипыАгрегатов</types>
+    <types>CatalogObject.уатСтавкиПоТранспортномуНалогу</types>
+    <types>CatalogObject.уатВидыПеревозок</types>
+    <types>CatalogObject.уатПараметрыВыработки</types>
+    <types>CatalogObject.уатЕмкостьАккумуляторов</types>
+    <types>CatalogObject.уатРаботыПоРемонту</types>
+    <types>CatalogObject.уатВидыДокументов</types>
+    <types>CatalogObject.уатСпособыОпределенияМассы</types>
+    <types>CatalogObject.уатТемпературныеКоэффициентыГСМ</types>
+    <types>CatalogObject.уатСмены</types>
+    <types>CatalogObject.уатШиныРадиус</types>
+    <types>CatalogObject.уатМаршруты</types>
+    <types>CatalogObject.уатПластиковыеКарты</types>
+    <types>CatalogObject.уатМестаУстановкиШин</types>
+    <types>CatalogObject.уатТарифыТС</types>
+    <types>CatalogObject.уатСостояниеТС</types>
+    <types>CatalogObject.уатЖурналыТранспортныхДокументов</types>
+    <types>CatalogObject.уатШиныВысота</types>
+    <types>CatalogObject.уатТарифныеПланыЗП</types>
+    <types>CatalogObject.уатЗаключенияОРезультатахМедицинскогоОсмотра</types>
+    <types>CatalogObject.уатВидыСообщения</types>
+    <types>CatalogObject.уатПричиныДТП</types>
+    <types>CatalogObject.уатУсловияРаботы</types>
+    <types>CatalogObject.уатТипыТС</types>
+    <types>CatalogObject.уатРежимыРаботыТС</types>
+    <types>CatalogObject.уатПунктыНазначения</types>
+    <types>CatalogObject.уатМоделиАгрегатов</types>
+    <types>CatalogObject.уатМоделиТС</types>
+    <types>CatalogObject.уатЦвета</types>
+    <types>CatalogObject.уатШиныШирина</types>
+    <types>CatalogObject.уатСерииНоменклатуры</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.РаботаСФайлами.УстановитьПометкуУдаленияФайловПередЗаписью</handler>
+</mdclass:EventSubscription>

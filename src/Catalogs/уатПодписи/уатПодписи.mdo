@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfad6cab-a256-44f3-a645-02d51ab6adad">
+  <producedTypes>
+    <objectType typeId="6a1b30dd-2e54-4e66-85f9-580f123281de" valueTypeId="1ea9e02f-ddbc-4106-88b8-6db8180f45f4"/>
+    <refType typeId="5f3c76e0-85d3-46f4-99d5-7ff8084ad341" valueTypeId="55e3227b-5880-4027-a646-9a1e1f8aeb89"/>
+    <selectionType typeId="49d6c164-5083-4a49-815a-4c62088647e2" valueTypeId="e7063a53-470b-44d5-919b-c4f1eb746dbb"/>
+    <listType typeId="da470625-12e2-4212-94d9-42b18a4ed8c1" valueTypeId="be67f3a5-bed6-4bd5-8066-21e2f572f8c4"/>
+    <managerType typeId="d9697c7b-2df2-4bd2-ab26-b8dec2886e37" valueTypeId="b67abda6-da7c-4b56-9d7d-738d2173cf00"/>
+  </producedTypes>
+  <name>уатПодписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписи</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Signatures</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатПодписи.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Подпись</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Подпись</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Подписи</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Signatures</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Подписи</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Signatures</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатПодписи.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатПодписи.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатПодписи.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="92835886-e0f1-4053-aaad-1acc88ed1d49">
+    <name>Факсимиле</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факсимиле</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПодписиПрисоединенныеФайлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a0ae60d3-3ab1-4e9c-b36a-fab087209703">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ace4125c-b494-47ce-847f-d859ad556460">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="30b89e86-d386-49d5-999b-61cc9830673a">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="d9bff2b6-03cb-49e5-87ae-e0c29787bbb8">
+    <name>ПомощникСозданияФаксимилеПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник создания факсимиле подписи</value>
+    </synonym>
+  </templates>
+  <templates uuid="49fe7c84-dca9-4a77-b02d-1462a31bcb1f">
+    <name>ПомощникСозданияФаксимилеПечати</name>
+    <synonym>
+      <key>ru</key>
+      <value>Помощник создания факсимиле печати</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

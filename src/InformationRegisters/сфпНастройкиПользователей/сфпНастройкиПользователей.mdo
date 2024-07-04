@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c3bbb56-0a28-44c8-8a12-1e31ab562d8e">
+  <producedTypes>
+    <selectionType typeId="6dd61970-f679-4f84-b283-c7914e7812d2" valueTypeId="bef1f312-d6ab-464d-8a9c-ba59482c0cc6"/>
+    <listType typeId="8c2d15ff-4238-4389-a8e7-c3ded5f0afa6" valueTypeId="39b0144e-3fd4-445f-a3f5-4c59f2e78677"/>
+    <managerType typeId="62cfb8c7-6bb9-4f7c-8f0b-d423ab33cd7b" valueTypeId="7ec03810-1483-4053-a9ae-6e21e1a3c0f8"/>
+    <recordSetType typeId="5e1c0cc9-e0b9-40e8-98e0-16613600f110" valueTypeId="a1cb9bf3-d248-4273-b2bd-b26771335229"/>
+    <recordKeyType typeId="d7bdaf7c-22d3-4d54-adb1-8ec8fc97f041" valueTypeId="b2a49bea-451c-4b4d-88eb-b6c128f29f9b"/>
+    <recordType typeId="cc89122a-e783-4705-a057-c74e72ae9e8b" valueTypeId="66cc4079-4758-4fb9-944c-1a244430b00e"/>
+    <recordManagerType typeId="b3c1f230-6c88-4e1c-ac85-86ccde404d97" valueTypeId="16b6458f-a084-426a-98ff-167b8b5aa120"/>
+  </producedTypes>
+  <name>сфпНастройкиПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки пользователей СофтФон</value>
+  </synonym>
+  <comment>Настройки пользователей СофтФон</comment>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Настройки пользователей</value>
+  </explanation>
+  <resources uuid="d9c5c35f-de3b-45a0-8473-2e90ba9a1fdc">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <comment>Значение</comment>
+    <type>
+      <types>Characteristic.сфпНастройкиПользователей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение настройки пользователя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.сфпНастройкиПользователей.Dimension.Настройка</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cf49d078-a346-415f-b9b0-798d0017a4c1">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <comment>Пользователь</comment>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь настройки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="29cca640-ce88-4c01-badb-4dbfe7b19eec">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <comment>Настройка</comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.сфпНастройкиПользователей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройка пользователя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="8e6878a4-cbaf-4edc-8a52-77bc1b81fb6e">
+    <name>ОткрытьНастройкиПользователя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Персональные настройки СофтФон</value>
+    </synonym>
+    <comment>Персональные настройки СофтФон</comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.Пользователи</types>
+    </commandParameterType>
+    <modifiesData>true</modifiesData>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Персональные настройки СофтФон</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.сфпАватарПоУмолчанию</picture>
+    </picture>
+  </commands>
+</mdclass:InformationRegister>

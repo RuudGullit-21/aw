@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e83021a-1a91-4ae4-b5e6-60c93cca5a4f">
+  <producedTypes>
+    <selectionType typeId="f5cfc4ce-a3de-450c-b1e5-a58ac5bffe28" valueTypeId="2307987b-a1e2-47cd-ab7f-26f2d95ac6f9"/>
+    <listType typeId="494eb85f-5e90-4fd3-a444-2d9f3853b776" valueTypeId="0c696e4d-d5b2-44c7-b192-9d90488afd71"/>
+    <managerType typeId="e249033b-d2f4-4434-a560-f285614a5f6e" valueTypeId="44c41387-172a-463d-8019-a7b5ee4de2cd"/>
+    <recordSetType typeId="b6a76133-3928-4fa6-98d3-a3966b708012" valueTypeId="93547a68-d6bb-459b-8eb4-154d4d4a169a"/>
+    <recordKeyType typeId="36e93e51-0958-447e-b2c7-10d25d811427" valueTypeId="f2dd7b40-e107-481a-85f7-f4157790ad3e"/>
+    <recordType typeId="bb38e248-ddfd-4ec4-bb27-7676e1508fa1" valueTypeId="20226c24-6737-4e4d-949c-1fd6b8a8ac78"/>
+    <recordManagerType typeId="532593d1-a2d2-404c-b74e-a3ec8f3686a5" valueTypeId="455f23bb-dcfe-4f05-9f20-b2212bd218a2"/>
+  </producedTypes>
+  <name>уатПрохождениеТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прохождение ТО</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Maintenance passage</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатПрохождениеТО.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>InformationRegister.уатПрохождениеТО.Form.ФормаСписка</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="694543ec-6025-430e-83eb-28991b39f498">
+    <name>Выработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Output</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество по параметру выработки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity by output value</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="ea0e698b-e3bd-4117-a6ba-72dda7b80f11">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f1b106f-7626-46c3-a6ce-6633d74facae">
+    <name>ВидТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ТО</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Maintenance type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыОбслуживанияТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид обслуживания ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle maintenance type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="56012474-8f26-40c8-b9eb-89a331fdc80f">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Output parameter</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметр выработки, связанный с обслуживанием</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Generation parameter associated with the service</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c401e083-4736-4c42-80c9-ffbc861b5e39">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

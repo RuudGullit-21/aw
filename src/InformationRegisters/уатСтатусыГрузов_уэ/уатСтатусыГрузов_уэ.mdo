@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc869d0f-4908-4bc1-b3fe-fa6cd5310415">
+  <producedTypes>
+    <selectionType typeId="1568c60f-03cc-4d98-baee-ff72caed6272" valueTypeId="7bb6ed7d-e2c5-449d-9db6-19c9ac83ba58"/>
+    <listType typeId="be4e8990-ae8d-4af1-9f38-4ede5c1f7c5f" valueTypeId="802116d5-a5e6-444c-abf1-b19df81dac89"/>
+    <managerType typeId="0c2d6bba-94fd-4409-9eb1-a9436efe5755" valueTypeId="7dd8028d-193d-411f-b850-c313581aede3"/>
+    <recordSetType typeId="2b694daa-8980-48e0-ab2e-e4c9e9bbd727" valueTypeId="55e681ac-a5c4-4150-8162-dce28700243a"/>
+    <recordKeyType typeId="5460d56b-2c39-484f-8c76-c1d15732f19f" valueTypeId="0d6300d9-b698-496f-9c8e-5e4fa1b724de"/>
+    <recordType typeId="172be23e-ddee-4945-ae07-ce499334f272" valueTypeId="6eb292a1-33fd-454f-a710-8202946700e1"/>
+    <recordManagerType typeId="60d2214e-34c0-4a16-9aea-c6403da018bd" valueTypeId="fe289a8b-df67-4658-a5f6-6ecd17012cfe"/>
+  </producedTypes>
+  <name>уатСтатусыГрузов_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы грузов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Cargo status</value>
+  </synonym>
+  <comment>Статусы грузов (уэ)</comment>
+  <defaultListForm>InformationRegister.уатСтатусыГрузов_уэ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="d8d8977e-eaf9-4b49-891b-68c67e222723">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Status</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатусы_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус груза.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cargo status.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa295baa-ce6d-4691-a6c7-130145a3f1c8">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Order</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ грузоотправителя</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Consignor order</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0ce1a8da-eea8-4aa2-969e-53943feac02c">
+    <name>ГрузовоеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузовое место</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Сargo space</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатГрузовыеМеста_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Грузовое место.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Сargo space.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="06b90922-7198-4806-9f3a-3cbb98208a79">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

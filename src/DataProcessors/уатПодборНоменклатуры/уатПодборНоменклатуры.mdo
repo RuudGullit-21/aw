@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14bfe825-032d-4c54-b242-7917839130a7">
+  <producedTypes>
+    <objectType typeId="58debed2-29a4-43fd-a890-b5a735949f81" valueTypeId="948218a4-4f2e-4459-948e-716abffea1ee"/>
+    <managerType typeId="15f391e7-1feb-4c78-b3f6-ddddfc867377" valueTypeId="ebe9f6f5-bc75-445f-80d1-462838e3fd03"/>
+  </producedTypes>
+  <name>уатПодборНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подбор номенклатуры</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Products and services selection</value>
+  </synonym>
+  <defaultForm>DataProcessor.уатПодборНоменклатуры.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="40330b7b-354d-4ff4-bc82-4d3c375f02e3">
+    <producedTypes>
+      <objectType typeId="dcf9f877-4d16-460e-a213-544b045f4cbe" valueTypeId="9a51ac23-6680-475b-a9bd-b2096527c9d8"/>
+      <rowType typeId="9cd78ef5-3537-48e1-929f-1a2b128b566a" valueTypeId="9e047f0c-d324-4ba7-8ee8-c26bd7f28b66"/>
+    </producedTypes>
+    <name>ПодобраннаяНоменклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобранная номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selected products and services</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="ae4690ee-63f8-421f-81b3-b741e1aa0dd9">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Products and services</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Номенклатура</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Подобранная номенклатура</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Selected products and services</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9298362e-3638-4525-9d07-b8816ce07ec1">
+      <name>Количество</name>
+      <synonym>
+        <key>ru</key>
+        <value>Количество</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Quantity</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Количество номенклатуры</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Quantity of products and services</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ce8f7084-38d1-47c2-8bed-8bacff311621">
+      <name>Цена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Цена</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Price</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Цена номенклатурной позиции. </value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Price of products and services position. </value>
+      </toolTip>
+      <markNegatives>true</markNegatives>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="42d1de20-a96f-43c6-88cb-7a03ea76f7d8">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sum</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Сумма.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sum.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="17de8aba-d2f3-4e16-9ca4-933582c661c7">
+      <name>Валюта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Валюта</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Currency</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Валюты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Валюта.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Currency.</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1224cfdf-26d5-42c6-a767-7956b76830b7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="fe32fecd-f95b-43bc-8898-bab711f24650">
+    <name>НастройкиПодбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки подбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection settings</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="609c7813-d4f7-4d5f-851b-adca54d90578">
+    <name>ФормаВводаЦенаКоличество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода цены и количества</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Input form of prices and quantity.</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

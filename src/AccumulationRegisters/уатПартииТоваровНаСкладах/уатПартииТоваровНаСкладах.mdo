@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="321eaa3b-6b33-4af3-8293-5cb67a86511c">
+  <producedTypes>
+    <selectionType typeId="03a19967-df38-4d67-b94a-04f0f1b72a3e" valueTypeId="0924fd47-6e7f-49c6-96c7-d73a8cd04df9"/>
+    <listType typeId="bfa3f090-ba57-47ae-bcb7-60b50f861233" valueTypeId="2496ebb4-eb4a-4690-8b14-e8c07e747223"/>
+    <managerType typeId="f1dd5526-46f3-4341-996e-b7c6e469ec72" valueTypeId="5a927911-5d8c-44f0-91fd-2667249c829a"/>
+    <recordSetType typeId="0df3a2eb-4bdb-4854-b986-883259ce8908" valueTypeId="de711884-a44c-46e8-a94e-a1c0c038f1e2"/>
+    <recordKeyType typeId="4e33679f-5fba-42a1-9f55-6c70c24f39f3" valueTypeId="4477da4f-f3ec-4b4d-9367-78d3f803225b"/>
+    <recordType typeId="35376b68-059a-4702-9a55-187490e29356" valueTypeId="efd992a4-eade-47e4-98b0-bd1ec411d657"/>
+  </producedTypes>
+  <name>уатПартииТоваровНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Партии товаров на складах</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Consignment at warehouses</value>
+  </synonym>
+  <comment>Партии товаров на складах  (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатПартииТоваровНаСкладах.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>AccumulationRegister.уатПартииТоваровНаСкладах.Form.ФормаСписка</auxiliaryListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Партии товаров на складах</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Consignment at warehouses</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Партии товаров на складах</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Consignment at warehouses</value>
+  </extendedListPresentation>
+  <resources uuid="d2e8a888-2435-49c3-bb36-eaa3886d524a">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество номенклатуры</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity of products and services</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="d622185d-3ef0-45d2-9e60-69f12551fd1e">
+    <name>Стоимость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость (регл.) без НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cost (compl.) excluding VAT</value>
+    </synonym>
+    <comment>Стоимость в валюте регламентированного учета без НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость в валюте регламентированного учета без НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cost in compliance accounting currency without VAT</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="51fdf399-b805-4fd5-8860-d78201eb2994">
+    <name>СтоимостьУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоимость (упр.) без НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cost (manag.) without VAT</value>
+    </synonym>
+    <comment>Стоимость в валюте управленческого учета без НДС</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Стоимость в валюте управленческого учета без НДС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cost in management accounting currency without VAT</value>
+    </toolTip>
+    <markNegatives>true</markNegatives>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="5194526b-bcf7-49aa-be76-51cbb95b11a7">
+    <name>СуммаНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>VAT amount</value>
+    </synonym>
+    <comment>Сумма НДС в регл. валюте</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма НДС в валюте регламентированного учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>VAT amount in the compliance accounting currency</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4db31c77-3a41-48b0-9843-f766c5cebc99">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="de63e2d8-3067-4a52-83f6-ffc81872cb85">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Batch</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатОприходованиеТоваров</types>
+      <types>DocumentRef.уатОперацииСТехническимиЖидкостями</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.уатСливГСМ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Партия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Lot.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f56938af-1bc6-4379-8e03-39c9bfad8e48">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад, на котором хранится номенклатура</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse where products and services are stored</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="191e18ce-fe6f-4e1b-8a49-b2822121a161">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

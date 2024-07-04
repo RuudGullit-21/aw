@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4be3d0fe-4d04-4a75-a22b-687e5648b149">
+  <producedTypes>
+    <selectionType typeId="aacce0ab-57ef-4a42-b807-88bc063c7cb0" valueTypeId="d964fc7e-2d2f-4cf2-98ca-d5bd08c7c6af"/>
+    <listType typeId="51c81576-c72a-47c0-8199-1fcb50ea9c77" valueTypeId="13da708e-5858-4532-a15e-670eb9fed177"/>
+    <managerType typeId="1dc86084-17d0-4793-ba05-19a53c7eb6fd" valueTypeId="17655ffb-f525-4481-a847-8f9b530baf47"/>
+    <recordSetType typeId="e7123c57-f954-4f20-b2dc-0ec63e27a39c" valueTypeId="6c10eb9c-08a4-45b1-82e6-07e100cc158a"/>
+    <recordKeyType typeId="cde72d79-d58d-4954-9e41-37bfaddeca74" valueTypeId="c1584e6d-8302-41df-8e5b-87ae31f21fc1"/>
+    <recordType typeId="dbd1cbd3-af78-4deb-8bf1-4df6d22ea382" valueTypeId="a2214b47-b2e6-44e9-874c-1345111c586a"/>
+    <recordManagerType typeId="14fbddfe-b1aa-44bc-afc0-dbd170f064dc" valueTypeId="3b7ed824-b980-4240-a333-4fc15e797cc6"/>
+  </producedTypes>
+  <name>уатСостоянияПодписиПутевыхЛистов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния подписи Путевых листов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатСостоянияПодписиПутевыхЛистов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСостоянияПодписиПутевыхЛистов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Состояния подписи Путевого листа</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Состояния подписи Путевого листа</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Состояния подписи Путевых листов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Состояния подписи Путевых листов</value>
+  </extendedListPresentation>
+  <resources uuid="60b856ba-3c31-4365-a1a4-8f473a3b4fd3">
+    <name>МедработникПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник (выезд)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e7bdedf1-a86e-4bc6-80b6-db0bdd375685">
+    <name>МедработникПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник (возврат)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="03e79464-3e82-446b-80ea-164047903e60">
+    <name>МедработникВодитель2Предрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник водитель 2 (выезд)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="898ccea0-41b7-4646-b642-0001d87e1d9c">
+    <name>МедработникВодитель2Послерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник водитель 2 (возврат)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dba42f20-a98a-4705-bc0e-2cb9d44a941b">
+    <name>КонтролерПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС (выезд)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="10141ece-8d67-414e-9047-72a12ce1e458">
+    <name>КонтролерПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный за состояние ТС (возврат)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3d5ee5ce-808c-46fb-b2d4-c110bba56455">
+    <name>УполномоченныйНаПроставлениеОдометраПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра (выезд)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1fcd1e48-752a-41fb-9744-3cf2137f996c">
+    <name>УполномоченныйНаПроставлениеОдометраПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра (возврат)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e11e157-0e56-4043-b087-438f9d3dbfb4">
+    <name>ВодительПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9cc1989e-64ac-4422-ab24-d824b3574261">
+    <name>ВодительПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f212a38-c5a4-423a-835f-7f9a71fac102">
+    <name>ДиспетчерПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчер (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="30454632-dfac-42b4-95df-eadefa5dfa3f">
+    <name>ДиспетчерПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчер (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСостоянияТранспортныхДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="54c6739d-4baf-4822-ad2a-bcc653a29984">
+    <name>МедработникИконка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Медработник иконка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a1340415-fbdc-43f3-97e9-e777c74f6c40">
+    <name>КонтролерИконка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контролер иконка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a8a8b8c4-09f7-4fcb-b67f-33ad28c6f8a7">
+    <name>УполномоченныйНаПроставлениеОдометраИконка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уполномоченный на проставление одометра иконка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0dfed3c2-9c17-4a28-b3ff-1c82dc32d72f">
+    <name>ВодительИконка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель иконка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9efab1cc-b3a8-4d33-b8b2-34b1537302b8">
+    <name>ДиспетчерИконка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диспетчер иконка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a987a2a-7a26-4242-aff6-6ab657f49a35">
+    <name>УдалитьМедработникПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Медработник (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1192ba6-b412-420e-9a77-ce6504b71d93">
+    <name>УдалитьМедработникВодитель2Предрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Медработник водитель 2 (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="23848380-d8d0-4571-901c-c0b4a14b8668">
+    <name>УдалитьМедработникВодитель2Послерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Медработник водитель 2 (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="39173fa8-4003-4d96-ac23-38cab86878f2">
+    <name>УдалитьКонтролерПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Контролер (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d1b3807-7f2a-4cd6-be79-b9df3554667c">
+    <name>УдалитьКонтролерПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Контролер (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f956303-d463-4058-b2ba-59ce02016c0c">
+    <name>УдалитьВодительПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Водитель (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6748725f-ce4f-445d-a69e-c0dfde657852">
+    <name>УдалитьВодительПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Водитель (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5ab78895-bd0f-4691-b537-842f2c6f5154">
+    <name>УдалитьДиспетчерПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Диспетчер (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eca26a57-f04a-470c-a95d-1b713503f72c">
+    <name>УдалитьДиспетчерПослерейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Диспетчер (послерейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dca6ab10-91ad-49ff-a52d-b5e7bcb90a86">
+    <name>УдалитьМедработникПредрейсовый</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Медработник (предрейсовый)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0cb8a3f8-4bac-4692-91c5-52b7365ef2ee">
+    <name>ПутевойЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Путевой лист</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатПутевойЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="866b7fb4-0599-4205-a620-c65298e68db2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="376c8b7a-0fc3-440e-8437-ba779b9c5daf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

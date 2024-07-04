@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2611cc02-dc1a-481e-8a70-6d08d9452168">
+  <producedTypes>
+    <selectionType typeId="dac7b965-ed20-4b41-90d8-b07fecbbc63c" valueTypeId="7016fd8b-3161-45f1-8783-d3bc4bbec15e"/>
+    <listType typeId="e425cab9-be5e-4b12-ad8e-d1b90d8f7485" valueTypeId="bbaef2dd-9e8f-49fa-95ff-772925b8a504"/>
+    <managerType typeId="3c4a5b69-9100-4dc8-89ea-bc634ebd5260" valueTypeId="b5dd3e2a-89ba-4c67-88f6-f4f6bdfec34d"/>
+    <recordSetType typeId="0b42fae5-74cf-41d0-b5b3-6b88826d8ba8" valueTypeId="0e81a4db-64ea-40f6-bdff-862f4fecda77"/>
+    <recordKeyType typeId="25fdaaef-3280-4057-847e-60f7f2a77e84" valueTypeId="9f44dcc5-49dc-4054-9e25-ff948e893080"/>
+    <recordType typeId="a2d7dcb4-fc12-484d-a7f3-6ccf30101db9" valueTypeId="a2bcc90f-87f7-4516-8ff3-4211f06115b1"/>
+    <recordManagerType typeId="abc360fb-10e8-4890-93ef-372f3b5b2d9a" valueTypeId="1359aebf-e1ba-4a15-9b59-c41bda27d9cd"/>
+  </producedTypes>
+  <name>уатЭкипажТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экипаж ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle crew</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатЭкипажТС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатЭкипажТС.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="c8e2195f-0ab3-4a78-99eb-0729bb65970c">
+    <name>ЧленЭкипажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Член экипажа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Crew member</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатЧленыЭкипажа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Член экипажа.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Crew member.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатЧленыЭкипажа.EmptyRef</value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="d641d9ed-63ed-4ebe-872d-6cef6578e510">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5732ed3f-4bdd-4e79-aa7a-92a8bac50473">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="607d9816-8297-4a45-9c72-1d20477379a1">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a1b0c665-5792-4379-8ef6-cd7447aae9d5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

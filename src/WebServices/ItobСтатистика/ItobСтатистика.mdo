@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d17592c-3ff0-4d8d-b701-c84cc1d54099">
+  <name>ItobСтатистика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика</value>
+  </synonym>
+  <namespace>http://www.itob.ru/csm/statisticsdata</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.ItobДанныеСтатистики</value>
+  </xdtoPackages>
+  <descriptorFileName>statisticsdata.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="c780e84c-48d4-4bf1-9aa1-5681e32630ae">
+    <name>ПолучитьСтатистикуРепликации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить статистику репликации</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>СтатистикаРепликации</name>
+      <nsUri>http://www.itob.ru/csm/statisticsdata</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСтатистикуРепликации</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+</mdclass:WebService>

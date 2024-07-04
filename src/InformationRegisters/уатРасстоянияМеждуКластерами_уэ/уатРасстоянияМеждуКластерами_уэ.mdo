@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f85b95a-54eb-4196-ae9d-abc0f4d9914e">
+  <producedTypes>
+    <selectionType typeId="eec60e8d-4be4-4223-a4f6-363e1a2f35c4" valueTypeId="a500ff88-f2f7-4861-91ab-6e679a678e01"/>
+    <listType typeId="c294aa1f-b2c5-4253-a83a-5107f7db458e" valueTypeId="64309a59-7bc9-4d8a-9f87-35f9c1259034"/>
+    <managerType typeId="ae0d701c-106b-4af5-9a2c-ad437c8499b9" valueTypeId="f5f5fb6c-a2c0-4b9f-b3b3-ee3d89e66694"/>
+    <recordSetType typeId="f86689b5-3dc9-4148-be40-1e6af8cfa4b8" valueTypeId="f3ede8eb-e0af-4a96-be63-2c735fd96aae"/>
+    <recordKeyType typeId="20aacb85-fa72-4ba1-8caa-5d48835efb68" valueTypeId="1eb1fd33-ec01-42c3-a2ea-e23fda1af594"/>
+    <recordType typeId="5901bfe1-fab5-4d46-9fd0-ade0fcddf299" valueTypeId="b5fc6829-9bdb-4cda-9b75-f5a5efc2b6da"/>
+    <recordManagerType typeId="2371e4a3-653f-4cdb-92c1-40bef002255a" valueTypeId="5e6a0a62-258a-43c4-ab45-1718071c6098"/>
+  </producedTypes>
+  <name>уатРасстоянияМеждуКластерами_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расстояния между кластерами</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Distance between clusters</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатРасстоянияМеждуКластерами_уэ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатРасстоянияМеждуКластерами_уэ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e108b420-46c5-43ac-b44f-a338f4632575">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Время в пути</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Time in transit</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d84b48d-fda0-4600-a440-03939d4eeb4f">
+    <name>Расстояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расстояние</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Distance</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Расстояние, км</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Distance (km)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d2974884-0878-42a7-a072-584c705e71cb">
+    <name>КластерОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер отправления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Departure cluster</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатКластеры_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кластер, содержащий пункт отправления</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cluster containing the point of departure</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d4e92ef8-3715-4f71-b753-ba029a1fc279">
+    <name>КластерПрибытия</name>
+    <synonym>
+      <key>en</key>
+      <value>Arrival cluster</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Кластер прибытия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатКластеры_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Кластер, содержащий пункт прибытия</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cluster containing arrival point</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="55986135-033c-4f49-86f3-4a4dc128ae92">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d2621016-5999-466e-b785-5837b53f787c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

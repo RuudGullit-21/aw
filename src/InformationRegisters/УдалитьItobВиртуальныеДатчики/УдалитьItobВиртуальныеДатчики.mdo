@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91a7f5fb-154b-4abf-9684-23622bdd4e2b">
+  <producedTypes>
+    <selectionType typeId="50b9ca90-427a-4a2b-a08d-a14d9bb41991" valueTypeId="d4f16c15-96b9-4d23-ac33-7f2a25ca3e09"/>
+    <listType typeId="8ba38021-2121-414e-a8c2-edb59fe0401d" valueTypeId="4762b2b0-d31c-4fd0-8b19-c516356ad6e2"/>
+    <managerType typeId="e27f2528-8009-4a7b-9125-dff38c0acd80" valueTypeId="609b855b-56eb-430a-9c30-b86dca08921a"/>
+    <recordSetType typeId="6b474076-25c8-4e6d-9330-4106ea39ebca" valueTypeId="18497a34-46ec-41ba-a000-f8a5a0be2bbd"/>
+    <recordKeyType typeId="04654123-d54e-4338-991a-66e44521b512" valueTypeId="eca9c3dd-c0dd-40b6-97d1-6c6b8e1d8db1"/>
+    <recordType typeId="796734ac-fb76-4580-9d2a-e3cfc8ff687b" valueTypeId="bf20ca78-d85e-4dff-ad16-36ab93cab454"/>
+    <recordManagerType typeId="6e33a2cd-f6b6-4f52-a866-2a69b4bd1782" valueTypeId="8ba36aee-56b1-4975-a8aa-deb94f9b7e55"/>
+  </producedTypes>
+  <name>УдалитьItobВиртуальныеДатчики</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Виртуальные датчики</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.УдалитьItobВиртуальныеДатчики.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.УдалитьItobВиртуальныеДатчики.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2e0b0139-63ec-484f-975e-3a61d82543ce">
+    <name>ФормулаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формула расчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Calculation formula</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Формула расчета (на встроенном языке 1С:Предприятие)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="857e9f41-332b-43bd-b83f-0d6dfe68fa61">
+    <name>РасчетДляВсехТерминалов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет для всех терминалов</value>
+    </synonym>
+    <comment>Расчет будет производиться для всех терминалов</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок ставится, если необходимо рассчитывать для всех терминалов. по которым идут данные датчика &quot;Базовый датчик&quot;. Если флажок снят, данные по виртуальному  датчику рассчитываются когда он явно указан в таблице датчиков терминала.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="01821326-d3fe-4630-b48a-376a54d279c9">
+    <name>БазовыйДатчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый датчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobДатчики</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Базовый датчик, данные которого пересчитываются</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="72289e76-3d46-4592-85a2-0e93f724716f">
+    <name>ВиртуальныйДатчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виртуальный датчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobДатчики</types>
+      <types>CatalogRef.ItobНазначенияДатчиков</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Виртуальный датчик - ссылка на справочник &quot;Датчики&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="02662af0-704c-4e7f-9816-751d63e1132c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ccebf79a-c058-4d7e-a2aa-6830180b59de">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

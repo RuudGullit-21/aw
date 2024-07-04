@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c4e7b405-b7c2-41ca-8402-801ef227ccf8">
+  <producedTypes>
+    <selectionType typeId="586ad658-9116-45a2-9958-b1bf4b47bffc" valueTypeId="aef8bbc8-e312-4619-9004-e73399103bc7"/>
+    <listType typeId="927fb645-b65f-40ab-8824-044978213c38" valueTypeId="68f2d1cc-9ad5-4c5e-a431-827bb1cdb36a"/>
+    <managerType typeId="4cfbdb36-0613-4d5e-ad0a-a829e5acc4a5" valueTypeId="0420f77b-8403-45f3-9221-4e15f0efa2d1"/>
+    <recordSetType typeId="915bc620-1d09-448d-bf1d-867a01ae3c36" valueTypeId="679d8cf4-e5c1-464d-a8e7-f2030538e1e6"/>
+    <recordKeyType typeId="c33e3b4e-956a-49bc-846a-8387bbf5d8e0" valueTypeId="6a8dc834-46f2-4ddf-b3e9-2b44fd52131c"/>
+    <recordType typeId="2cd14ce7-1c26-43fd-88a7-11690ce6f47f" valueTypeId="a87cecb9-f477-47a9-82e9-6e48197aef8c"/>
+    <recordManagerType typeId="6517ab5c-9f95-4b90-b2f4-7a5f6dfc67c5" valueTypeId="a3ad85b5-1bea-4dfd-a0e4-1f4469610e0f"/>
+  </producedTypes>
+  <name>уатСчетчикиТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Счетчики ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle counters</value>
+  </synonym>
+  <comment>Показания одометров и счетчиков транспортных средств</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатСчетчикиТС.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>InformationRegister.уатСчетчикиТС.Form.ФормаСписка</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="720b7881-e6e4-410a-87bc-f7f65698cc8b">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>11</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Показания счетчика</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counter statements</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="50e6b929-e3e8-4991-8dfb-c8c4ab4d1386">
+    <name>ТипСчетчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип счетчика</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counter type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыСчетчиковТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип счетчика ТС</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle counter type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1bb6c975-240c-482f-ab4b-63855637a036">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="97edc45d-5984-4f00-9323-e70b909c9f50">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

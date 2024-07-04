@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d56410b0-dae6-4ce0-970d-074ba7384701">
+  <producedTypes>
+    <selectionType typeId="105ce79a-54a9-4631-8da2-98ac00e7aea9" valueTypeId="24a05c58-5a43-4d47-a259-7f5b8b86044f"/>
+    <listType typeId="a994003d-a1fe-41ec-acb1-2445e469d529" valueTypeId="2ecdc9b0-b826-4d9f-b3b1-d736e3245a51"/>
+    <managerType typeId="0bfc27ca-16d6-4ae0-abb2-0575952f87af" valueTypeId="861d53a2-06df-4b53-b523-c690deb688ad"/>
+    <recordSetType typeId="a276dce3-a608-478f-aad3-e5a5d0236ed5" valueTypeId="793f6034-c5f3-42a9-9c49-2866a959de7d"/>
+    <recordKeyType typeId="c9bed5cc-4287-424f-9b1d-d6474c8df3ed" valueTypeId="981b37b7-db13-4cc1-8c4b-c5227f0e8265"/>
+    <recordType typeId="387d4b8a-3a76-4056-8866-bd3dcec78cce" valueTypeId="1427edba-bf38-4e7c-8eaf-e2396d320ab5"/>
+  </producedTypes>
+  <name>уатРабочееВремяСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рабочее время сотрудников</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Employee's working time</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатРабочееВремяСотрудников.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>AccumulationRegister.уатРабочееВремяСотрудников.Form.ФормаСписка</auxiliaryListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Рабочее время сотрудников</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Employee's working time</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Рабочее время сотрудников</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Employee's working time</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Рабочее время сотрудников</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Employee's working time</value>
+  </explanation>
+  <resources uuid="a35c4264-507c-427b-9b74-ac6297491ed8">
+    <name>Дней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Days</value>
+    </synonym>
+    <comment>Всегда = 1 (Нужен для выгрузки в ЗУП)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отработано дней</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Days worked</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="2316a9f3-c230-426f-a964-a627a62fd898">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время в секундах</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time in seconds</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Отработано время</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Worked time</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="4fa909b1-d408-43c0-956f-eadfaaa67d7e">
+    <name>ВидИспользованияРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид использования рабочего времени</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Use type of working time</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыИспользованияРабочегоВремени</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид использования рабочего времени по классификатору</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Use of working time by classifier</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ae781818-33a8-4f3f-8688-47b41d6261e3">
+    <name>ДатаРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата работы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Activity date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата работ по документам выработки сотрудников</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date of work by employees output documents</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f2fdeeba-9c0a-4e87-8180-b649c7c4dec1">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация учета рабочего времени</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company of work time accounting</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d9d291de-7031-46b4-aac7-444c3b83e684">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Физическое лицо (сотрудник), по которому ведется учет</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Individual (employee) on which the account is kept</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="3b041480-177d-45d2-915c-f69c8f409f01">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

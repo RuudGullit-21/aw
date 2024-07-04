@@ -1,0 +1,1332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="264bd568-d6a8-4d25-95eb-0e86e0b073aa">
+  <producedTypes>
+    <objectType typeId="cd35ce9d-29ea-47f7-a726-909f9cd55598" valueTypeId="e84610ec-4e47-4d45-95ad-b7816ba33f9f"/>
+    <refType typeId="0b331e06-886f-4981-8477-899fe12a100c" valueTypeId="b01c8837-b85d-415f-adc1-dfa833d30b7e"/>
+    <selectionType typeId="73d258d6-640e-4ffa-8731-27e3849e1f40" valueTypeId="4a2bb3ec-2867-4eee-a23b-28ac6b0b0cb0"/>
+    <listType typeId="3d93c7f8-597a-427a-881c-e718392a6b29" valueTypeId="585490eb-51ea-438d-87db-3d9e30b592b1"/>
+    <managerType typeId="5086f9ce-1d71-4043-b904-8670ffc5dd0a" valueTypeId="dbba60d3-eda1-41f5-a09b-7330b89517d1"/>
+  </producedTypes>
+  <name>уатПунктыНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пункты назначения</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Points of destination</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатПунктыНазначения.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатПунктыНазначения.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.уатПунктыНазначения.Attribute.АдресДляПоиска</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в группу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Included in group</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа пунктов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Points group</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатПунктыНазначения.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Код</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Code</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатПунктыНазначения</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>Catalog.уатПунктыНазначения.TabularSection.ДополнительныеРеквизиты</characteristicValues>
+    <objectField>Catalog.уатПунктыНазначения.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</objectField>
+    <typeField>Catalog.уатПунктыНазначения.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</typeField>
+    <valueField>Catalog.уатПунктыНазначения.TabularSection.ДополнительныеРеквизиты.Attribute.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатПунктыНазначения</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатПунктыНазначения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатПунктыНазначения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатПунктыНазначения.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.уатПунктыНазначения.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
+  <attributes uuid="82125fab-76a7-4ece-9d01-c5c973233324">
+    <name>Автостанция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автостанция</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bus station</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e90ef71-376a-4277-b0b6-4af6a933e847">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Address</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес пункта</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Item address</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7afc8f9-6e2c-47b1-b771-9c32a1089dd1">
+    <name>ВремяДоступностиПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время доступности по</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time availability</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время окончания доступности</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End time of availability</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="786c27d2-3531-42d9-ae1c-e49d90c0ee5f">
+    <name>ВремяДоступностиС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время доступности С</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time availability from</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время начало доступности</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start time of availability</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3bbd5c18-1988-4114-9163-287b38de2661">
+    <name>Гараж</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гараж</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Garage</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6551128f-7989-4510-960d-26da5b0c9249">
+    <name>ДоставкаВМонопаллетах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доставка в монопаллетах</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Delivery in monopallet</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется основной вид упаковки из справочника &quot;Виды упаковки&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Main type of packaging is used from catalog &quot;Types of packaging&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dc403049-f463-4dbc-983e-14f33204f1db">
+    <name>ДоставкаВПаллетах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доставка в паллетах</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Delivery in pallets</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется основной вид упаковки из справочника &quot;Виды упаковки&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Main type of packaging is used from catalog &quot;Types of packaging&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4ac267e0-18e5-43c1-b84a-b4e75940a930">
+    <name>ЗначенияПолейАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значения полей адреса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Values of address fields</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значения полей адреса пункта назначения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Address fields values of destination point</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d89c21a0-e2e7-4210-a74b-b22cc275d4d4">
+    <name>ИнтервалВремениДляПоискаКоординат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интервал поиска</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>The specified value is added to the planned date of arrival at the point and extends the time range for finding coordinates.
+For example, if you specify an interval of 2 hours and a scheduled arrival time of 10:00, the search will be performed by coordinates in the interval from 08:00 to 12:00.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество часов, которое добавляется к времени прибытия. Если указано значение 2 часа и время прибытия 10:00, поиск координат будет выполняться в интервале с 08:00 до 12:00. Если не заполнено, используется интервал по умолчанию 12 часов.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c1f435b5-443e-4459-a9b6-d8aa9bbf9d27">
+    <name>Комиссия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комиссия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fee</value>
+    </synonym>
+    <comment>Комиссия (УАТ_Пассажирские перевозки)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите комиссию</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify fee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="861b56d6-a46b-4991-a4df-fd9500b24464">
+    <name>Контрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <comment>Контрагент (УАТ_Пассажирские перевозки)</comment>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент, к которому относится пункт назначения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Counterparty to which destination belongs</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="52eb571b-2c3d-40f8-a266-3ad35bf32266">
+    <name>Лат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Latitude</value>
+    </synonym>
+    <comment>Широта пункта назначения</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Широта пункта назначения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Latitude of destination</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="772d3cfa-c076-4bc6-bd06-00ff6dae51ba">
+    <name>Лон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Longitude</value>
+    </synonym>
+    <comment>Долгота пункта назначения</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Долгота пункта назначения</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Longitude of destination</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="407bd4f1-0acd-49a8-b298-e25f8d61d5c3">
+    <name>НаправлениеПеревозки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление перевозки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transportation direction</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатНаправленияПеревозок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4b8e3404-2df8-4e66-a62f-d77490c978c6">
+    <name>ОтдельнаяГруппировкаПриКомплектации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отдельная группировка при комплектации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Separate grouping in packaging arrangement</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cead8a91-cddd-4f18-84a0-2491bd83eb9d">
+    <name>РадиусПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Радиус поиска</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Search radius, m</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество метров, которые ограничивают радиус поиска. Если по данным трека ТС находилось в указанном радиусе от координат пункта, то отмечается факт посещения данного пункта.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Search radius (in meters)</value>
+    </toolTip>
+    <minValue xsi:type="core:StringValue">
+      <value>1</value>
+    </minValue>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="42ce02c2-b96b-4949-96db-2e114e504a98">
+    <name>Страна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Страна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Country</value>
+    </synonym>
+    <comment>Страна (уэ)</comment>
+    <type>
+      <types>CatalogRef.СтраныМира</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите страну</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify country</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a8ab3190-ee91-4a4c-925b-d9cb024408ab">
+    <name>ТелефонныйКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефонный код</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Phone code</value>
+    </synonym>
+    <comment>Телефонный код (уэ)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите телефонный код</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify phone code</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bcbbfb1d-1c0a-4891-82ec-87609c7d08e9">
+    <name>ТипПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип пункта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point type</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыПунктов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7bf3b2f1-106f-4094-9547-1640524deb15">
+    <name>ШифрПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Краткое наименование</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Short name</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для отображения пункта на планировщике и при печати документов: &quot;Путевой лист&quot;, &quot;Маршрутный лист&quot; , &quot;Разнарядка на выпуск ТС&quot;.
+</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Used to display point on scheduler</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07e7358e-9aa7-47fe-83e7-38abf8fabb41">
+    <name>ЗначениеАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение адреса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Служебное поле для хранения контактной информации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="81efc219-1536-43d5-8913-de48bc289f9f">
+    <name>СтоянкаДоп</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоянка (доп.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Park</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Время дополнительной стоянки. Это время является общим для разных заказов в одном пункте. Может включать время на заезд и выезд из территории, оформление документов и т.д.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Duration of stop in point</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d6d24625-6c53-4e21-ab84-1b8329aa7d7a">
+    <name>СтоянкаПР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стоянка (п/р)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Park</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:</value>
+    </editFormat>
+    <toolTip>
+      <key>ru</key>
+      <value>Время стоянки для погрузочно-разгрузочных операций в пункте. Используется для подстановки в документ в качестве времени погрузки или разгрузки по умолчанию.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="453c8728-e948-4eaa-88cf-8e7fdf9fa247">
+    <name>ЦветНаКарте</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет на карте</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>color on the map</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="07972886-e4a6-4e4f-8bbe-34a5d90cf30b">
+    <name>ПропускнаяСпособностьСкладаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ТС к одновременной погрузке</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество ТС к одновременной погрузке.
+Используется только для Яндекс.Маршрутизации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4f275dee-cb78-4682-90d3-f5898c5c9591">
+    <name>ПропускнаяСпособностьСкладаКгЧ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропускная способность склада, кг/ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пропускная способность склада, кг/ч.
+Используется только для Яндекс.Маршрутизации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="404bff76-e23b-42d0-9169-e7eb2eb7fadc">
+    <name>ПропускнаяСпособностьСкладаЕдЧ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пропускная способность в единицах/час</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пропускная способность в единицах/час.
+Используется только для Яндекс.Маршрутизации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="933110b8-f5ab-4cc7-9e7e-01d26259d7de">
+    <name>АдресДляПоиска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес для поиска</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a037ccc0-a0e7-495b-9670-a3e31d96a429">
+    <name>ПробегВнеГеозоны</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пробег вне геозоны</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="4816f5fb-842b-4700-80b6-c58feecd21fa">
+    <producedTypes>
+      <objectType typeId="2b6fe0d3-d887-46b5-830a-bb145eabcb72" valueTypeId="4074cd45-7a11-4c69-a17e-b80f7e76b22d"/>
+      <rowType typeId="055390ad-b6e8-4991-9ede-c4b82e37ab30" valueTypeId="95077d8c-985d-4e45-8311-6937ee0ec43a"/>
+    </producedTypes>
+    <name>РазрешенныеТипыТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенные типы ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Permitted types of vehicle</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6b5f41f2-04e5-4f3f-b643-75f066780fa3">
+      <name>ТипТС</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип ТС</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатТипыТС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Тип транспортного средства</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Vehicle type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="eecd55f9-1cab-4119-b78a-8b469b407cf7">
+      <name>СтоянкаДоп</name>
+      <synonym>
+        <key>ru</key>
+        <value>Стоянка (доп.)</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Park</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>6</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <format>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </format>
+      <format>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </format>
+      <editFormat>
+        <key>ru</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </editFormat>
+      <editFormat>
+        <key>en</key>
+        <value>ЧДЦ=2; ЧРД=:</value>
+      </editFormat>
+      <toolTip>
+        <key>ru</key>
+        <value>Время дополнительной стоянки. Это время является общим для разных заказов в одном пункте. Может включать время на заезд и выезд из территории, оформление документов и т.д.</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Parking duration</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="973b8e04-71ec-4c83-b579-2ed270fd20d5">
+    <producedTypes>
+      <objectType typeId="7254aa3c-31c8-4d44-892d-e09ca95ed86a" valueTypeId="45890cc8-4bbd-4c61-bd11-81e6235f28be"/>
+      <rowType typeId="8cbf8d30-bf94-4f61-9c4a-1f68410f5083" valueTypeId="b2605cde-7172-484f-9fc5-291aecaffaa7"/>
+    </producedTypes>
+    <name>ДополнительныеРеквизиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные реквизиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Additional details</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="b64675eb-746a-4b0b-81cd-33d43ab603e5">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Value</value>
+      </synonym>
+      <type>
+        <types>Characteristic.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Значение дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute value</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.уатПунктыНазначения.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4d5dfece-6413-45af-a873-3ca50692c3e5">
+      <name>Свойство</name>
+      <synonym>
+        <key>ru</key>
+        <value>Свойство</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Property</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дополнительный реквизит</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Additional attribute</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="551b4244-03fc-4fb6-ba5c-da3640c06941">
+      <name>ТекстоваяСтрока</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текстовая строка</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Text string</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Полный текст строкового дополнительного реквизита</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Full text of additional attribute of string type</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="32a47ff9-10ba-45a7-811b-cc164929183b">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cef037ec-1e8f-44cf-bed3-899c0351e9f6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8b626017-586a-4820-8dde-327d8f66e54b">
+    <name>ФормаВыбораАвтостанции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора автостанции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form of bus station</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4e86f6bf-2745-45df-81b3-f15ec7e5f39d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1b89ae4c-6cf6-476d-b7dd-a99b65b80e48">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6508f690-cc56-4041-ae89-e5a603227ded">
+    <name>ФормаСпискаАвтостанции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка автостанции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form bus station</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="550ce086-9cd5-48cb-a1fd-a2d2aea4b46d">
+    <name>ФормаНастроекГеокодирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек геокодирования</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="39e0f8df-0696-45d1-8456-a6a127e01409">
+    <name>ФормаВыбораРезультатаГеокодирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора результата геокодирования</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c5410d86-3170-49f1-b15c-7b8651a240ec">
+    <name>Автостанции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автостанции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>BusStation</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Открыть список автостанций</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Open list of bus stations</value>
+    </toolTip>
+  </commands>
+  <commands uuid="264b5639-e9a2-4fbc-88df-73650bc257b3">
+    <name>РасстоянияМеждуПунктами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расстояния между пунктами (уат)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Distance between points (FMS)</value>
+    </synonym>
+    <comment>Перейти к регистру &quot;Расстояния между пунктами (уат)&quot;</comment>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

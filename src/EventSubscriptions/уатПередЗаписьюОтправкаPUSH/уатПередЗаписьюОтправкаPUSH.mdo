@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fe1e9577-6332-4cfe-96ba-0bb30ddadb91">
+  <name>уатПередЗаписьюОтправкаPUSH</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уат перед записью отправка PUSH</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>FMS before recording a route list PUSH</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.уатЗаявкаНаРемонт</types>
+    <types>DocumentObject.уатМаршрутныйЛист</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.уатМобильноеПриложениеВодителяСервер.ПередЗаписьюОтправкаPUSH</handler>
+</mdclass:EventSubscription>

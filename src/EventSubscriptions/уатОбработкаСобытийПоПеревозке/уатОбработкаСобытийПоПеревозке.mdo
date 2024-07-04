@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f229bd17-7eef-4eac-80cc-a4db1bdf4e1c">
+  <name>уатОбработкаСобытийПоПеревозке</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка событий по перевозке</value>
+  </synonym>
+  <source>
+    <types>BusinessProcessObject.Задание</types>
+    <types>DocumentObject.Встреча</types>
+    <types>DocumentObject.ЗапланированноеВзаимодействие</types>
+    <types>DocumentObject.СообщениеSMS</types>
+    <types>DocumentObject.ТелефонныйЗвонок</types>
+    <types>DocumentObject.ЭлектронноеПисьмоИсходящее</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.уатОбработкаСобытийПоПеревозке</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииТелефонКонтрагента</name>
+    <id>149</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииТелефонКонтрагента</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>Телефон контрагента по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииТелефонКонтрагентаРасширеннаяПодсказка</name>
+      <id>151</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииТелефонКонтрагентаКонтекстноеМеню</name>
+      <id>150</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникКонтрагенты</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииEmailКонтрагента</name>
+    <id>152</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииEmailКонтрагента</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>E-mail контрагента по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииEmailКонтрагентаРасширеннаяПодсказка</name>
+      <id>154</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииEmailКонтрагентаКонтекстноеМеню</name>
+      <id>153</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникКонтрагенты</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.АдресЭлектроннойПочты</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииТелефонКонтактногоЛица</name>
+    <id>155</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииТелефонКонтактногоЛица</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>Телефон контактного лица по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииТелефонКонтактногоЛицаРасширеннаяПодсказка</name>
+      <id>157</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииТелефонКонтактногоЛицаКонтекстноеМеню</name>
+      <id>156</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникКонтактныеЛица</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииEmailКонтактногоЛица</name>
+    <id>158</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииEmailКонтактногоЛица</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>E-mail контактного лица по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииEmailКонтактногоЛицаРасширеннаяПодсказка</name>
+      <id>160</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииEmailКонтактногоЛицаКонтекстноеМеню</name>
+      <id>159</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникКонтактныеЛица</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.АдресЭлектроннойПочты</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииТелефонПользователя</name>
+    <id>161</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииТелефонПользователя</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>Телефон пользователя (например, ответственного) по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииТелефонПользователяРасширеннаяПодсказка</name>
+      <id>163</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииТелефонПользователяКонтекстноеМеню</name>
+      <id>162</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникПользователи</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииEmailПользователя</name>
+    <id>164</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииEmailПользователя</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>E-mail пользователя (например, ответственного) по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииEmailПользователяРасширеннаяПодсказка</name>
+      <id>166</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииEmailПользователяКонтекстноеМеню</name>
+      <id>165</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникПользователи</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.АдресЭлектроннойПочты</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииТелефонФизическогоЛица</name>
+    <id>170</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииТелефонФизическогоЛица</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>Телефон физического лица по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииТелефонФизическогоЛицаРасширеннаяПодсказка</name>
+      <id>172</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииТелефонФизическогоЛицаКонтекстноеМеню</name>
+      <id>171</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникФизическиеЛица</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.Телефон</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <items xsi:type="form:FormField">
+    <name>видКонтактнойИнформацииEmailФизическогоЛица</name>
+    <id>167</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>видКонтактнойИнформацииEmailФизическогоЛица</segments>
+    </dataPath>
+    <toolTip>
+      <key>ru</key>
+      <value>E-mail физического лица по умолчанию</value>
+    </toolTip>
+    <extendedTooltip>
+      <name>видКонтактнойИнформацииEmailФизическогоЛицаРасширеннаяПодсказка</name>
+      <id>169</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>видКонтактнойИнформацииEmailФизическогоЛицаКонтекстноеМеню</name>
+      <id>168</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+      <choiceParameters>
+        <name>Отбор.ПометкаУдаления</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.ЭтоГруппа</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:BooleanValue"/>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Родитель</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Catalog.ВидыКонтактнойИнформации.СправочникФизическиеЛица</value>
+          </value>
+        </value>
+      </choiceParameters>
+      <choiceParameters>
+        <name>Отбор.Тип</name>
+        <value xsi:type="form:FormChoiceListDesTimeValue">
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.ТипыКонтактнойИнформации.EnumValue.АдресЭлектроннойПочты</value>
+          </value>
+        </value>
+      </choiceParameters>
+    </extInfo>
+  </items>
+  <autoCommandBar>
+    <name>ФормаКоманднаяПанель</name>
+    <id>-1</id>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписатьИЗакрыть</name>
+      <id>32</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаписатьИЗакрытьРасширеннаяПодсказка</name>
+        <id>33</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ЗаписатьИЗакрыть</commandName>
+      <representation>Auto</representation>
+      <defaultButton>true</defaultButton>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаЗаписать</name>
+      <id>34</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗаписатьРасширеннаяПодсказка</name>
+        <id>35</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.Записать</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <items xsi:type="form:Button">
+      <name>ФормаЗакрыть</name>
+      <id>19</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>ФормаЗакрытьРасширеннаяПодсказка</name>
+        <id>20</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.StandardCommand.Close</commandName>
+      <representation>PictureAndText</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <horizontalAlign>Left</horizontalAlign>
+    <autoFill>true</autoFill>
+  </autoCommandBar>
+  <handlers>
+    <event>BeforeClose</event>
+    <name>ПередЗакрытием</name>
+  </handlers>
+  <handlers>
+    <event>OnCreateAtServer</event>
+    <name>ПриСозданииНаСервере</name>
+  </handlers>
+  <windowOpeningMode>LockWholeInterface</windowOpeningMode>
+  <saveWindowSettings>true</saveWindowSettings>
+  <autoTitle>true</autoTitle>
+  <autoUrl>true</autoUrl>
+  <group>Vertical</group>
+  <autoFillCheck>true</autoFillCheck>
+  <allowFormCustomize>true</allowFormCustomize>
+  <enabled>true</enabled>
+  <showTitle>true</showTitle>
+  <showCloseButton>true</showCloseButton>
+  <attributes>
+    <name>видКонтактнойИнформацииТелефонКонтрагента</name>
+    <title>
+      <key>ru</key>
+      <value>Телефон контрагента</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Counterparty phone number</value>
+    </title>
+    <id>26</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииEmailКонтрагента</name>
+    <title>
+      <key>ru</key>
+      <value>E-mail контрагента</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Counterparty e-mail</value>
+    </title>
+    <id>27</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииТелефонКонтактногоЛица</name>
+    <title>
+      <key>ru</key>
+      <value>Телефон контактного лица</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Phone number of contact</value>
+    </title>
+    <id>28</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииEmailКонтактногоЛица</name>
+    <title>
+      <key>ru</key>
+      <value>E-mail контактного лица</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>E-mail of contact</value>
+    </title>
+    <id>29</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииEmailПользователя</name>
+    <title>
+      <key>ru</key>
+      <value>E-mail пользователя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>E-mail responsible</value>
+    </title>
+    <id>30</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииТелефонПользователя</name>
+    <title>
+      <key>ru</key>
+      <value>Телефон пользователя</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Phone of responsible</value>
+    </title>
+    <id>31</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииТелефонФизическогоЛица</name>
+    <title>
+      <key>ru</key>
+      <value>Телефон физического лица</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Counterparty phone number</value>
+    </title>
+    <id>1</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <attributes>
+    <name>видКонтактнойИнформацииEmailФизическогоЛица</name>
+    <title>
+      <key>ru</key>
+      <value>E-mail физического лица</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>E-mail responsible</value>
+    </title>
+    <id>32</id>
+    <valueType>
+      <types>CatalogRef.ВидыКонтактнойИнформации</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+    <savedData>true</savedData>
+  </attributes>
+  <formCommands>
+    <name>ЗаписатьИЗакрыть</name>
+    <title>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Write and close</value>
+    </title>
+    <id>1</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать и закрыть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Write and close</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Write</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ЗаписатьИЗакрыть</name>
+      </handler>
+    </action>
+    <representation>Text</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>Записать</name>
+    <title>
+      <key>ru</key>
+      <value>Записать</value>
+    </title>
+    <title>
+      <key>en</key>
+      <value>Write</value>
+    </title>
+    <id>2</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Записать</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Write</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <picture xsi:type="core:PictureRef">
+      <picture>StdPicture.Write</picture>
+    </picture>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>Записать</name>
+      </handler>
+    </action>
+    <representation>Picture</representation>
+    <currentRowUse>DontUse</currentRowUse>
+  </formCommands>
+  <commandInterface>
+    <navigationPanel/>
+    <commandBar/>
+  </commandInterface>
+</form:Form>

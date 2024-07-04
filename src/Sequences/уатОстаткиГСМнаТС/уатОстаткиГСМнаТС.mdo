@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Sequence xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fc3c862-8a41-4638-933a-0112d518e567">
+  <producedTypes>
+    <recordType typeId="46cc6dad-5073-440c-a387-8b7c10cc02ff" valueTypeId="45d7c3ce-e09b-4fe2-949c-e52b26b5b08f"/>
+    <managerType typeId="4baa9002-a2ff-490c-93df-884fbf61b8f1" valueTypeId="bd0aca49-2814-45a0-8f2c-33e8466f9329"/>
+    <recordSetType typeId="562ce89e-eeba-4522-9143-e409ef689f89" valueTypeId="a710a3fe-e323-4cb0-bc22-7e6478af85b0"/>
+  </producedTypes>
+  <name>уатОстаткиГСМнаТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки ГСМ на ТС (уат)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Fuels remains on vehicle (fms)</value>
+  </synonym>
+  <documents>Document.уатЗаправкаГСМ</documents>
+  <documents>Document.уатПутевойЛист</documents>
+  <documents>Document.уатСливГСМ</documents>
+  <documents>Document.уатВводОстатковГСМ</documents>
+  <registerRecords>AccumulationRegister.уатОстаткиГСМнаТС</registerRecords>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="5f7d8927-ea6d-45e9-9ce3-e8662e60cda4">
+    <name>ГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <documentMap>Document.уатВводОстатковГСМ.TabularSection.Топливо.Attribute.ГСМ</documentMap>
+    <documentMap>Document.уатЗаправкаГСМ.TabularSection.Заправки.Attribute.ГСМ</documentMap>
+    <documentMap>Document.уатПутевойЛист.Attribute.ВыдатьГорючее</documentMap>
+    <documentMap>Document.уатСливГСМ.Attribute.ГСМ</documentMap>
+    <registerRecordsMap>AccumulationRegister.уатОстаткиГСМнаТС.Dimension.ГСМ</registerRecordsMap>
+  </dimensions>
+  <dimensions uuid="dde455c8-81a2-4cb3-9f5d-ed405d25522b">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <documentMap>Document.уатВводОстатковГСМ.TabularSection.Топливо.Attribute.ТС</documentMap>
+    <documentMap>Document.уатЗаправкаГСМ.TabularSection.Заправки.Attribute.ТС</documentMap>
+    <documentMap>Document.уатПутевойЛист.Attribute.ТранспортноеСредство</documentMap>
+    <documentMap>Document.уатСливГСМ.Attribute.ТС</documentMap>
+    <registerRecordsMap>AccumulationRegister.уатОстаткиГСМнаТС.Dimension.ТС</registerRecordsMap>
+  </dimensions>
+</mdclass:Sequence>

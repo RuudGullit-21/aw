@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e1ca066-2eae-4c7c-8c97-40929f92401c">
+  <producedTypes>
+    <selectionType typeId="f3a8af2b-43f1-4ae1-a933-52f30b44c8a4" valueTypeId="6cf1961c-80b1-498d-9192-93edd92b1324"/>
+    <listType typeId="da9268dd-9f5f-4358-8a8f-814d1c1b6a86" valueTypeId="ce5c8033-6ac3-4dbe-9b4e-dbb1bdf3edea"/>
+    <managerType typeId="37312cfc-61fa-4cdd-a0d7-d8f7678502a5" valueTypeId="c4e045e0-9f44-4d73-aee3-93cd157e8a4f"/>
+    <recordSetType typeId="08a910df-babc-44d4-9422-2ac72d6a8386" valueTypeId="268da20e-063a-46ef-ba4b-f91e2fd2e443"/>
+    <recordKeyType typeId="12528ac7-6d15-460e-8b05-3b17aaf28978" valueTypeId="4af4a740-fce3-4492-9394-123287beb1c1"/>
+    <recordType typeId="2b82fb16-9c65-4a4d-aa2c-22c6e452e9a1" valueTypeId="596480bb-1ef1-4495-8c4b-b1aa6fe9a8df"/>
+    <recordManagerType typeId="d90f8648-9c0e-45fb-b081-01d3d1b1506c" valueTypeId="2f811d59-1e30-4318-9e25-f35dc0e8e199"/>
+  </producedTypes>
+  <name>уатИсторияПеремещенияТопливныхКарт</name>
+  <synonym>
+    <key>en</key>
+    <value>History of the movement of fuel cards</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>История перемещения топливных карт</value>
+  </synonym>
+  <comment>Используется для хранения истории изменения владельца карты</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатИсторияПеремещенияТопливныхКарт.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатИсторияПеремещенияТопливныхКарт.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>en</key>
+    <value>Ownership history fuel card</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>История изменения владельца топливной карты</value>
+  </explanation>
+  <resources uuid="042ba031-fa12-48b3-86c6-409707a61ec0">
+    <name>КомуВыдана</name>
+    <synonym>
+      <key>en</key>
+      <value>Issued to</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Кому выдана</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle or employee to whom fuel card is assigned</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или сотрудник за которым закреплена топливная карта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8b696570-d88b-4578-a1c3-338745cb40f8">
+    <name>Карта</name>
+    <synonym>
+      <key>en</key>
+      <value>Fuel card</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Топливная карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПластиковыеКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="48db1e8c-dac4-40a2-abef-2ba794ad7561">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0fecdc3d-8aa6-4796-94e2-8b197c7b07f6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

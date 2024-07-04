@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4835a434-4441-43ea-899f-f1d95c1ab1b1">
+  <producedTypes>
+    <selectionType typeId="01e8d5eb-9e15-4c55-801d-342f963d3c04" valueTypeId="80afdefc-57ac-44f1-9d66-14528c1556d0"/>
+    <listType typeId="64305f1a-50e6-457f-a077-67d33df789dc" valueTypeId="26a5ab14-0f40-40d3-9471-61370f062f77"/>
+    <managerType typeId="97441bde-1b3e-42a1-80e6-f6b7fb03e2c9" valueTypeId="c43ff843-36c8-4708-b596-f65629f02215"/>
+    <recordSetType typeId="6e87390b-e4d8-4630-861b-de959ab2f4ef" valueTypeId="c790750d-871f-4f5e-943e-f8e3aa026ef1"/>
+    <recordKeyType typeId="f571f961-3c94-4f2f-8cc4-3f904f455c50" valueTypeId="74672e44-37a3-4cbd-abac-745018b19e83"/>
+    <recordType typeId="753bd5f5-3f11-410e-aa8c-1074256334dc" valueTypeId="4599faa4-b0c0-4d14-9c0c-cf61df059b2d"/>
+    <recordManagerType typeId="b08f3863-efa7-4846-ad4d-eef62fce44b9" valueTypeId="febad01d-b6eb-4bc1-84b6-fb397e70dd95"/>
+  </producedTypes>
+  <name>ItobАктуальностьДанныхТерминалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальность данных терминалов</value>
+  </synonym>
+  <comment>Актуальность данных терминалов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.ItobАктуальностьДанныхТерминалов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ItobАктуальностьДанныхТерминалов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>ru</key>
+    <value>Актуальность данных терминалов</value>
+  </explanation>
+  <resources uuid="31600ed1-425b-4f8e-8fb6-2257dc9da03c">
+    <name>ДатаВремя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата время</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата актуального сообщения от терминала</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b2277cff-5ea1-44c4-818b-2811c95f19f7">
+    <name>Счетчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Счетчик</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Счетчик записей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cca9e436-5370-4831-ba52-e547aa5d565d">
+    <name>Широта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Широта местоположения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f62ac441-eb50-46df-b927-9ade3268db10">
+    <name>ШиротаДействияРазрешеннойСкорости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта действия разрешенной скорости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Широта местоположения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4cc2fe61-9ab5-4866-aa14-f061293af3b4">
+    <name>Долгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Долгота местоположения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d24c02ba-4d21-4814-867b-2681006ac7b3">
+    <name>ДолготаДействияРазрешеннойСкорости</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота действия разрешенной скорости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>9</precision>
+        <scale>6</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Долгота местоположения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7779ba67-be06-4fb9-a319-8174df0d8527">
+    <name>Скорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скорость</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Speed</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Скорость движения, км/ч</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="968b2b73-d587-4b6e-a3de-743307ec8bc5">
+    <name>РазрешеннаяСкоростьПоПДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешенная скорость по ПДД</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e45a9977-3c58-426a-86de-627f45172b34">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Direction</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путевой угол</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="41bef265-3c2b-49d4-8b55-53afd6dd1718">
+    <name>АктуальностьИтогов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуальность итогов</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата актуальности итогов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="79fb5c53-20c9-4421-8590-5b54a17bab7b">
+    <name>ДанныеДатчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные датчиков</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Данные актуальных датчиков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="392934b8-a0fd-4021-a5d7-ca86c1899eb8">
+    <name>КрайниеТочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крайние точки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Крайние точки датчиков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="e755baa2-4de1-4596-8d28-18748e361e77">
+    <name>ВидГруппировки0</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 0</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 0</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e9f44acd-5dd7-48d5-a60d-592090e88792">
+    <name>ВидГруппировки1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a31a1e73-a5e8-41e5-adbf-a153f071b579">
+    <name>ВидГруппировки2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0848fd31-c529-4bca-a625-9df501275639">
+    <name>ВидГруппировки3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 3</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 3</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c8649b5c-0628-4fed-9a69-0e283979fe42">
+    <name>ВидГруппировки4</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 4</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 4</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d342e930-9727-4755-bcaf-c1835411153d">
+    <name>ВидГруппировки5</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 5</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 5</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5a56a908-c4a6-4fee-8662-a2432e1bde76">
+    <name>ВидГруппировки6</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 6</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 6</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="da43ce35-a9fa-4d27-9afc-3a40f83e8a59">
+    <name>ВидГруппировки7</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 7</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 7</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="594dbd79-defd-43f7-8d59-f7df7c8923aa">
+    <name>ВидГруппировки8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 8</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 8</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="744315f5-d7d5-490f-9682-d5f2102e56dd">
+    <name>ВидГруппировки9</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид группировки 9</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВидыГруппировок</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид группировки с индексом 9</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8dd3a3d5-a70a-4cb0-b550-b226fba2a362">
+    <name>ПодходящийВариантДинамическогоОформления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подходящий вариант динамического оформления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВариантыДинамическогоОформления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d47593af-9868-4324-a8a0-f779cd061d19">
+    <name>ПодходящийВариантДинамическогоОформленияПриЗадержкеДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подходящий вариант динамического оформления при задержке данных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВариантыДинамическогоОформления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2ab3332e-74fb-4fc2-a92a-a717cc10acd1">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на терминал объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c788e807-701f-4d12-9db3-4003f2b036cd">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8c3890cf-e40b-4c4b-83ca-df9583a340a6">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

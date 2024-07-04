@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5bc285f-0687-41f9-9180-1f4b4b77dfcd">
+  <producedTypes>
+    <selectionType typeId="a1307d02-67e7-4d75-b836-96d1748cf0a8" valueTypeId="4ce2225a-36c5-4fe5-aeb0-a9bc87ca941a"/>
+    <listType typeId="7e4a61ee-be80-4214-a05e-bc1424da6e16" valueTypeId="3bd3ea54-25cc-49ce-8db0-f147a0ef892d"/>
+    <managerType typeId="9b329ed7-019a-463c-95de-f19f2e58948a" valueTypeId="eef38a37-f156-454c-a155-ba8ed267b919"/>
+    <recordSetType typeId="4dacdd63-93af-46c8-8f20-916ea9386bb4" valueTypeId="bba70554-c6c6-410e-b52f-b70fdd93cf85"/>
+    <recordKeyType typeId="cb130e03-826a-4cd0-b065-da958ec69f32" valueTypeId="51bd91d9-7f1b-4a67-baa3-c27b178620e4"/>
+    <recordType typeId="cff00cb5-e26c-4c23-9933-d53f822d99cc" valueTypeId="d377574e-40d8-4ed6-a8d7-19faf82ba84c"/>
+    <recordManagerType typeId="39b7de00-87d7-4dc5-8f9e-0c0293038e6e" valueTypeId="d4394ec0-3758-467e-a831-714a1bfb22c6"/>
+  </producedTypes>
+  <name>уатСтатьиДоходовРасходовНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статьи доходов и расходов номенклатуры</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Items of income and expense of products and servises</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатСтатьиДоходовРасходовНоменклатуры.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСтатьиДоходовРасходовНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="96eac6fd-42b3-4817-92de-ad5bb5b65838">
+    <name>СтатьяРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья расходов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Expense item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатьиРасходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья расходов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Expense item.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a018fb3-e66e-4bac-bc27-36d56530364f">
+    <name>СтатьяДоходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья доходов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Income item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатьиДоходов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья доходов.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Asset</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="d13a7864-d110-463f-8343-e111f10afe78">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bbd9151e-5cc9-4991-acd4-044923e2221d">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d3da1fc6-dbb7-42a1-b685-6d2bb50fbfe5">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcc4f613-8eda-4403-b240-d87aff127761">
+  <producedTypes>
+    <selectionType typeId="fd1e9b34-6b52-415c-8506-149964197cac" valueTypeId="453240a2-42a1-4c90-858c-495d8a99d47c"/>
+    <listType typeId="0fbd0ab4-a568-44d7-9cd7-9ef4e9097d05" valueTypeId="b349b5c2-06ed-465e-9c7a-5676da6cd31d"/>
+    <managerType typeId="257c9e2c-1a93-423d-ac9e-0c224c8d3c09" valueTypeId="4ce5b4e0-42da-48e4-8224-b97514e4fd58"/>
+    <recordSetType typeId="510d405b-679a-4dff-9803-5ff6fe38831b" valueTypeId="c1d7e720-00ef-4d9c-8435-31afa4f6cc68"/>
+    <recordKeyType typeId="03a1fe33-4901-4237-a312-80a73f1e5aa9" valueTypeId="008b6bb0-4e7e-4f4b-bea3-5fdee4d8e940"/>
+    <recordType typeId="8abd3bc4-b838-40b7-b4e6-8ed53e7eb188" valueTypeId="e5adbcd4-9f89-4981-9a10-12b3c9bd4998"/>
+    <recordManagerType typeId="f85a7714-c68f-406f-b074-f4d55a74f056" valueTypeId="1a2525bc-208a-4348-bef2-c1667ae67f20"/>
+  </producedTypes>
+  <name>ItobСервисыCsmSvc</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисы CsmSvc</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="953870f5-bf22-4934-b8bf-631d99e14c6e">
+    <name>АдресCsmService</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес CsmService</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>IPv4 адрес сервиса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="92ec9e0f-3031-44ab-8d6f-c24970e36d9c">
+    <name>ПортCsmService</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порт CsmService</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порт сервиса</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9572360b-2711-40e0-aa7f-d77866ea4935">
+    <name>ВидОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид обращения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ItobВидыОбращенияCsmSvc</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид обращения на сервис</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1a248a6d-0e42-4836-a13b-eecfdde0ca8f">
+    <name>СерверОбращения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сервер обращения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сервер обращения на сервис</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

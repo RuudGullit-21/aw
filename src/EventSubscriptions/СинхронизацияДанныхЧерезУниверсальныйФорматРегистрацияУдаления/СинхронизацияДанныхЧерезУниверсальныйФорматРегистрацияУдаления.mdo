@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5fefa983-9fff-4787-a13d-540a487da1c7">
+  <name>СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияУдаления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синхронизация данных через универсальный формат регистрация удаления</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Data sync via universal format registration removal</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.уатВозвратТоваров</types>
+    <types>DocumentObject.уатСписаниеТоваров</types>
+    <types>DocumentObject.уатПлатежноеПоручениеИсходящее</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>DocumentObject.уатРемонтныйЛист</types>
+    <types>DocumentObject.уатИнвентаризацияТоваров</types>
+    <types>DocumentObject.уатПлатежноеПоручениеВходящее</types>
+    <types>DocumentObject.уатАвансовыйОтчет</types>
+    <types>CatalogObject.уатПараметрыВыработки</types>
+    <types>CatalogObject.СтатьиДвиженияДенежныхСредств</types>
+    <types>CatalogObject.Склады</types>
+    <types>DocumentObject.уатПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.уатЗаправкаГСМ</types>
+    <types>DocumentObject.уатСчетНаОплатуПоставщика</types>
+    <types>DocumentObject.уатОперацииСТехническимиЖидкостями</types>
+    <types>DocumentObject.уатСливГСМ</types>
+    <types>CatalogObject.СтраныМира</types>
+    <types>DocumentObject.уатСчетНаОплатуПокупателю</types>
+    <types>CatalogObject.ДоговорыКонтрагентов</types>
+    <types>DocumentObject.уатПриходныйКассовыйОрдер</types>
+    <types>CatalogObject.Банки</types>
+    <types>CatalogObject.Контрагенты</types>
+    <types>DocumentObject.уатТТД</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.Пользователи</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.БанковскиеСчета</types>
+    <types>DocumentObject.уатПутевойЛист</types>
+    <types>CatalogObject.Организации</types>
+    <types>DocumentObject.уатВыдачаРасходныхМатериалов</types>
+    <types>CatalogObject.ФизическиеЛица</types>
+    <types>CatalogObject.ПодразделенияОрганизаций</types>
+    <types>CatalogObject.ОсновныеСредства</types>
+    <types>CatalogObject.уатСтатьиРасходов</types>
+    <types>DocumentObject.уатРасходныйКассовыйОрдер</types>
+    <types>DocumentObject.уатНачислениеЗарплаты</types>
+    <types>DocumentObject.уатРеализацияУслуг</types>
+    <types>CatalogObject.КлассификаторЕдиницИзмерения</types>
+    <types>DocumentObject.уатПеремещениеТоваров</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУАТ.СинхронизацияДанныхЧерезУниверсальныйФорматРегистрацияУдаленияПередУдалением</handler>
+</mdclass:EventSubscription>

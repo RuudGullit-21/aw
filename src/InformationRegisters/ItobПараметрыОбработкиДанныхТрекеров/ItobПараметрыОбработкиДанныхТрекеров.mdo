@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0e002305-2704-4390-ad10-ac211435537f">
+  <producedTypes>
+    <selectionType typeId="7f84bf68-936b-47db-89f1-75aecf2cb3c2" valueTypeId="30e4559e-e62e-40cd-a846-083207d31782"/>
+    <listType typeId="13db8a9b-0e17-49aa-9572-d9b11d8816e0" valueTypeId="2ab5694f-e3a6-421b-81a5-8c0c755e3ed6"/>
+    <managerType typeId="611892eb-1f4f-42ea-ae2c-a4da54602082" valueTypeId="73fd9960-27bb-45a7-90bc-4579722832b3"/>
+    <recordSetType typeId="77d2e274-68f3-4330-ba68-7d25e64e49e5" valueTypeId="781e9ee8-a9a5-4b42-9330-56adc5aafe4d"/>
+    <recordKeyType typeId="dbd384f7-a422-45c8-9795-5383e0c2a147" valueTypeId="54c66f77-53af-493c-b423-fbdbdd3eb93d"/>
+    <recordType typeId="03e91125-f223-411f-ba23-67d514529a29" valueTypeId="de240155-1c4b-4fc0-987a-4f3c1717c600"/>
+    <recordManagerType typeId="b4253b17-d46f-4efc-b5aa-768388a17866" valueTypeId="203c9f60-5919-4ecb-a281-eb184ed16fa1"/>
+  </producedTypes>
+  <name>ItobПараметрыОбработкиДанныхТрекеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры обработки данных трекеров</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ItobПараметрыОбработкиДанныхТрекеров.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="802b8ae3-a4e6-4528-a34e-01a77d9c3138">
+    <name>ОпределениеДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определение движения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ItobМетодыОпределенияДвижения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Определение движения объекта мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ItobМетодыОпределенияДвижения.EnumValue.GpsСкорость</value>
+    </fillValue>
+  </resources>
+  <resources uuid="3c063dd3-998e-4373-a784-b9482ac0e1dc">
+    <name>МинимальнаяСкоростьДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальная скорость движения (км/ч)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимальная скорость движения, км/ч. Стоянкой считается состояние терминала, при котором скорость меньше чем &quot;Минимальная скорость движения&quot; в промежуток времени, больший или равный значению &quot;Минимальное время стоянки&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e061fdbb-0dd7-4b0a-b3db-50ab6a05956b">
+    <name>МинимальноеВремяСтоянки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальное время стоянки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимальное время стоянки. Стоянкой считается состояние терминала, при котором скорость меньше чем &quot;Минимальная скорость движения&quot; в промежуток времени, больший или равный значению &quot;Минимальное время стоянки&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="32ff7841-2f24-4e20-9409-b31878d8e3ed">
+    <name>МинимальныйИнтервалОтправкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное время между сообщениями (сек.)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимальный интервал отправки данных, указывается в секундах. Если разница между двумя точками трекера больше чем &quot;Минимальный интервал отправки данных&quot;, это отмечается как состояние &quot;Нет данных&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2c1851a0-2d5e-4f13-95f5-a3c072a25e1b">
+    <name>ОтключитьНормализациюТочекДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключить нормализацию точек движения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выключить нормализацию точек трекера</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="76ca9d57-ddac-4003-8c39-6b0452b3bf03">
+    <name>ДопустимыйРадиусСтоянки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый радиус стоянки (м)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Радиус стоянки, в метрах. Все выбросы точек трекера за пределы радиуса стоянки - уже не являются стоянкой.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9d9e4044-a1ea-4666-b149-05b412ebf248">
+    <name>МаксимальнаяВалиднаяСкоростьДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальная валидная скорость (км/ч)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимально валидная скорость движения, км/ч</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1089cd77-9cb0-46e7-9c1e-f10ee16ddc48">
+    <name>УдалитьПрофильЗаписиДанныхДатчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Профиль записи данных датчиков</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УдалитьItobПрофилиЗаписиДанныхДатчиков</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Необязательный параметр, указывается профиль записи данных датчиков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="280ca77e-913f-46d4-8cef-84c65c474328">
+    <name>МодельТерминала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель терминала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Model of terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobМоделиТерминалов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Модель ГЛОНАСС/GPS трекеров</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Модель ГЛОНАСС/GPS трекеров</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="472893bc-5a8e-46fb-8211-00ef66cc5ae7">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Терминал, если не указан - то по всем (для данной модели)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b1ac6f7c-6f28-4c05-bc38-239794c4e73a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

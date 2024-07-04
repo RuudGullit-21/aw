@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="489831c8-8bc5-46f6-b842-0aa7f62a5ed7">
+  <producedTypes>
+    <objectType typeId="25bf98fa-9302-4620-8488-a4ce9270cdde" valueTypeId="1d751a3d-1302-42b4-8c80-f5f9dc83e7ee"/>
+    <managerType typeId="294d4c35-248e-4048-b138-2b221ba85070" valueTypeId="55cdfd57-16ad-4654-857d-e0c2930de2f4"/>
+  </producedTypes>
+  <name>ItobМаршрутПоГеозонамДиаграммаГанта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Маршрут по географическим зонам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ItobМаршрутПоГеозонамДиаграммаГанта.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ItobМаршрутПоГеозонамДиаграммаГанта.Template.СКД</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="7169944d-93a5-4c7e-bcb1-016963947919">
+    <name>НачПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нач периода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Beginning of period</value>
+    </synonym>
+    <comment>Начало периода</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period start date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f9aceec6-f27e-42bf-bc57-209c61a0e44d">
+    <name>КонПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кон периода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End of period</value>
+    </synonym>
+    <comment>Конец периода</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата конца периода</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="ef6e412f-4e3b-4699-8360-c69171e8624b">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект для формирования отчета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="b984dd97-df57-4f06-b759-9b2fb41013c2">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Report form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="a242a3d9-8988-4a7c-9399-e969ea94e32b">
+    <name>СКД</name>
+    <synonym>
+      <key>ru</key>
+      <value>СКД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>DCS</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

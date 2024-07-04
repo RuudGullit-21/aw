@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4b52b35-6687-4870-ab0a-1b2196451413">
+  <producedTypes>
+    <selectionType typeId="fc8e5ef9-37b4-458f-8f70-06102e35d9b2" valueTypeId="9d145c0c-f5cb-4fdd-ae9f-d81c74d125e6"/>
+    <listType typeId="0b47c1a8-4da9-4909-948c-246ad04bb71d" valueTypeId="0321f1ce-33b9-4296-9ba1-873bb8703adc"/>
+    <managerType typeId="9dac797b-cb26-4513-8ebd-3d72232c378d" valueTypeId="992f0254-deb8-42ec-aff8-00f72238d425"/>
+    <recordSetType typeId="2ca9d73c-5809-417f-9b48-5156733127b6" valueTypeId="49fc6f4a-a6e7-4096-801a-5afcdeb59bab"/>
+    <recordKeyType typeId="07150afe-3de0-42a0-82ea-1cf68df6889e" valueTypeId="caabddca-2dc7-4bdc-a4b4-39d04d3d15bf"/>
+    <recordType typeId="f4e6129b-8087-4e08-bb7a-a250fdbaf755" valueTypeId="2d8c339c-9f48-4f1d-8c6c-4b5ac7ecc2e3"/>
+    <recordManagerType typeId="19575c84-1fe3-41fe-9738-5a7593e44a29" valueTypeId="385ec311-b917-49ac-9d09-9d0e140379c8"/>
+  </producedTypes>
+  <name>уатОчередьУведомлений_уэ</name>
+  <synonym>
+    <key>en</key>
+    <value>Notification queue</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь уведомлений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатОчередьУведомлений_уэ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатОчередьУведомлений_уэ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Notification</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Уведомление</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Notification</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Уведомление</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Notification queue</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Очередь уведомлений</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Notification queue</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Очередь уведомлений</value>
+  </extendedListPresentation>
+  <resources uuid="72fe70f6-5cff-47d4-b7e0-b5fa2451b607">
+    <name>ДатаУстановкиСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата установки статуса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date of status installiation</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3948cc70-4408-4258-87d8-5b93ec1f4cf7">
+    <name>СтатусДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document status</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСтатусы_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус Заказа на ТС или его грузового места</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b9419ec5-c99d-4eb6-bbe5-6044f7611000">
+    <name>ТекстСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст сообщения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Message text</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="28a7e903-9549-453e-8e38-9fc65f2caf8e">
+    <name>ТемаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема письма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Email subject</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="ad623dce-da94-4399-993e-6fffab3a23fc">
+    <name>УбытиеПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Убытие план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Плановая дата убытия из пункта, для событий маршрутного листа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f1519c54-abb6-456b-ae17-928b489bb290">
+    <name>GUIDСтрокиМЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>GUIDСтроки МЛ</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7f7e2477-3812-4d11-ae6d-a11d0407e22a">
+    <name>ГрузовоеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузовое место</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Сargo space</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.уатГрузовыеМеста_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Грузовое место.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Сargo space.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4e630b38-d005-48dd-8ed0-5c854aa36de3">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2ca6325f-aa42-4d92-bdec-0a79e30b117c">
+    <name>Документ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Subject</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатПакетСопроводительныхДокументов</types>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+      <types>DocumentRef.уатТендер_уэ</types>
+      <types>DocumentRef.уатАктПриемки_уэ</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      <types>DocumentRef.уатПотребностьВПеревозке_уэ</types>
+      <types>CatalogRef.уатТС</types>
+      <types>DocumentRef.уатАктОтгрузки_уэ</types>
+      <types>CatalogRef.уатСопроводительныеДокументы</types>
+      <types>DocumentRef.уатЗаказПеревозчику_уэ</types>
+      <types>DocumentRef.уатУстановкаСтатусовСопроводительныхДокументов</types>
+      <types>DocumentRef.уатСтраховойСертификат_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a2f52d81-074c-459a-a1c9-5921d657dc9b">
+    <name>ДополнительныйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c1112af6-71a1-46ee-bf6f-80abd29b90f5">
+    <name>Получатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.КонтактныеЛица</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>String</types>
+      <types>CatalogRef.ФизическиеЛица</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="03776c81-a9db-4ebd-8a74-e67d0aa3b299">
+    <name>ПравилоФормированияУведомлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило формирования уведомлений</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Notification creation rule</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПравилаФормированияУведомлений_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0f5905f3-0de5-4e02-b761-10043b7d6653">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ШаблоныСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="69118ea0-2666-4c10-bdf9-f307a7553870">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b8e8b53f-4bd7-4c45-9e3b-55318a371019">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

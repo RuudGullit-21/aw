@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7690319-a5ad-4b6c-9e28-04b8aa62a817">
+  <producedTypes>
+    <managerType typeId="12d2e6f3-584d-45fa-8db1-aac4fba71d5b" valueTypeId="a1cdd87c-1f6c-4e6b-b13e-c48a7f45f9d4"/>
+    <valueManagerType typeId="2f2c8a9d-3ab5-428c-8c4c-50b2979a4fd3" valueTypeId="edc459cd-d399-422b-8ab1-ac223cf43ce1"/>
+    <valueKeyType typeId="6a71ff04-cf47-5ff8-befe-6be94d91085b" valueTypeId="c94cd00a-ad01-58cb-8759-7ef145459731"/>
+  </producedTypes>
+  <name>уатНомерМаршрутногоЛистаВЗаказеНаТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Номер маршрутного листа в Заказе на ТС</value>
+  </synonym>
+  <type>
+    <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <choiceParameters>
+    <name>Отбор.НаборСвойств</name>
+    <value xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатЗаказГрузоотправителя</value>
+    </value>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ПометкаУдаления</name>
+    <value xsi:type="core:BooleanValue"/>
+  </choiceParameters>
+  <choiceParameters>
+    <name>Отбор.ЭтоДополнительноеСведение</name>
+    <value xsi:type="core:BooleanValue">
+      <value>true</value>
+    </value>
+  </choiceParameters>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

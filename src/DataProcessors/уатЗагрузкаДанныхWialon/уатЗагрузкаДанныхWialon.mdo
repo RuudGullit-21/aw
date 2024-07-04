@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c4e1cdf-3bec-409c-9e33-2d5887c0181d">
+  <producedTypes>
+    <objectType typeId="8a0938d4-673a-4e47-8eac-1c46c30d7504" valueTypeId="4d0ece1a-9fb4-44b7-99b8-ea1d32a0abc8"/>
+    <managerType typeId="147dd0c2-79b9-40d9-a1f7-a9151e4c78f4" valueTypeId="68f43faa-807f-46ae-b414-df7fd85f77cf"/>
+  </producedTypes>
+  <name>уатЗагрузкаДанныхWialon</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка данных Wialon</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Download Wialon data</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатЗагрузкаДанныхWialon.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <explanation>
+    <key>en</key>
+    <value>Loading data from a system Wialon hosting</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Загрузка данных из системы Wialon hosting</value>
+  </explanation>
+  <attributes uuid="03bec599-72da-4c0d-bfa4-d472ff1df554">
+    <name>ДатаС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата С</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <comment>Дата начала периода</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period start date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="41b58c21-4056-4d18-90fe-4cb8f08cde79">
+    <name>ДатаПо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата по</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date to</value>
+    </synonym>
+    <comment>Дата окончания периода</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания периода</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End of period date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <forms uuid="e52e65ea-4286-457c-b64a-b872f8c9d688">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

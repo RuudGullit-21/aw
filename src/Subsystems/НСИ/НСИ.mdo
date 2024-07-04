@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f492a4a-07e8-4061-b123-42ce87fca995">
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Reference information</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Нормативно-справочная информация </value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Reference information </value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.уатПодсистемаНСИ</picture>
+  </picture>
+  <content>Enum.СтавкиНДС</content>
+  <content>CommonPicture.ПодсистемаСправочникиИНастройкиУчета</content>
+  <content>CommonCommand.ДополнительныеОбработкиНСИ</content>
+  <content>CommonCommand.ДополнительныеОтчетыНСИ</content>
+  <content>Catalog.ВидыКонтактнойИнформации</content>
+  <content>CommonCommand.ПанельОтчетовНСИ</content>
+  <content>CommonModule.ИдентификационныеНомераНалогоплательщиков</content>
+  <content>DataProcessor.уатЗагрузкаДанныхИзExcel</content>
+  <subsystems>Предприятие</subsystems>
+  <subsystems>Номенклатура</subsystems>
+  <subsystems>Классификаторы</subsystems>
+  <subsystems>Контрагенты</subsystems>
+</mdclass:Subsystem>

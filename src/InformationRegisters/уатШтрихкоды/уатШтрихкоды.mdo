@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ccfe5b1a-a4e4-45b9-9182-a8f4eda99614">
+  <producedTypes>
+    <selectionType typeId="bf160ac3-7c3e-4e58-98e0-82245898093f" valueTypeId="f029dd5b-4b4e-47de-9b9a-8083a518b44c"/>
+    <listType typeId="b631bab9-dab5-4e0c-b147-83595911eb61" valueTypeId="a35639c2-20b2-4bd0-a2ff-20689656f3e4"/>
+    <managerType typeId="30587a55-04c5-49e0-9e12-35bef406e592" valueTypeId="01b66e1d-b1fa-45d0-a9fb-b592172e7871"/>
+    <recordSetType typeId="5919d1f7-e5b1-48e6-a9df-66912c840763" valueTypeId="184a4aa8-f721-45e3-b0b3-d5cdb007222c"/>
+    <recordKeyType typeId="c8b26d3d-05f5-4069-80da-6fb54bf498fe" valueTypeId="491fba9d-7f2f-4b5a-80be-7b1fba896132"/>
+    <recordType typeId="05ff070a-8928-4bc1-893c-65aeaf27a3d1" valueTypeId="5ad4b3e5-b606-4545-8b94-ba8498d1d67a"/>
+    <recordManagerType typeId="48ae671e-03be-407f-8e0e-f605bbbcddd5" valueTypeId="17e8cc35-bee8-45a8-aac1-5c06d7fca60e"/>
+  </producedTypes>
+  <name>уатШтрихкоды</name>
+  <synonym>
+    <key>ru</key>
+    <value>Штрихкоды</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Barcodes</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатШтрихкоды.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатШтрихкоды.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="be32e023-56e6-43ea-9290-58882824985e">
+    <name>НомерСтрокиЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cd6ab08e-51cb-40f6-8210-baa049b63d83">
+    <name>НомерПаллеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер паллеты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of pallet</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="6b9d1e8c-a98b-4faf-91c7-b2971bedd99a">
+    <name>Штрихкод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Barcode</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>128</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7a6c27bf-7149-40b2-82a3-93425369d71e">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатОприходованиеТоваров</types>
+      <types>DocumentRef.уатСписаниеТоваров</types>
+      <types>DocumentRef.уатВнутреннееПеремещение</types>
+      <types>DocumentRef.уатИнвентаризацияТоваров</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      <types>DocumentRef.уатПотребностьВПеревозке_уэ</types>
+      <types>DocumentRef.уатПутевойЛист</types>
+      <types>CatalogRef.Номенклатура</types>
+      <types>DocumentRef.уатЗаявкаНаРемонт</types>
+      <types>DocumentRef.уатПеремещениеТоваров</types>
+      <types>CatalogRef.уатГрузовыеМеста_уэ</types>
+      <types>DocumentRef.уатВыдачаРасходныхМатериалов</types>
+      <types>DocumentRef.уатРемонтныйЛист</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.уатВозвратТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6850600e-b510-4b77-85af-1e3625829fa2">
+    <name>ЗаказГрузоотправителя</name>
+    <synonym>
+      <key>en</key>
+      <value>Consignor order</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ грузоотправителя</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      <types>DocumentRef.уатПотребностьВПеревозке_уэ</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Заказ грузоотправителя.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Consignor order.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d7c6d54c-1b6e-40bf-a86b-04bdb9aae641">
+    <name>ТипШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип штрихкода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Barcode type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатТипыШтрихкодов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатТипыШтрихкодов.EnumValue.EAN13</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="40749611-e260-4029-8a43-fb32026a1fbb">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7f7eff9a-c4bf-4b56-8e22-c95caecd70dd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

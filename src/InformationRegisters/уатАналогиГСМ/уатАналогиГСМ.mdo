@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2e0d46b6-3589-4c06-88cb-38d2b8c7670d">
+  <producedTypes>
+    <selectionType typeId="2190873a-33ff-49a0-a537-f01307ed68f7" valueTypeId="be3a73b3-a775-4fee-8019-ad40cf10a34c"/>
+    <listType typeId="183a5235-1e39-4b88-817a-1d0c2126a267" valueTypeId="3736e0a7-6b24-4c78-91b2-0552f771bb08"/>
+    <managerType typeId="37e1fd2f-d270-47ff-b389-3d686d4d32dd" valueTypeId="4d306ee2-02e2-4313-a3da-8fd9cda16848"/>
+    <recordSetType typeId="16190709-3f8e-46be-9540-d2e9eeb0c42a" valueTypeId="cd7cb7ca-903c-4db5-9e01-e106bdf45ac1"/>
+    <recordKeyType typeId="617c4925-a310-4790-a5da-b7693fc58911" valueTypeId="3ff22626-649f-42a0-935d-b48e0d919bac"/>
+    <recordType typeId="96486bd9-2723-432c-a121-58487e08f469" valueTypeId="1a214457-0cfb-4649-bd7a-321e26272418"/>
+    <recordManagerType typeId="6a1fd143-fdbd-46cf-b2c8-e46d0060d60b" valueTypeId="905594cb-632e-4281-adb1-4c30090a3124"/>
+  </producedTypes>
+  <name>уатАналогиГСМ</name>
+  <synonym>
+    <key>en</key>
+    <value>Fuels analogs</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Аналоги ГСМ</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.уатАналогиГСМ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатАналогиГСМ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Fuels analog</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Аналог ГСМ</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Fuels analog</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Аналог ГСМ</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Fuels analogs</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Аналоги ГСМ</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Fuels analogs</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Аналоги ГСМ</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Fuels analogs</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Аналоги ГСМ</value>
+  </explanation>
+  <dimensions uuid="fd6c2d29-4ed3-4668-86d3-f6b1ae69df25">
+    <name>ГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels</value>
+    </synonym>
+    <comment>ГСМ</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Petroleum, oil and lubricants</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Горюче - смазочные материалы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="53281b94-756d-4b81-8611-de88726fa80c">
+    <name>Аналог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналог</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Analog</value>
+    </synonym>
+    <comment>Аналог</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Fuels analog</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Аналог ГСМ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="2401407c-10bb-4218-9270-a1bcd2bc53d0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="62d11918-2cc8-460c-823f-39b4df18b1ec">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6991bc0-ce02-4388-9c84-2074652fe7c3">
+  <producedTypes>
+    <selectionType typeId="1b77aae7-5e41-4151-b70e-b37f6773d349" valueTypeId="2f69219d-b116-49ca-a39a-902b955ed455"/>
+    <listType typeId="ce613204-f6a2-431c-b6d3-fd3593938bac" valueTypeId="15c91735-d887-414d-ba19-d8725ca0f43f"/>
+    <managerType typeId="7f2dda5c-fbab-4599-b602-503d4e78bc79" valueTypeId="16823c3c-7244-4781-8fc8-cf92e4e3595e"/>
+    <recordSetType typeId="2d44da8f-92fd-4b60-87af-3fa70075e6f4" valueTypeId="e0aee1e6-19b4-4837-a075-d418fe6f4d36"/>
+    <recordKeyType typeId="3f803d79-4ae2-4ae6-85c1-1e9f946b5821" valueTypeId="523bd8ed-8c77-46e9-bf1b-8aec660d9823"/>
+    <recordType typeId="c85f4f81-bac1-4411-980a-168ce0af806a" valueTypeId="d956b908-72d5-4979-b0aa-ebb4cdd7c8ba"/>
+    <recordManagerType typeId="a6546c4d-3ab2-4aa2-a1bc-58485d2a98c1" valueTypeId="53a96663-c929-4f12-8ae9-7d36b781cc3a"/>
+  </producedTypes>
+  <name>уатСведенияОТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доп. сведения о ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатСведенияОТС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСведенияОТС.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Доп. сведения о ТС</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Дополнительные сведения о ТС</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Доп. сведения о ТС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Дополнительные сведения о ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Дополнительные сведения о ТС</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Additional information about vehicle</value>
+  </explanation>
+  <resources uuid="6dc48ee4-296e-4428-81b4-aee333751bd7">
+    <name>СтавкаТранспортногоНалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ставка транспортного налога</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Transport tax rate</value>
+    </synonym>
+    <comment>Ставка транспортного налога</comment>
+    <type>
+      <types>CatalogRef.уатСтавкиПоТранспортномуНалогу</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите ставку транспортного налога</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify rate of vehicle tax</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0e0f183d-dd24-4dfc-a359-508f53ece6a2">
+    <name>КоэффициентИзмененияНормТоплива</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент изменения норм топлива</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Coefficient of changes in fuel norms</value>
+    </synonym>
+    <comment>Значение задается в процентах</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение в процентах, на которое увеличится или уменьшится (если меньше нуля) норма расхода ГСМ по ТС</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="44bffd9e-02ee-49c3-baf5-70c01e67b429">
+    <name>НачислятьТранспортныйНалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начислять транспортный налог</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Charge transport tax</value>
+    </synonym>
+    <comment>Начислять транспортный налог</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак начисления транспортного налога</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of calculation of transport tax</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f947848-868e-4f50-9bc4-1cabeb11445b">
+    <name>НалоговаяБаза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая база</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tax base</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>17</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите налоговую базу</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify tax base</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a3612ba2-5d14-4f8f-bbea-6e77566b10d4">
+    <name>ЕдиницаИзмеренияНалоговойБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Единица измерения налоговой базы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tax base unit</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Укажите единицу измерения налоговой базы</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Specify the unit of measure of tax base</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1e47d8e7-79e5-4290-9c76-c309b480f9d3">
+    <name>ЭкологическийКласс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экологический класс</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Emission standard</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Экологический класс.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Emission standard.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f2c2dc94-658b-4c10-842a-0c85e95eb996">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arbitrary comment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1ee64172-0c0a-4d8a-a59f-df56d116d991">
+    <name>ОбщаяСобственность</name>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle is in common property</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>ТС находится в общей долевой (совместной) собственности</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="084a9ab4-872d-425c-bcbe-44a12fe1e244">
+    <name>ДоляВПравеОбщейСобственностиЧислитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доля в праве общей собственности (числитель)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Part in common property (numerator)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <resources uuid="c1672915-d81c-4c75-a4a7-a66ab876289a">
+    <name>ДоляВПравеОбщейСобственностиЗнаменатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доля в праве общей собственности (знаменатель)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Part in common property (denominator)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </resources>
+  <resources uuid="ce5a705b-0187-48d0-804c-ad78b73bdb97">
+    <name>ПовышающийКоэффициент</name>
+    <synonym>
+      <key>en</key>
+      <value>Inflation index</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Повышающий коэффициент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <scale>1</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="890729e7-9f55-4dab-a43c-84f838a23e37">
+    <name>НалоговаяЛьгота</name>
+    <synonym>
+      <key>en</key>
+      <value>Tax concession</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговая льгота</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыНалоговыхЛьготПоТранспортномуНалогу</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВидыНалоговыхЛьготПоТранспортномуНалогу.EnumValue.НеПрименяется</value>
+    </fillValue>
+  </resources>
+  <resources uuid="a3a11102-fcbb-4e1c-8a19-a70b5920df1f">
+    <name>КодНалоговойЛьготы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код налоговой льготы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Код налоговой льготы</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f7f18d09-ad84-4e04-9e77-d42680461159">
+    <name>РегиональныйКодЛьготы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Региональный код льготы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Regional benefit code</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="aee50d70-12f4-48b4-a743-9cb42f7568cd">
+    <name>ЛьготнаяСтавка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Льготная ставка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Preferential rate</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>8</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d348c472-9ce6-4382-ad88-013b4fb006f9">
+    <name>ПроцентУменьшения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент уменьшения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Percent of decrease</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="36e9fc3c-102e-4fbd-a50d-983ff7043e9a">
+    <name>СуммаНалоговойЛьготы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма налоговой льготы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Сумма налоговой льготы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="53c768b8-e5aa-4e1e-b4d6-44fc2df49c14">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Транспортное средство</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="70b34e50-43bc-477f-9ac5-88b59d6760eb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="140a70a0-d161-41d5-a445-fe1d558bb733">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="25a2fcf9-ad6c-4c4f-87a2-6e2a21347394">
+    <name>ФормаВводаОснованияЛьготы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма ввода основания льготы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Форма ввода основания льготы</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="faf76a02-413f-415c-af11-0cbe4217400e">
+  <producedTypes>
+    <selectionType typeId="0f57b697-531d-4e5c-bae3-756a5442a947" valueTypeId="b4cba2c6-d002-4323-ac22-b2c4135e456e"/>
+    <listType typeId="88eea074-daf5-49b6-8774-21926b90255c" valueTypeId="664463b4-0348-446a-ae97-69dd846b9811"/>
+    <managerType typeId="9acf1edd-2ed5-4ee2-8294-763709041979" valueTypeId="7c555602-21b9-416e-9d43-0d45c1455e92"/>
+    <recordSetType typeId="9a90ad2a-06ac-4d71-8ece-838b18d2fd11" valueTypeId="7ffd6a85-c923-44e3-b4fd-e67ec668b11c"/>
+    <recordKeyType typeId="24f48c32-c818-4910-ba00-5d5146c206c5" valueTypeId="34257029-f27e-4a09-9617-b95043beddc7"/>
+    <recordType typeId="dc5aad5f-8739-4cc4-af38-55ddf4f264be" valueTypeId="c34f4515-d571-4d90-a1ce-0d2e4fde06ad"/>
+    <recordManagerType typeId="6d72d5b7-fa67-4e13-bb93-d1c90193da85" valueTypeId="e3bf7cd2-ce2d-4773-ae45-9a6c9d469b96"/>
+  </producedTypes>
+  <name>уатДатыДвиженияТоваровНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты движения товаров на складах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Даты движения товаров на складах</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Даты движения товаров на складах</value>
+  </extendedListPresentation>
+  <dimensions uuid="e9a064ff-5d8d-4226-8719-41209c648634">
+    <name>ВидДвижения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид движения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ВидыДвиженийПриходРасход</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1f6a8079-111c-4546-9326-d43389fa9a23">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="678738ce-b97d-4238-b59c-2b08e8c12743">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8a356ef1-8e96-412e-bf7e-d86f447798fd">
+    <name>Ячейка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ячейка</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСкладскиеЯчейки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

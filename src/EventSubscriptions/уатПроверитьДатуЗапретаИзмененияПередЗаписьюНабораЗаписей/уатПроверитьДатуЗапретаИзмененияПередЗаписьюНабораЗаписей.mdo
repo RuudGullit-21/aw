@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2df5449-68d6-4051-9249-f4cb2c8c2e23">
+  <name>уатПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед записью набора записей</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Check change prohibition date before writing a record set</value>
+  </synonym>
+  <comment>Подписка создана при внедрении подсистемы ДатыЗапретаИзменения для проверки регистров</comment>
+  <source>
+    <types>InformationRegisterRecordSet.уатТарифыСебестоимости_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатДоходы</types>
+    <types>AccumulationRegisterRecordSet.уатПартииТоваровНаСкладах</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиГрузовВКонтейнерах_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатСводныеПараметрыВыработки</types>
+    <types>AccumulationRegisterRecordSet.уатОборотыПоОтчетамПоставщиковПЦ</types>
+    <types>AccumulationRegisterRecordSet.уатЗаявкиНаРемонт</types>
+    <types>InformationRegisterRecordSet.уатТарифыСотрудников</types>
+    <types>InformationRegisterRecordSet.уатПрейскурантыТС</types>
+    <types>AccumulationRegisterRecordSet.уатВыработкаСотрудников</types>
+    <types>InformationRegisterRecordSet.уатСведенияОТС</types>
+    <types>InformationRegisterRecordSet.уатНормыРасходаГСМ</types>
+    <types>InformationRegisterRecordSet.уатНормыРасходаТехническихЖидкостей</types>
+    <types>AccumulationRegisterRecordSet.уатПланРаботыТС</types>
+    <types>AccumulationRegisterRecordSet.уатВыработкаАгрегатов</types>
+    <types>AccumulationRegisterRecordSet.уатВзаиморасчетыСКонтрагентами</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиТЖнаТС</types>
+    <types>AccumulationRegisterRecordSet.уатФинансовыеРезультаты</types>
+    <types>InformationRegisterRecordSet.уатАгрегатыТС</types>
+    <types>AccumulationRegisterRecordSet.уатРасходы</types>
+    <types>AccumulationRegisterRecordSet.уатГрузыКПеревозке_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатОборотыПоМаршрутномуЛисту</types>
+    <types>AccumulationRegisterRecordSet.уатИзносПробегШин</types>
+    <types>AccumulationRegisterRecordSet.уатСписаниеАгрегатов</types>
+    <types>InformationRegisterRecordSet.уатСчетчикиТС</types>
+    <types>AccumulationRegisterRecordSet.уатЗаказыГрузоотправителей</types>
+    <types>AccumulationRegisterRecordSet.уатФактРаботыТС</types>
+    <types>AccumulationRegisterRecordSet.уатНевыставленныеРекламации_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатРабочееВремяСотрудников</types>
+    <types>AccumulationRegisterRecordSet.уатЗаявкиНаРасходованиеДС</types>
+    <types>AccumulationRegisterRecordSet.уатВыручка</types>
+    <types>AccumulationRegisterRecordSet.уатВыработкаТС</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиГрузовНаСкладеКомплектации_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатБилетыНаСкладах</types>
+    <types>AccumulationRegisterRecordSet.уатНоменклатураТС</types>
+    <types>AccumulationRegisterRecordSet.уатРасходГСМнаТС</types>
+    <types>InformationRegisterRecordSet.уатПрохождениеТО</types>
+    <types>AccumulationRegisterRecordSet.уатДвижениеДС</types>
+    <types>AccumulationRegisterRecordSet.уатПредоставленныеУслуги</types>
+    <types>AccumulationRegisterRecordSet.уатПлановыеУслуги_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатВыработкаПоМаршрутнымЛистам_уэ</types>
+    <types>InformationRegisterRecordSet.уатКадроваяИсторияСотрудников</types>
+    <types>AccumulationRegisterRecordSet.уатРекламации_уэ</types>
+    <types>AccumulationRegisterRecordSet.уатОборотыПоЗаправкамГСМ</types>
+    <types>AccumulationRegisterRecordSet.уатОборотыТЖнаТС</types>
+    <types>AccumulationRegisterRecordSet.уатВыставленныеУслуги</types>
+    <types>InformationRegisterRecordSet.уатЦеныНоменклатурыКонтрагентов</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиДСУПодотчетныхЛиц</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиДС</types>
+    <types>InformationRegisterRecordSet.уатНормыБесплатногоХранения_уэ</types>
+    <types>InformationRegisterRecordSet.уатМестонахождениеТС</types>
+    <types>InformationRegisterRecordSet.уатСтатусыСопроводительныхДокументов</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиАгрегатов</types>
+    <types>AccumulationRegisterRecordSet.уатОстаткиГСМнаТС</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюНабораЗаписей</handler>
+</mdclass:EventSubscription>

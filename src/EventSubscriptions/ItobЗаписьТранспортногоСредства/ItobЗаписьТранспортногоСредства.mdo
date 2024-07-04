@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf992240-dfa4-4f81-8e00-3368d3a69d78">
+  <name>ItobЗаписьТранспортногоСредства</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись транспортного средства (ЦСМ)</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ItobТранспортноеСредствоОбъект</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ItobТранспортныеСредства.ЗаписьТС</handler>
+</mdclass:EventSubscription>

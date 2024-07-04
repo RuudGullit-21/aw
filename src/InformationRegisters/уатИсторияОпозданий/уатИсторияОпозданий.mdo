@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="90f02a48-ca3e-42ac-869c-2b272ffac438">
+  <producedTypes>
+    <selectionType typeId="693401a1-fa6a-49c8-9b0f-ea61cdcaabda" valueTypeId="514d7679-9c49-4a09-bc70-c8aaa024d1f8"/>
+    <listType typeId="e802ee42-f940-4939-a971-ffe80dc1e0ab" valueTypeId="c31adc27-92d9-4138-9f1e-c3aabba8ed19"/>
+    <managerType typeId="ef9cea50-7f62-4864-bd5f-6b3f72e873ec" valueTypeId="70fe83bf-4185-4c2c-a4a0-18b25a37ee85"/>
+    <recordSetType typeId="ea712cad-7042-48e3-8e11-a07dc8ff752a" valueTypeId="b47f8495-cc65-435f-9395-9b619e0bb479"/>
+    <recordKeyType typeId="bf669881-fff6-454b-b608-356b74906aaa" valueTypeId="b31918bd-6925-48a0-8b90-e8dc648f3ed7"/>
+    <recordType typeId="bbccbd1e-22d2-43a3-8a7c-5c560a44face" valueTypeId="e1fd0821-3cd4-4e19-a95a-076692efbc99"/>
+    <recordManagerType typeId="6eb3f755-b595-40cf-beaf-8de054ad03ba" valueTypeId="f19c6920-c868-4a8e-80e9-829cd3f1f16d"/>
+  </producedTypes>
+  <name>уатИсторияОпозданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>История прогнозов опозданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатИсторияОпозданий.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="1173742b-c569-4822-8797-92883d824139">
+    <name>GUIDСтрокиМЛ</name>
+    <synonym>
+      <key>ru</key>
+      <value>GUIDСтроки МЛ</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6f2fa8d1-bfa8-47f4-ab2d-ec564411d96f">
+    <name>ВремяОпоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время опоздания (чч:мм)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <format>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>ЧДЦ=2; ЧРД=:; ЧГ=</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3801abe7-7db9-49e8-a112-5dfb3d317747">
+    <name>МаршрутныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Routing list</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2a9e13ea-af6f-4749-9e43-4fa3fad991d2">
+    <name>ПрибытиеПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прибытие план</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Прибытие по плану</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arrival by plan</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="60f30abd-5609-4cc0-b1d5-3c483e7e2876">
+    <name>ПрибытиеПрогноз</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прибытие прогноз</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Прогноз времени прибытия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="464d8b79-6199-4704-a7f4-ddba32324d47">
+    <name>Пункт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="26b951ce-cfe6-4515-925d-811c132f292a">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e5b6e64d-7510-4489-a4fa-c578903f5688">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c295505-ad15-47a9-99a8-5615866935b2">
+  <name>уатОбработкаПроведенияДокументаОбновитьПланыРемонтныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновить планы ремонтных работ</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.уатРемонтныйЛист</types>
+    <types>DocumentObject.уатВводВЭксплуатациюТСиОборудования</types>
+    <types>DocumentObject.уатВводНачальныхПоказаний</types>
+    <types>DocumentObject.уатПутевойЛист</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.ОбработкаПроведенияДокументаОбновитьПланыРемонтныхРабот</handler>
+</mdclass:EventSubscription>

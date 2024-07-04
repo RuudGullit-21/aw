@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0dd385d-16ba-4954-9858-e29f4402e9c2">
+  <producedTypes>
+    <selectionType typeId="6045d778-d3c6-4ab6-ad82-e2f2a46caf81" valueTypeId="f80ed64e-d876-4308-b339-e3842fc6c432"/>
+    <listType typeId="f28e4d29-0783-4361-97a3-beee0648d3b3" valueTypeId="211c48b5-8a16-436c-8b9f-aab7d8431656"/>
+    <managerType typeId="f5d9b2ff-2173-4bdf-b7a6-ab54b5133070" valueTypeId="1742b685-24a1-47b3-a58f-9621b0c3bd88"/>
+    <recordSetType typeId="979f3745-2477-471c-92e8-e397ce898241" valueTypeId="5acbcc2a-a0bf-4ae4-a364-9bfddfab3642"/>
+    <recordKeyType typeId="9dc272fe-70e4-4dce-badb-ab38a10852f1" valueTypeId="b965c1d6-1044-49ef-99f3-7626e8e320a4"/>
+    <recordType typeId="73b9e29c-57be-4fde-803d-b90179ba94f6" valueTypeId="5a4cd54b-4e0b-4f03-8bb6-2dc2479febd4"/>
+    <recordManagerType typeId="9ef8002d-dbf9-4f12-803c-7d87533cf7d8" valueTypeId="ff1ae2e6-bc74-40bf-8b1a-7182ef559282"/>
+  </producedTypes>
+  <name>ItobПараметрыГеографическихЗон</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры географических зон</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="25050d8a-ed4f-4de6-9222-2576e37a8558">
+    <name>ИспользоватьПриГеокодировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать при геокодировании</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Использование в геокодировании</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8d8363e8-d752-48c0-a9ff-a7fc7728ff17">
+    <name>ГеографическаяЗона</name>
+    <synonym>
+      <key>ru</key>
+      <value>Географическая зона</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobГеографическаяЗона</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Географические зоны&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

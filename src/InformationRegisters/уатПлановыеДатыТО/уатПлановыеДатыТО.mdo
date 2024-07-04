@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c10364c9-2587-4df8-8a1b-4baefa13c473">
+  <producedTypes>
+    <selectionType typeId="59dbf749-1ecc-4b89-a0ee-a46cab035835" valueTypeId="6dff5983-5598-4060-adbc-11bd6a79d12b"/>
+    <listType typeId="3c352597-c9cd-45c9-9d76-338131035c21" valueTypeId="b4fe7997-d7c1-49c0-b55c-41502c9b3e8e"/>
+    <managerType typeId="cc8dec0f-8767-4c3a-aa07-32c6aa48a162" valueTypeId="45699cf1-03ed-4e6f-8c19-2d33236e061a"/>
+    <recordSetType typeId="2a988eb8-56a9-4442-8b09-2d9fbb9d2719" valueTypeId="7d7dafe1-8518-4b5a-81b0-2565ddc0c26f"/>
+    <recordKeyType typeId="e9550c9f-fe7f-45d5-b6bd-1c853e05e27e" valueTypeId="1580ed2e-8318-4326-ba84-f6abea19c6ee"/>
+    <recordType typeId="6afb086b-b961-4458-abd5-2acb5e635463" valueTypeId="1e430a84-0a7f-4739-bfac-62009d4bca66"/>
+    <recordManagerType typeId="350dd919-b55e-4d99-887d-26c1d4a4cd02" valueTypeId="2dde9814-08b4-4564-a8ff-5e19ff31c406"/>
+  </producedTypes>
+  <name>уатПлановыеДатыТО</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые даты ТО</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Work norm-hours of vehicle repair</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатПлановыеДатыТО.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПлановыеДатыТО.Form.ФормаСписка</defaultListForm>
+  <auxiliaryRecordForm>InformationRegister.уатПлановыеДатыТО.Form.ФормаЗаписи</auxiliaryRecordForm>
+  <auxiliaryListForm>InformationRegister.уатПлановыеДатыТО.Form.ФормаСписка</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="9a528960-f986-47df-a4ce-445b6d8c52a8">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of labor hour</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of labour hours.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6fff94af-59f1-4c39-be27-9c4fc7b577dd">
+    <name>ДатаПоследнегоТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последнего ТО</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of labor hour</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of labour hours.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2bd5cabe-a8c5-415f-8cb7-a0f97f032c5f">
+    <name>ВыработкаПоследнегоТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка при последнем ТО</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of labor hour</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of labour hours.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="c4bbe060-51a4-4228-81b5-acda247312fb">
+    <name>КоличествоДнейПослеПоследнегоТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество дней после последнего ТО</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="10256f1b-bb1e-4b01-9dfe-6930b534f5d3">
+    <name>СреднесуточнаяВыработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Среднесуточная выработка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9df04ce4-c4bb-47eb-b36e-c6b5a39a0594">
+    <name>ВыработкаПослеПоследнегоТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка после последнего ТО</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of labor hour</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of labour hours.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="15a0a89e-0295-44f0-94c7-7fb3be1d4f53">
+    <name>ДатаРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата работы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Activity date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="97d099cc-4124-472d-a0aa-230ef74809fa">
+    <name>Плановая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b53fa735-5069-4e9f-9831-53c45fe2c834">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle model</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle model</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="787a67d1-0931-458d-9c35-93b374280fbe">
+    <name>ТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид обслуживания ТС </value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Work</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыОбслуживанияТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид обслуживания ТС.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Work on repair</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d784f78e-9be0-4e8f-aedc-ac7fef2ef742">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="facb5c22-21b2-4949-8e17-862113c40cc4">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

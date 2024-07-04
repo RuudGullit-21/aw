@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fd742d6e-f3d7-4d71-9ecd-b6b6767398b5">
+  <producedTypes>
+    <selectionType typeId="7696f28e-a9de-4561-9ccf-bdb593edd1ee" valueTypeId="9bcbc7b8-def1-4440-996e-01f575e631b6"/>
+    <listType typeId="6adc975b-5f08-4c5e-b17f-399cdeaa9280" valueTypeId="985f379e-4c2a-4af7-943f-6dda82766495"/>
+    <managerType typeId="5139c21c-8a41-445a-90f5-3745cd39633d" valueTypeId="97910004-3507-4b94-9a3b-0c71aacf6068"/>
+    <recordSetType typeId="cc8e8672-e62a-4cb3-90b7-c6b5bb11a705" valueTypeId="ec6f5a03-063e-4cb3-bc73-b2525e67ba51"/>
+    <recordKeyType typeId="d843a0fb-e5c2-48bd-bec0-eb72591ef1cb" valueTypeId="eb43fddd-afc8-4167-8f1c-d444ce2eac67"/>
+    <recordType typeId="bdf45615-b9b5-4a7a-ac75-9f5f460ce7e7" valueTypeId="6675c664-2b63-464d-ac09-e74ec6e62c1d"/>
+  </producedTypes>
+  <name>уатОборотыТЖнаТС</name>
+  <synonym>
+    <key>en</key>
+    <value>Actual and normative tech liquids consumption in vehicle</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Обороты ТЖ на ТС</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатОборотыТЖнаТС.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>ru</key>
+    <value>Обороты технических жидкостей</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Turnovers of liquids</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Обороты технических жидкостей</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Turnovers of liquids</value>
+  </extendedListPresentation>
+  <resources uuid="9b78d1b2-ff80-4bd1-96db-fb9fadb37b70">
+    <name>КоличествоПриход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity receipt</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Приход (заправка) технических жидкостей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Receipt (fuelling) of liquids</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="ccadd382-3a49-4895-a7a5-af86822c4773">
+    <name>КоличествоРасход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход по факту</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity consumption</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Фактический расход технических жидкостей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="82686d7e-6884-4a75-8e0f-05b2731d0d9c">
+    <name>КоличествоРасходНорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расход по норме</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity consumption</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Нормативный расход технических жидкостей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="fd2a13c9-0eb5-48bd-b4e4-f4d06864bc27">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of operation</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыОперацийСТехническимиЖидкостями</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид операции с техническими жидкостями</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Operation type with liquids</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="662fc72c-8973-4cb0-9946-7bea90ec8973">
+    <name>Водитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <comment>Водитель</comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, по которому ведется учет расхода технических жидкостей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee, which accounted of liquids consumpion</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="c3417305-fc24-4cee-8a62-9f0b0ed3c245">
+    <name>ГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Fuels</value>
+    </synonym>
+    <comment>ГСМ</comment>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура технической жидкости</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services of liquids</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="d0f60c4d-0422-4e89-a7d0-06c8fa61d42e">
+    <name>Колонна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle department</value>
+    </synonym>
+    <comment>Колонна к которой принадлежит ТС на момент закрытия ПЛ</comment>
+    <type>
+      <types>CatalogRef.уатКолонны</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Колонна, по которой ведется учет расхода технических жидкостей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle department, which is accounting concumpion of liquids</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="aa6f6c5c-139a-4d8b-be4c-eb433a13f055">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация, к которой принадлежит ТС на момент закрытия ПЛ</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, по которой ведется учет расхода технических жидкостей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company, which keeps records of liquids concuption</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="8f17bfcf-0df8-48cd-9076-7f61b8dd3bdd">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="292a57d8-9fc8-4711-bc3d-20b4ad40c534">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

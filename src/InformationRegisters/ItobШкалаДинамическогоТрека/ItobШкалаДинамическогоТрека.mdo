@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95a6153e-ed01-4218-9907-299ec4ef3b99">
+  <producedTypes>
+    <selectionType typeId="28e5adc9-e649-4cc8-bcee-08a429cdc534" valueTypeId="8985841f-3d84-46a4-a929-2da88205442c"/>
+    <listType typeId="0f7c4ecf-a267-45c6-99be-d9541e0b33ab" valueTypeId="70c88f67-0705-4da2-86e9-ffdbd58e1edb"/>
+    <managerType typeId="c77d4ecc-fd65-43a5-a796-0ab24fdf47c2" valueTypeId="73780620-3a3c-4f96-afc2-148ffc4d3dd0"/>
+    <recordSetType typeId="96a1e12f-91b8-4d0d-8359-1125415f89cf" valueTypeId="51de1ebe-8ff0-4e36-9079-d844fb22f2ef"/>
+    <recordKeyType typeId="02c3e1a6-b7c4-45f4-8725-10891191fa4c" valueTypeId="41c514f0-fc7f-405e-b47c-bb0402ac3c2d"/>
+    <recordType typeId="263c104b-e40c-4934-bc5c-7d4bfef3dfd8" valueTypeId="cc9d408a-229c-4097-9c75-85ad8f53c017"/>
+    <recordManagerType typeId="004c7bd8-d96b-4b86-addb-c01b29aefadb" valueTypeId="bd0a379a-335e-4f74-8d0b-12bd3576d56e"/>
+  </producedTypes>
+  <name>ItobШкалаДинамическогоТрека</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шкала динамического трека</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e8b8dd1c-1612-4cfa-8120-2915e246e292">
+    <name>ВыбранныйЦвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбранный цвет</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selected color</value>
+    </synonym>
+    <comment>B*256*256 + G*256 + R</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="06115dd4-56cd-48b0-9638-c1856f2872d5">
+    <name>ВариантОтображенияТрека</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отображения трека</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobВариантыОтображенияТрека</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="df77eb45-63c9-4523-95ec-0426880c4196">
+    <name>СкоростьВерхняяГраница</name>
+    <synonym>
+      <key>ru</key>
+      <value>Верхняя граница скорости</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

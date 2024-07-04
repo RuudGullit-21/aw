@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="493aa61d-abaf-41da-9380-d3a1fb2ff4d0">
+  <name>уатПолныйРегистрацияНабораРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уат полный регистрация набора расчета</value>
+  </synonym>
+  <source>
+    <types>CalculationRegisterRecordSet.уатОсновныеНачисления</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ОбменДаннымиСобытияУАТ.уатПолныйРегистрацияНабораРасчетаПередЗаписью</handler>
+</mdclass:EventSubscription>

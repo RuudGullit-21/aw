@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4fafd196-472e-4535-aa41-1e1d7b155be2">
+  <producedTypes>
+    <selectionType typeId="096da107-67d3-4bc4-a1bf-a527fd3b399e" valueTypeId="f19ac5e1-5a7c-4ee1-91e1-1053500d5fc7"/>
+    <listType typeId="08459716-92c2-4f23-ba1a-f124271dbc7f" valueTypeId="5e107db1-da08-4d29-87f0-65e7233050ce"/>
+    <managerType typeId="eea278bc-5628-4c5a-8ac8-7f37f9a467d8" valueTypeId="ae720640-24a6-4269-b549-6073ec97efa9"/>
+    <recordSetType typeId="ea0b29fd-7ecf-4d37-b195-61353a4cc190" valueTypeId="8a9a1ba6-1a0a-4cc6-ba14-7085e3607be0"/>
+    <recordKeyType typeId="665c0232-e37d-4648-8c8d-e89928dc5589" valueTypeId="c9c9f1bd-d2c4-4c3a-9459-3a0e2c6b5094"/>
+    <recordType typeId="03e50402-55e7-401d-aff9-a31ad5f3cc8f" valueTypeId="c36c31c1-7ae8-4a48-a5fa-5aee1aa63029"/>
+    <recordManagerType typeId="80e6ce9e-1763-44f0-b473-f4af12110809" valueTypeId="fb6e0844-8209-4668-8da2-bbb507b774d2"/>
+  </producedTypes>
+  <name>уатГрафикРаботыРесурсов</name>
+  <synonym>
+    <key>ru</key>
+    <value>График работы ресурсов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Resources work schedule</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатГрафикРаботыРесурсов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="8a3ed809-e857-4774-8e5f-c943556d3f7f">
+    <name>Продолжительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжительность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Duration</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Продолжительность.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Duration.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="0ceef749-7b15-4e60-bf0a-4480affe5b14">
+    <name>Ресурс1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс 1</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Resource 1</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатЦеха</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ресурс №1</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Resource №1</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f83902a4-66e2-448f-83ef-a48d2d825110">
+    <name>Ресурс2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс 2</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Resource 2</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ресурс №2</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Resource No. 2</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5df6cd99-6e4e-41b2-ba3b-e812f1162f62">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <comment>Дата</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5df15b11-ca7a-4417-b102-7d8e2d6630d5">
+    <name>НачалоРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало рабочего времени</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Begin of working time</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Начало рабочего времени.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Begin of working time.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0413baad-6a26-473c-8c6f-3e04c31fd1a0">
+    <name>КонецРабочегоВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец рабочего времени</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End of working time</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>End of working time.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Конец рабочего времени.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="80164b29-16a6-4602-aac8-01889b57b679">
+    <name>Смена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Смена</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Shift</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСмены</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Shift.</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Смена.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="6dacf7f6-0384-4ed9-9d87-601bac4546ae">
+    <name>ДокументПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ планирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Planning document</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаявкаНаРемонт</types>
+      <types>DocumentRef.уатРемонтныйЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ планирования.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Planning document.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c4aff215-0ace-42ec-8f94-60f7b613795e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

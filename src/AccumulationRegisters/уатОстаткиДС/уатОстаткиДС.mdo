@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69390e9b-1b41-4ba2-b045-2a5f8b52381c">
+  <producedTypes>
+    <selectionType typeId="d73aabde-23b7-46bf-940e-e1e9ec91d5ad" valueTypeId="0b0b04a0-d9b7-4de1-a899-95e0542d711f"/>
+    <listType typeId="04765666-1f28-467f-bc80-57a5556cac1a" valueTypeId="2fb8dbc5-2edb-41d2-82a6-d00b7407ec14"/>
+    <managerType typeId="16fd8148-8173-4fea-ac09-c9e29d997594" valueTypeId="b92407ba-a0c7-424d-bda9-5571a9d7f3ca"/>
+    <recordSetType typeId="e1fb7c84-53a6-4d17-b03c-cfb979e6136b" valueTypeId="7e261741-4080-4a12-8899-9ae191d83fd7"/>
+    <recordKeyType typeId="f8d97e3f-362b-4f9e-9e4e-6851c573a68d" valueTypeId="b5a1f199-08f5-4a87-9e55-c66592014753"/>
+    <recordType typeId="99c81dc7-a21a-478f-959d-cc7e35313bb5" valueTypeId="da92c7ea-b07b-4f57-9c72-f5ece6f983a5"/>
+  </producedTypes>
+  <name>уатОстаткиДС</name>
+  <synonym>
+    <key>en</key>
+    <value>Cash assets balances</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки денежных средств</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатОстаткиДС.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период движений</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Movements period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Остатки денежных средств</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Cash assets balances</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Остатки денежных средств</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Cash assets balances</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Остатки денежных средств</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cash assets balances</value>
+  </explanation>
+  <resources uuid="2987cbf6-05ca-45f9-8e1d-6b2060f6b5b5">
+    <name>Сумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sum</value>
+    </synonym>
+    <comment>Сумма в валюте денежных средств</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте денежных средств</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="f608d8b7-55bf-4e00-b9a4-575cf9b5b906">
+    <name>СуммаУпр</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма (упр.)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Amount (manag.)</value>
+    </synonym>
+    <comment>Сумма в валюте управленческого учета</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма в валюте управленческого учета</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Amount in the management accounting currency</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="6b0cc643-b22d-40aa-b390-cd7b645836f6">
+    <name>СтатьяДвиженияДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статья движения денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cash flow item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтатьиДвиженияДенежныхСредств</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статья движения денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Cash flow item.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="19873b40-dd96-48a9-87ae-dd34e66be396">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация документа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Document company</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7e0a2c43-cf31-4784-a4bb-6f5e8a7af613">
+    <name>БанковскийСчетКасса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Банковский счет / касса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Bank account / cash fund</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Кассы</types>
+      <types>CatalogRef.БанковскиеСчета</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Банковский счет или касса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bank account or cash fund</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="7eebda0f-d6ed-49cb-bf6b-b6a207699c62">
+    <name>ВидДенежныхСредств</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид денежных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Cash kind</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатФормыОплаты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид денежных средств.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Type of cash.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="9b6dfb5b-eeac-470a-b719-86114ac29a68">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5173a16b-cb16-4df5-8abb-0910746b7d1b">
+  <producedTypes>
+    <objectType typeId="fc0fcc3d-f27e-4d40-a0bc-373b5a385ca9" valueTypeId="bd9c0688-1e5b-4c98-bbd8-8011d361c9ef"/>
+    <refType typeId="7960c849-f43f-4a01-b7f1-4d5ea19bc700" valueTypeId="127c725b-84bb-4298-95bc-44cf8aa1451a"/>
+    <selectionType typeId="5e12cdbc-65e2-4311-81d5-4d25a0b281ba" valueTypeId="7b398098-bc25-4e30-82f4-b291b5f2aa42"/>
+    <listType typeId="cfa5425b-58cd-4fd7-9461-dc0a29b176e3" valueTypeId="68f89efa-717b-4679-9b33-9cc5977aab54"/>
+    <managerType typeId="29e8b36a-841c-44be-8ee4-7433f3ce03ac" valueTypeId="01ae4bd4-d18c-41d6-bffd-78847c5b3a79"/>
+  </producedTypes>
+  <name>ТипыЦенНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы цен номенклатуры</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Prices types of products and servises</value>
+  </synonym>
+  <comment>(Общ)</comment>
+  <inputByString>Catalog.ТипыЦенНоменклатуры.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипыЦенНоменклатуры.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_ТипыЦенНоменклатуры</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>1</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>BothWays</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТипыЦенНоменклатуры.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ТипыЦенНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ТипыЦенНоменклатуры.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a298c049-3c02-416f-bc27-8f976c0d1757">
+    <name>ВалютаЦены</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <comment>(Общ) Валюта типа цен</comment>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта цены по умолчанию</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Price currency default</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="31183a0b-a51a-49d7-af4d-6b0d9963d94b">
+    <name>БазовыйТипЦен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый тип цен</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Base type of prices</value>
+    </synonym>
+    <comment>(Общ) Тип цен, от которого рассчитываются цены данного типа, если не выбран, то цены задаются вручную</comment>
+    <type>
+      <types>CatalogRef.ТипыЦенНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип цен, от которого рассчитываются цены данного типа, если не выбран, то цены задаются вручную</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Price type from which prices of this type are calculated, if not selected, then prices are set manually</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a352d9f4-01b1-4a73-a897-3d54a855b153">
+    <name>Рассчитывается</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывается</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Being calculated</value>
+    </synonym>
+    <comment>(Общ) Истина - цены автоматически рассчитываются (не хранятся) на основании цен базового типа</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Истина - цены автоматически рассчитываются (не хранятся) на основании цен базового типа</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Truth - prices are automatically calculated (not stored) based on prices of the base type</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0fb5a3d6-7807-4963-9ac0-159a58ca007d">
+    <name>ПроцентСкидкиНаценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент скидки или наценки по умолчанию</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Percent of discount or margin by default</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Процент скидки или наценки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Percen of discount or surcharge</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc68f4b6-7386-4d6e-835a-e08111a615f8">
+    <name>ЦенаВключаетНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цена включает НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Price includes VAT</value>
+    </synonym>
+    <comment>(Общ) Истина - цена включает НДС, ложь - не включает</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Истина - цена включает НДС, ложь - не включает</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Truth - price includes VAT, a lie - does not include</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7594207-fc8e-4e4c-ac02-10505b378ea8">
+    <name>ПорядокОкругления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок округления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Rounding order</value>
+    </synonym>
+    <comment>(Общ)</comment>
+    <type>
+      <types>EnumRef.ПорядкиОкругления</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядок округления цены</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Procedure for prices rounding</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="da66a6c4-c448-45a0-b91f-83b30050a687">
+    <name>ОкруглятьВБольшуюСторону</name>
+    <synonym>
+      <key>ru</key>
+      <value>Округлять в большую сторону</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Round up</value>
+    </synonym>
+    <comment>(Общ) Истина, то при порядке округления &quot;5&quot; 0.01 будет округлена до 5, ложь - округление по арифметическим правилам</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Истина, то при порядке округления &quot;5&quot; 0.01 будет округлена до 5, ложь - округление по арифметическим правилам</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Truth, when order of rounding &quot;5&quot; 0.01 will be rounded to 5, lies - rounding on arithmetic rules</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e58602d-b11a-41bd-bcab-07ed5fbefff3">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>(Общ) Любая дополнительная информация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Любая дополнительная информация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Any additional information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fa123b06-190f-40dc-bf52-b322c9fe98f4">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a563fb89-6328-4bb2-a542-99b1b1862658">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eb180872-065a-4152-9905-5fee8050841f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

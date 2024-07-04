@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82c0a070-6cf2-44da-b6f8-7bcdff2e23c7">
+  <producedTypes>
+    <selectionType typeId="d13dd933-6140-4ce4-9bdb-bbbf97e14068" valueTypeId="2c8934d7-f03b-4173-a820-67eb7f133ee1"/>
+    <listType typeId="7eaa44df-dcd9-4d8a-b51c-75c0784883fe" valueTypeId="73579bb9-c443-46d1-8bc0-b854ba4174f8"/>
+    <managerType typeId="6c634637-ae36-43a8-9bb4-39740b9e9f49" valueTypeId="1e86ebb7-36b4-45df-b8b0-5267292f77d6"/>
+    <recordSetType typeId="4c5de2c7-d628-40a6-9fde-ca383b82b48d" valueTypeId="d158c478-f72a-4e56-8c3c-9a8da6a7de4a"/>
+    <recordKeyType typeId="7f787f82-d403-4f39-b8d9-d73f593f9ca3" valueTypeId="89db0ffc-0346-44ef-ae8c-5b0c0a40e5b9"/>
+    <recordType typeId="287b1dd4-ebb7-4c02-b131-e7bcd2007e09" valueTypeId="1417ab7c-b069-456b-9f92-8d0aac14278d"/>
+    <recordManagerType typeId="c3e29563-919f-4b93-ad7b-db73fb3b0009" valueTypeId="b9d2c279-b804-4b85-b91d-3634d7169ab0"/>
+  </producedTypes>
+  <name>уатТекущееСостояниеОплатыЗаказов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущее состояние оплаты заказов</value>
+  </synonym>
+  <comment>Текущее состояние оплаты заказов (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатТекущееСостояниеОплатыЗаказов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатТекущееСостояниеОплатыЗаказов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Текущее состояние оплаты заказов</value>
+  </explanation>
+  <resources uuid="a7d6d2aa-419e-41a2-94f4-c78cadb5e028">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние оплаты</value>
+    </synonym>
+    <comment>Текущее состояние оплаты по заказу</comment>
+    <type>
+      <types>EnumRef.уатСостоянияВыполненияЗаказов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Текущее состояние оплаты по заказу</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="683120d3-56cf-4f11-9a60-df01063c0016">
+    <name>ПроцентОплаты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент оплаты</value>
+    </synonym>
+    <comment>Процент оплачено по платежному календарю от общей суммы услуг в валюте заказа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Процент оплачено по платежному календарю от общей суммы услуг в валюте заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="53be51f8-6203-4eda-932f-fcf327faf69d">
+    <name>Оплачено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено</value>
+    </synonym>
+    <comment>Сумма оплачено по платежному календарю в валюте заказа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сумма оплачено по платежному календарю в валюте заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="dd820575-fcc1-472a-ad9f-2b9fef7da035">
+    <name>СуммаВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма всего</value>
+    </synonym>
+    <comment>Общая сумма услуг по заказу в валюте заказа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Общая сумма услуг по заказу в валюте заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="199fd8ad-932e-452a-99f2-8292a9d9016c">
+    <name>ПредоплатыНедостаточно</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоплаты недостаточно</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Нет или не хватает оплаты по этапу графика оплаты &quot;До отправления по Заказу&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2741210b-82e2-4974-a47f-d600b1c86ef3">
+    <name>ОплаченоПредставление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оплачено представление</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="12aeeba1-792d-43f7-9f98-1911db724266">
+    <name>ЗаказНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на ТС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="9153280c-164b-4c53-a7e1-1e757eeea977">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="539bf097-99f2-4f4f-af9c-25d1ad5bf14a">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

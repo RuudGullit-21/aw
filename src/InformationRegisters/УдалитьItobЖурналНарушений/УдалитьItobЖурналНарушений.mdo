@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b0b35c8f-759c-4876-bef4-2ae49ec750a8">
+  <producedTypes>
+    <selectionType typeId="9840108b-a82b-438b-9565-1cabb5db83e8" valueTypeId="bf9614ba-465c-454f-b60f-c16d46249fc9"/>
+    <listType typeId="954c5215-07b5-413b-8d3a-b9d6272b491e" valueTypeId="3312d3a8-8399-481f-ad25-15267da8b87a"/>
+    <managerType typeId="6e6799ba-0b0a-4f9c-b0d9-e78e091d3d79" valueTypeId="fb231613-0645-4a13-8539-f6e3e643dbf9"/>
+    <recordSetType typeId="3e58d6c9-25c6-4903-9769-1b68095bdb74" valueTypeId="58ae2df6-5775-433f-8260-d61b721f1081"/>
+    <recordKeyType typeId="c6a2e928-30f8-4f4a-9871-44b7a817c002" valueTypeId="e3ed2fbf-42a0-4ab7-9844-875b4b226cf9"/>
+    <recordType typeId="df43223c-eae6-4abc-a780-234feababe8c" valueTypeId="7eb4c6b2-3f09-474a-b245-f1a78a94c787"/>
+    <recordManagerType typeId="72507533-2a5e-4e81-8faf-613aee8f9ba6" valueTypeId="4521d34f-e0a7-4db7-8df8-d49fcd07e09d"/>
+  </producedTypes>
+  <name>УдалитьItobЖурналНарушений</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Журнал нарушений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период нарушения</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="525d16ee-667a-4692-aabb-e85791bbb91d">
+    <name>ДатаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата записи события</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="25e62cbc-cd09-46eb-9c6e-4123578e1591">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Терминалы&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d21cdffc-7941-4716-9212-a73b2a46f96a">
+    <name>МаршрутноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутное задание</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobПутевойЛист</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на документ &quot;Путевой лист&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5756ca05-57b1-4bb6-9fb2-fb51b0f64804">
+    <name>ВидНарушения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид нарушения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.УдалитьItobВидыНарушений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ссылка на справочник &quot;Виды нарушения&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

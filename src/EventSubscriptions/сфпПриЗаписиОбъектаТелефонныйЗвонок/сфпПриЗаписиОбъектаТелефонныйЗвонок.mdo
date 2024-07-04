@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fcc7b8e-fa83-4e1d-817d-574f8c269299">
+  <name>сфпПриЗаписиОбъектаТелефонныйЗвонок</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи объекта &quot;Телефонный звонок&quot;</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ТелефонныйЗвонок</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.сфпСофтФонПроСервер.сфпПриЗаписиОбъектаТелефонныйЗвонокПриЗаписи</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cfdc1f0-336e-4bea-87e2-9d071c73338d">
+  <name>уатФормаКонтактов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контакты</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Contacts</value>
+  </synonym>
+  <group>CommandGroup.Взаимодействия</group>
+  <commandParameterType>
+    <types>DocumentRef.уатМаршрутныйЛист</types>
+    <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    <types>DocumentRef.уатЗаказПеревозчику_уэ</types>
+  </commandParameterType>
+  <representation>PictureAndText</representation>
+  <toolTip>
+    <key>ru</key>
+    <value>Контакты</value>
+  </toolTip>
+  <toolTip>
+    <key>en</key>
+    <value>Contacts</value>
+  </toolTip>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ОтветитьНаЭлектронноеПисьмоВсем</picture>
+  </picture>
+</mdclass:CommonCommand>

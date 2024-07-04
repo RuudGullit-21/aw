@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="95fd16d0-8e18-4abb-a1e7-7addafb2558a">
+  <name>уатАвтоматическоеСозданиеТехнологическихПЛ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматическое создание технологических ПЛ</value>
+  </synonym>
+  <comment>Создает ежедневно документы &quot;Технологический путевой лист&quot; по всем ТС, в которых установлен флаг &quot;Использовать в тех. ПЛ&quot;</comment>
+  <methodName>CommonModule.уатОбщегоНазначения_проф.уатАвтоматическоеСозданиеТехнологическихПЛ</methodName>
+  <description>Автоматическое создание технологических ПЛ</description>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

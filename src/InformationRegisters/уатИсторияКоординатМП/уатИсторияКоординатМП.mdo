@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="623362ec-3bf0-40a3-8713-b205fd2be02f">
+  <producedTypes>
+    <selectionType typeId="6b568389-5a42-4add-96a7-119d3a7d93bb" valueTypeId="9c8fba8d-7956-40dd-95ca-b0b9e7d9afbf"/>
+    <listType typeId="52ef707e-b396-483b-9513-c311b3e6628c" valueTypeId="37af67e7-8159-46b6-af95-cc8f31aaf73f"/>
+    <managerType typeId="f025a29c-de91-46b4-93b8-94be3ad024e8" valueTypeId="04e6b728-dc63-48c4-b597-f5c461677316"/>
+    <recordSetType typeId="9f439b4c-d5eb-4918-b68d-6159b8a5d980" valueTypeId="bbeb7196-08e7-4a14-b7ba-b06b587243a1"/>
+    <recordKeyType typeId="48a36b50-38d9-4aa0-8e18-ec8db9c84e2e" valueTypeId="79ef9a74-505b-457d-ad75-79f68920d42f"/>
+    <recordType typeId="a22e9ab3-8a95-482b-80ef-b5797513d888" valueTypeId="1616cbd2-3d20-4cd7-8656-e88fed87ed14"/>
+    <recordManagerType typeId="c5858427-1c43-4acb-b8f1-ffdb87761936" valueTypeId="0d662554-954a-4202-90d8-431d04879bb0"/>
+  </producedTypes>
+  <name>уатИсторияКоординатМП</name>
+  <synonym>
+    <key>ru</key>
+    <value>История координат по моб. приложению</value>
+  </synonym>
+  <comment>Используется для хранения истории местоположения</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатИсторияКоординатМП.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатИсторияКоординатМП.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>История координат</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>История координат</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>История координат по моб. приложению</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>История координат по моб. приложению</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>История местоположения транспортных средств по данным мобильного приложения водителя</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>History of vehicle location according to mobile driver app</value>
+  </explanation>
+  <resources uuid="041af20c-082f-40dc-ba1e-548f7c65d875">
+    <name>Лат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лат</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Lat</value>
+    </synonym>
+    <comment>Широта</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Широта.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Latitude.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="349f5642-7c23-4abc-8194-02a0afbed1c2">
+    <name>Лон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Лон</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Lon</value>
+    </synonym>
+    <comment>Долгота</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Долгота.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Longitude.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="36b8a88a-5d22-482a-8da6-334a99f0e6fd">
+    <name>Алт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Высота</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Height</value>
+    </synonym>
+    <comment>Высота над уровнем моря</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Высота над уровнем моря.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Altitude above sea level.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fce6ce03-4eba-4be9-ba18-faa64a7138ef">
+    <name>Скорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скорость</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Speed</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Скорость.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Speed.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="62298ead-ce26-414c-b632-491560e3d6f9">
+    <name>Направление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Direction</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Направление.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Direction.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="c23853ae-1fda-4236-a510-baf43cfc9c49">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2d889245-443c-4493-9a30-7dc8493cf0ca">
+    <name>Время</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Time</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Time</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Time.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67cd8595-eb6a-4b18-9fad-c6951be2ffe3">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="75120bd3-85b3-4f54-bb12-5cae0a4d3961">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89ea2142-1872-425f-89b7-31918af166cf">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

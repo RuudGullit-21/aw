@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a6717e1-5b14-4c4f-b4df-9d7823c4400d">
+  <producedTypes>
+    <refType typeId="092bba23-33e5-4001-ba96-79b76f0f1014" valueTypeId="58ef8916-1912-4009-8c1f-409dd5b4aa33"/>
+    <listType typeId="ef800cb4-4460-4e02-b23f-fa3ea2847ec1" valueTypeId="f6248dcf-8cd1-4517-9858-25c7219c9727"/>
+    <objectType typeId="b1b5e9a9-2d81-48df-a88c-fc77701ccda7" valueTypeId="6e4fb3ac-7a08-4732-84c5-94eb6a7ffad8"/>
+    <managerType typeId="d11e76eb-0570-4d80-9780-acfc93d47f88" valueTypeId="eb75cbad-18a6-4f56-a759-a21c64d33cbb"/>
+    <recordManagerType typeId="8823ffcf-1a36-450c-9c54-0d2220cc862f" valueTypeId="96fcedb6-e0d2-4ada-8dca-956b1c9c5b96"/>
+    <recordSetType typeId="2b67e624-8b13-4e40-aeb8-947ec5cb1ed5" valueTypeId="9a05ac79-30da-4b84-8790-53fc6ae35c4b"/>
+    <recordType typeId="4957b222-4eef-4cc0-9a20-9ac305eb0aea" valueTypeId="d7f94525-2ade-44e4-a521-b8df4bcd54e2"/>
+    <recordKeyType typeId="9ff71924-552f-4954-aff8-5057738016e1" valueTypeId="12c4c856-652c-4b51-8290-e503c72628ac"/>
+  </producedTypes>
+  <name>ItobДанныеТерминаловIMCS</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные терминалов IMCS</value>
+  </synonym>
+  <parentDataSource>ExternalDataSource.УдалитьItobДанныеСервераСбораДанных</parentDataSource>
+  <nameInDataSource>dbo.device_data</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <keyFields>ExternalDataSource.УдалитьItobДанныеСервераСбораДанных.Table.ItobДанныеТерминаловIMCS.Field.Счетчик</keyFields>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <readOnly>true</readOnly>
+  <transactionsIsolationLevel>ReadUncommitted</transactionsIsolationLevel>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <tableFields uuid="e581b0d6-364c-4e9f-a573-11c4fbb8d796">
+    <name>Счетчик</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>counter</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="0d26e499-bd28-46ee-9e66-bb1f0e4c1254">
+    <name>КодТерминала</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>device_code</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="cd20f3cb-e55f-408a-9289-3cf3a096c349">
+    <name>Период</name>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <nameInDataSource>period</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="85827f0b-1cc9-4b18-aafe-4d78e8ac68d9">
+    <name>Широта</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>7</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>lat</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="c0aeab28-d363-47da-8bbd-75179ea31b32">
+    <name>Долгота</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>7</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>lon</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="91eaecf8-6601-4e99-a0dd-3233dfe9609f">
+    <name>Скорость</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>speed</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="f6a4550c-ad46-4210-a1b9-98827fd65cdf">
+    <name>Направление</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>course</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="b3e726d8-8b21-495e-b97e-0a931a1b6f3c">
+    <name>ЧислоСпутников</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>vsat</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="588333bf-3a15-47d0-8610-85d976752ca5">
+    <name>ДанныеДатчиков</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>600</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <nameInDataSource>SENS_DATA</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="0d1dad33-4117-423d-b3b3-b22c43f89dec">
+    <name>Высота</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>altitude</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="2f97dcdb-e3be-417f-a877-232b85bea338">
+    <name>ВерсияФормата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия формата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Format version</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>ARCH_VERSION</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

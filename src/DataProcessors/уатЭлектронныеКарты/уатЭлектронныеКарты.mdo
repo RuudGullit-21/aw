@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fada68a3-b48b-4bac-b7c2-865a3e7aad52">
+  <producedTypes>
+    <objectType typeId="49a7484c-7f7f-40fc-9f8b-9440878fb9f4" valueTypeId="b59512df-c273-4363-8a12-b5b57f3f7651"/>
+    <managerType typeId="4902e239-a4ab-4674-b49f-cbc5d2d99c85" valueTypeId="d649f584-9bdc-4f8c-9d73-e2c4c6554413"/>
+  </producedTypes>
+  <name>уатЭлектронныеКарты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронные карты</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Electronic maps</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатЭлектронныеКарты.Form.ФормаКарты</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="55a6b58f-ca00-49c8-972c-b7ee5fa9845f">
+    <name>ФормаКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма карты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form OSM</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b72e7d5e-fde0-4599-a067-f1d269f462cf">
+    <name>ФормаНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настроек</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Settings form OSM</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ba3cfc28-4fbe-488c-bc99-a82678908b87">
+    <name>ФормаПодбораПункта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора пункта</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2a50d78c-5620-4f34-8020-8b352c2d00e2">
+    <name>ФормаНастроекШаблонаИнформацииПоГрузу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка шаблонов отображения информации для объектов карты</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="8ab49dd1-5672-4d8a-920f-26d98b5d3a1e">
+    <name>ОткрытьКарту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Map</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>CatalogRef.уатКластеры_уэ</types>
+      <types>CatalogRef.уатПунктыНазначения</types>
+      <types>CatalogRef.уатМаршруты</types>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+      <types>DocumentRef.уатШтраф</types>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+      <types>CatalogRef.уатТипыПунктов</types>
+      <types>DocumentRef.уатПарковка</types>
+      <types>DocumentRef.уатПутевойЛист</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>CatalogRef.уатГеозоны_уэ</types>
+      <types>DocumentRef.уатОтчетПоставщикаПЦ</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Показать на карте</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Show on the map</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.уатКартаСинийБалун</picture>
+    </picture>
+  </commands>
+</mdclass:DataProcessor>

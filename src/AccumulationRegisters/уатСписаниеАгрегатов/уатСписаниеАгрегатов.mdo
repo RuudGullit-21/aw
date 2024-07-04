@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f64dbbd5-5117-43ef-a9fb-69e2f4e418f0">
+  <producedTypes>
+    <selectionType typeId="9549fe85-4941-409e-92bd-8e7aa52a0911" valueTypeId="9ccf578a-0f01-40f9-9aac-6c911f96b9b8"/>
+    <listType typeId="30c7e6b9-cfa4-4e78-a0c7-c6d6d51e4e31" valueTypeId="dc5b4c5a-571a-4d35-9ebb-118a4aca7066"/>
+    <managerType typeId="972cff22-076d-4b12-b9e2-1b1f75f3ceec" valueTypeId="d4092d17-e2e9-4255-bc0d-82d0a0a69aaf"/>
+    <recordSetType typeId="8e9ddd7a-beb0-4b2e-8cc2-9da62ccc2be3" valueTypeId="9f930987-b626-4c57-bb8a-12db1e24c015"/>
+    <recordKeyType typeId="be543229-fdc0-4248-826e-383427d652b9" valueTypeId="754290d3-cdf5-41db-9491-459eea3f5296"/>
+    <recordType typeId="2fa966e3-7d9d-44fb-9a16-f9622298d0e3" valueTypeId="f4421be2-ff1e-48ac-a8a5-6a4d567ad574"/>
+  </producedTypes>
+  <name>уатСписаниеАгрегатов</name>
+  <synonym>
+    <key>en</key>
+    <value>Write-off of car parts</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Списание агрегатов</value>
+  </synonym>
+  <comment>Списание агрегатов (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатСписаниеАгрегатов.Form.ФормаСписка</defaultListForm>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период списания</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Write-off period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <listPresentation>
+    <key>en</key>
+    <value>Write-off of car parts</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Списание агрегатов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Write-off of car parts</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Списание агрегатов</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Write-off of car parts</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Списание агрегатов</value>
+  </explanation>
+  <resources uuid="a3ee5531-05af-4a09-9e8f-6fc09845a829">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <comment>Количество</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество списанных агрегатов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of write-off car parts</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="8fbf6630-4cf8-4f22-9062-061352041a07">
+    <name>ПричинаСписания</name>
+    <synonym>
+      <key>en</key>
+      <value>Write-off reason</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Причина списания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПричиныСписанияАгрегатов</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Reason for car part write-off</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Причина списания агрегата</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a36244bb-ead4-4f61-bf8e-91eaa6d429a7">
+    <name>СерияНоменклатуры</name>
+    <synonym>
+      <key>en</key>
+      <value>Car part</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Агрегат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСерииНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Car part</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ce64f400-16ff-4c5a-8013-714af3e97933">
+    <name>ТипАгрегата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип агрегата</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Type of car part</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТипыАгрегатов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип агрегата.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Car part type.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="7f523b08-88c6-41e9-a710-2310893e49b4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>

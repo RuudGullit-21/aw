@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2dea2b32-5300-432a-bbe0-0c7ee8659097">
+  <producedTypes>
+    <selectionType typeId="449ea45a-b5fb-415b-b4d3-68f8cff28b82" valueTypeId="a997a71d-40ea-48f8-a5c4-9da1adcc52b6"/>
+    <listType typeId="83b89941-0524-417f-ab20-ede840032268" valueTypeId="b0b970df-4f2f-4af8-a675-ebad3c160858"/>
+    <managerType typeId="fcc15a22-9fd1-4170-af2b-6d68279ce6e2" valueTypeId="fdec576c-1614-4b5a-9fd3-8a4011df3306"/>
+    <recordSetType typeId="5098bfba-dbd2-49b2-89d7-26d85c1d24ee" valueTypeId="da6d05ac-acbb-4a68-8c6d-f6363269bb5a"/>
+    <recordKeyType typeId="61c77301-1417-4642-bd95-768e71f4aab9" valueTypeId="87546150-5407-4942-ba26-3db2cc4b6ddb"/>
+    <recordType typeId="f6dbb5a0-6b1c-4211-b1b0-cb5967d33f22" valueTypeId="6fca136f-8789-413b-9fd9-b623aa417d7c"/>
+    <recordManagerType typeId="16de270b-c30a-4573-affe-e7b4e53a0926" valueTypeId="b22127e7-0fdb-4181-86ca-64b4e4c1a42c"/>
+  </producedTypes>
+  <name>уатДоступКСправочникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Доступ к справочникам</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Access to catalogs</value>
+  </synonym>
+  <comment>Доступ к справочникам (уат)</comment>
+  <defaultListForm>InformationRegister.уатДоступКСправочникам.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bf7b3589-8c9f-4da2-8748-9decf463090a">
+    <name>ДоступЕсть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступ есть</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>There are access</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Доступ есть</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>There are access</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2c06d187-96b1-45cd-b128-2550535d5023">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>User</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="da2406a1-8748-4239-b04b-c6a1eaafa2df">
+    <name>Право</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Right</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.уатПраваИНастройки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Право</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Right</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="402edd9e-68b3-4208-82cd-abb88149de7c">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <comment>Объект, на уровне которого производится настройка</comment>
+    <type>
+      <types>CatalogRef</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект, на уровне которого производится настройка</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Object, at the level which you are configuring</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1affd189-5353-4556-a430-c85b24d1e185">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

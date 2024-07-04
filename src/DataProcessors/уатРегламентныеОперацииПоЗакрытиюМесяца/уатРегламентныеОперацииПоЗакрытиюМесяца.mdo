@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9d044cb-f2ea-4f9f-92f9-b8fe09b7c6be">
+  <producedTypes>
+    <objectType typeId="e1917591-92be-4380-90c6-cf70125feae5" valueTypeId="4035cb77-89af-4bbf-b480-a8c85b95f69d"/>
+    <managerType typeId="3310fa98-db14-472d-a8f0-938480ec74d0" valueTypeId="5a1c4b1a-a8ec-4445-a210-e51942af9e3a"/>
+  </producedTypes>
+  <name>уатРегламентныеОперацииПоЗакрытиюМесяца</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентные операции по закрытию месяца</value>
+  </synonym>
+  <defaultForm>DataProcessor.уатРегламентныеОперацииПоЗакрытиюМесяца.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="f3b61a4d-e55f-46ed-959c-2e0694bc2551">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Registration period</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8424f8df-5363-42b5-b6ab-76c00ce51e96">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="1f660cd9-6e55-4e25-9509-ef5340089257">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="09452b5f-a9e8-4baa-9b7b-a4656e6ba625">
+    <name>ВыборПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор периода</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Select period</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

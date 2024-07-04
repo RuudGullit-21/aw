@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<planner:PlannerSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:planner="http://g5.1c.ru/v8/dt/planner/model">
+  <items>
+    <value xsi:type="core:UndefinedValue"/>
+    <begin>2016-03-31T01:00:00</begin>
+    <end>2016-03-31T04:00:00</end>
+    <text>Встреча</text>
+    <font xsi:type="core:AutoFont"/>
+    <replacementDate>0001-01-01T00:00:00</replacementDate>
+    <itemId>96a6c2d8-f48c-47fa-8b38-418c88127e33</itemId>
+  </items>
+  <wrappedTimeScaleHeaderFormat>
+    <key>#</key>
+    <value>ДФ='dd MMM'</value>
+  </wrappedTimeScaleHeaderFormat>
+  <wrappedTimeScaleHeaderFormat>
+    <key>ru</key>
+    <value>ДФ='dd MMM'</value>
+  </wrappedTimeScaleHeaderFormat>
+  <periodicVariantRepetition>1</periodicVariantRepetition>
+  <periodicVariantUnit>Year</periodicVariantUnit>
+  <border xsi:type="core:BorderDef">
+    <style>Single</style>
+    <width>1</width>
+  </border>
+  <textColor xsi:type="core:ColorDef"/>
+  <font xsi:type="core:AutoFont"/>
+  <beginOfRepresentationPeriod>0001-01-01T00:00:00</beginOfRepresentationPeriod>
+  <endOfRepresentationPeriod>0001-01-01T00:00:00</endOfRepresentationPeriod>
+  <timeScale>
+    <levels>
+      <measure>Day</measure>
+      <interval>1</interval>
+      <show>true</show>
+      <line>
+        <width>1</width>
+        <style>Solid</style>
+      </line>
+      <dayFormatRule>WeekDayMonthDay</dayFormatRule>
+      <format>
+        <key>#</key>
+        <value>ДФ='dd MMM'</value>
+      </format>
+      <labels/>
+      <showPereodicalLabels>true</showPereodicalLabels>
+    </levels>
+    <levels>
+      <measure>Hour</measure>
+      <interval>1</interval>
+      <show>true</show>
+      <line>
+        <width>1</width>
+        <style>Dotted</style>
+      </line>
+      <scaleColor xsi:type="core:ColorDef">
+        <red>192</red>
+        <green>192</green>
+        <blue>192</blue>
+      </scaleColor>
+      <dayFormatRule>MonthDayWeekDay</dayFormatRule>
+      <format>
+        <key>#</key>
+        <value>DF=&quot;HH:mm&quot;</value>
+      </format>
+      <labels/>
+      <showPereodicalLabels>true</showPereodicalLabels>
+    </levels>
+  </timeScale>
+  <periods>
+    <begin>2016-03-31T00:00:00</begin>
+    <end>2016-03-31T23:59:59</end>
+  </periods>
+  <itemsBehaviorWhenSpaceInsufficient>ShowAllItems</itemsBehaviorWhenSpaceInsufficient>
+</planner:PlannerSettings>

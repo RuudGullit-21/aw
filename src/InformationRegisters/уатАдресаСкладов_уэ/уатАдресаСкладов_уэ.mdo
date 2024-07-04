@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6af10d8c-2380-4e99-a4c8-5ae31be6a8cf">
+  <producedTypes>
+    <selectionType typeId="e76f5b81-d6b4-4780-b0b4-0730beb50111" valueTypeId="e7abb4be-9476-499b-a901-972cf1b3ada7"/>
+    <listType typeId="317e918b-bc4e-4e75-9024-fadb0b4fd1bf" valueTypeId="1be67bd2-9df0-4af2-8365-c9704902c087"/>
+    <managerType typeId="58d3d1a3-7eeb-4f3c-b817-392cdeb12a52" valueTypeId="f3146d78-47d9-4bc4-b559-746d009c25bb"/>
+    <recordSetType typeId="9a9e7f53-48a5-4a33-9457-129c3f4d43c0" valueTypeId="aab9d41a-5fd3-42e7-bea9-804b31726928"/>
+    <recordKeyType typeId="f2158980-a34a-473f-804c-febff2b52b12" valueTypeId="bd54c61d-1e97-4ab8-a322-972ea98c4df3"/>
+    <recordType typeId="5c8cdab6-add0-4a3c-a4a8-2ee197bd7c82" valueTypeId="527c0b23-1218-4b02-bfbb-ed386536f519"/>
+    <recordManagerType typeId="970be59b-309a-4bc1-a514-b0eac46c1e6b" valueTypeId="9bdc5377-7c58-493b-95b2-6fc2daf8e460"/>
+  </producedTypes>
+  <name>уатАдресаСкладов_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адреса складов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Warehouses address</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="63626b0c-f524-4ab4-8bad-26750635b458">
+    <name>Адрес</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Address</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Адрес склада</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse address</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e8c63d4e-d981-4dab-adf4-4131947f1144">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

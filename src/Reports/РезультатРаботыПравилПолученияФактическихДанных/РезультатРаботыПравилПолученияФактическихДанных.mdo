@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5b8848f-d8dc-4ab4-94c7-294a1cddd4b3">
+  <producedTypes>
+    <objectType typeId="f1088178-f7b9-47b3-b6da-7c69fe1d2eb1" valueTypeId="45b9bfa3-6bc7-47ae-b633-9133bcb364d7"/>
+    <managerType typeId="5d9949eb-e2f9-484f-9f70-22caf6819398" valueTypeId="8844276a-6b3d-46e2-9ad5-1ae62a7e4493"/>
+  </producedTypes>
+  <name>РезультатРаботыПравилПолученияФактическихДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результат работы правил получения фактических данных</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Result of rules for receiving actual data</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.РезультатРаботыПравилПолученияФактическихДанных.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <templates uuid="5303b62b-d54d-4506-a73b-4b73174524ac">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Main data composition schema</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="82d61f14-c902-406d-a9b8-0a27d06ba4ea">
+    <name>ПоСтатьеБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат работы правил</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Результат работы правил</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.СтатьиБюджетов</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+  </commands>
+  <commands uuid="1e9bf539-547b-4568-86cd-43016e0c2533">
+    <name>ПоПоказателюБюджетов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат работы правил</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Результат работы правил</value>
+    </synonym>
+    <group>FormNavigationPanelGoTo</group>
+    <commandParameterType>
+      <types>CatalogRef.ПоказателиБюджетов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Report>

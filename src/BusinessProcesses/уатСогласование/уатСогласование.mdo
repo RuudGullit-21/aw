@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e72dff88-06b1-40dc-aad9-9ddfd8a9e173">
+  <producedTypes>
+    <objectType typeId="69446e91-3946-470b-a9e8-9942d99e11fc" valueTypeId="c0516c06-e59b-4495-b378-63fc7a8fd6e1"/>
+    <refType typeId="00fba755-e34f-41c2-9a5d-381d79abb699" valueTypeId="0775a930-098a-4295-a079-f7aa8043d524"/>
+    <selectionType typeId="1a1955f6-766a-4a1a-ba31-ed40192196ee" valueTypeId="c1eacfbd-fc45-417e-a2b1-63c6a1f08ed7"/>
+    <listType typeId="c067246a-dcb2-4725-b386-1af4f4875d85" valueTypeId="e93b72ad-d719-47c4-87c0-03d34acdb925"/>
+    <managerType typeId="ddf1042e-c1b5-465e-adba-6a4ee3f55c7f" valueTypeId="6f4c5cad-9db3-4f24-b877-26367be9eaee"/>
+    <routePointRef typeId="24480bb8-42c4-46d0-9ed6-43780dd1f9c3" valueTypeId="864c5b6f-54c5-49e7-bda2-4997fb3032cb"/>
+  </producedTypes>
+  <name>уатСогласование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Approval</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.уатСогласование.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Started</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>HeadTask</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Completed</name>
+    <fillValue xsi:type="core:BooleanValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:StringValue">
+      <value>         </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <basedOn>Document.уатВводВЭксплуатациюТСиОборудования</basedOn>
+  <basedOn>Document.уатВыбытиеТСиОборудования</basedOn>
+  <basedOn>Document.уатПеремещениеТСиОборудования</basedOn>
+  <basedOn>Document.уатЗаявкаНаРасходованиеДС</basedOn>
+  <basedOn>Document.уатУстановкаТарифовЗП</basedOn>
+  <basedOn>Document.уатУстановкаПрейскурантовТС</basedOn>
+  <basedOn>Document.уатАктСверкиВзаиморасчетов_уэ</basedOn>
+  <basedOn>Document.уатУстановкаТарифовСебестоимости_уэ</basedOn>
+  <basedOn>Document.уатРеестрПеревозок</basedOn>
+  <basedOn>Document.уатПоступлениеТоваровУслуг</basedOn>
+  <basedOn>Document.уатСчетНаОплатуПоставщика</basedOn>
+  <createOnInput>DontUse</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockFields>BusinessProcess.уатСогласование.StandardAttribute.HeadTask</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Согласования</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Approval</value>
+  </listPresentation>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.уатСогласование.Form.ФормаБизнесПроцесса</defaultObjectForm>
+  <defaultListForm>BusinessProcess.уатСогласование.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>BusinessProcess.уатСогласование.Form.ФормаВыбора</defaultChoiceForm>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <task>Task.ЗадачаИсполнителя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="69ae6fc3-0d3f-4d17-a5b3-22fd9dc18b96">
+    <name>Автор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Author</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Инициатор бизнес-процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Initiator of business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Пользователи.EmptyRef</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="901d23c2-6acd-4bc9-a717-fd5d799da1ee">
+    <name>Важность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Важность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Importance</value>
+    </synonym>
+    <comment>Важность задач точки действия Выполнить для исполнителя</comment>
+    <type>
+      <types>EnumRef.ВариантыВажностиЗадачи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Важность задания для его исполнителей</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Job importance for its performers</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.ВариантыВажностиЗадачи.EnumValue.Обычная</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ac8ed364-bd64-44c7-8c14-74995a576bee">
+    <name>ВариантСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант согласования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Approval option</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВариантыСогласования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант обхода</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Bypass option</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c51bb689-9690-4dcc-8144-7557ee4db98f">
+    <name>ДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата завершения бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Business process completion Date</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea10d283-0dd3-4053-bb22-9c09b7c865e0">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start date business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:DateValue">
+      <value>0001-01-01T00:00:00</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5306203a-69e7-4a7e-8edb-ef5dc9a35bf9">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Name</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name of the business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c7ad9bc6-00c0-43e6-b389-6029b10089e0">
+    <name>НомерИтерации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер текущей итерации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Number of current iteration</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер текущей итерации бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Number of the current iteration of the business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08c4cae7-a202-4f9a-9791-961c627a2297">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Definition</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание бизнес -процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Description of business process</value>
+    </toolTip>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f7217dd4-e4af-476b-a50b-719f070c78c4">
+    <name>ПовторитьСогласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Повторить согласование</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Repeat approval</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак повторного согласования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Sign of reapproval</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f264ab14-35fa-463f-9b7c-beb9e18338a0">
+    <name>Предмет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предмет</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Subject</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатРеестрПеревозок</types>
+      <types>DocumentRef.уатПланированиеРаботыТС</types>
+      <types>DocumentRef.уатАктСверкиВзаиморасчетов_уэ</types>
+      <types>DocumentRef.уатУстановкаТарифовЗП</types>
+      <types>DocumentRef.уатЗаявкаНаРасходованиеДС</types>
+      <types>DocumentRef.уатУстановкаПрейскурантовТС</types>
+      <types>DocumentRef.уатСчетНаОплатуПоставщика</types>
+      <types>DocumentRef.уатРекламация_уэ</types>
+      <types>DocumentRef.уатЗаявкаНаРемонт</types>
+      <types>DocumentRef.уатПеремещениеТСиОборудования</types>
+      <types>DocumentRef.уатУстановкаТарифовСебестоимости_уэ</types>
+      <types>DocumentRef.уатРемонтныйЛист</types>
+      <types>DocumentRef.уатПоступлениеТоваровУслуг</types>
+      <types>DocumentRef.уатВводВЭксплуатациюТСиОборудования</types>
+      <types>DocumentRef.уатВыбытиеТСиОборудования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предмет бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Subject of business - process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="888e54fe-9b22-4a9c-a21c-7c28a0c3ce35">
+    <name>РезультатСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат согласования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Approval result</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатРезультатыСогласования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Результат согласования бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Result of approval of business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="062b05ba-7729-4bd2-9f0d-89fe17c20ffe">
+    <name>СрокИсполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок согласования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Approval period</value>
+    </synonym>
+    <comment>В днях</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Срок исполнения, дней</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Execution time, days</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fdbd2950-59f4-48b1-85c1-fecdc90dbdae">
+    <name>Шаблон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон бизнес-процесса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Template of business process</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатШаблоныСогласования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Шаблон бизнес - процесса</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Template of business process</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3695d3fc-c0cc-4a1f-97bc-96d751a67d24">
+    <name>УдалитьВажность</name>
+    <synonym>
+      <key>ru</key>
+      <value>(не используется) Важность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Importance</value>
+    </synonym>
+    <comment>Важность задач точки действия Выполнить для исполнителя</comment>
+    <type>
+      <types>EnumRef.УдалитьуатВажность</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Важность задачи</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Task importance</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="65a4c643-e6cf-453b-b082-df274b166806">
+    <producedTypes>
+      <objectType typeId="9447a8ee-9e1a-432f-a9ed-85347bc644d5" valueTypeId="39013016-183c-42c5-8992-b5370ec8ef1e"/>
+      <rowType typeId="1ee38ae4-0117-4741-a4d1-caa4bebc535e" valueTypeId="05e4d29e-1fbf-45cd-a051-d7773df1e4ec"/>
+    </producedTypes>
+    <name>Исполнители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнители</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Executors</value>
+    </synonym>
+    <fillChecking>ShowError</fillChecking>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="61db4acb-b2a3-4dc5-a820-cb287ff0decd">
+      <name>Исполнитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Исполнитель</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Performer</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВнешниеПользователи</types>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Исполнитель бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Executor of business process</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="57f122e2-0fca-4d0a-8a32-e5b7dd9823f7">
+      <name>Пройден</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пройден</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Passed</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак пройденного этапа</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sign of passed stage</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="35ae19ec-3949-4294-9267-6af605525503">
+    <producedTypes>
+      <objectType typeId="e95d18bc-16b8-426c-a972-7976500d23d7" valueTypeId="5ee1b5e1-6441-4fb3-a1b6-f4a4a41640f4"/>
+      <rowType typeId="8d9914a0-5775-4ed3-af25-3bd2bf6b3c24" valueTypeId="0bcbc2e2-c44a-4371-a972-d0a916797894"/>
+    </producedTypes>
+    <name>РезультатыСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты согласования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Approval results</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="50dac7da-1ced-4b79-81b0-ca31bd7c4733">
+      <name>ЗадачаИсполнителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Задача исполнителя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Performer task</value>
+      </synonym>
+      <type>
+        <types>TaskRef.ЗадачаИсполнителя</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Задача исполнителя бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Task of the business process executor</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7011abc3-3ae2-4db8-9402-1d4ef7e7e64b">
+      <name>НомерИтерации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер итерации</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Iteration number</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер итерации бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Iteration number of business process</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="65968749-ac2a-44cd-a4fb-14fae00132b9">
+      <name>РезультатСогласования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат согласования</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Approval result</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатРезультатыСогласования</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Результат согласования бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Result of approval of business process</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="0a84ed32-3ef7-4197-a9ad-bd83af301885">
+    <producedTypes>
+      <objectType typeId="7ee25562-84db-44be-a5f6-1fea121ab6f3" valueTypeId="779b397b-d83c-462b-ba80-8b917bf66d1e"/>
+      <rowType typeId="16c35d7b-0d68-4a37-b1bb-ecc8fea99008" valueTypeId="d4a0fe66-d28d-42cc-bb3e-4984ab3eef55"/>
+    </producedTypes>
+    <name>РезультатыОзнакомлений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результаты ознакомлений</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Preview results</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5903142b-22c9-4a3f-bf63-288cc28de1b8">
+      <name>ЗадачаИсполнителя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Задача исполнителя</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Performer task</value>
+      </synonym>
+      <type>
+        <types>TaskRef.ЗадачаИсполнителя</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Задача исполнителя бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Task of the business process executor</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="51b9ca9b-3347-49ba-83fc-9c4aab840667">
+      <name>НомерИтерации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер итерации</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Iteration number</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Номер итерации бизнес - процесса</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Iteration number of business process</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="2dc6120f-eff0-40da-b84b-1f7d5d0f370a">
+      <name>ОтправленоНаПовторноеСогласование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отправлено на повторное согласование</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Sent for reapproval</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Признак повторной отправки на согласование</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Sign of resendings for approval</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c8d64096-af2d-451a-8886-26a53d589d89">
+    <name>КартаМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Карта маршрута</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Route map</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b4a7f61d-176e-483a-97d6-5bb85565365b">
+    <name>ФормаБизнесПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бизнес процесса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Business process form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="07318288-03b7-4e32-91a2-b3053170d2be">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8dc634fa-2b73-46be-bf10-729b3515f028">
+    <name>ФормаЗадачиОсновная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма задачи основная</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Task form main</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="868454ee-b6d7-4b8b-836d-a03b1ee9949f">
+    <name>ФормаИзменениеПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма изменение параметров</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form change settings</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ba9015c-5494-4ab0-b035-82315ff8829c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>

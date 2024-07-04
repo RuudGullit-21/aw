@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b16aed2-4cad-4e6c-bcb6-525be6554e75">
+  <producedTypes>
+    <refType typeId="38d66705-5960-49a2-bffc-922823423fab" valueTypeId="aa566fb7-c6c5-474b-a665-7968a38bc844"/>
+    <listType typeId="60e8d7f8-bab9-4e6d-9cc5-5a9030e262f2" valueTypeId="7f1e1562-759e-4d8f-b480-7e02570f82c0"/>
+    <managerType typeId="e8c25104-58c3-4fe4-909a-5b39b9a24b40" valueTypeId="37e32b8a-3740-4ed4-b7a2-9853fa49ccfd"/>
+  </producedTypes>
+  <name>ItobВидыПериодовПланФакта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды периодов план-факта</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fd415cc0-5099-4b6a-b9c3-c27987777b1b">
+    <name>НеРассчитывать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не рассчитывать</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Do not count</value>
+    </synonym>
+    <comment>Актуально только для отчета &quot;ItobСостояниеМаршрутовПланФакт&quot;</comment>
+  </enumValues>
+  <enumValues uuid="d8e02db6-fbe3-434d-8183-f56ac7393492">
+    <name>ВзятьИзНастройкиВизуализацииФактМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласно настройкам подсистемы</value>
+    </synonym>
+    <comment>Актуально только для отчета &quot;ItobСостояниеМаршрутовПланФакт&quot;</comment>
+  </enumValues>
+  <enumValues uuid="ca3a23c2-98f5-4d68-bf7d-2c0125d884c0">
+    <name>Авто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Авто</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Auto</value>
+    </synonym>
+    <comment>Для отчета и РМД (Сначала факт. введенные, потом факт. рассчитанные, потом плановые окна)</comment>
+  </enumValues>
+  <enumValues uuid="b6314c43-1594-4095-8927-24080cfc061d">
+    <name>ФактВведенныеЗатемПлановыеОкна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт. введенные, затем плановые окна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b14366db-90ff-473b-8ddf-60d35a9731f8">
+    <name>ФактРассчитанныеЗатемПлановыеОкна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Факт. рассчитанные, затем плановые окна</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ed0ba61-3f8b-4f3c-8d09-ac44168d0754">
+    <name>ПлановыеОкна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановые окна</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

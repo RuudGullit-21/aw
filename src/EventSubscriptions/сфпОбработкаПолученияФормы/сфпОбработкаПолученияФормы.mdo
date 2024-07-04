@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8fd6160a-781a-4c51-abcb-3c382b95e5a8">
+  <name>сфпОбработкаПолученияФормы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка получения формы объектов СофтФон</value>
+  </synonym>
+  <source>
+    <types>DocumentManager.ТелефонныйЗвонок</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.сфпСофтФонПроСерверПереопределяемый.сфпОбработкаПолученияФормыОбработкаПолученияФормы</handler>
+</mdclass:EventSubscription>

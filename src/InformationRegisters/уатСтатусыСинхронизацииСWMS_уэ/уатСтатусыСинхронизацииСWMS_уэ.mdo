@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d24b82e-9cbf-4537-a2c9-32d68f751353">
+  <producedTypes>
+    <selectionType typeId="a8d4e21f-e018-4bb5-a61f-bd1cc48a8c78" valueTypeId="7bec7ca6-10a3-4386-ab21-2b9fd15ea7a9"/>
+    <listType typeId="0a39ffe1-21a5-4925-a71a-732d5502ee3d" valueTypeId="3b0f7e84-04de-4d1d-b99b-792398a3e5f7"/>
+    <managerType typeId="963c2f4f-84ad-44d7-b1d2-66c7678b8753" valueTypeId="6a9705f8-104d-4247-8124-3a8ff6df89ed"/>
+    <recordSetType typeId="c25e62f5-674f-4a5e-ae0c-3bd7a7149b86" valueTypeId="e31a1f5a-4c28-4492-b75c-e01197a28fe9"/>
+    <recordKeyType typeId="ec5d1689-d270-435a-84ec-9ad316b97446" valueTypeId="cc65ebb4-3fc6-4f08-8298-135643bec65f"/>
+    <recordType typeId="34f15074-e89b-4ce1-bbd5-0d957ab032df" valueTypeId="c8b6b19a-0c75-4c8f-b275-4c153272233b"/>
+    <recordManagerType typeId="54f7733a-7fd1-4025-ae59-e5f57445239a" valueTypeId="a659dbb3-170b-4e1c-9a50-dd2897d2f19c"/>
+  </producedTypes>
+  <name>уатСтатусыСинхронизацииСWMS_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы синхронизации с WMS</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.уатСтатусыСинхронизацииСWMS_уэ.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5e686fba-ea80-4dce-a58c-d7c15739e83c">
+    <name>СтатусВыгрузкиВWMS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус выгрузки в WMS</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатСтатусыОбменаСWMS_уэ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5bc830ea-14c8-46f9-9f9c-8a4336976552">
+    <name>ИнформацияОбОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация об ошибке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b1b59970-08f3-436b-8867-be1ff517ef8b">
+    <name>ДатаНачалаОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="104199c3-5a25-4e58-ac09-8576011d3b36">
+    <name>ДатаОкончанияОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания операции</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2d52a3b1-aa01-4392-8d7a-bbcd2535695e">
+    <name>СтатусЗаданияПРР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус документа WMS</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус задания или заявки на погрузочно-разгрузочные работы, полученный из WMS</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="5ba8287d-6b04-444f-b92b-5dd13d86fe2c">
+    <name>МаршрутныйЛист</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрутный лист</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Routing list</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатМаршрутныйЛист</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f3d39cc6-6767-42d9-a917-10a7651cc24b">
+    <name>ЗаказНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на ТС</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатЗаказГрузоотправителя</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfbb8f53-6ec8-4551-92a3-050a3fdddd62">
+    <name>ИДЗаданияПРР</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Задания ПРР в WMS</value>
+    </synonym>
+    <comment>Строковое представление УИДа Заказа на ТС</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="612bcd38-362d-46fb-82c7-8a4eb0e34696">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

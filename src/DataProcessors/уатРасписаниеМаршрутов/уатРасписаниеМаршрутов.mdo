@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59259802-d08e-40e8-bc17-6fa35aa90b97">
+  <producedTypes>
+    <objectType typeId="edfee80e-5d2b-4456-b243-f25c35f7cf8d" valueTypeId="04fc3cf7-5b8b-4cb1-8556-43d5d3846f65"/>
+    <managerType typeId="a0de8d09-901b-4eee-85a8-44a6bcd1d951" valueTypeId="87fda335-0a8b-44da-ae95-190733de126f"/>
+  </producedTypes>
+  <name>уатРасписаниеМаршрутов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расписание рейсов</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Routes schedule</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.уатРасписаниеМаршрутов.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="dc3f52b8-1bf9-4071-b454-af8db6b1f9c4">
+    <name>FTL</name>
+    <synonym>
+      <key>ru</key>
+      <value>FTL</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>FTL</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="acaeb802-863c-4e38-bd2b-43f297da378b">
+    <name>Выход</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выход</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Exit</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВыходыМаршрутов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выход.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Exit.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="278b8354-2acc-4326-a76c-46e55e743556">
+    <name>Грузоотправитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузоотправитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3110093b-04e3-488b-8a0f-e945ce59f6a6">
+    <name>Грузополучатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Грузополучатель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Consignee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9b646005-dafc-40a7-a207-bcb1d256be95">
+    <name>ДнейВПути</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней в пути</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5a27558b-f04d-4123-abe3-128c516455d7">
+    <name>ДнейДоОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до отправления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Days before receipt</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8a1e5198-287d-4add-a615-c5b898c56c30">
+    <name>Маршрут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Маршрут</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Route</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатМаршруты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Маршрут.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Route.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.уатСтатусыДействия.EnumValue.Действует</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="ddaf7069-28c9-4ac0-a238-0e66cc4905f9">
+    <name>ПунктНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт назначения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5cfb1d8c-c7a0-4d35-8d10-ed66b44fce0f">
+    <name>ПунктОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пункт отправления</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Point of departure</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПунктыНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="91d0a1a4-29e6-461d-9cb3-860bff709a68">
+    <name>ШиринаКолонкиПункты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ширина колонки &quot;Пункты&quot;</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="58f09d23-dc99-4c12-9300-dedc696d6bd4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="46d3489c-8435-419a-a3c3-6537aaedce53">
+    <name>ФормаВыхода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выхода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8ec16ade-964b-4037-86b7-e2d9affa2840">
+    <name>ФормаРейса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма рейса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Trip form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e9636fdb-a1cb-4cd0-88ce-c9d01f0aec84">
+    <name>ФормаПунктаОтправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма пункта отправления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89414d07-5feb-42b2-9a2f-105fa9de95f8">
+    <name>ФормаИзмененияРасписания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение расписания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="deb0b16b-9806-4b78-b137-a193778c2af4">
+    <name>ФормаКопирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Копирование рейса</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Copying trip</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="e619ac1b-904a-4fa1-90ad-928cfe13d547">
+    <name>МакетЗаполнениеПоПунктам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет заполнение по пунктам</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Template</value>
+    </synonym>
+  </templates>
+  <templates uuid="db1bbdfe-61bb-4cb6-8ef7-f762641bc678">
+    <name>МакетЗаполнениеПоМаршрутам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет заполнение по маршрутам</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Template</value>
+    </synonym>
+  </templates>
+  <templates uuid="784c1a69-b7f4-419f-a22c-0ba6dbc273f1">
+    <name>МакетЗаполнениеПоМаршрутамПарнымиПунктами</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет заполнение по маршрутам парными пунктами</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Template</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="848237b5-93d6-4bd9-abe7-b75ba7320c2e">
+  <producedTypes>
+    <selectionType typeId="c4440ea4-1d2d-4041-875f-58ac5ba48b15" valueTypeId="3b37db17-4935-46b1-8780-929b8e01b11c"/>
+    <listType typeId="5cbe48af-ba94-44ae-8d6d-3b8b66770572" valueTypeId="66c9ab5c-8774-494f-8df6-1d1c566ac989"/>
+    <managerType typeId="de9525bb-c32a-4829-80db-61c37766dcfd" valueTypeId="7a7df44c-6223-4def-a379-de04032df921"/>
+    <recordSetType typeId="1616640e-60f0-43ce-b639-1edd6e1a52ca" valueTypeId="82483688-1cce-406e-a260-4673f3a711d3"/>
+    <recordKeyType typeId="ac3be99b-93b6-4087-acef-59170b88fd8d" valueTypeId="f2b55e96-9fdc-4712-a8c8-dec94d98fc53"/>
+    <recordType typeId="ee28b6d9-1ce4-48d0-b597-8b372639cdf7" valueTypeId="8558cfca-3015-4130-bee1-416c4646bc87"/>
+    <recordManagerType typeId="d5891b05-1bab-4e39-80b7-66c7726584a1" valueTypeId="2b21bdeb-7f6c-43f7-b3f2-50b86cc2958e"/>
+  </producedTypes>
+  <name>уатПараметрыАвторизацииТерминала</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатПараметрыАвторизацииТерминала.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПараметрыАвторизацииТерминала.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Параметры авторизации терминала</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Authorization terminal settings</value>
+  </explanation>
+  <resources uuid="89c567f2-3899-4172-819c-e915c86496dd">
+    <name>Логин</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логин</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Login</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Логин для входа в терминал.
+Должен состоять только из цифр, если используется авторизация с помощью экранной клавиатуры.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Login to enter the terminal.
+Must consist only of digits if authorization is used using the on-screen keyboard.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="8b49d5c1-e13e-419b-9ba8-6e30548d30b7">
+    <name>Пароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Password</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пароль для входа в терминал.
+Должен состоять только из цифр, если используется авторизация с помощью экранной клавиатуры.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Password for entering the terminal.
+Must consist only of digits if authorization is used using the on-screen keyboard.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="afed2eca-2de9-4477-aa7d-1d91e970766a">
+    <name>СертификатПодписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сертификат подписи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СертификатыКлючейЭлектроннойПодписиИШифрования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сертификат для электронной подписи водителем Путевых листов в Терминале. Если не указан, то подпись недоступна.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ece6bd39-e638-4ce8-8bdf-d93fd318ed92">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="108ab167-a13d-41e4-b884-252de10c4a65">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1701b3f9-0db7-474e-9a00-81c31860cff3">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2fb5cd8-c08c-4faa-8e3e-ed1c49c16266">
+  <producedTypes>
+    <selectionType typeId="c51da157-26dc-409c-ac3d-865cbc642e35" valueTypeId="4c9acbf5-2821-470d-bb6d-ca53edb4cc11"/>
+    <listType typeId="99e839ae-c8f9-494c-9ee3-f3cc318454c6" valueTypeId="380f55f6-09d3-4873-ae13-22b30a95b4db"/>
+    <managerType typeId="eb338414-070f-4e13-bac5-247d3eeb74a2" valueTypeId="5de38bc3-2703-4252-95db-3f5b57fac6c4"/>
+  </producedTypes>
+  <name>уатСкладскиеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Warehouse documents</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатСкладскиеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.уатОприходованиеТоваров</registeredDocuments>
+  <registeredDocuments>Document.уатПеремещениеТоваров</registeredDocuments>
+  <registeredDocuments>Document.уатСписаниеТоваров</registeredDocuments>
+  <registeredDocuments>Document.уатВозвратТоваров</registeredDocuments>
+  <registeredDocuments>Document.уатИнвентаризацияТоваров</registeredDocuments>
+  <registeredDocuments>Document.уатПоступлениеТоваровУслуг</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <listPresentation>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Warehouse documents</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Warehouse documents</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Складские документы</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Warehouse documents</value>
+  </explanation>
+  <columns uuid="c4791ce6-b534-4eb9-81e9-9629d4653978">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <comment>Склад</comment>
+    <references>Document.уатВозвратТоваров.Attribute.Склад</references>
+    <references>Document.уатИнвентаризацияТоваров.Attribute.Склад</references>
+    <references>Document.уатОприходованиеТоваров.Attribute.Склад</references>
+    <references>Document.уатПеремещениеТоваров.Attribute.СкладОтправитель</references>
+    <references>Document.уатСписаниеТоваров.Attribute.Склад</references>
+    <references>Document.уатПоступлениеТоваровУслуг.Attribute.Склад</references>
+  </columns>
+  <columns uuid="fffb4601-4160-4042-b68e-d9e3207f5d5c">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <references>Document.уатВозвратТоваров.Attribute.Организация</references>
+    <references>Document.уатИнвентаризацияТоваров.Attribute.Организация</references>
+    <references>Document.уатОприходованиеТоваров.Attribute.Организация</references>
+    <references>Document.уатПеремещениеТоваров.Attribute.Организация</references>
+    <references>Document.уатСписаниеТоваров.Attribute.Организация</references>
+    <references>Document.уатПоступлениеТоваровУслуг.Attribute.Организация</references>
+  </columns>
+  <columns uuid="32294a8f-44d1-4771-91f9-4348867daf0f">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <references>Document.уатВозвратТоваров.Attribute.Комментарий</references>
+    <references>Document.уатИнвентаризацияТоваров.Attribute.Комментарий</references>
+    <references>Document.уатОприходованиеТоваров.Attribute.Комментарий</references>
+    <references>Document.уатПеремещениеТоваров.Attribute.Комментарий</references>
+    <references>Document.уатСписаниеТоваров.Attribute.Комментарий</references>
+    <references>Document.уатПоступлениеТоваровУслуг.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="6dd75f21-43a0-4ee4-b146-1085a573bce6">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <references>Document.уатВозвратТоваров.Attribute.Ответственный</references>
+    <references>Document.уатИнвентаризацияТоваров.Attribute.Ответственный</references>
+    <references>Document.уатОприходованиеТоваров.Attribute.Ответственный</references>
+    <references>Document.уатПеремещениеТоваров.Attribute.Ответственный</references>
+    <references>Document.уатСписаниеТоваров.Attribute.Ответственный</references>
+    <references>Document.уатПоступлениеТоваровУслуг.Attribute.Ответственный</references>
+  </columns>
+  <forms uuid="16f0094b-e01e-4510-8270-86f183ff1b36">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

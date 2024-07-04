@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f71da10-cec9-4335-9441-744148eb0533">
+  <producedTypes>
+    <selectionType typeId="b8175ef9-05e5-467e-bc02-2a2bac0a7cb4" valueTypeId="35e5b2fa-fc2e-4cea-94bb-6824467eb2d9"/>
+    <listType typeId="bbc4f502-e606-4e3a-accd-6a9dfd0da514" valueTypeId="98aa70f1-5a49-4892-8c99-3ddfd8d5218a"/>
+    <managerType typeId="979d9df8-ea35-4b41-85fc-a8a387e9c72c" valueTypeId="4c5e2d6c-0c80-48a6-beac-c4fe1d8f74f6"/>
+  </producedTypes>
+  <name>уатЭлектронныеПеревозочныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Электронные перевозочные документы</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатЭлектронныеПеревозочныеДокументы.Form.ФормаСписка</defaultForm>
+  <registeredDocuments>Document.ЭлектроннаяСопроводительнаяВедомость</registeredDocuments>
+  <registeredDocuments>Document.ЭлектроннаяТранспортнаяНакладная</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйЗаказНаряд</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйПутевойЛист</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйДоговорФрахтования</registeredDocuments>
+  <registeredDocuments>Document.ЭлектронныйЗаказЗаявка</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="6378f968-0302-47ee-996c-10b01210bc24">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <references>Document.ЭлектроннаяСопроводительнаяВедомость.Attribute.Организация</references>
+    <references>Document.ЭлектроннаяТранспортнаяНакладная.Attribute.Организация</references>
+    <references>Document.ЭлектронныйЗаказНаряд.Attribute.Организация</references>
+    <references>Document.ЭлектронныйПутевойЛист.Attribute.Организация</references>
+    <references>Document.ЭлектронныйЗаказЗаявка.Attribute.Организация</references>
+    <references>Document.ЭлектронныйДоговорФрахтования.Attribute.Организация</references>
+  </columns>
+  <forms uuid="314a2228-6861-4736-af85-cf089faed5d2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4b4e3be2-74dc-4cea-a654-fc88218ede67">
+    <name>ФормаПодбораЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма подбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="9549d90f-88e9-422f-8ced-ae03923c80a8">
+    <name>ФормаВыбораЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора ЭПД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Catalog selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="c75f7746-ca6b-4031-b5fa-17098b2ff0ba">
+    <name>ЭлектронныеПеревозочныеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронные перевозочные документы</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="1d29c911-51bb-4342-b778-c037fb56fae2">
+    <name>ПодобратьДокументыЭПД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подобрать документы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Personal settings</value>
+    </synonym>
+    <group>FormCommandBarImportant</group>
+    <commandParameterType>
+      <types>DocumentRef.ЭлектроннаяТранспортнаяНакладная</types>
+    </commandParameterType>
+    <representation>PictureAndText</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Подобрать документы к Электронной транспортной накладной</value>
+    </toolTip>
+    <picture xsi:type="core:PictureRef">
+      <picture>CommonPicture.уатПодбор</picture>
+    </picture>
+  </commands>
+</mdclass:DocumentJournal>

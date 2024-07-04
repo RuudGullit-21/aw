@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5898b146-cf4e-417c-a07d-e56986166c3f">
+  <name>уатДвижениеДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Денежные средства</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Funds</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Денежные средства</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Cash flows (FMS)</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.уатПодсистемаДенежныеСредства</picture>
+  </picture>
+  <content>Document.уатПриходныйКассовыйОрдер</content>
+  <content>Document.уатРасходныйКассовыйОрдер</content>
+  <content>Enum.уатВидыОперацийПоступлениеДС</content>
+  <content>Enum.уатВидыОперацийРасходДС</content>
+  <content>AccumulationRegister.уатДвижениеДС</content>
+  <content>AccumulationRegister.уатЗаявкиНаРасходованиеДС</content>
+  <content>Document.уатЗакрытиеЗаявокНаРасходованиеСредств</content>
+  <content>Enum.уатВидыОперацийПКО</content>
+  <content>DataProcessor.уатПодборПараметровРасшифровкиПлатежа</content>
+  <content>Document.уатПлатежноеПоручениеВходящее</content>
+  <content>Enum.уатВидыОперацийПлатежноеПоручениеВходящее</content>
+  <content>DocumentJournal.уатКассовыеИБанковскиеДокументы</content>
+  <content>Enum.уатВидыОперацийРКО</content>
+  <content>Document.уатПлатежноеПоручениеИсходящее</content>
+  <content>Document.уатЗаявкаНаРасходованиеДС</content>
+  <content>Enum.уатВидыОперацийЗаявкиНаРасходование</content>
+  <content>Enum.уатВидыОперацийПлатежноеПоручениеИсходящее</content>
+  <content>Report.уатАнализДвиженияДенежныхСредств</content>
+  <content>Report.уатДвиженияДенежныхСредств</content>
+  <content>CommonForm.уатФормаВводаКурсаИКратности</content>
+  <content>CommonPicture.уатПодсистемаДенежныеСредства</content>
+  <content>Report.уатВедомостьВзаиморасчетыСКонтрагентами</content>
+  <content>Report.уатЗадолженностьПоКонтрагентам</content>
+  <content>AccumulationRegister.уатВзаиморасчетыСКонтрагентами</content>
+  <content>CommonCommand.уатПанельОтчетовДвижениеДС</content>
+  <content>Document.уатАктСверкиВзаиморасчетов_уэ</content>
+  <content>AccumulationRegister.уатОстаткиДС</content>
+  <content>AccumulationRegister.уатОстаткиДСУПодотчетныхЛиц</content>
+  <content>Document.уатАвансовыйОтчет</content>
+  <content>Report.уатОстаткиДС</content>
+  <content>Report.уатДенежныеСредстваУПодотчетныхЛиц</content>
+  <content>CommonCommand.ДополнительныеОбработкиУатДвижениеДС</content>
+  <content>CommonCommand.ДополнительныеОтчетыУатДвижениеДС</content>
+  <content>Catalog.СтатьиДвиженияДенежныхСредств</content>
+  <content>Catalog.Проекты</content>
+  <content>Document.уатВзаимозачет</content>
+  <content>Document.уатКорректировкаДолга</content>
+  <content>Report.уатАвансовыеОтчеты</content>
+  <content>Report.уатВедомостьПоДенежнымСредствам</content>
+  <content>AccumulationRegister.уатПлатежныйКалендарь</content>
+  <content>InformationRegister.уатДатыПлатежей</content>
+  <content>Report.уатПлатежныйКалендарь</content>
+  <content>Report.уатКонтрольОтсрочкиПлатежей</content>
+  <content>FunctionalOption.уатМноговалютныйУчет</content>
+  <content>Constant.уатМноговалютныйУчет</content>
+  <content>Constant.уатИспользоватьПлатежныйКалендарь</content>
+  <content>FunctionalOption.уатИспользоватьПлатежныйКалендарь</content>
+  <content>Enum.уатВариантыОтсчетаДатыПлатежа</content>
+  <content>Catalog.уатЭтапыОплаты</content>
+  <content>InformationRegister.уатТекущееСостояниеОплатыЗаказов</content>
+  <content>CommonPicture.уатСостоянияОплатыЗаказов</content>
+</mdclass:Subsystem>

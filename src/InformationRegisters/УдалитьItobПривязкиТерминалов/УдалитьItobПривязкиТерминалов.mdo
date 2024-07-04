@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c2bccd4f-8c52-4561-9724-043989fd8eb8">
+  <producedTypes>
+    <selectionType typeId="82cf97fa-e9a2-452b-a9fc-0e1a52f537e7" valueTypeId="bb698ff1-07cc-49e9-bba7-02cd55183d9e"/>
+    <listType typeId="089616f1-0247-4ef7-be15-f827f643d2b8" valueTypeId="ee03e6dc-4f27-4c64-a6a1-62764c0dc74d"/>
+    <managerType typeId="2e7e35e8-98d3-4975-bd3e-91797bbac2ce" valueTypeId="19817f4e-e8f8-4061-9e5b-63fc3e2b22b7"/>
+    <recordSetType typeId="ed3f627d-6c3f-4838-9811-354ae335b7e1" valueTypeId="cad9c1e1-a27c-46b8-8b06-7d0eb3ebf593"/>
+    <recordKeyType typeId="0287c8cf-4c3a-4d11-9f07-a1529ae0d264" valueTypeId="d9b4363a-03de-4640-b21e-229be8c6cae3"/>
+    <recordType typeId="1309cf76-83c5-4b0d-92d9-cdb5198dd9f3" valueTypeId="8627c0a1-5d08-41a0-a25d-36ff8848859b"/>
+    <recordManagerType typeId="cbd14e1f-5866-411c-9537-26ca2d3ef6e8" valueTypeId="ce0aa905-1b9c-4dc4-b834-526fd85d5ed6"/>
+  </producedTypes>
+  <name>УдалитьItobПривязкиТерминалов</name>
+  <synonym>
+    <key>ru</key>
+    <value>(не используется) Привязки терминалов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала привязки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата начала привязки</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <explanation>
+    <key>ru</key>
+    <value>Привязка терминалов к определенному объекту мониторинга</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Binding of terminals to specific monitoring object</value>
+  </explanation>
+  <resources uuid="a9be6e8a-82fb-42cf-84ec-d45b201b692f">
+    <name>ТерминалУстановлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал установлен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак установки терминала на объекте мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="0f27cf3f-6e49-4e27-965b-833c32bde036">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Привязанный терминал</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Привязанный терминал</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="dc825918-4a30-4b7a-a4ed-c030c96e9d33">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

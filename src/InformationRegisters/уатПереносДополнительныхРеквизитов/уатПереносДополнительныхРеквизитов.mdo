@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7968e1c1-e48a-47bf-aab6-874731147685">
+  <producedTypes>
+    <selectionType typeId="92b418a3-24ba-42f2-886f-aca1c6e1994d" valueTypeId="c9a1221e-0fd0-42c8-82cc-a1fa423137e2"/>
+    <listType typeId="de235316-0528-45fd-bb5a-fad92df34155" valueTypeId="0133d6bd-b6b7-4185-956f-5bce60bee50e"/>
+    <managerType typeId="51662cbe-e910-4847-8c01-fd787d5b210a" valueTypeId="22e0f8eb-caf1-4ef1-a4b3-4ddec7f2fb0f"/>
+    <recordSetType typeId="8418b0f4-208f-4d57-83f8-e1a50ae3dfe3" valueTypeId="3dfb330e-2ccb-47cc-bf0b-294b1fd8f460"/>
+    <recordKeyType typeId="30159f09-e454-4c00-95ed-5677f2c4ac5e" valueTypeId="2d5a5bd0-b15c-4c92-b2ef-4c20b3f6c85e"/>
+    <recordType typeId="075f65d5-a951-4d29-8e45-e8c61c24ce82" valueTypeId="42c6a440-79a2-47fe-8045-f943f2794444"/>
+    <recordManagerType typeId="e2e19d41-f8e8-4612-aefc-6adea0e858f7" valueTypeId="6a68541b-8c67-4038-adb4-6e575070473a"/>
+  </producedTypes>
+  <name>уатПереносДополнительныхРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перенос дополнительных реквизитов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатПереносДополнительныхРеквизитов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПереносДополнительныхРеквизитов.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fecb5d22-30a7-4cf2-8936-9ff678e9a234">
+    <name>РеквизитПриемника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реквизит приемника</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="77119fb7-f622-4840-999a-2957c1f46b93">
+    <name>ДокументИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-источник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0074cd87-5660-4eff-b22d-50ebf785e5d6">
+    <name>ДокументПриемник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-приемник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.НаборыДополнительныхРеквизитовИСведений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="333d6b64-2c96-4f25-954d-b1622594952d">
+    <name>ДополнительныйРеквизитИсточника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доп. реквизит источника</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дополнительный реквизит источника</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="1817ac2b-88f4-45dd-b29d-b41d1cc21ba1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab116285-a72e-4f94-9a0d-0e64d7a22ac4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="5320cdfd-8904-498a-82b2-a426b72a69ef">
+    <name>НастройкиПереносаДополнительныхРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки переноса дополнительных реквизитов</value>
+    </synonym>
+    <group>CommandGroup.НовостиСервис</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60018e40-ba3c-4a77-90b3-b48ec6833d9b">
+  <producedTypes>
+    <objectType typeId="7fe13474-b2b1-411e-8a2f-f17d812f6a12" valueTypeId="fb992671-3e57-48b9-ae89-a5e7400793e9"/>
+    <managerType typeId="02de573b-fc40-446f-bda7-b80ce7f9566b" valueTypeId="aad27b56-40b7-4bf7-96a4-6efbb43f69f6"/>
+  </producedTypes>
+  <name>уатВыгрузкаДанныхВ1СБухгалтерию8</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка данных в конфигурацию &quot;Бухгалтерия предприятия&quot;</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Выгрузка данных в конфигурацию &quot;Бухгалтерия предприятия&quot;</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <defaultForm>DataProcessor.уатВыгрузкаДанныхВ1СБухгалтерию8.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="289a5ca9-1ec0-4c85-95ef-b1ce56ec2b7e">
+    <name>ВерсияБухгалтерии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия бухгалтерии</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Версия бухгалтерии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>3</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Версия бухгалтерии.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Версия бухгалтерии.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="f791359b-8204-463b-b2c4-e2a189d62ce5">
+    <name>ВыгружатьЗаправкиГСМВоВнутренниеПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать заправки ГСМ во внутренние перемещения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выгружать заправки ГСМ во внутренние перемещения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать заправки ГСМ во внутренние перемещения.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Выгружать заправки ГСМ во внутренние перемещения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="96bdb72a-9f91-4ee1-b4b0-e7b4d1c50c30">
+    <name>ВыгружатьОперацииТЖВоВнутренниеПеремещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать операции с ТЖ во внутренние перемещения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Выгружать операции с ТЖ во внутренние перемещения.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cc2e8c3-a28b-4723-bd74-d6a5c3e330ea">
+    <name>ВыгружатьРасходГСМвСписание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать расход ГСМ в списание</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8cda4717-e063-4791-8815-973d5127ed55">
+    <name>ВыгружатьПомеченныеНаУдалениеДокументы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружать помеченные на удаление документы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выгружать помеченные на удаление документы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак выгрузки документов помеченных на удаление</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак выгрузки документов помеченных на удаление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ee87465b-6492-4649-a0e8-0322826d26c3">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата окончания выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата окончания выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="547e5976-c029-4d84-918b-d0220daa4cb8">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Дата начала выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4d1f667d-d6fd-4871-a7e4-7ca0990965a4">
+    <name>НеЗамещатьДокументыПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не замещать документы при загрузке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Не замещать документы при загрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не замещать документы при загрузке.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Не замещать документы при загрузке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="36741cbf-edd2-42a1-a306-c48f3df1454a">
+    <name>НеЗамещатьСправочникиПриЗагрузке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не замещать справочники при загрузке</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Не замещать справочники при загрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не замещать справочники при загрузке.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Не замещать справочники при загрузке.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1968823c-8c58-4d80-8372-c3ff32dcef97">
+    <name>ТаблицаПравилВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export rule table</value>
+    </synonym>
+    <type>
+      <types>ValueTree</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица правил выгрузки объектов и свойств</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Таблица правил выгрузки объектов и свойств</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b6e4279b-c033-4d5a-8830-d1bb5f723d18">
+    <name>ТаблицаПравилКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таблица правил конвертации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Conversion rule table</value>
+    </synonym>
+    <type>
+      <types>ValueTable</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Таблица правил конвертации объектов и свойств</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Таблица правил конвертации объектов и свойств</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="935990e5-ed06-45d2-b246-e98cb3ddd51e">
+    <name>ФайлВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Файл выгрузки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export file</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя файла выгрузки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Имя файла выгрузки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="412483e4-19aa-460c-a2ef-176e9b6489b5">
+    <name>ФлагКомментироватьОбработкуОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментировать выгрузку объектов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Комментировать выгрузку объектов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак комментирования выгрузки объектов</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Признак комментирования выгрузки объектов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="0f72a2f4-6a51-4fd4-824a-b67a32e57ae1">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ae44f385-6f84-493c-93b2-39902b34138b">
+    <name>ПравилаОбменаТекст</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена, текст</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Правила обмена, текст</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="f02981e2-8f8b-4284-9ad6-d44b99ad282a">
+    <name>ПравилаОбменаТекст_БП_20</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила обмена, текст для Бухгалтерии 2.0</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Правила обмена, текст для Бухгалтерии 2.0</value>
+    </synonym>
+    <comment>Правила обмена с решением 1С:Бухгалтерия 2.0</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <commands uuid="48ecb21c-0957-4ac2-8065-7141a23e7de8">
+    <name>ВыгрузкаДанныхВ1СБухгалтерию8</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка данных в конфигурацию &quot;Бухгалтерия предприятия&quot;</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Выгрузка данных в конфигурацию &quot;Бухгалтерия предприятия&quot;</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

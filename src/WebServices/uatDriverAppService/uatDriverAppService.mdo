@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06a2d09a-44f6-4f84-a111-44f433a6a4ae">
+  <name>uatDriverAppService</name>
+  <synonym>
+    <key>ru</key>
+    <value>Driver app service (UAT)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Driver app service (FMS)</value>
+  </synonym>
+  <namespace>http://www.w3.org/</namespace>
+  <descriptorFileName>uatDriverApp.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="c9bccb76-17f9-47a1-9163-f4233166e0d5">
+    <name>ExecuteCommand</name>
+    <synonym>
+      <key>ru</key>
+      <value>Execute command</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Execute command</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>boolean</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ExecuteCommand</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a38bb565-fc2d-42b4-829a-ba61c254b682">
+      <name>loginData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Login data</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Login data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="2b08bbd8-3dec-40b8-b71f-03fe3f1da16d">
+      <name>commandName</name>
+      <synonym>
+        <key>ru</key>
+        <value>Command name</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Command name</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5cc8de79-3fc8-4549-a830-a722270f492c">
+      <name>requestData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Request data</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Request data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="8fb1dac9-b9c3-4aed-98f4-772df0aa47c2">
+      <name>responseData</name>
+      <synonym>
+        <key>ru</key>
+        <value>Response data</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Response data</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+      <transferDirection>Out</transferDirection>
+    </parameters>
+    <parameters uuid="c0579c64-3686-4039-8958-8d08d5dcceeb">
+      <name>resultCode</name>
+      <synonym>
+        <key>ru</key>
+        <value>Result code</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Result code</value>
+      </synonym>
+      <xdtoValueType>
+        <name>int</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <transferDirection>Out</transferDirection>
+    </parameters>
+    <parameters uuid="5891e5e0-dc77-4225-8c56-c1b071c39b75">
+      <name>resultDescription</name>
+      <synonym>
+        <key>ru</key>
+        <value>Result description</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Result description</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+      <transferDirection>Out</transferDirection>
+    </parameters>
+  </operations>
+</mdclass:WebService>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35516160-0468-4076-af36-280c1cd690a2">
+  <name>уатИнтеграцияСWMS_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с WMS</value>
+  </synonym>
+  <rootURL>wms_api</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="e7570872-022c-4340-8382-5a5190f6a0e5">
+    <name>ПроверкаСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка соединения</value>
+    </synonym>
+    <template>/test</template>
+    <methods uuid="ea21d8ca-00ad-4eb9-a52d-8fb5358b4068">
+      <name>ПроверкаСоединенияGET</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверка соединения GET</value>
+      </synonym>
+      <handler>ПроверкаСоединения</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e8c7756f-3fbd-4050-a6af-959c1f989f3e">
+    <name>СтатусыТочекМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы точек маршрута</value>
+    </synonym>
+    <template>/v1/CHTStatus/{pointID}</template>
+    <methods uuid="dbb7a055-8dbb-41bc-acfb-c9a6f4d8698b">
+      <name>УстановитьСтатус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Установить статус</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Установить статус</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>УстановитьСтатусТочекМаршрута</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="fdd1be72-e4a1-44d5-94dc-42fde089afaf">
+    <name>СтатусыЗаявокПРР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статусы заявок ПРР</value>
+    </synonym>
+    <comment>Статусы заявок на погрузочно-разгрузочные работы</comment>
+    <template>/v1/CHOStatus/{OrderUID}</template>
+    <methods uuid="9ea57fe5-c16b-4df6-991b-df40ace63667">
+      <name>УстановитьСтатус</name>
+      <synonym>
+        <key>ru</key>
+        <value>Установить статус</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Установить статус</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>УстановитьСтатусЗаявокПРР</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

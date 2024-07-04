@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a9bae015-e7a9-40e6-a9f4-050ceca829a1">
+  <producedTypes>
+    <objectType typeId="de417b44-2127-4378-bc91-3c08294c7d1a" valueTypeId="a3cef579-d0c1-4a14-aa6a-782557295953"/>
+    <refType typeId="a87ec6d3-c025-415c-8213-d44886539f4a" valueTypeId="97492bd1-ff68-40c2-ae1d-bd46d4bd8b55"/>
+    <selectionType typeId="0f877708-dc39-462c-9903-e98103ec97db" valueTypeId="f97d0170-0ed6-4bbe-8889-86d9a19ecd23"/>
+    <listType typeId="9c18be74-da52-449a-9137-3336b0e129bd" valueTypeId="f4b63dd8-d82a-42bd-8d3c-974d62018ad5"/>
+    <managerType typeId="f5b8b7d7-c688-4da6-b218-e241e3cacb44" valueTypeId="7c7bdf75-ef0c-4013-a2f7-15fcda0d1b1d"/>
+  </producedTypes>
+  <name>уатЦвета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Цвета ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle colors</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатЦвета.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатЦвета.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатЦвета</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Цвет ТС</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>en</key>
+    <value>Vehicle color</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Цвет ТС</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Vehicle color</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Цвета ТС</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Vehicle colors</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Цвета ТС</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Vehicle colors</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Цвета транспортных средств</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Color of vehicles</value>
+  </explanation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>11</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатЦвета.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатЦвета.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатЦвета.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="55ba12a8-7f57-409a-9c19-16a06d2e4c73">
+    <name>ЦветПоГИБДД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цвет по ГИБДД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Color by traffic police</value>
+    </synonym>
+    <comment>Название цвета по классификации ГИБДД</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Название цвета по классификации ГИБДД</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name of color according to classification of traffic police</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3bf488f8-c541-41dd-8ceb-5886f18a57ad">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="eaf88e36-a6a4-4b92-94b8-d7268320df18">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cf9eac68-43cb-497d-8ec0-c55f30978e18">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

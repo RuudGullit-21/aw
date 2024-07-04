@@ -1,0 +1,2249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДерево</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FFF8CB</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличество</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоТипТочкиМаршрута</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоЕдиницаИзмерения</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоЕдиницаИзмеренияПоЗаказу</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОкноС</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОкноПо</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоНадписьДопВыработка</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПричинаЗакрытияЗаказа</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+				<right xsi:type="xs:decimal">3</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоРасстояние</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоРасстояниеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВремяФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеПлан</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеПланВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеПлан</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеПланВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеФактВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеФактВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоЕдиницаИзмерения</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоЕдиницаИзмеренияПоЗаказу</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличество</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОжидание</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОжиданиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоПунктЗаказНоменклатура</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоРасстояние</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоРасстояниеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВремяФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоТипТочкиМаршрута</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоСтоянка</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоСтоянкаФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеФактВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеФакт</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеФактВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеПлан</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоПрибытиеПланВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеПлан</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоУбытиеПланВремя</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОкноС</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОкноПо</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоНадписьДопВыработка</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОжидание</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОжиданиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">4</right>
+				<right xsi:type="xs:decimal">5</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоЕдиницаИзмерения</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">4</right>
+				<right xsi:type="xs:decimal">5</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ЕдиницаИзмерения</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.ЕдиницыИзмерения.ПустаяСсылка</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.КлассификаторЕдиницИзмерения.ПустаяСсылка</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличество</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">4</right>
+				<right xsi:type="xs:decimal">5</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.Количество</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоПунктЗаказНоменклатура</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+				<right xsi:type="xs:decimal">3</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВыполнен</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>NotGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:decimal">1</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:decimal">3</right>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>S</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоРекламация</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>NotInList</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+				<right xsi:type="xs:decimal">4</right>
+				<right xsi:type="xs:decimal">5</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Ы</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>S</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОказываемыеУслугиСуммаВключаетНДС</field>
+			</item>
+			<item>
+				<field>ОказываемыеУслугиСтавкаНДС</field>
+			</item>
+			<item>
+				<field>ОказываемыеУслугиСуммаНДС</field>
+			</item>
+			<item>
+				<field>ОказываемыеУслугиВсего</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Доходы.УчитыватьНДС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ПолучаемыеУслугиСуммаВключаетНДС</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиСтавкаНДС</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиСуммаНДС</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиВсего</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиСуммаНДСПлан</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиВсегоПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Расходы.УчитыватьНДС</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">false</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LightGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ПолучаемыеУслугиРассчитать</field>
+			</item>
+			<item>
+				<field>ОказываемыеУслугиРассчитать</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Номер</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:Field">Объект.Номер</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Рассчитать</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>Calculate</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">5</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыОбъем</field>
+			</item>
+			<item>
+				<field>Заказы1КоличествоМест</field>
+			</item>
+			<item>
+				<field>Заказы1ВесБрутто</field>
+			</item>
+			<item>
+				<field>Заказы1Объем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоПрибытиеПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ПрибытиеПлан</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоПрибытиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ПрибытиеФакт</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоУбытиеПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.УбытиеПлан</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоУбытиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.УбытиеФакт</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыПрибытиеПлан</field>
+			</item>
+			<item>
+				<field>Заказы1ПрибытиеПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.ПрибытиеПлан</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыПрибытиеФакт</field>
+			</item>
+			<item>
+				<field>Заказы1ПрибытиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.ПрибытиеФакт</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыУбытиеПлан</field>
+			</item>
+			<item>
+				<field>Заказы1УбытиеПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.УбытиеПлан</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыУбытиеФакт</field>
+			</item>
+			<item>
+				<field>Заказы1УбытиеФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.УбытиеФакт</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="v8:StandardBeginningDate">
+					<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+					<v8:date>0001-01-02T00:00:00</v8:date>
+				</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ОказываемыеУслугиКоличество</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Доходы.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ПолучаемыеУслугиКоличество</field>
+			</item>
+			<item>
+				<field>ПолучаемыеУслугиКоличествоПлан</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Расходы.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+					<v8:item>
+						<v8:lang>en</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по весу (0-25%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Tree orders - overload by weight (0-25%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по весу (26-50%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overweight (26-50%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по весу (51-75%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overweight (51-75%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по весу (76-100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overweight (76-100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоВесБрутто</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоВесПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ВесПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по весу (&gt;100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload by weight (&gt;100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по объему (0-25%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload by volume (0-25%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по объему (26-50%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload by volume (26-50%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по объему (51-75%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload by volume (51-75%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по объему (76-100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Orders tree - overload by volume (76-100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОбъем</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоОбъемПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ОбъемПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по объему (&gt;100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload by volume (&gt;100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>НомерТС</field>
+			</item>
+			<item>
+				<field>ТСМодель</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВидПеревозки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатВидыПеревозок.Авиационная</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатВидыПеревозок.Железнодорожная</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатВидыПеревозок.Морская</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ОтметкаНезаполненного</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМестПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по местам (0-25%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Tree orders - overload on places (0-25%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМестПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по местам (26-50%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload on places (26-50%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМестПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по местам (51-75%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload on places (51-75%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМестПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по местам (76-100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Orders tree - overload on places (76-100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоКоличествоМест</field>
+			</item>
+			<item>
+				<field>ЗаказыДеревоКоличествоМестПроцент</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.КоличествоМестПроцент</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+					<comparisonType>InList</comparisonType>
+					<right xsi:type="xs:decimal">1</right>
+					<right xsi:type="xs:decimal">3</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов - перегруз по местам (&gt;100%)</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Order tree - overload on places (&gt;100%)</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОжидание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.Ожидание</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дерево заказов: отрицательное ожидание</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Orders tree: a negative expectation</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыОжидание</field>
+			</item>
+			<item>
+				<field>Заказы1Ожидание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.Заказы.Ожидание</left>
+				<comparisonType>Less</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:NegativeTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Список заказов: отрицательное ожидание</v8:content>
+			</v8:item>
+			<v8:item>
+				<v8:lang>en</v8:lang>
+				<v8:content>Orders list: negative expectation</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоТерминал</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="xs:decimal">2</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОжидание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.Ожидание</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">9999</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ЗаказыДерево.Ожидание</left>
+					<comparisonType>Less</comparisonType>
+					<right xsi:type="xs:decimal">-9999</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>∞</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыОжидание</field>
+			</item>
+			<item>
+				<field>Заказы1Ожидание</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.Заказы.Ожидание</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">9999</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Объект.Заказы.Ожидание</left>
+					<comparisonType>Less</comparisonType>
+					<right xsi:type="xs:decimal">-9999</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>∞</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоСтоянка</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>InList</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+				<right xsi:type="xs:decimal">3</right>
+			</item>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.СтоянкаИзПункта</left>
+				<comparisonType>Greater</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветФона</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:PaleGreen</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkViolet</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводная</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыработкаСводная.ТолькоПросмотр</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводная</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыработкаСводная.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводная</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыработкаСводная.ТолькоПросмотр</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводная</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ВыработкаСводная.ПараметрВыработкиВременный</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ВыработкаСводная.ТолькоПросмотр</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#B38888</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводнаяКоличествоПлан</field>
+			</item>
+			<item>
+				<field>ВыработкаСводнаяКоличествоФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыработкаСводная.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаСводнаяДопАналитика</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыработкаСводная.ПараметрВыработки</left>
+				<comparisonType>NotInList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоУпаковок</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоТочекПоВидуОперации</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоТочекПоТипуПункта</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.СкладскаяОбработка</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоКонтейнеров</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаТСиСотрудниковДопАналитика</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВыработкаТСиСотрудников.ПараметрВыработки</left>
+				<comparisonType>NotInList</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоУпаковок</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоТочекПоВидуОперации</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоТочекПоТипуПункта</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.СкладскаяОбработка</right>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатПараметрыВыработки.КоличествоКонтейнеров</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаТСиСотрудников</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВыработкаТСиСотрудников.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаТСиСотрудниковКоличествоПлан</field>
+			</item>
+			<item>
+				<field>ВыработкаТСиСотрудниковКоличествоФакт</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВыработкаТСиСотрудников.ПараметрВыработкиВременный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Brown</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=2; ЧРД=:</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыработкаТСиСотрудниковЗаказГрузоотправителя</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">Объект.ВыработкаТСиСотрудников.ЗаказГрузоотправителя</left>
+				<comparisonType>NotFilled</comparisonType>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Все заказы</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДерево</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.Служебный</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#999999</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоНомерПункта</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.НомерПункта</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="xs:decimal">0</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыДеревоОценкаСервиса</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыДерево.ТипЗначенияСтроки</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:decimal">1</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string"/>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Доступность</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ТолькоПросмотр</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			</dcscor:item>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>Отображать</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Table xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03bb117e-7166-4088-bef4-f89744a60ab8">
+  <producedTypes>
+    <refType typeId="51b6620a-5149-4410-9366-f4c176ee7b5f" valueTypeId="9dc4cefc-ae78-4da2-a8ba-34cec42564cb"/>
+    <listType typeId="557492fb-234e-41f7-aacb-7b70aa50e859" valueTypeId="8ac5c7ac-74eb-4e78-a438-36e31057cfaf"/>
+    <objectType typeId="aa87414b-1c18-458f-9c05-d94001c4aec7" valueTypeId="69a64008-300d-4053-b992-44961f94b0a2"/>
+    <managerType typeId="177a7899-a0e7-42fb-ba6c-717ac63e99c4" valueTypeId="dc4ace79-1143-42d3-8b3d-5fce17eeaca9"/>
+    <recordManagerType typeId="cfc076d1-bc90-44eb-9508-adaa011f4e21" valueTypeId="f4ba16d9-0133-401e-8013-1c0badf23625"/>
+    <recordSetType typeId="ad0beab4-756c-4ee5-82a1-914bbd2bede9" valueTypeId="ca15f30b-fa37-4f0e-a340-92e5985a7a80"/>
+    <recordType typeId="41b55e11-3370-4512-94eb-da0b1e542299" valueTypeId="f74b25b0-c344-4bd1-8179-a90c0fda618e"/>
+    <recordKeyType typeId="fe963964-57d6-4226-a484-2e39eb6728d4" valueTypeId="8aea09ca-113b-4a6d-82a5-e56c3cdb06fc"/>
+  </producedTypes>
+  <name>Терминалы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Терминалы (Информация с сервера сбора данных)</value>
+  </synonym>
+  <parentDataSource>ExternalDataSource.УдалитьItobДанныеСервераСбораДанных</parentDataSource>
+  <nameInDataSource>dbo.devices</nameInDataSource>
+  <tableDataType>NonobjectData</tableDataType>
+  <keyFields>ExternalDataSource.УдалитьItobДанныеСервераСбораДанных.Table.Терминалы.Field.ИдентификаторТерминала</keyFields>
+  <unfilledParentValue xsi:type="core:UndefinedValue"/>
+  <readOnly>true</readOnly>
+  <transactionsIsolationLevel>ReadUncommitted</transactionsIsolationLevel>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <tableFields uuid="41b2a381-956d-4665-a505-00569bed3bb5">
+    <name>ИдентификаторТерминала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор терминала</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <nameInDataSource>id</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="326b6cce-8252-4ef0-ba66-5d11997c6f89">
+    <name>КодТерминала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код терминала</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>19</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+    <nameInDataSource>code</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="90068e95-7457-4f17-93de-f22add6ea3cc">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>descr</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="ea1ded68-c51d-4769-bd18-2956f39f706e">
+    <name>type</name>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <nameInDataSource>type</nameInDataSource>
+  </tableFields>
+  <tableFields uuid="321acfd4-e869-4761-b071-d851ab26dbda">
+    <name>imei</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>imei</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+  <tableFields uuid="36ea2765-4491-4934-ae17-a778632d3af7">
+    <name>sim</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <nameInDataSource>sim</nameInDataSource>
+    <allowNull>true</allowNull>
+  </tableFields>
+</mdclass:Table>

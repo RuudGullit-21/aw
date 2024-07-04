@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="864a40fa-5961-4fa8-bc76-3d58041645ec">
+  <producedTypes>
+    <selectionType typeId="226be03c-5077-4289-9f2a-d79af92b2d89" valueTypeId="fbd1eeda-a123-4b33-b511-3d20e595db40"/>
+    <listType typeId="c6961100-0f75-4665-a636-73d4af5855dd" valueTypeId="1dbdba78-83d4-4395-a3d0-d1ca3981e98e"/>
+    <managerType typeId="03dafcb0-a719-4fd5-85da-76f709a6a80c" valueTypeId="bb6c7f51-b434-43b0-ac0a-1b0961cb73df"/>
+    <recordSetType typeId="b10c1959-463d-4892-8779-acbf699ee112" valueTypeId="9b2a6036-3904-46ea-82be-97f27d3c1b88"/>
+    <recordKeyType typeId="9d2b7210-2391-4750-a2d3-c5dccd794208" valueTypeId="64804f7d-af85-44f5-bcde-e8876439aa64"/>
+    <recordType typeId="a0379f6c-405c-4688-b238-54f4a3f2ef5b" valueTypeId="cc12614e-0f10-40ab-95e2-6d0eafc6aa68"/>
+    <recordManagerType typeId="b43fa485-6bcc-4d9b-a36b-1916efd80069" valueTypeId="360dc300-ac00-468e-a1f5-05b4f8ad6e45"/>
+  </producedTypes>
+  <name>уатНастройкиСогласований</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки согласований</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="205f45e9-30fc-49ee-bd2e-a5428e94cd05">
+    <name>Настройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="445c66a0-3dbf-4c2a-b57e-f6fca7744fa2">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d45c3b72-b936-47ee-8e8e-82f342743b03">
+  <producedTypes>
+    <selectionType typeId="a9c0bf00-acf9-4d76-a79f-fd4a3636b8f3" valueTypeId="0e75b8fb-3079-460b-ad96-b59bfbbfccb2"/>
+    <listType typeId="47a5712f-95a3-495a-8b27-d099c162aa32" valueTypeId="b18483c7-12c8-4f76-9149-2f5e06ce972a"/>
+    <managerType typeId="9619d28d-7db9-4f1c-add5-5ae764868e8e" valueTypeId="22d83668-8118-40e9-b0d3-11b84b3497a6"/>
+    <recordSetType typeId="c4907b78-4859-4f2f-9caf-aefa2f330cce" valueTypeId="d5a02b6c-67e3-488a-a07e-966cb07f6b9a"/>
+    <recordKeyType typeId="ae196100-b497-4939-a6fa-d1e293aeb498" valueTypeId="1dea0daa-ca84-43a6-9f59-5ac7d047533b"/>
+    <recordType typeId="d1b3af5b-93ac-4547-b05e-fa367dbea0a0" valueTypeId="5061afb7-01af-40d6-a185-ddf09d2861a4"/>
+    <recordManagerType typeId="1ea4cf27-7f97-4703-a83c-59215c0372ef" valueTypeId="724e7b77-8fb3-4814-892d-341cf5ef810e"/>
+  </producedTypes>
+  <name>уатПраваИНастройки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Права и настройки</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Rights and settings</value>
+  </synonym>
+  <comment>Хранит права доступа и настройки окружения пользователей</comment>
+  <editType>BothWays</editType>
+  <defaultRecordForm>InformationRegister.уатПраваИНастройки.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатПраваИНастройки.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="ebeafd6a-9966-4da6-8316-c559363f0209">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Value</value>
+    </synonym>
+    <comment>Значение права / настройки</comment>
+    <type>
+      <types>Characteristic.уатПраваИНастройки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение права / настройки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Value of right / settings</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="a8f1f13c-6e34-47fc-805a-05e1276bffa0">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object</value>
+    </synonym>
+    <comment>Объект, на уровне которого производится настройка</comment>
+    <type>
+      <types>CatalogRef.ПодразделенияОрганизаций</types>
+      <types>CatalogRef.ВнешниеПользователи</types>
+      <types>CatalogRef.Пользователи</types>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект, на уровне которого производится настройка</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Object, at the level which you are configuring</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="fe12bae2-8e57-4e4c-aa1d-a5d80088981f">
+    <name>ПравоНастройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право / настройка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Right / setting</value>
+    </synonym>
+    <comment>Право или настройка, по которой хранится значение</comment>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.уатПраваИНастройки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Право или настройка, по которой хранится значение</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Right or settings for which value stored</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="a7e776ab-ae8b-427b-99e3-884d976fa206">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f1cfcec4-6ed1-419e-9895-8e7403e14a40">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

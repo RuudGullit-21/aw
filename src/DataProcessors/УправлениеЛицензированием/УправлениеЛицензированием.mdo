@@ -1,0 +1,685 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d6150cdb-46d9-469e-ba40-cd454f6d5cb7">
+  <producedTypes>
+    <objectType typeId="4df9e8b8-ff2a-4fa2-bb6f-9c86e88d171a" valueTypeId="1c2fac69-12e2-49e6-843d-56cf7b04d6a9"/>
+    <managerType typeId="f5e46ef7-03af-42e7-a28d-3d8cae0ce02a" valueTypeId="cb90b549-a1b9-48d3-b051-b78d9f2aedf8"/>
+  </producedTypes>
+  <name>УправлениеЛицензированием</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление лицензированием</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Software License</value>
+  </synonym>
+  <comment>Управление лицензированием</comment>
+  <defaultForm>DataProcessor.УправлениеЛицензированием.Form.СостояниеСистемыЗащиты</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="9e5d92d6-ed17-4249-ac2c-7cd41d552354">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Error details</value>
+    </synonym>
+    <comment>Описание ошибки</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="532a68a3-e778-49dc-a3d9-e229a97391ea">
+    <name>КодОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код ошибки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Error code</value>
+    </synonym>
+    <comment>Код ошибки</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e8196248-0367-4f0e-856c-d81ff68f2e51">
+    <name>РежимСтарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим старта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start mode</value>
+    </synonym>
+    <comment>Режим старта</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0c633481-0d09-4e98-b057-31d187a7e180">
+    <name>АдресСервера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес сервера</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Server address</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ba0a16b6-74db-4a8b-8859-5a0839dd2c84">
+    <name>РегистрационныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Registration number</value>
+    </synonym>
+    <comment>Регистрационный номер</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <mask>9999999999999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4284f399-e102-4da4-8de2-7ab4b1475921">
+    <name>ПинКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пин-код</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>PIN</value>
+    </synonym>
+    <comment>Пин-код</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>23</length>
+      </stringQualifiers>
+    </type>
+    <mask>999-999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b71142c9-7060-4249-85e0-32ccf0b36005">
+    <name>СигнатураОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сигнатура оборудования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Hardware signature</value>
+    </synonym>
+    <comment>Сигнатура оборудования</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="59633b37-db51-4c61-919a-eb6c279d4ce6">
+    <name>ОписаниеОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание оборудования</value>
+    </synonym>
+    <comment>Описание оборудования</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d9abffc8-89e9-40b5-b6b4-384035ddc6cc">
+    <name>ВариантАктивации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант активации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>The method of activation</value>
+    </synonym>
+    <comment>Вариант активации</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="848b340b-650f-4dc8-853f-5a99448ad190">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Organization</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="03a9a55b-a196-4e4a-8f74-cb019c2e52ea">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="72f6e47f-630a-4e44-be06-057dae466de2">
+    <name>Телефон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Телефон</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Phone number</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="8b6f4461-30b2-46a3-b8e7-8302091a6e61">
+    <name>ЭлектроннаяПочта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронная почта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Email</value>
+    </synonym>
+    <comment>Электронная почта</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="a4e202fd-1219-4eac-91d3-5c3284f86229">
+    <name>Сайт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сайт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Web site</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c14e4770-8de1-4e39-81ff-c120505436d7">
+    <name>ОтветИнтернетАктивации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответ интернет активации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Activation response</value>
+    </synonym>
+    <comment>Ответ интернет активации</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9043231e-6b42-4783-8f7f-2c391ec094e4">
+    <name>ЗапросОтвет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос ответ</value>
+    </synonym>
+    <comment>Переключатель запрос или ответ активации</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3fcdd65e-1548-4899-90ec-38e11f3d086a">
+    <name>БлокЗапросаТелефоннойАктивации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок запроса</value>
+    </synonym>
+    <comment>Строка запроса телефонной активации</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>58</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="4f9f723e-dd0b-4310-9f90-706cf41404d9">
+    <name>БлокОтветаТелефоннойАктивации1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок ответа телефонной активации 1</value>
+    </synonym>
+    <comment>Блок ответа 1</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>27</length>
+      </stringQualifiers>
+    </type>
+    <mask>999-999-999-999-999-999-999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e20c277c-85f3-4078-8701-9e2bc9f32326">
+    <name>БлокОтветаТелефоннойАктивации2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок ответа телефонной активации 2</value>
+    </synonym>
+    <comment>Блок ответа 2</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>27</length>
+      </stringQualifiers>
+    </type>
+    <mask>999-999-999-999-999-999-999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e344d8b2-5b60-4446-ae41-e4f4724931d9">
+    <name>БлокОтветаТелефоннойАктивации3</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блок ответа телефонной активации 3</value>
+    </synonym>
+    <comment>Блок ответа 3</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>27</length>
+      </stringQualifiers>
+    </type>
+    <mask>999-999-999-999-999-999-999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3cabed90-2e8a-44ee-a678-38626fe75c53">
+    <name>ПодключитьсяКВыбранномуСерверуПослеАктивации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключиться к выбранному серверу после активации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Connect to the selected server after activation</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc4a5b0c-8e9e-4c19-a224-a6eef07f3f0b">
+    <name>РегистрационныйНомерПакетаЛицензий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регистрационный номер</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Registration number of the license package</value>
+    </synonym>
+    <comment>Регистрационный номер пакета лицензий</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>13</length>
+      </stringQualifiers>
+    </type>
+    <mask>9999999999999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="352fc384-1f29-43ff-869e-18756edb6137">
+    <name>ПарольПакетаЛицензий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль пакета лицензий</value>
+    </synonym>
+    <comment>Пароль пакета лицензий</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>15</length>
+      </stringQualifiers>
+    </type>
+    <mask>999-999-999-999</mask>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="de311c91-8ef8-43d0-ba96-9a8cd469f014">
+    <name>СпособАктивации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ активации</value>
+    </synonym>
+    <comment>Способ активации</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="fbd53000-006d-427d-b166-f73fea7a842a">
+    <name>НомерКлюча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер ключа</value>
+    </synonym>
+    <comment>Номер ключа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d72f5411-4d6f-4c9a-bf91-529afda22345">
+    <name>ЗаводскойНомерКлюча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заводской номер ключа</value>
+    </synonym>
+    <comment>Заводской номер ключа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="1cd27676-44b4-41f4-ad36-fcd58705d367">
+    <name>Установщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установщик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Installer</value>
+    </synonym>
+    <comment>Установщик</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="cd12dfc0-ea71-4564-abaf-5476b5f26956">
+    <name>КодДоступаКлючаЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код доступа ключа защиты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Passcode protection key</value>
+    </synonym>
+    <comment>Код доступа ключа защиты</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3a911975-6879-4371-b973-882eca7b5e88">
+    <name>ИмяОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя обработки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="453eaa6d-a445-4979-9b6d-bbed8d1b2f7b">
+    <name>ДнейДоОкончанияДействияКлюча</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дней до окончания действия ключа</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Предупреждать об окончании действия ключа за указанное количество дней</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="0e717916-a4ce-47cf-9d94-4ef8ff3c5c30">
+    <name>ИНН</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИНН</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>TIN</value>
+    </synonym>
+    <comment>Идентификационный номер налогоплательщика</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ИНН будет использоваться исключительно для техподдержки продукта, при активации дополнительных лицензий. Не будет использоваться в рекламных целях.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="f1c0cc9a-941b-4821-885c-bde2585a819e">
+    <name>СостояниеСистемыЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние системы защиты</value>
+    </synonym>
+    <comment>Текущее состояние системы защиты</comment>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b9137479-963e-422e-9ed9-a4f61b146d4b">
+    <name>ФормаНастройкиСервераЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки сервера защиты</value>
+    </synonym>
+    <comment>Форма настройки сервера защиты</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="30d99dcf-4ef3-4795-bfd6-4a0525df8881">
+    <name>ФормаАктивацииКлючаЗащиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма активации ключа защиты</value>
+    </synonym>
+    <comment>Форма активации ключа защиты</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6cc5f9ad-a7b6-431b-a9eb-c36635bbd97e">
+    <name>ФормаАктивацииЛицензий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма активации лицензий</value>
+    </synonym>
+    <comment>Форма активации лицензий</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b759ab83-bce0-4669-8402-78b90a0561f9">
+    <name>ИнформацияОПараметрахЛицензирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация о параметрах лицензирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Information about license options</value>
+    </synonym>
+    <comment>Информация о параметрах лицензирования</comment>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="ccd54b51-10c6-42e4-a517-6ff52165a94d">
+    <name>УправлениеЛицензированием</name>
+    <synonym>
+      <key>ru</key>
+      <value>Управление лицензированием</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Software License</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

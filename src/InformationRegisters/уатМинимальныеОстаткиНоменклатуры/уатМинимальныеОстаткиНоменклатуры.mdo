@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a4266f20-3889-4e93-815a-56a3b4e17b1c">
+  <producedTypes>
+    <selectionType typeId="d1546ab1-af8b-4dc7-b58a-d002ab9fe09f" valueTypeId="85e2ceec-fb91-4496-b8f6-43ff9dbc6e2f"/>
+    <listType typeId="bd2078cf-96f8-4c0e-b963-300dde6fb91d" valueTypeId="6e7dc826-7381-4180-8417-fc22a0b4c72b"/>
+    <managerType typeId="d8a8cc57-5a1c-406e-9650-ab95bc570bcc" valueTypeId="3a6f015c-2baf-4f7e-b462-3c24939bfd69"/>
+    <recordSetType typeId="a47a1ed5-2d68-48b7-9e6e-6e34a0bb9406" valueTypeId="5b04ead3-ab6a-4611-94db-f3a69f10173e"/>
+    <recordKeyType typeId="57fdcb2d-94b9-4931-aa5d-9f5b93596e84" valueTypeId="df692dce-1aa2-4bd1-85d5-e5471b2a4dda"/>
+    <recordType typeId="aca3c5ac-cc44-4790-a334-ec45a392a5c9" valueTypeId="c1856979-9f14-4827-9f7e-6a1ca4d97e14"/>
+    <recordManagerType typeId="fd930276-b816-48ac-8fb8-cf3da63ccfe5" valueTypeId="b13ef6a6-1c32-4e0e-bd73-fc6e85dca469"/>
+  </producedTypes>
+  <name>уатМинимальныеОстаткиНоменклатуры</name>
+  <synonym>
+    <key>en</key>
+    <value>Minimum remains of products and services</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Минимальные остатки номенклатуры</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>InformationRegister.уатМинимальныеОстаткиНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <auxiliaryListForm>InformationRegister.уатМинимальныеОстаткиНоменклатуры.Form.ФормаСписка</auxiliaryListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="82d3d7cf-b271-4eea-8f8e-1a8d9c26a2e0">
+    <name>МинимальныйОстаток</name>
+    <synonym>
+      <key>en</key>
+      <value>Minimal remains</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Минимальный остаток</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Min. remains, quantity</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Минимальный остаток, количество</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="29ec2704-346d-4316-9c10-e7789b939034">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Products and services.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="d3f678f7-2abf-4000-bb2d-44be47896c33">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

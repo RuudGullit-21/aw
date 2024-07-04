@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="619be175-9767-4ff7-bca7-e2af261e47f6">
+  <name>ItobЗаписьПунктовНазначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись пунктов назначения</value>
+  </synonym>
+  <source>
+    <types>DefinedType.ItobПунктНазначенияОбъект</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.ItobПунктыНазначения.ЗаписьПунктаНазначения</handler>
+</mdclass:EventSubscription>

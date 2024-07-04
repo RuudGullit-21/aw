@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f95b0b65-1d91-451d-8ac2-48cb407483c6">
+  <producedTypes>
+    <selectionType typeId="56c8da1a-084a-4f16-aca7-c2f6ed917d18" valueTypeId="225f2fed-b629-4bfb-9c15-8bd6d42c0802"/>
+    <listType typeId="0a469a2f-13a0-441b-8565-df2a40e1e29c" valueTypeId="5e90a72d-7bf0-4f4f-b5e8-8add354614e1"/>
+    <managerType typeId="12a87989-95e0-4e96-97d5-8bd102fcf92c" valueTypeId="efbe24f6-3e72-405c-b982-707ab12c41e6"/>
+    <recordSetType typeId="c2812884-9e71-4b2d-85af-cef3ca163805" valueTypeId="bd615298-66a8-4bbf-a511-d15b05f4daa7"/>
+    <recordKeyType typeId="4ee657f1-eaf2-4fac-9995-0f189883bb74" valueTypeId="5e511398-bb7b-435f-ac96-129ec8e40e4e"/>
+    <recordType typeId="751aa7f2-3875-4aa9-95f9-7e2c24210e1f" valueTypeId="c1d05234-dc86-49c1-8d7d-65a53546747f"/>
+    <recordManagerType typeId="a70c8fba-693f-4c16-b278-aff97e433343" valueTypeId="9d694311-30eb-4699-86aa-2c3febd69541"/>
+  </producedTypes>
+  <name>уатСтатусыМобильногоПриложения</name>
+  <synonym>
+    <key>en</key>
+    <value>Mobile app statuses</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы мобильного приложения</value>
+  </synonym>
+  <comment>Статусы мобильного приложения  (УАТ)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>en</key>
+    <value>Mobile app status</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Статус мобильного приложения</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>en</key>
+    <value>Mobile app status</value>
+  </extendedRecordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Статус мобильного приложения</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Mobile app statuses</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Статусы мобильного приложения</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Mobile app statuses</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Статусы мобильного приложения</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Mobile app activity statuses</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Статусы активности мобильного приложения</value>
+  </explanation>
+  <dimensions uuid="268df79d-541d-4c9f-a61d-f8d709ba276a">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3147c727-395d-48be-b169-6c9999dbb180">
+    <name>МобильноеУстройство</name>
+    <synonym>
+      <key>en</key>
+      <value>Mobile device</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Мобильное устройство</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатМобильныеУстройства</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Mobile device</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Мобильное устройство (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cb315317-48df-4409-90ca-d0a15354c15e">
+    <name>Водитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водитель</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Driver</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Водитель (по данным мобильного приложения)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a010cfdb-cbdf-486b-8b33-14c82f11e39b">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="681adf87-bac2-4146-930e-2d43a8b11cb0">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Mobile app status</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус мобильного приложения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e75062e7-81df-4a21-872c-5359e21be020">
+  <producedTypes>
+    <objectType typeId="2a4ef844-d6c6-4efd-894f-236265034bee" valueTypeId="1945f545-2535-489f-aec6-933544498331"/>
+    <refType typeId="e61749ec-4bcd-4c46-9878-e760784c1036" valueTypeId="77b3b536-6dd1-4eec-991e-d520ac6e27dd"/>
+    <selectionType typeId="7698a42a-859f-468d-b3b0-700653b20c60" valueTypeId="a174e309-b742-4a47-94fd-d4a77ce1b93e"/>
+    <listType typeId="bfd9fe71-c9bb-45a8-8ae0-8d9b96e84d55" valueTypeId="684b4ef1-ac9c-442c-81a8-9c7550500cf1"/>
+    <managerType typeId="89aebb71-996e-4ceb-abbd-2d5419770966" valueTypeId="e7218a28-052f-4d46-98fb-1f25bab8b2a2"/>
+  </producedTypes>
+  <name>уатСценарииПланирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сценарии планирования</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Planning scripts</value>
+  </synonym>
+  <comment>Сценарии планирования (уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатСценарииПланирования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатСценарииПланирования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Входит в группу</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Included in group</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа сценариев</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Script group</value>
+    </toolTip>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.уатСценарииПланирования.EmptyRef</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Наименование.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Name.</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>UUID</value>
+    </toolTip>
+    <fillValue xsi:type="core:StringValue">
+      <value>     </value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатСценарииПланирования</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Сценарий планирования</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>en</key>
+    <value>Planning script</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Сценарий планирования</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Planning script</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сценарии планирования</value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Planning scripts</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Сценарии планирования</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Planning scripts</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Сценарии планирования</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Planning scripts</value>
+  </explanation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>5</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <defaultObjectForm>Catalog.уатСценарииПланирования.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.уатСценарииПланирования.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.уатСценарииПланирования.Form.ФормаВыбора</defaultChoiceForm>
+  <auxiliaryObjectForm>Catalog.уатСценарииПланирования.Form.ФормаЭлемента</auxiliaryObjectForm>
+  <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+  <attributes uuid="2bc419df-1fc9-4158-bc6d-6e8d48e501bb">
+    <name>Раздел</name>
+    <synonym>
+      <key>ru</key>
+      <value>Раздел</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Section</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатРазделыПланирования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Раздел планирования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатРазделыПланирования.EnumValue.Выработка</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08af73a8-24ca-4d91-8a3e-856f9cf149a8">
+    <name>Периодичность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Periodicity</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Периодичность сценария</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Script periodicity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.Периодичность.EnumValue.Месяц</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35846f86-d950-4f2d-86b7-91e0be434e16">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Currency</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Script currency</value>
+    </toolTip>
+    <toolTip>
+      <key>ru</key>
+      <value>Валюта сценария</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="74f9239f-73c7-413c-9220-897f778ad9c5">
+    <name>ПолучательУслуг</name>
+    <synonym>
+      <key>en</key>
+      <value>Recipient of service</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Получатель услуг</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатПолучателиУслуг</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Получатель услуг: контрагент или наша организация</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>The recipient of the service.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6c910e6c-dcaf-4261-89c9-3a9b5e825d0d">
+    <name>ВедущийСценарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведущий сценарий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСценарииПланирования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ведущий сценарий долгосрочного планирования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="039910be-e825-4995-884d-308bea84bd91">
+    <name>ВидПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид планирования</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыПланирования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Позволяет реализовать несколько уровней планирования:
+Долгосрочное планирование - планирование на длительный интервал времени от недели до года;
+Краткосрочное планирование - планирование на более короткие интервалы времени, чем долгосрочное планирование</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатВидыПланирования.EnumValue.Долгосрочный</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6a6cfb73-e198-4aa8-a072-5154760f6351">
+    <name>ИспользоватьКраткосрочноеПланирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать краткосрочное планирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг включен, в документе &quot;Планирование работы ТС&quot; отображаются интервалы краткосрочного планирования.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="74d0b058-17e8-407b-b5f0-d8f3767328ae">
+    <name>ПериодичностьКраткосрочногоПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Периодичность</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Periodicity</value>
+    </synonym>
+    <type>
+      <types>EnumRef.Периодичность</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Периодичность краткосрочного планирования</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Script periodicity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.Периодичность.EnumValue.Месяц</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="852d28b0-5449-42c5-8f91-2606089ef94d">
+    <name>ИспользоватьОперативноеПланирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать оперативное планирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3d57b582-ee95-4905-b77d-1eb54708684b">
+    <name>АвтоматическиСоздаватьЗаказыНаТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматически создавать Заказы на ТС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c3ec16f8-6c60-421d-aab4-ad8f87db1693">
+    <name>АвтоматическиСоздаватьРазнарядкиНаВыпускТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматически создавать Разнарядки на выпуск ТС</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1fb53858-ce54-44af-a38c-53636e759c23">
+    <name>ОтображатьНомерПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отображать № периода в заголовке (в пределах года)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Display period No. in the title (within a year)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Диапазон дат или Номер периода в пределах года</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e79c567c-5be1-40f7-9d50-c46e88dc48af">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arbitrary comment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4e068961-ec43-46a5-9ac8-b374087e15fb">
+    <name>УдалитьДетализацияПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить детализация планирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Detail planning</value>
+    </synonym>
+    <comment>Детализация планирования</comment>
+    <type>
+      <types>EnumRef.уатДетализацияПланирования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Детализация планирования.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Detail planning.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="35d1e9d6-592e-46c0-90dc-242acfa1fb21">
+    <name>УдалитьПланированиеПоГруппамУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалить планирование по группам услуг</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если флаг установлен, то при планировании по услугам в качестве номенклатуры услуг будут использоваться группы справочника. </value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0ca13a15-64a0-4421-bb40-fcfade7ad613">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Products and services</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура при создании заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3562b4b5-54b5-430a-b4c7-03c0c72d0f94">
+    <name>РежимЗаполненияВесаОбъемаГруза</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим заполнения веса и объема грузов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Режим заполнения веса и объема грузов:
+Копировать из плана - вес и объем груза переносятся как было указано в плане
+Распределять равномерно по дням - вес и объем груза распределяются пропорционально количеству дней в периоде сценария</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a3db04de-0fbc-403a-86e8-3200c8e2b3d9">
+    <name>ПараметрВыработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр выработки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатПараметрыВыработки</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется для раздела планирования &quot;Объемы перевозок&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="71480345-be35-47f3-a116-b8cf00d2b8d6">
+    <name>ПланированиеОбъемовВПроцентах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Планирование объемов перевозок в процентах</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="23afbfc6-3b29-485c-8c63-ce704c422291">
+    <producedTypes>
+      <objectType typeId="8907c695-54c0-4d70-825d-95a33acbc8ab" valueTypeId="43be732d-debd-4fd8-808c-b8e2c2df289b"/>
+      <rowType typeId="cf445436-7442-435e-95f1-34d0afe0a4d8" valueTypeId="c694879d-78ec-4d5a-9a68-3c7e2a2ffaa6"/>
+    </producedTypes>
+    <name>РазрезыПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрезы планирования</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="a5e55212-c024-43ea-bcd5-3e33c0bb552e">
+      <name>РазрезПланирования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Разрез планирования</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатРазрезыПланирования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="231f46f6-16ed-4b79-8bc1-fd3625845c56">
+      <name>ПланированиеПоГруппам</name>
+      <synonym>
+        <key>ru</key>
+        <value>Планирование по группам</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Если флаг установлен, то при планировании будут использоваться группы справочника. </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d58f6279-01f4-4dbf-ad28-e1a0a1bbcbbd">
+      <name>ВариантАналитики</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант аналитики</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатВариантыАналитик</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="5a09a697-be82-4505-81e8-da835d350838">
+    <producedTypes>
+      <objectType typeId="ebba06bb-b697-49b1-b28c-ebff1b477902" valueTypeId="a488c64e-856e-45f7-a3d5-cee69df5a300"/>
+      <rowType typeId="30284af6-9288-4acf-9c29-84dc13d22024" valueTypeId="d1537436-9bee-4fb1-ada4-cfe720274a00"/>
+    </producedTypes>
+    <name>РазрезыПоказателейПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрезы показателей планирования</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="7a7a7fb7-74b2-4395-9dc8-564f12682cbc">
+      <name>РазрезПланирования</name>
+      <synonym>
+        <key>ru</key>
+        <value>Разрез планирования</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатРазрезыПланирования</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dcb57786-f986-4432-82a4-66d10a877e90">
+      <name>ПланированиеПоГруппам</name>
+      <synonym>
+        <key>ru</key>
+        <value>Планирование по группам</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Если флаг установлен, то при планировании будут использоваться группы справочника. </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4d17ce46-4c8c-4088-be56-64a8a17f2175">
+      <name>ВариантАналитики</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вариант аналитики</value>
+      </synonym>
+      <type>
+        <types>EnumRef.уатВариантыАналитик</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8c6ea37b-26c6-4088-916a-8dc8049a8735">
+      <name>ПараметрВыработки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметр выработки</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатПараметрыВыработки</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="81e2062f-254a-4ca8-9769-c12a8981a8a6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ab68318e-1fa4-4d7f-a3c6-7cab2f743bca">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b2c0e5cb-2fff-4f26-8aa6-226ce4559667">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f75b2676-c4fe-4da8-b666-999111a705fa">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Group form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="29fd9817-c48a-40a5-81a5-dc0eb8841aff">
+    <name>РазблокированиеРеквизитов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разблокирование реквизитов</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Unlock attributes</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="251293f0-337f-412a-8304-25da09354b48">
+    <name>ФормаВыбораРазрезовПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрезы планирования</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

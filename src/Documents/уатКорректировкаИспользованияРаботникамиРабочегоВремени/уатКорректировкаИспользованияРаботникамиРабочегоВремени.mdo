@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="598a1f91-e456-41ac-8cde-8df67dfe3214">
+  <producedTypes>
+    <objectType typeId="69b04bb6-ec90-44f9-9449-56fd8b9ff14a" valueTypeId="988667aa-8213-4cff-ad58-02062b718ddd"/>
+    <refType typeId="ddacfbc7-6257-4f32-b01e-560e1db5de3a" valueTypeId="0666500d-1e61-4bf7-82d1-09d226d27275"/>
+    <selectionType typeId="4e9ed548-3878-460a-9558-260df5117ac5" valueTypeId="24710be5-3edf-4374-b5a3-4b528402877d"/>
+    <listType typeId="cee2cdea-6194-4a9f-a6dc-36bbb32a79fb" valueTypeId="7d5d4221-c82e-46c7-aec9-7bdfca22b276"/>
+    <managerType typeId="8177b858-0a8b-4d32-95f9-9926ce05217b" valueTypeId="22519eca-3159-470b-abdc-e865b831170f"/>
+  </producedTypes>
+  <name>уатКорректировкаИспользованияРаботникамиРабочегоВремени</name>
+  <synonym>
+    <key>en</key>
+    <value>Adjustment of working hours use by drivers</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Корректировка рабочего времени</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.уатКорректировкаИспользованияРаботникамиРабочегоВремени.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Документ_уатКорректировкаИспользованияРаботникамиРабочегоВремени</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>en</key>
+    <value>Adjustment of working hours use by drivers</value>
+  </objectPresentation>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Корректировка рабочего времени</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>en</key>
+    <value>Adjustment of working hours use by drivers</value>
+  </extendedObjectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Корректировка рабочего времени</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Adjustments of working hours use by drivers</value>
+  </listPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Корректировки рабочего времени</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Adjustments of working hours use by drivers</value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Корректировки рабочего времени</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>en</key>
+    <value>Adjustment of working hours use by drivers</value>
+  </explanation>
+  <explanation>
+    <key>ru</key>
+    <value>Корректировка рабочего времени</value>
+  </explanation>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.уатКорректировкаИспользованияРаботникамиРабочегоВремени.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.уатКорректировкаИспользованияРаботникамиРабочегоВремени.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.уатКорректировкаИспользованияРаботникамиРабочегоВремени.Form.ФормаВыбора</defaultChoiceForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecordsDeletion>AutoDelete</registerRecordsDeletion>
+  <registerRecords>InformationRegister.уатКорректировкаПланаРабочегоВремениСотрудников</registerRecords>
+  <registerRecords>AccumulationRegister.уатРабочееВремяСотрудников</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="b8066f76-4614-4c18-8fc6-31efea312dd7">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация предприятия, от имени которой оформляется документ инвентаризации</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company on whose behalf inventory document issued</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7e1b4eb2-8586-4006-8b85-6d9b690f0e88">
+    <name>ВидОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид операции</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыОперацийКорректировкаРабочегоВремени</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатВидыОперацийКорректировкаРабочегоВремени.EnumValue.Факт</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c0dccfc-bcb1-47ab-9cf1-1cadb1625b12">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <comment>Сотрудник</comment>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник, по которому производится корректировка</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Employee, which is correction executing</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="660f9109-27f9-4dc1-a1a4-9c05bd81759a">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, ответственный за  документ</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>User responsible for the document</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2783a9f2-ba5c-46e3-89a4-610aac357cf7">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольный комментарий</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Arbitrary comment</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0567d8e8-f5ae-4fba-aced-de6cc72b8518">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e82a742c-8489-4fa6-a14c-0ff49b37331c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="77dde2b7-4114-4d60-854e-eb268b3eea6a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="8f8d9ecb-3235-418a-ae6e-034df2c69ec1">
+    <producedTypes>
+      <objectType typeId="a79ab9df-3500-4c43-ac2a-973d6c1db723" valueTypeId="fa7496b7-13a3-46a9-8302-29cc852931dd"/>
+      <rowType typeId="8b7741b7-e840-4fb2-9304-ff6437a12633" valueTypeId="ebf628d3-f534-4247-a065-3940562bb8f4"/>
+    </producedTypes>
+    <name>ТабличнаяЧасть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Табличная часть</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tabular section</value>
+    </synonym>
+    <comment>Табличная часть</comment>
+    <toolTip>
+      <key>ru</key>
+      <value>Табличная часть корректировки</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Correction tabular section</value>
+    </toolTip>
+    <attributes uuid="e0d990c7-abc5-43b8-a492-b568f0e7551e">
+      <name>ВидИспользованияРабочегоВремени</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид использования рабочего времени</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Use type of working time</value>
+      </synonym>
+      <comment>Вид использования рабочего времени</comment>
+      <type>
+        <types>CatalogRef.уатВидыИспользованияРабочегоВремени</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Вид использования рабочего времени сотрудника</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Type of employee working time use</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0be021d9-56a3-43f7-afae-c93a1c89dc21">
+      <name>Время</name>
+      <synonym>
+        <key>ru</key>
+        <value>Время</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Time</value>
+      </synonym>
+      <comment>Время в секундах</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Time</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Время корректировки. </value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Adjustment time</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e13ccd74-f409-4358-b745-295837a87af3">
+      <name>ДатаНачала</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата начала</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Start date</value>
+      </synonym>
+      <comment>Дата начала</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дата начала корректировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Start date of correcting</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="07a20cb9-3864-4c12-a3fa-4ed18a50d8a6">
+      <name>Дней</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дней</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Days</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>4</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Дней корректировки</value>
+      </toolTip>
+      <toolTip>
+        <key>en</key>
+        <value>Days adjustments</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="fcca8ddd-5b73-44db-b733-a1c3dcbf7cbe">
+      <name>Смена</name>
+      <synonym>
+        <key>ru</key>
+        <value>Смена</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Shift</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.уатСмены</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

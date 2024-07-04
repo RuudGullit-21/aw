@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e592352c-4c11-4c6c-9e7c-5f723b41f8bb">
+  <producedTypes>
+    <objectType typeId="709a511a-026c-41dd-8ab8-4da49fc0ca33" valueTypeId="85437800-c98d-4456-89c6-9db2d80e0d06"/>
+    <refType typeId="d06ed634-0651-44f6-a2ba-3f1c5d458a8f" valueTypeId="f12a3a5d-02f0-40b5-9ff3-375aca1386ba"/>
+    <selectionType typeId="6fb898a6-8552-4a86-806a-5e2e11ecf112" valueTypeId="a53a6fc5-0873-49b6-9a49-1887d1e85b85"/>
+    <listType typeId="5478c36a-e175-4eeb-aa4d-6ea90c4bc254" valueTypeId="e3cc5cb6-951a-4335-9f08-5085a46a5bcb"/>
+    <managerType typeId="60daf071-ede6-41d4-8e9b-69e072d13dda" valueTypeId="7ea755bb-4e81-46c9-b5e8-a4b679ab2654"/>
+  </producedTypes>
+  <name>уатЧаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список чатов</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.уатЧаты.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.уатЧаты.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <characteristics>
+    <characteristicTypes>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения</characteristicTypes>
+    <keyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</keyField>
+    <typesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</typesFilterField>
+    <typesFilterValue xsi:type="core:ReferenceValue">
+      <value>Catalog.НаборыДополнительныхРеквизитовИСведений.Справочник_уатЧаты</value>
+    </typesFilterValue>
+    <dataPathField>-1</dataPathField>
+    <multipleValuesUseField>-1</multipleValuesUseField>
+    <characteristicValues>InformationRegister.ДополнительныеСведения</characteristicValues>
+    <objectField>InformationRegister.ДополнительныеСведения.Dimension.Объект</objectField>
+    <typeField>InformationRegister.ДополнительныеСведения.Dimension.Свойство</typeField>
+    <valueField>InformationRegister.ДополнительныеСведения.Resource.Значение</valueField>
+    <multipleValuesKeyField>-1</multipleValuesKeyField>
+    <multipleValuesOrderField>-1</multipleValuesOrderField>
+  </characteristics>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Чат</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Чат</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Список чатов</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Список чатов</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="082e1a95-9049-425b-85fe-f134750f86c6">
+      <name>ОбщийЧат</name>
+      <description>Общий чат</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.уатЧаты.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="bf15adc3-5d03-47ae-b7fb-32dce0e0558d">
+    <name>ГруппаДиспетчеров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа диспетчеров</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатГруппыДиспетчеров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="028ae9ae-52f6-40af-889c-d61b5f93f4b9">
+    <producedTypes>
+      <objectType typeId="7cc0e8d1-9ac8-4948-a221-aba434833986" valueTypeId="9c41b8f0-5357-4685-a36b-8a95369fb73f"/>
+      <rowType typeId="631b62f7-cbcb-4a9c-8d8d-e2a498e99c99" valueTypeId="d35148ba-e5af-40b4-b6b7-47ae717e381e"/>
+    </producedTypes>
+    <name>Водители</name>
+    <synonym>
+      <key>ru</key>
+      <value>Водители</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Drivers</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Список водителей чата</value>
+    </toolTip>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="cb5c85f6-fc8f-4c70-9970-5c63c36b6ab1">
+      <name>Водитель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Водитель</value>
+      </synonym>
+      <synonym>
+        <key>en</key>
+        <value>Driver</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Водитель (по данным мобильного приложения)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="aa70d5c1-9a94-4336-8a07-d5d44a19343e">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29d4cd90-a88a-4553-8c5d-01d3bdd0e0e9">
+  <producedTypes>
+    <selectionType typeId="f20690a7-aefc-4caa-ab1e-248c1c5b1ff0" valueTypeId="3c453f81-484d-4632-92ce-c70d4c020b52"/>
+    <listType typeId="6cbc7b64-437a-4ec8-af43-88b74e573d62" valueTypeId="0ae0e6bb-f71d-458f-9a3e-6f16df40d845"/>
+    <managerType typeId="47897fce-6f46-4f3c-8442-7dff4d3097e8" valueTypeId="fad12b46-c5e8-4a3b-9556-308147342ae4"/>
+    <recordSetType typeId="81b39842-5906-45db-bbab-6db633bad421" valueTypeId="d2d55868-a45f-4ad3-8f8c-9eb9463e3c16"/>
+    <recordKeyType typeId="9834f5d0-d2cd-4e38-beb5-10359e7136a7" valueTypeId="502cd871-eaae-4703-bc28-ab7c2b3b1307"/>
+    <recordType typeId="97f21892-a533-41fa-aadb-fc6ab5b20d06" valueTypeId="360d6c63-e2e2-4db7-8691-d6363386c299"/>
+    <recordManagerType typeId="967da634-f244-44ad-8ee7-dc5221ee47d9" valueTypeId="316aca24-3f33-4652-8600-6c0945bf0376"/>
+  </producedTypes>
+  <name>уатСоставТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав ТС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle composition</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатСоставТС.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСоставТС.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8ce02f17-7264-4f3b-8189-5663702bf20f">
+    <name>ВСоставе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В составе</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>In the composition</value>
+    </synonym>
+    <comment>(Общ) ТС, в состав которого входит текущее</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС, в состав которого входит текущее</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle, which includes current</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="603a67c8-f639-460f-806b-1566277d1501">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>ТС или оборудование</comment>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС или оборудование</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bfd19ae5-de3e-4c22-a743-82008f6202ee">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3254c7f0-da48-4430-bc1a-63bdb8f68521">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

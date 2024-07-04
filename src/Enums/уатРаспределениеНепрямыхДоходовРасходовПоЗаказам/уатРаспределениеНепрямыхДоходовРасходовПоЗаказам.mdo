@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="73fb1a80-8c88-4ef1-b295-fa986665ddc4">
+  <producedTypes>
+    <refType typeId="1b9ac871-26a5-42bf-a648-6e61280de66d" valueTypeId="2a8ed676-7caf-42a3-b794-d6e6462881ea"/>
+    <listType typeId="306003c7-32f6-49dc-ba21-7ac566005ba5" valueTypeId="3d5a37fc-d0c0-4a81-934b-fbc8e5c30b25"/>
+    <managerType typeId="6be4f044-1987-44df-911b-7f42a58b1e91" valueTypeId="6abca2d1-1ecd-49a8-a4a8-457a260349fd"/>
+  </producedTypes>
+  <name>уатРаспределениеНепрямыхДоходовРасходовПоЗаказам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Распределение непрямых доходов и расходов по заказам</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Allocation of indirect incomes and expenses on orders</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ae56fa99-913d-412f-b235-c3265b3d6afa">
+    <name>РаспределятьПоСобственнымЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По собственным заданиям (Заказам на ТС) транспортного средства</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>On own jobs (Order for trucking) of vehicle</value>
+    </synonym>
+    <comment>Распределять по собственным заказам (заданиям) транспортного средства</comment>
+  </enumValues>
+  <enumValues uuid="5d74acb1-066e-4828-8b1f-1120abfa7410">
+    <name>РаспределятьПоВсемЗаказам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По заданиям (Заказам на ТС) всех транспортных средств</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>On jobs (Order for trucking) of all vehicles</value>
+    </synonym>
+    <comment>Распределять по заказам (заданиям) всех транспортных средств</comment>
+  </enumValues>
+</mdclass:Enum>

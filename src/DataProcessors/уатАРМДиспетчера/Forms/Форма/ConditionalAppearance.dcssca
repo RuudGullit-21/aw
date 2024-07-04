@@ -1,0 +1,1329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">МаршрутыСписок.ВесПредставление</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="xs:string"/>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:Field">МаршрутыСписок.ВесПредставление</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">МаршрутыСписок.ОбъемПредставление</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="xs:string"/>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:Field">МаршрутыСписок.ОбъемПредставление</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">МаршрутыСписок.КоличествоУпаковокПредставление</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="xs:string"/>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:Field">МаршрутыСписок.КоличествоУпаковокПредставление</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентВремяВРаботе</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентПротяженность</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокРасстояние</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокВремяВПути</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">МаршрутыСписок.ТС</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатТС.ПустаяСсылка</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ТС</left>
+				<comparisonType>NotEqual</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Справочник.уатТС.ПустаяСсылка</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовОбъем</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиОбъем</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиОбъем</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>GreaterOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">25</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:LimeGreen</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">50</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkOrange</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовКоличествоМест</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиКолМест</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиКолМест</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:Crimson</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписок.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>МаршрутыСписокЗаказовВесБрутто</field>
+			</item>
+			<item>
+				<field>МаршрутыСписокЗаказовПроцентЗагрузкиВес</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>Greater</comparisonType>
+					<right xsi:type="xs:decimal">75</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">МаршрутыСписокМЛ.ПроцентЗагрузкиВес</left>
+					<comparisonType>LessOrEqual</comparisonType>
+					<right xsi:type="xs:decimal">100</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">web:DarkGoldenRod</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗаказыСписокСостояние</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ЗаказыСписок.Состояние</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="dcscor:DesignTimeValue">Перечисление.уатСостоянияВыполненияЗаказов.ЧастичноВыполнен</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Текст</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:Field">ЗаказыСписок.СостояниеВыполненияСтрока</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

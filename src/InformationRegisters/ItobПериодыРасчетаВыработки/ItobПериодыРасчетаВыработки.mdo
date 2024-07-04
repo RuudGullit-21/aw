@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9bfd232b-6e49-4d76-a157-fb9fc9f4fe4c">
+  <producedTypes>
+    <selectionType typeId="61c04c40-d870-4285-9596-9a864a2b496d" valueTypeId="87cf6f68-5c11-486d-9724-8a251d96e7c4"/>
+    <listType typeId="8ef60221-4cd3-411a-b3c1-33997c865ffc" valueTypeId="cafbf21a-7ee5-4a74-83b7-08120cc7050c"/>
+    <managerType typeId="aa0015c1-27f1-4c74-a99f-c7e1e51db1b8" valueTypeId="f73c54ce-a7b0-414f-82ec-ebbb0b084bdd"/>
+    <recordSetType typeId="7831dd78-53cc-44d8-acef-71fb001b5e55" valueTypeId="fcdf0894-d03e-4df4-b9ba-78334df1552b"/>
+    <recordKeyType typeId="7d9ae722-52cd-42c4-9c55-71967e07e29c" valueTypeId="a028322f-e57a-4aca-8019-5646b8f2a425"/>
+    <recordType typeId="bbae675a-2ea8-4919-af4f-f5cbfe5713a4" valueTypeId="0140cc40-a699-4730-9a26-790ea4bbc634"/>
+    <recordManagerType typeId="174ef457-d32e-4815-9379-4e32dbdd65ff" valueTypeId="e4b9b127-ec5c-4ed6-8cab-a3411a641483"/>
+  </producedTypes>
+  <name>ItobПериодыРасчетаВыработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Периоды расчета выработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2eed04bb-78f5-4093-88ed-c6ce99602e45">
+    <name>ВыработкаПодсчитана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выработка подсчитана</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Флажок установлен, если выработка по данному объекту мониторинга произведена</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="42979ca1-9999-44bd-befe-5837dca0c246">
+    <name>ПериодДата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период дата</value>
+    </synonym>
+    <comment>Дата</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Период времени, по которому рассчитана выработка</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <dimensions uuid="732c0623-d4a6-4d0a-a4d0-03dd83fc1750">
+    <name>Терминал</name>
+    <synonym>
+      <key>ru</key>
+      <value>Терминал</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Terminal</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobТерминалы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Объект мониторинга</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

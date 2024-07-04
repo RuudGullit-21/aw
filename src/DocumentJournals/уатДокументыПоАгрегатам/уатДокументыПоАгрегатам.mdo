@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9363262-3c1f-4bda-8502-8fa37f070ecc">
+  <producedTypes>
+    <selectionType typeId="4ffbc018-420e-4e3f-99a9-60c627920ab0" valueTypeId="683ed2b3-d832-4e77-bcb7-92c5cf6753f2"/>
+    <listType typeId="62273f22-f26a-457d-a8d2-cfd049200bf9" valueTypeId="7f8965e2-f00c-4fbb-884c-c4756cbb94b9"/>
+    <managerType typeId="6fb1b67b-a2ce-49ce-a5cd-41730524504e" valueTypeId="795b6c78-de41-446d-a406-04dd467dae13"/>
+  </producedTypes>
+  <name>уатДокументыПоАгрегатам</name>
+  <synonym>
+    <key>en</key>
+    <value>Car parts documents</value>
+  </synonym>
+  <synonym>
+    <key>ru</key>
+    <value>Документы по агрегатам</value>
+  </synonym>
+  <defaultForm>DocumentJournal.уатДокументыПоАгрегатам.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.уатПоступлениеАгрегатов</registeredDocuments>
+  <registeredDocuments>Document.уатПеремещениеАгрегатов</registeredDocuments>
+  <registeredDocuments>Document.уатСписаниеАгрегатов</registeredDocuments>
+  <registeredDocuments>Document.уатОперацииСАгрегатами</registeredDocuments>
+  <registeredDocuments>Document.уатВводНачальныхДанныхПоАгрегатам</registeredDocuments>
+  <registeredDocuments>Document.уатИнвентаризацияАгрегатов</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <listPresentation>
+    <key>ru</key>
+    <value>Документы по агрегатам </value>
+  </listPresentation>
+  <listPresentation>
+    <key>en</key>
+    <value>Car parts documents</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Документы по агрегатам </value>
+  </extendedListPresentation>
+  <extendedListPresentation>
+    <key>en</key>
+    <value>Car parts documents</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Документы по агрегатам </value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Car parts documents</value>
+  </explanation>
+  <columns uuid="277fe477-833f-40ac-b67f-a2860357a7d4">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <comment>Организация</comment>
+    <references>Document.уатОперацииСАгрегатами.Attribute.Организация</references>
+    <references>Document.уатВводНачальныхДанныхПоАгрегатам.Attribute.Организация</references>
+    <references>Document.уатПеремещениеАгрегатов.Attribute.Организация</references>
+    <references>Document.уатПоступлениеАгрегатов.Attribute.Организация</references>
+    <references>Document.уатСписаниеАгрегатов.Attribute.Организация</references>
+    <references>Document.уатИнвентаризацияАгрегатов.Attribute.Организация</references>
+  </columns>
+  <columns uuid="36c27345-13fe-4f85-acbe-72500c3f964c">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <comment>Ответственный</comment>
+    <references>Document.уатВводНачальныхДанныхПоАгрегатам.Attribute.Ответственный</references>
+    <references>Document.уатОперацииСАгрегатами.Attribute.Ответственный</references>
+    <references>Document.уатПеремещениеАгрегатов.Attribute.Ответственный</references>
+    <references>Document.уатПоступлениеАгрегатов.Attribute.Ответственный</references>
+    <references>Document.уатИнвентаризацияАгрегатов.Attribute.Ответственный</references>
+    <references>Document.уатСписаниеАгрегатов.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="991d8b8e-9fda-426a-8cf7-6122be9b9751">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <comment>Комментарий</comment>
+    <references>Document.уатВводНачальныхДанныхПоАгрегатам.Attribute.Комментарий</references>
+    <references>Document.уатОперацииСАгрегатами.Attribute.Комментарий</references>
+    <references>Document.уатПеремещениеАгрегатов.Attribute.Комментарий</references>
+    <references>Document.уатПоступлениеАгрегатов.Attribute.Комментарий</references>
+    <references>Document.уатСписаниеАгрегатов.Attribute.Комментарий</references>
+    <references>Document.уатИнвентаризацияАгрегатов.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="1c9e2bbc-2f88-4199-8530-70b322a6a305">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <comment>Склад</comment>
+    <references>Document.уатВводНачальныхДанныхПоАгрегатам.Attribute.Склад</references>
+    <references>Document.уатОперацииСАгрегатами.Attribute.СкладОтправитель</references>
+    <references>Document.уатПеремещениеАгрегатов.Attribute.СкладОтправитель</references>
+    <references>Document.уатПоступлениеАгрегатов.Attribute.Склад</references>
+    <references>Document.уатСписаниеАгрегатов.Attribute.Склад</references>
+    <references>Document.уатИнвентаризацияАгрегатов.Attribute.Склад</references>
+  </columns>
+  <forms uuid="ac55f91b-4dbf-4142-a52d-5ae4593b90bd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

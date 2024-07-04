@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb4a2a00-cbfc-4d23-90f9-b2819b1e1871">
+  <name>уатСозданиеНапоминанийПоСогласованиям</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание напоминаний по согласованиям (уат)</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Create reminders for approvals (FMS)</value>
+  </synonym>
+  <comment>Автоматическое создание напоминаний пользователям при создании задач по бизнес-процессу &quot;уатСогласование&quot;</comment>
+  <source>
+    <types>TaskObject.ЗадачаИсполнителя</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.уатОбработчикиПодписокНаСобытия.уатСозданиеНапоминанийПоСогласованиямПриЗаписи</handler>
+</mdclass:EventSubscription>

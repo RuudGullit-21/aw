@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7b2b4c61-b468-445e-929b-c943581d35b2">
+  <producedTypes>
+    <selectionType typeId="6f1786ee-be33-4f86-8b39-ee1355c42c90" valueTypeId="7610ff6c-6a1d-4730-b5b6-6811c63c1197"/>
+    <listType typeId="c5218f3f-4028-4d17-ac30-1638f5f733b5" valueTypeId="5a3ea371-9c5a-4dd9-969a-5c174bc2ef77"/>
+    <managerType typeId="8a24d728-16aa-4a40-9807-6ff314456ed5" valueTypeId="218a6658-4588-4887-b926-fd7801b32481"/>
+    <recordSetType typeId="fcee2b62-9878-437b-8044-4f39d32078ac" valueTypeId="d1049f6a-7ebb-4185-ae36-570421315d83"/>
+    <recordKeyType typeId="9cf179df-824a-43e2-9b4f-58c7dee73d2d" valueTypeId="b60c792b-94fd-46ea-b9df-340fb84b51d6"/>
+    <recordType typeId="9aa3dc07-2219-4616-abe9-8eaef1f3416f" valueTypeId="39e9e4a4-eb1c-4f83-9c5c-cb83b9f2f4d0"/>
+    <recordManagerType typeId="c789ba66-abbe-4477-82c6-b3c8cf6c39b1" valueTypeId="57431cae-89e9-429c-896f-110950804fa6"/>
+  </producedTypes>
+  <name>уатСервиснаяКнижка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сервисная книжка</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Vehicle composition</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultRecordForm>InformationRegister.уатСервиснаяКнижка.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСервиснаяКнижка.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="778fc8ba-76ef-4fc2-81ed-c38657246002">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>In the composition</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>16</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>ТС, в состав которого входит текущее</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle, which includes current</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="b70261fb-08c4-450a-abd2-47e7560e8589">
+    <name>Привязана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Привязана</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:BooleanValue"/>
+  </attributes>
+  <dimensions uuid="acfefa7c-672c-4595-bb25-bac7689be52f">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <comment>Модель ТС.</comment>
+    <type>
+      <types>CatalogRef.уатМоделиТС</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="00cbf583-7fb8-49ce-b410-4b65e00814e0">
+    <name>ТО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид обслуживания ТС </value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Work</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатВидыОбслуживанияТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид обслуживания ТС.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Work on repair</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5dcedf8d-c81b-4941-bb47-4c975220c78e">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работа/Запчасть</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Work</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатРаботыПоРемонту</types>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>en</key>
+      <value>Work on repair</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b595f766-72f9-4121-8b61-75aa629eea46">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2a4c322b-ad9d-46da-8ccc-3c648752d5d1">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

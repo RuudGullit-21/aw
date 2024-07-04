@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea0ada38-8fc2-4526-bca7-8377663ae61a">
+  <producedTypes>
+    <selectionType typeId="c0530a55-bbe5-45df-a49e-82a767565f89" valueTypeId="79af6c87-f730-49ea-97fb-631bc80f498b"/>
+    <listType typeId="eeb4ed90-67d8-46da-a298-2e7e61c15b16" valueTypeId="05981526-214d-46cd-bea7-1103e7fdadcb"/>
+    <managerType typeId="0ecfd6d0-1303-4627-b6de-2d7947221499" valueTypeId="17de1874-e4e9-4779-a379-90af446a2162"/>
+    <recordSetType typeId="0f25c448-a337-411c-a37e-f61067339620" valueTypeId="ee81a9fc-c005-4ab5-86cb-e89bd70ce18c"/>
+    <recordKeyType typeId="007f2467-e398-47ff-a491-aa1a42ac9d62" valueTypeId="867d36c5-764b-4b35-bc67-75c06244abeb"/>
+    <recordType typeId="f5adf29c-7594-4661-a066-056790c11d05" valueTypeId="f4c717c4-1475-45fb-94f2-bcfc6dbc32f7"/>
+    <recordManagerType typeId="c130ca22-aeb3-4886-8e62-838556468b49" valueTypeId="54408d8f-f07b-4a6e-8049-f269dc410429"/>
+  </producedTypes>
+  <name>уатВнешниеИдентификаторыВыгружаемыхОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешние идентификаторы выгружаемых объектов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатВнешниеИдентификаторыВыгружаемыхОбъектов.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатВнешниеИдентификаторыВыгружаемыхОбъектов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Внешний идентификатор</value>
+  </recordPresentation>
+  <extendedRecordPresentation>
+    <key>ru</key>
+    <value>Внешний идентификатор выгружаемого объекта</value>
+  </extendedRecordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Внешние идентификаторы</value>
+  </listPresentation>
+  <resources uuid="23a230d2-e694-4ab6-8233-8c968aab7e62">
+    <name>ВнешнийИдентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешний идентификатор</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="d3fa7e79-6f35-4484-8981-b226b401ebd3">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатАвансовыйОтчет</types>
+      <types>DocumentRef.уатПутевойЛист</types>
+      <types>DocumentRef.уатРемонтныйЛист</types>
+      <types>DocumentRef.уатЗаправкаГСМ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e2cf1e01-99db-4ff9-bcf4-e052a57f39cf">
+    <name>ВидОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид объекта</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Object type</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатВидыОбъектовУниверсальногоФормата</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="abfeeae5-87b0-4417-85b6-640b9f117a93">
+    <name>Валюта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Валюта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Валюты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="74efa43e-7001-411b-8a78-642e648b39f6">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Individual</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dbfee10a-82df-4cc1-9424-c501fad94e92">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="beb4f5c9-a3e4-48ca-be20-b61c7e2b637d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

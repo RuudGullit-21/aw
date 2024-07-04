@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="677a38d6-c1c9-4dd3-b9a4-ccc4224b4a1a">
+  <producedTypes>
+    <selectionType typeId="77efdf6a-29f1-442e-9aa1-d4299a0c082e" valueTypeId="64a227df-5fd5-4f0f-b066-d15241145984"/>
+    <listType typeId="3cc86b5d-4693-4d75-afc0-95f400e662cb" valueTypeId="a30d6948-0f4f-48a1-848c-2703298b2a54"/>
+    <managerType typeId="11528dfb-e58e-4b29-b2f5-1634b3934f6e" valueTypeId="490f0bf8-868e-4167-b50d-6947af4da58a"/>
+    <recordSetType typeId="a990808e-fbff-4df8-a58f-d67d0d70f35c" valueTypeId="8477b236-b5bd-409b-82c3-73d8be946ba0"/>
+    <recordKeyType typeId="79a50c85-6d1a-487d-a043-1a54ae10f97c" valueTypeId="5a73ebf2-a873-461c-b5ca-2004ac5bbdf4"/>
+    <recordType typeId="0583284f-13b7-4274-9729-0999d3a03f46" valueTypeId="725a5afd-4953-4bd7-9d5e-7f4b2d53fa17"/>
+  </producedTypes>
+  <name>ItobВыдачиТоплива</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выдачи топлива</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="cb60d0ff-7d88-4a5f-b141-2aa79cb42ffc">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="2e9f8094-1968-4725-a73a-53d67d6e681a">
+    <name>НомерRFID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер RFID-карты</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="553f1fa5-3943-4d15-a393-bb624dbd5cf9">
+    <name>Топливозаправщик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Топливозаправщик</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobТранспортноеСредство</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ed58e33f-32c1-4e67-bb6f-eff125aadded">
+    <name>Цистерна</name>
+    <synonym>
+      <key>ru</key>
+      <value>Цистерна</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Tank</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobАЗС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="0a05bc1b-f4c2-4d37-ada8-8c8b06a6b260">
+    <name>КомуВыдано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Кому выдано</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ItobОбъектМониторинга</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f015380c-2810-4242-b59d-496f26152d19">
+    <name>RFIDКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>RFID-карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ItobRFIDКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4c6fddb6-799b-426a-ad0f-93656db09e7d">
+  <producedTypes>
+    <objectType typeId="ce5c89fb-bf45-48e7-ad31-9def4cfdf16f" valueTypeId="96a6642a-d1ba-4903-8cb5-ae51764e30b0"/>
+    <managerType typeId="34b36bba-0c90-4379-990d-e001f247fa75" valueTypeId="626eb168-beb7-426d-979d-4a1657465360"/>
+  </producedTypes>
+  <name>уатКарточкаРаботыАккумулятора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Карточка работы аккумулятора</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Woking card of battery</value>
+  </synonym>
+  <comment>Карточка работы аккумулятора</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.уатКарточкаРаботыАккумулятора.Form.Форма</defaultForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Карточка работы аккумулятора</value>
+  </extendedPresentation>
+  <extendedPresentation>
+    <key>en</key>
+    <value>Woking card of battery</value>
+  </extendedPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Карточка работы аккумулятора</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Woking card of battery</value>
+  </explanation>
+  <attributes uuid="1ba18a50-f914-4365-869d-5df32bbf62ae">
+    <name>Аккумулятор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аккумулятор</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Battery</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатСерииНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Аккумулятор.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Battery.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="74df8ffb-c561-4838-a067-400f6eda8aca">
+    <name>ДатаКон</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата конца</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>End date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата конца.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>End date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d3e1a0f9-1c5f-42bd-9ee3-dbdea10fa5e6">
+    <name>ДатаНач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Start date</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Start date.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="80c35dd9-670d-4776-818e-80b6ebaca986">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Company.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="dc13a657-5f31-4e4d-89f3-47bb4cf2258b">
+    <name>ПостроительОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Построитель отчета</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Report builder</value>
+    </synonym>
+    <type>
+      <types>ReportBuilder</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Построитель отчета.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Report builder.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="35cec660-c58b-4457-a82f-4da01037ad72">
+    <name>СохраненныеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сохраненные настройки</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Saved setting</value>
+    </synonym>
+    <type/>
+    <toolTip>
+      <key>ru</key>
+      <value>Сохраненные настройки.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Saved settings.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2b9c104a-0c6d-4348-b960-8163110df76f">
+    <name>ТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ТС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Vehicle</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатТС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Транспортное средство</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Vehicle</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="69ff75bd-4ba9-4ec8-a537-56365bcc1139">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="9fc480cd-83bd-4f63-82a7-ba8b86f9bdf2">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остатки и обороты</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Balance and turnovers</value>
+    </synonym>
+  </templates>
+</mdclass:Report>

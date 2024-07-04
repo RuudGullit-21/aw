@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f1cab10-8f7e-4928-b161-b519aa19708c">
+  <producedTypes>
+    <selectionType typeId="44444f91-df2a-4456-8a24-c600fc2426ea" valueTypeId="b7cf1fef-9c3e-43f8-94fc-5781486c4416"/>
+    <listType typeId="a0236e67-c4d8-4b43-82f6-619815d58d41" valueTypeId="9b696f1a-4442-4a52-8fa1-6139384a82cc"/>
+    <managerType typeId="289deae8-ed9a-4b48-8754-68566f7c1382" valueTypeId="d4fd5924-784e-425b-944f-01a425617c9c"/>
+    <recordSetType typeId="bf798096-c2d5-48d3-98bf-1ac8781196fe" valueTypeId="40d8f37d-f770-459a-a8c1-8b702ed1b643"/>
+    <recordKeyType typeId="5df40419-a30e-4cd1-954b-7f5d3e1710e8" valueTypeId="4ff7d4db-3ca5-41cd-934b-0b391a28c397"/>
+    <recordType typeId="ca8b3631-92b2-4d40-8439-b6b83287e8c1" valueTypeId="d4944742-e315-45fe-bdf2-fc129ed3dd63"/>
+    <recordManagerType typeId="d799d973-58c9-412b-a631-16e800b9e95a" valueTypeId="2f51c236-4a5c-4fb4-9cb8-1d64765499ed"/>
+  </producedTypes>
+  <name>ItobСтатистикаРепликации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика репликации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="64b9b5ec-0aec-487b-9444-c890b7f216a3">
+    <name>ПериодКрайнейРепликации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период крайней репликации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата время крайней репликации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e7108cea-a36e-41a5-b2ca-3a32070457ef">
+    <name>ЗаписейВсего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записей всего</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>25</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Число записей всего (в регистр &quot;Данные терминалов&quot;)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b6a7c2e8-96fb-4346-9c26-56a96b92cdd2">
+    <name>ЗаписейЗаМесяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записей за месяц</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>20</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Число записей за месяц (в регистр &quot;Данные терминалов&quot;)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a86620a6-cc03-45f0-8435-78f1e2c8f0fc">
+    <name>ЗаписейЗаСутки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записей за сутки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Число записей за сутки (в регистр &quot;Данные терминалов&quot;)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ab0505d6-58f0-45bd-9f0e-bd737d797533">
+    <name>ЗаписейЗаЧас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Записей за час</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Число записей за час (в регистр &quot;Данные терминалов&quot;)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="068568a9-b608-44b5-bc45-12000a14433c">
+    <name>Поток</name>
+    <synonym>
+      <key>ru</key>
+      <value>Поток</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Поток репликации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

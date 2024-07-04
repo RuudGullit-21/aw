@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12b801b0-cf4a-4641-9e12-cdb612b14078">
+  <producedTypes>
+    <selectionType typeId="5c378a11-7225-4c1b-8cae-def24f18078d" valueTypeId="eec22325-4fd3-4d0b-8891-1a167467939a"/>
+    <listType typeId="aac357d3-f71f-47a0-a1ad-d972ec994f99" valueTypeId="c03f6409-2bba-46f2-86b3-dda0c7fdb15d"/>
+    <managerType typeId="e6fec0c2-047f-49fe-8850-6534a1b7e9e6" valueTypeId="6b2eec7f-e492-4ecd-8dad-ff79f8df68e6"/>
+    <recordSetType typeId="215119ac-c8e2-4669-aec1-97209d2782df" valueTypeId="e8d21064-70d9-45b7-a5cb-606d641cc916"/>
+    <recordKeyType typeId="b6a2f0bf-76a3-4142-b599-fb7c626c80b2" valueTypeId="ac27664d-5e47-4301-8328-588e57ab9883"/>
+    <recordType typeId="e547c629-9171-446a-8a01-ef355ac13916" valueTypeId="429847a2-c730-483a-89bd-5ff9f4478d20"/>
+    <recordManagerType typeId="bdfd6bd3-aa2e-496c-977f-71695fdceba7" valueTypeId="3092935c-b515-4aef-b4e1-28dc15781b7e"/>
+  </producedTypes>
+  <name>уатСведенияОКонтрагентах_уэ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о контрагентах</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Counterparty information</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.уатСведенияОКонтрагентах_уэ.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.уатСведенияОКонтрагентах_уэ.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сведения о контрагенте</value>
+  </recordPresentation>
+  <recordPresentation>
+    <key>en</key>
+    <value>Information about the counterparty</value>
+  </recordPresentation>
+  <resources uuid="3d91edb3-04ee-4d57-9baf-ef7202b293ff">
+    <name>Перевозчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перевозчик</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Carrier</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак перевозчика</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Carrier sign</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="08b9b8b4-2fde-4af3-849f-8be19ff4cab8">
+    <name>Рейтинг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рейтинг</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Rating</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рейтинг перевозчика, используемый при подборе в документ Тендер</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Rating of carrier used in the selection in Tender document</value>
+    </toolTip>
+    <minValue xsi:type="core:StringValue">
+      <value>0</value>
+    </minValue>
+    <maxValue xsi:type="core:StringValue">
+      <value>10</value>
+    </maxValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="72f1884f-8587-47ce-ab9c-f94a52c8ee3f">
+    <name>Услуга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Услуга</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Service</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Услуга перевозчика, используемая при подборе в документ &quot;Заказ перевозчику&quot;</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Carrier service used in selection to document &quot;Order to carrer&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Услуга</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="199bdd48-4e53-4457-ad37-2495526ef3ee">
+    <name>КодАТИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код АТИ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Код в АТИ.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="d04bd204-342d-4d05-96d1-81729bdc5c98">
+    <name>РедактированиеРасходов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование расходов</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатУровеньДоступаКУслугам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизит определяет, какие строки ТЧ «Расходы» разрешено редактировать внешнему пользователю, связанному с контрагентом, в документах «Маршрутный лист» и «Заказ перевозчику»</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатУровеньДоступаКУслугам.EnumValue.РедактированиеЗапрещено</value>
+    </fillValue>
+  </resources>
+  <resources uuid="54fa7092-1640-4c16-9ccd-bf0d1419d751">
+    <name>РедактированиеПоступленийУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование реквизитов поступлений услуг</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатУровеньДоступаКУслугам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизит определяет, что разрешено редактировать внешнему пользователю, связанному с контрагентом в документе «Поступление материалов и услуг»</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатУровеньДоступаКУслугам.EnumValue.РедактированиеЗапрещено</value>
+    </fillValue>
+  </resources>
+  <resources uuid="737e8c8a-9f78-4c84-aac5-72c411ef5be8">
+    <name>РедактированиеСчетовНаОплату</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактирование реквизитов счетов на оплату</value>
+    </synonym>
+    <type>
+      <types>EnumRef.уатУровеньДоступаКУслугам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизит определяет, что разрешено редактировать внешнему пользователю, связанному с контрагентом, в документе «Счет на оплату поставщика»</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Enum.уатУровеньДоступаКУслугам.EnumValue.РедактированиеЗапрещено</value>
+    </fillValue>
+  </resources>
+  <resources uuid="a944a0ef-4a4b-4bc8-a6fb-dd59d7659cc2">
+    <name>СозданиеПроизвольныхПоступленийУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создание поступлений услуг</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Реквизит определяет, разрешено ли внешнему пользователю, связанному с контрагентом, введение новых произвольных Поступлений услуг</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1798af7-d60d-4043-b6ca-86bcf7598f1d">
+    <name>СогласованиеРекламацийСПеревозчиком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование рекламаций с перевозчиком</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При установленном флаге, если перевозчик является виновником рекламации и выполняется согласование документа, рекламация будет также согласовываться с перевозчиком</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6eb06bbd-b23a-4dac-98f4-48ff492a6fd5">
+    <name>ИсполнительДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель для согласования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВнешниеПользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="52da8aff-0a06-4764-a513-3d8c539e7c65">
+    <name>Контрагент</name>
+    <synonym>
+      <key>en</key>
+      <value>Counterpartу</value>
+    </synonym>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контрагент сведений</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Contractor information</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="02f95395-1378-4987-98a1-b0886a7a80fe">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Record form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c87b9ab-ea32-45aa-8164-65da1484efe4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="78168dc0-1f76-4752-bdac-f237e72e78d4">
+    <name>ФормаВыбораПеревозчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора перевозчика</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Carrier selection form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

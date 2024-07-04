@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1f5c3634-b387-48af-837e-63f111c41f60">
+  <producedTypes>
+    <selectionType typeId="17432844-0e76-4a01-a15a-f375afbcc3c6" valueTypeId="1dd10cc6-6470-4ae9-adb0-fbdde8e8bc43"/>
+    <listType typeId="cb2dfdce-6efd-4bab-ac1a-5ed372aa8728" valueTypeId="7cb5f561-207a-473d-9baa-e4e4f21d99c1"/>
+    <managerType typeId="23d76197-5fad-4e01-8cc3-32514d570563" valueTypeId="92ece246-b238-409b-9085-191df151064f"/>
+    <recordSetType typeId="b4abfd44-8b2c-4658-9e0b-d9e76d40ee01" valueTypeId="e16f40ee-999d-427e-ad0a-e3b0e6e91fb4"/>
+    <recordKeyType typeId="5ccd0c5a-aa9d-4e28-aa9b-bd8a2684a381" valueTypeId="7c610edb-7d85-4b9b-9708-a9976fa73d77"/>
+    <recordType typeId="6fb14cc3-32d9-4cdc-823c-13ebc6d2de2d" valueTypeId="e7d302ae-3bd9-4b90-8bd8-30337110876a"/>
+  </producedTypes>
+  <name>уатБилетыНаСкладах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остатки билетов на складах</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Remains of tickets at warehouses</value>
+  </synonym>
+  <comment>(уат)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>AccumulationRegister.уатБилетыНаСкладах.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>RecordType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Period</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="c644e4ad-b12c-44ac-bdd2-7b84b4fa5a76">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Quantity</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Quantity</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="a721733f-8b80-4010-b508-3fb2954004bf">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Warehouse.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6584a07d-ecbe-48e4-97fc-c90e9f9793ae">
+    <name>Билет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Билет</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Ticket</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.уатБилеты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Билет.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Ticket.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6f56cae4-7915-4b09-a00e-b20ea3579968">
+    <name>Партия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Batch</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.уатПоступлениеБилетов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Партия.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Lot.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <forms uuid="7676795b-d7a5-4a19-8e1b-4a6700a69c6d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:AccumulationRegister>
